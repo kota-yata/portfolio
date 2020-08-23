@@ -41,12 +41,10 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --cache --fix",
-      "prettier '**/*.{js,jsx,ts,tsx,vue}' --write"
-    ],
+    "*.js": "eslint --cache --fix",
     "*.scss": [
       "stylelint '**/*.{css,scss,sass}'"
-    ]
+    ],
+    "*.css": "stylelint --fix"
   }
 }
