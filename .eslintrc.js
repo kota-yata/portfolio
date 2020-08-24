@@ -3,13 +3,20 @@ module.exports = {
     browser: true,
     commonjs: true,
     es2020: true,
-    node: true
+    node: true,
   },
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module'
   },
+  plugins: ['svelte3'],
+  overrides: [
+    {
+      files: ['*.svelte'],
+      processor: 'svelte3/svelte3',
+    },
+  ],
   rules: {
     semi: ['error', 'always'],
     curly: ['error', 'multi-line', 'consistent'],
@@ -53,7 +60,6 @@ module.exports = {
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     camelcase: ['warn', { properties: 'always', ignoreImports: false }],
-    'comma-dangle': ['error', 'never'],
     'comma-spacing': ['error', { before: false, after: true }],
     'comma-style': ['error', 'last'],
     'computed-property-spacing': ['error', 'never'],
@@ -78,7 +84,7 @@ module.exports = {
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
         ignoreRegExpLiterals: true
-      }
+      },
     ],
     'multiline-ternary': ['error', 'never'],
     'new-parens': ['error', 'always'],
@@ -98,8 +104,22 @@ module.exports = {
     'space-before-function-paren': ['error', { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
     'space-in-parens': ['error', 'never'],
     'arrow-body-style': ['error', 'as-needed'],
-    'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': 'error',
-    'no-var': 'error'
+    'no-var': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        useTabs: false,
+        singleQuote: true,
+        semi: true,
+        tabWidth: 2,
+        printWidth: 120,
+        trailingComma: 'none',
+        bracketSpacing: true,
+        jsxBracketSameLine: true,
+        requirePragma: true,
+        insertPragma: true
+      }
+    ]
   }
 };
