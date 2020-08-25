@@ -61,3 +61,11 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+
+.swiper-pagination-bullet-active {
+	background: #333333 !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	color: #248a6b !important;
+}

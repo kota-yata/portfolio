@@ -9,7 +9,11 @@
     "color-named": "never",
     "color-hex-case": ["lower"],
     "comment-no-empty": true,
-    "string-quotes": "single"
+    "string-quotes": "single",
+    "at-rule-no-unknown": [true,
+      {"ignoreAtRules": ["include","mixin","each","extend"]}],
+    "no-descending-specificity": null,
+    "selector-type-no-unknown": null
   },
   "extends":[
     "stylelint-config-standard",

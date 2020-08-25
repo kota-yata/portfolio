@@ -1,0 +1,56 @@
+//Color
+$black: #333;
+$white: #f5f5f5;
+$deep-pink: #d53a9d;
+$light-blue: #bfd9fe;
+$note-blue: #41c9b4;
+$green: #248a6b;
+$yellow: #ffdb66;
+
+//default font-size
+%defont{
+  font-size: 15px;
+}
+
+//centering
+%center{
+  text-align:center;
+  margin:0 auto;
+}
+
+//justify-content template
+%justify{
+  display: flex;
+  justify-content: space-between;
+}
+
+//h template
+%h{
+  font-family: 'muli', sans-serif;
+  font-weight: lighter;
+  color:$white;
+}
+
+//button template
+%button{
+  cursor: pointer;
+  border:none;
+  border-radius: 10px;
+  background: #248a6b;
+  box-shadow:  20px 20px 40px #1f785d, -20px -20px 40px #299c79;
+  transition: 0.5s;
+  &:hover{
+    box-shadow:  20px 20px 40px #743ad5, -20px -20px 40px #d53a9d;
+  }
+}
+
+//describe words template
+%describe{
+  font-family: 'muli','Noto Sans JP', sans-serif;
+}
+
+//workcard template
+@mixin workcard($color1, $color2) {
+  background: linear-gradient(135deg, $color1, $color2 );
+  background-size: cover;
+}
