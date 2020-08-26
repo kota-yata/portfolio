@@ -12,9 +12,9 @@
       modifier: 1,
       slideShadows: false
     },
-    speed: 1000,
+    speed: 4000,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false
     },
     loop: true,
