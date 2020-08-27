@@ -4,8 +4,8 @@
 
 <svelte:head>
   <script
-    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
-    integrity="sha384-QLs4VQg614zMrRtkgMK6uETamOX2hrpd9k+EitpfurDuIZPjMXm72BFAuj5RQNe2"
+    src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"
+    integrity="sha384-qv1VTwh92pdXF7094Zj98Sm9gQm9m+qxZBa5n5LMY/RV3zIxSaf67NK83krYPMqt"
     crossorigin="anonymous">
 
   </script>

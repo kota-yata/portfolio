@@ -69,6 +69,9 @@ button:focus {
 .swiper-button-next, .swiper-button-prev {
 	color: #e0e5eb !important;
 }
+.swiper-container {
+	overflow: visible !important;
+}
 
 .fa-icon {
 	vertical-align: middle;

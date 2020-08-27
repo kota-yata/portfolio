@@ -35,7 +35,7 @@
 
   .work-card {
     position: relative;
-    height: 50vh !important;
+    height: 55vh !important;
     width: 30vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
@@ -43,7 +43,7 @@
     background: $white;
     box-shadow: 5px 5px 7px $shadow-white1, -5px -5px 7px $shadow-white2;
     .work-sentences {
-      padding: 0.5em;
+      padding: 1em;
     }
     .work-img {
       border-top-right-radius: 20px;
@@ -75,6 +75,7 @@
   @media screen and (max-width: 750px) {
     .work-card {
       width: 95vw !important;
+      height: 60vh !important;
       .work-img {
         width: 95vw;
       }
