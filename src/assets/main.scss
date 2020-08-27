@@ -8,6 +8,7 @@ html{
   margin:0;
   scroll-behavior: smooth;
   background: $white;
+  color: $light-black;
 }
 body{
   width: 100vw;
@@ -17,6 +18,15 @@ body{
   font-family:'Poppins','Noto Sans JP',sans-serif;
 }
 
-#second_page {
-  height: 100vh;
+h1,h2,h3 {
+  text-align: center;
+  color: $h-color;
+}
+
+.section {
+  color: $light-black;
+  width: 100vw;
+  #section_content {
+    margin: 0 auto;
+  }
 }

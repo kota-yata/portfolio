@@ -1,18 +1,10 @@
 //Color
 $black: #333;
-$shadow-white1: #d5dadf;
-$shadow-white2: #ebf0f7;
+$light-black: #555;
+$shadow-white1: #d3d7dd;
+$shadow-white2: #edf3f9;
 $white: #e0e5eb;
-$deep-pink: #d53a9d;
-$light-blue: #bfd9fe;
-$note-blue: #41c9b4;
-$green: #248a6b;
-$yellow: #ffdb66;
-
-//default font-size
-%defont{
-  font-size: 15px;
-}
+$h-color: #cecece;
 
 //centering
 %center{
@@ -23,43 +15,6 @@ $yellow: #ffdb66;
 %completely-center{
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 40%;
+  top: 35%;
   left: 50%;
-}
-
-//justify-content template
-%justify{
-  display: flex;
-  justify-content: space-between;
-}
-
-//h template
-%h{
-  font-family: 'Poppins', sans-serif;
-  font-weight: lighter;
-  color:$white;
-}
-
-//button template
-%button{
-  cursor: pointer;
-  border:none;
-  border-radius: 10px;
-  background: #248a6b;
-  box-shadow:  20px 20px 40px #1f785d, -20px -20px 40px #299c79;
-  transition: 0.5s;
-  &:hover{
-    box-shadow:  20px 20px 40px #743ad5, -20px -20px 40px #d53a9d;
-  }
-}
-
-//describe words template
-%describe{
-  font-family: 'Poppins','Noto Sans JP', sans-serif;
-}
-
-//workcard template
-@mixin workcard($color1, $color2) {
-  background: linear-gradient(135deg, $color1, $color2 );
-  background-size: cover;
 }

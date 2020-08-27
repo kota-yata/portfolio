@@ -1,10 +1,11 @@
 <script>
   export let words;
   export let size;
+  export let paddingTop;
 </script>
 
-<div>
-  <span style="font-size:{size}">{words}</span>
+<div style="padding-top: {paddingTop};">
+  <span style="font-size:{size};">{words}</span>
 </div>
 
 <style lang="scss">
