@@ -4,6 +4,7 @@
   import { github, twitter } from 'svelte-awesome/icons';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
+  import '../../assets/arrow.scss';
 
   let isVisible = false;
 
@@ -19,25 +20,24 @@
     </span>
     <div id="icon_container">
       <span transition:fade={{ delay: 3000, duration: 1000 }}>
-        <a href="https://github.com/kota-yata">
+        <a id="github" href="https://github.com/kota-yata">
           <Icon data={github} scale="3" />
         </a>
       </span>
       <span transition:fade={{ delay: 4000, duration: 1000 }}>
-        <a href="https://twitter.com/kota_yata">
+        <a id="twitter" href="https://twitter.com/kota_yata">
           <Icon data={twitter} scale="3" />
         </a>
       </span>
     </div>
 
-    <lottie-player
-      transition:fade={{ delay: 5000, duration: 1000 }}
-      src="https://assets4.lottiefiles.com/packages/lf20_CsR6jc.json"
-      background="transparent"
-      speed="1.5"
-      style="width: 150px; height: 150px;"
-      loop
-      autoplay />
+    <span transition:fade={{ delay: 5000, duration: 2000 }}>
+      <div class="arrow-container">
+        <div class="chevron" />
+        <div class="chevron" />
+        <div class="chevron" />
+      </div>
+    </span>
   </div>
 {/if}
 
@@ -46,7 +46,7 @@
 
   #top_page {
     height: 100vh;
-    lottie-player {
+    .arrow-container {
       @extend %completely-center;
       top: 95%;
     }
@@ -56,6 +56,16 @@
       span {
         a {
           color: $shadow-white1;
+          transition: 0.3s;
+          &:hover {
+            transition: 0.3s;
+          }
+        }
+        #github:hover {
+          color: $black;
+        }
+        #twitter:hover {
+          color: $twitter;
         }
         margin-left: 15px;
         margin-right: 15px;
