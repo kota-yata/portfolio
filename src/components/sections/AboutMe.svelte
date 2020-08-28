@@ -79,17 +79,12 @@
   #about {
     #skills_container {
       @extend %center;
-      width: 90vw;
+      width: 100vw;
       padding-bottom: 10px;
     }
     #member_container {
       @extend %center;
       padding-bottom: 3em;
-    }
-  }
-  @media screen and (max-width: 1400px) {
-    #skills_container {
-      width: 100vw !important;
     }
   }
 </style>

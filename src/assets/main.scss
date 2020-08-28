@@ -31,3 +31,9 @@ h1,h2,h3 {
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: 750px) {
+  html {
+    overflow-x: hidden;
+  }
+}
