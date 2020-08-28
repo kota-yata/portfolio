@@ -55,6 +55,11 @@
       description="I can develop 3D game with Unity. I'm not so familiar with how to develop 2D game, but I'm learning
       it now." />
     <SkillCard
+      imgPath="./img/firebase.png"
+      title="Firebase"
+      description="I'm not currently using Firebase Authentication cuz I want to implement auth system BY MYSELF. Anyway
+      I love Firebase rather than AWS." />
+    <SkillCard
       imgPath="./img/aws.png"
       title="Lambda & S3"
       description="I can use Lambda for automation, S3 for storage. I'm also learning other sevices such as Cloud9." />

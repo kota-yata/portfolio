@@ -16,7 +16,7 @@
   <div class="work-sentences">
     <div class="work-title">
       <span>{title}</span>
-      <a href="https//github.com/kota-yata/{title}">
+      <a href="https://github.com/kota-yata/{title}">
         <Icon data={github} scale="2" />
       </a>
     </div>

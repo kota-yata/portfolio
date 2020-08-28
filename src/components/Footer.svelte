@@ -40,6 +40,7 @@
       text-shadow: -1px -1px 3px rgba(255, 255, 255, 0.4), 1px 1px 5px rgba(0, 0, 0, 0.08);
       caret-color: #262626;
       font-size: 30px;
+      user-select: none;
     }
   }
 </style>
