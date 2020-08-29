@@ -3385,15 +3385,11 @@ var app = (function () {
     	let t8;
     	let skillcard8;
     	let t9;
-    	let skillcard9;
-    	let t10;
-    	let skillcard10;
-    	let t11;
     	let h2;
-    	let t13;
+    	let t11;
     	let div1;
     	let membercard0;
-    	let t14;
+    	let t12;
     	let membercard1;
     	let current;
     	const if_block_creators = [create_if_block$1, create_else_block];
@@ -3463,15 +3459,6 @@ var app = (function () {
 
     	skillcard6 = new SkillCard({
     			props: {
-    				imgPath: "./img/ruby.png",
-    				title: "Ruby",
-    				description: "I can develop Web scraping system with Nokogiri on Rails."
-    			},
-    			$$inline: true
-    		});
-
-    	skillcard7 = new SkillCard({
-    			props: {
     				imgPath: "./img/python.png",
     				title: "Python",
     				description: "I can develop Web scraping system with Selenium. Automate the Boring Stuff with Python - Someone"
@@ -3479,7 +3466,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	skillcard8 = new SkillCard({
+    	skillcard7 = new SkillCard({
     			props: {
     				imgPath: "./img/unity.jpg",
     				title: "Unity",
@@ -3488,20 +3475,11 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	skillcard9 = new SkillCard({
+    	skillcard8 = new SkillCard({
     			props: {
     				imgPath: "./img/firebase.png",
     				title: "Firebase",
-    				description: "I'm not currently using Firebase Authentication cuz I want to implement auth system BY MYSELF. Anyway\n      I love Firebase rather than AWS."
-    			},
-    			$$inline: true
-    		});
-
-    	skillcard10 = new SkillCard({
-    			props: {
-    				imgPath: "./img/aws.png",
-    				title: "Lambda & S3",
-    				description: "I can use Lambda for automation, S3 for storage. I'm also learning other sevices such as Cloud9."
+    				description: "Mainly Authentication, Realtime Database and Hosting. I'm learning Firestore now."
     			},
     			$$inline: true
     		});
@@ -3550,24 +3528,20 @@ var app = (function () {
     			t8 = space();
     			create_component(skillcard8.$$.fragment);
     			t9 = space();
-    			create_component(skillcard9.$$.fragment);
-    			t10 = space();
-    			create_component(skillcard10.$$.fragment);
-    			t11 = space();
     			h2 = element("h2");
     			h2.textContent = "Member of...";
-    			t13 = space();
+    			t11 = space();
     			div1 = element("div");
     			create_component(membercard0.$$.fragment);
-    			t14 = space();
+    			t12 = space();
     			create_component(membercard1.$$.fragment);
     			attr_dev(div0, "id", "skills_container");
     			attr_dev(div0, "class", "svelte-bgo7pz");
     			add_location(div0, file$7, 17, 2, 535);
-    			add_location(h2, file$7, 66, 2, 2719);
+    			add_location(h2, file$7, 57, 2, 2323);
     			attr_dev(div1, "id", "member_container");
     			attr_dev(div1, "class", "svelte-bgo7pz");
-    			add_location(div1, file$7, 67, 2, 2743);
+    			add_location(div1, file$7, 58, 2, 2347);
     			attr_dev(div2, "id", "about");
     			attr_dev(div2, "class", "svelte-bgo7pz");
     			add_location(div2, file$7, 9, 0, 247);
@@ -3597,16 +3571,12 @@ var app = (function () {
     			mount_component(skillcard7, div0, null);
     			append_dev(div0, t8);
     			mount_component(skillcard8, div0, null);
-    			append_dev(div0, t9);
-    			mount_component(skillcard9, div0, null);
-    			append_dev(div0, t10);
-    			mount_component(skillcard10, div0, null);
-    			append_dev(div2, t11);
+    			append_dev(div2, t9);
     			append_dev(div2, h2);
-    			append_dev(div2, t13);
+    			append_dev(div2, t11);
     			append_dev(div2, div1);
     			mount_component(membercard0, div1, null);
-    			append_dev(div1, t14);
+    			append_dev(div1, t12);
     			mount_component(membercard1, div1, null);
     			current = true;
     		},
@@ -3623,8 +3593,6 @@ var app = (function () {
     			transition_in(skillcard6.$$.fragment, local);
     			transition_in(skillcard7.$$.fragment, local);
     			transition_in(skillcard8.$$.fragment, local);
-    			transition_in(skillcard9.$$.fragment, local);
-    			transition_in(skillcard10.$$.fragment, local);
     			transition_in(membercard0.$$.fragment, local);
     			transition_in(membercard1.$$.fragment, local);
     			current = true;
@@ -3640,8 +3608,6 @@ var app = (function () {
     			transition_out(skillcard6.$$.fragment, local);
     			transition_out(skillcard7.$$.fragment, local);
     			transition_out(skillcard8.$$.fragment, local);
-    			transition_out(skillcard9.$$.fragment, local);
-    			transition_out(skillcard10.$$.fragment, local);
     			transition_out(membercard0.$$.fragment, local);
     			transition_out(membercard1.$$.fragment, local);
     			current = false;
@@ -3658,8 +3624,6 @@ var app = (function () {
     			destroy_component(skillcard6);
     			destroy_component(skillcard7);
     			destroy_component(skillcard8);
-    			destroy_component(skillcard9);
-    			destroy_component(skillcard10);
     			destroy_component(membercard0);
     			destroy_component(membercard1);
     		}
@@ -3903,28 +3867,28 @@ var app = (function () {
     			attr_dev(a0, "id", "github");
     			attr_dev(a0, "href", "https://github.com/kota-yata");
     			attr_dev(a0, "class", "svelte-1ywn9d3");
-    			add_location(a0, file$9, 22, 8, 605);
+    			add_location(a0, file$9, 22, 8, 604);
     			attr_dev(span1, "class", "svelte-1ywn9d3");
     			add_location(span1, file$9, 21, 6, 540);
     			attr_dev(a1, "id", "twitter");
     			attr_dev(a1, "href", "https://twitter.com/kota_yata");
     			attr_dev(a1, "class", "svelte-1ywn9d3");
-    			add_location(a1, file$9, 27, 8, 798);
+    			add_location(a1, file$9, 27, 8, 796);
     			attr_dev(span2, "class", "svelte-1ywn9d3");
-    			add_location(span2, file$9, 26, 6, 733);
+    			add_location(span2, file$9, 26, 6, 732);
     			attr_dev(div0, "id", "icon_container");
     			attr_dev(div0, "class", "svelte-1ywn9d3");
     			add_location(div0, file$9, 20, 4, 508);
     			attr_dev(div1, "class", "chevron");
-    			add_location(div1, file$9, 35, 8, 1040);
+    			add_location(div1, file$9, 35, 8, 1038);
     			attr_dev(div2, "class", "chevron");
-    			add_location(div2, file$9, 36, 8, 1072);
+    			add_location(div2, file$9, 36, 8, 1070);
     			attr_dev(div3, "class", "chevron");
-    			add_location(div3, file$9, 37, 8, 1104);
+    			add_location(div3, file$9, 37, 8, 1102);
     			attr_dev(div4, "class", "arrow-container svelte-1ywn9d3");
-    			add_location(div4, file$9, 34, 6, 1002);
+    			add_location(div4, file$9, 34, 6, 1000);
     			attr_dev(span3, "class", "svelte-1ywn9d3");
-    			add_location(span3, file$9, 33, 4, 939);
+    			add_location(span3, file$9, 33, 4, 937);
     			attr_dev(div5, "id", "top_page");
     			attr_dev(div5, "class", "svelte-1ywn9d3");
     			add_location(div5, file$9, 16, 2, 371);
@@ -3958,26 +3922,26 @@ var app = (function () {
     			transition_in(neumotitle.$$.fragment, local);
 
     			add_render_callback(() => {
-    				if (!span0_transition) span0_transition = create_bidirectional_transition(span0, fade, { delay: 300, duration: 2000 }, true);
+    				if (!span0_transition) span0_transition = create_bidirectional_transition(span0, fade, { delay: 300, duration: 1000 }, true);
     				span0_transition.run(1);
     			});
 
     			transition_in(icon0.$$.fragment, local);
 
     			add_render_callback(() => {
-    				if (!span1_transition) span1_transition = create_bidirectional_transition(span1, fade, { delay: 3000, duration: 1000 }, true);
+    				if (!span1_transition) span1_transition = create_bidirectional_transition(span1, fade, { delay: 1500, duration: 700 }, true);
     				span1_transition.run(1);
     			});
 
     			transition_in(icon1.$$.fragment, local);
 
     			add_render_callback(() => {
-    				if (!span2_transition) span2_transition = create_bidirectional_transition(span2, fade, { delay: 4000, duration: 1000 }, true);
+    				if (!span2_transition) span2_transition = create_bidirectional_transition(span2, fade, { delay: 2500, duration: 700 }, true);
     				span2_transition.run(1);
     			});
 
     			add_render_callback(() => {
-    				if (!span3_transition) span3_transition = create_bidirectional_transition(span3, fade, { delay: 5000, duration: 2000 }, true);
+    				if (!span3_transition) span3_transition = create_bidirectional_transition(span3, fade, { delay: 4000, duration: 2000 }, true);
     				span3_transition.run(1);
     			});
 
@@ -3985,15 +3949,15 @@ var app = (function () {
     		},
     		o: function outro(local) {
     			transition_out(neumotitle.$$.fragment, local);
-    			if (!span0_transition) span0_transition = create_bidirectional_transition(span0, fade, { delay: 300, duration: 2000 }, false);
+    			if (!span0_transition) span0_transition = create_bidirectional_transition(span0, fade, { delay: 300, duration: 1000 }, false);
     			span0_transition.run(0);
     			transition_out(icon0.$$.fragment, local);
-    			if (!span1_transition) span1_transition = create_bidirectional_transition(span1, fade, { delay: 3000, duration: 1000 }, false);
+    			if (!span1_transition) span1_transition = create_bidirectional_transition(span1, fade, { delay: 1500, duration: 700 }, false);
     			span1_transition.run(0);
     			transition_out(icon1.$$.fragment, local);
-    			if (!span2_transition) span2_transition = create_bidirectional_transition(span2, fade, { delay: 4000, duration: 1000 }, false);
+    			if (!span2_transition) span2_transition = create_bidirectional_transition(span2, fade, { delay: 2500, duration: 700 }, false);
     			span2_transition.run(0);
-    			if (!span3_transition) span3_transition = create_bidirectional_transition(span3, fade, { delay: 5000, duration: 2000 }, false);
+    			if (!span3_transition) span3_transition = create_bidirectional_transition(span3, fade, { delay: 4000, duration: 2000 }, false);
     			span3_transition.run(0);
     			current = false;
     		},
@@ -16370,7 +16334,7 @@ var app = (function () {
     }
 
     // (44:6) <SwiperSlide>
-    function create_default_slot_4(ctx) {
+    function create_default_slot_5(ctx) {
     	let workcard;
     	let current;
 
@@ -16410,7 +16374,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4.name,
+    		id: create_default_slot_5.name,
     		type: "slot",
     		source: "(44:6) <SwiperSlide>",
     		ctx
@@ -16420,7 +16384,7 @@ var app = (function () {
     }
 
     // (53:6) <SwiperSlide>
-    function create_default_slot_3(ctx) {
+    function create_default_slot_4(ctx) {
     	let workcard;
     	let current;
 
@@ -16460,7 +16424,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3.name,
+    		id: create_default_slot_4.name,
     		type: "slot",
     		source: "(53:6) <SwiperSlide>",
     		ctx
@@ -16470,7 +16434,7 @@ var app = (function () {
     }
 
     // (62:6) <SwiperSlide>
-    function create_default_slot_2(ctx) {
+    function create_default_slot_3(ctx) {
     	let workcard;
     	let current;
 
@@ -16510,7 +16474,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2.name,
+    		id: create_default_slot_3.name,
     		type: "slot",
     		source: "(62:6) <SwiperSlide>",
     		ctx
@@ -16520,7 +16484,7 @@ var app = (function () {
     }
 
     // (71:6) <SwiperSlide>
-    function create_default_slot_1(ctx) {
+    function create_default_slot_2(ctx) {
     	let workcard;
     	let current;
 
@@ -16560,7 +16524,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1.name,
+    		id: create_default_slot_2.name,
     		type: "slot",
     		source: "(71:6) <SwiperSlide>",
     		ctx
@@ -16569,7 +16533,57 @@ var app = (function () {
     	return block;
     }
 
-    // (81:6) <div class="swiper-pagination" slot="pagination" />
+    // (80:6) <SwiperSlide>
+    function create_default_slot_1(ctx) {
+    	let workcard;
+    	let current;
+
+    	workcard = new WorkCard({
+    			props: {
+    				imgPath: "./img/iso.png",
+    				title: "iso-639-1-jp",
+    				description: "Conversion module of ISO-639 language code to Japanese name.",
+    				url: "https://iso-639-1-jp.netlify.app/",
+    				urlMessage: "Document"
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(workcard.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(workcard, target, anchor);
+    			current = true;
+    		},
+    		p: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(workcard.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(workcard.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(workcard, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_1.name,
+    		type: "slot",
+    		source: "(80:6) <SwiperSlide>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (89:6) <div class="swiper-pagination" slot="pagination" />
     function create_pagination_slot(ctx) {
     	let div;
 
@@ -16578,7 +16592,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-pagination");
     			attr_dev(div, "slot", "pagination");
-    			add_location(div, file$c, 80, 6, 2451);
+    			add_location(div, file$c, 88, 6, 2745);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -16592,14 +16606,14 @@ var app = (function () {
     		block,
     		id: create_pagination_slot.name,
     		type: "slot",
-    		source: "(81:6) <div class=\\\"swiper-pagination\\\" slot=\\\"pagination\\\" />",
+    		source: "(89:6) <div class=\\\"swiper-pagination\\\" slot=\\\"pagination\\\" />",
     		ctx
     	});
 
     	return block;
     }
 
-    // (82:6) <div class="swiper-button-next" slot="button-next" />
+    // (90:6) <div class="swiper-button-next" slot="button-next" />
     function create_button_next_slot(ctx) {
     	let div;
 
@@ -16608,7 +16622,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-button-next");
     			attr_dev(div, "slot", "button-next");
-    			add_location(div, file$c, 81, 6, 2509);
+    			add_location(div, file$c, 89, 6, 2803);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -16622,14 +16636,14 @@ var app = (function () {
     		block,
     		id: create_button_next_slot.name,
     		type: "slot",
-    		source: "(82:6) <div class=\\\"swiper-button-next\\\" slot=\\\"button-next\\\" />",
+    		source: "(90:6) <div class=\\\"swiper-button-next\\\" slot=\\\"button-next\\\" />",
     		ctx
     	});
 
     	return block;
     }
 
-    // (83:6) <div class="swiper-button-prev" slot="button-prev" />
+    // (91:6) <div class="swiper-button-prev" slot="button-prev" />
     function create_button_prev_slot(ctx) {
     	let div;
 
@@ -16638,7 +16652,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-button-prev");
     			attr_dev(div, "slot", "button-prev");
-    			add_location(div, file$c, 82, 6, 2569);
+    			add_location(div, file$c, 90, 6, 2863);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -16652,7 +16666,7 @@ var app = (function () {
     		block,
     		id: create_button_prev_slot.name,
     		type: "slot",
-    		source: "(83:6) <div class=\\\"swiper-button-prev\\\" slot=\\\"button-prev\\\" />",
+    		source: "(91:6) <div class=\\\"swiper-button-prev\\\" slot=\\\"button-prev\\\" />",
     		ctx
     	});
 
@@ -16669,13 +16683,15 @@ var app = (function () {
     	let t2;
     	let swiperslide3;
     	let t3;
+    	let swiperslide4;
     	let t4;
     	let t5;
+    	let t6;
     	let current;
 
     	swiperslide0 = new bundle.SwiperSlide({
     			props: {
-    				$$slots: { default: [create_default_slot_4] },
+    				$$slots: { default: [create_default_slot_5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16683,7 +16699,7 @@ var app = (function () {
 
     	swiperslide1 = new bundle.SwiperSlide({
     			props: {
-    				$$slots: { default: [create_default_slot_3] },
+    				$$slots: { default: [create_default_slot_4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -16691,13 +16707,21 @@ var app = (function () {
 
     	swiperslide2 = new bundle.SwiperSlide({
     			props: {
-    				$$slots: { default: [create_default_slot_2] },
+    				$$slots: { default: [create_default_slot_3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
     	swiperslide3 = new bundle.SwiperSlide({
+    			props: {
+    				$$slots: { default: [create_default_slot_2] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	swiperslide4 = new bundle.SwiperSlide({
     			props: {
     				$$slots: { default: [create_default_slot_1] },
     				$$scope: { ctx }
@@ -16715,8 +16739,10 @@ var app = (function () {
     			t2 = space();
     			create_component(swiperslide3.$$.fragment);
     			t3 = space();
+    			create_component(swiperslide4.$$.fragment);
     			t4 = space();
     			t5 = space();
+    			t6 = space();
     		},
     		m: function mount(target, anchor) {
     			mount_component(swiperslide0, target, anchor);
@@ -16727,8 +16753,10 @@ var app = (function () {
     			insert_dev(target, t2, anchor);
     			mount_component(swiperslide3, target, anchor);
     			insert_dev(target, t3, anchor);
+    			mount_component(swiperslide4, target, anchor);
     			insert_dev(target, t4, anchor);
     			insert_dev(target, t5, anchor);
+    			insert_dev(target, t6, anchor);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
@@ -16760,6 +16788,13 @@ var app = (function () {
     			}
 
     			swiperslide3.$set(swiperslide3_changes);
+    			const swiperslide4_changes = {};
+
+    			if (dirty & /*$$scope*/ 4) {
+    				swiperslide4_changes.$$scope = { dirty, ctx };
+    			}
+
+    			swiperslide4.$set(swiperslide4_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -16767,6 +16802,7 @@ var app = (function () {
     			transition_in(swiperslide1.$$.fragment, local);
     			transition_in(swiperslide2.$$.fragment, local);
     			transition_in(swiperslide3.$$.fragment, local);
+    			transition_in(swiperslide4.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -16774,6 +16810,7 @@ var app = (function () {
     			transition_out(swiperslide1.$$.fragment, local);
     			transition_out(swiperslide2.$$.fragment, local);
     			transition_out(swiperslide3.$$.fragment, local);
+    			transition_out(swiperslide4.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -16785,8 +16822,10 @@ var app = (function () {
     			if (detaching) detach_dev(t2);
     			destroy_component(swiperslide3, detaching);
     			if (detaching) detach_dev(t3);
+    			destroy_component(swiperslide4, detaching);
     			if (detaching) detach_dev(t4);
     			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(t6);
     		}
     	};
 
@@ -16876,10 +16915,10 @@ var app = (function () {
     			add_location(div0, file$c, 41, 2, 961);
     			attr_dev(h1, "id", "tech_blog");
     			attr_dev(h1, "class", "svelte-14kx7ul");
-    			add_location(h1, file$c, 85, 2, 2648);
+    			add_location(h1, file$c, 93, 2, 2942);
     			attr_dev(div1, "id", "blog_container");
     			attr_dev(div1, "class", "svelte-14kx7ul");
-    			add_location(div1, file$c, 86, 2, 2684);
+    			add_location(div1, file$c, 94, 2, 2978);
     			attr_dev(div2, "id", "works");
     			add_location(div2, file$c, 35, 0, 769);
     		},

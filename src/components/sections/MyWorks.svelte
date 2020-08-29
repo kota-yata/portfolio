@@ -77,6 +77,14 @@
           url="https://syncmovie.herokuapp.com"
           urlMessage="Web app" />
       </SwiperSlide>
+      <SwiperSlide>
+        <WorkCard
+          imgPath="./img/iso.png"
+          title="iso-639-1-jp"
+          description="Conversion module of ISO-639 language code to Japanese name."
+          url="https://iso-639-1-jp.netlify.app/"
+          urlMessage="Document" />
+      </SwiperSlide>
 
       <div class="swiper-pagination" slot="pagination" />
       <div class="swiper-button-next" slot="button-next" />

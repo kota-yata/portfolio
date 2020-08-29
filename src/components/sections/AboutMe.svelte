@@ -42,10 +42,6 @@
       description="I almost use SCSS for stylesheet currently. I understand general specifications like mixin and
       template." />
     <SkillCard
-      imgPath="./img/ruby.png"
-      title="Ruby"
-      description="I can develop Web scraping system with Nokogiri on Rails." />
-    <SkillCard
       imgPath="./img/python.png"
       title="Python"
       description="I can develop Web scraping system with Selenium. Automate the Boring Stuff with Python - Someone" />
@@ -57,12 +53,7 @@
     <SkillCard
       imgPath="./img/firebase.png"
       title="Firebase"
-      description="I'm not currently using Firebase Authentication cuz I want to implement auth system BY MYSELF. Anyway
-      I love Firebase rather than AWS." />
-    <SkillCard
-      imgPath="./img/aws.png"
-      title="Lambda & S3"
-      description="I can use Lambda for automation, S3 for storage. I'm also learning other sevices such as Cloud9." />
+      description="Mainly Authentication, Realtime Database and Hosting. I'm learning Firestore now." />
   </div>
   <h2>Member of...</h2>
   <div id="member_container">

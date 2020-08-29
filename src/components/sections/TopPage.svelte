@@ -15,23 +15,23 @@
 
 {#if isVisible}
   <div id="top_page">
-    <span transition:fade={{ delay: 300, duration: 2000 }}>
+    <span transition:fade={{ delay: 300, duration: 1000 }}>
       <NeumoTitle name="KOTA YATAGAI" />
     </span>
     <div id="icon_container">
-      <span transition:fade={{ delay: 3000, duration: 1000 }}>
+      <span transition:fade={{ delay: 1500, duration: 700 }}>
         <a id="github" href="https://github.com/kota-yata">
           <Icon data={github} scale="3" />
         </a>
       </span>
-      <span transition:fade={{ delay: 4000, duration: 1000 }}>
+      <span transition:fade={{ delay: 2500, duration: 700 }}>
         <a id="twitter" href="https://twitter.com/kota_yata">
           <Icon data={twitter} scale="3" />
         </a>
       </span>
     </div>
 
-    <span transition:fade={{ delay: 5000, duration: 2000 }}>
+    <span transition:fade={{ delay: 4000, duration: 2000 }}>
       <div class="arrow-container">
         <div class="chevron" />
         <div class="chevron" />
