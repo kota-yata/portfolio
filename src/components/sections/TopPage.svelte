@@ -1,7 +1,7 @@
 <script>
   import NeumoTitle from '../NeumoTitle.svelte';
   import Icon from 'svelte-awesome';
-  import { github, twitter } from 'svelte-awesome/icons';
+  import { faGithub, faTwitter, faSpeakerDeck, faQuora } from '@fortawesome/free-brands-svg-icons';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import '../../assets/arrow.scss';
@@ -21,12 +21,22 @@
     <div id="icon_container">
       <span transition:fade={{ delay: 1500, duration: 700 }}>
         <a id="github" href="https://github.com/kota-yata">
-          <Icon data={github} scale="3" />
+          <Icon data={faGithub} scale="3" />
+        </a>
+      </span>
+      <span transition:fade={{ delay: 2000, duration: 700 }}>
+        <a id="twitter" href="https://twitter.com/kota_yata">
+          <Icon data={faTwitter} scale="3" />
         </a>
       </span>
       <span transition:fade={{ delay: 2500, duration: 700 }}>
-        <a id="twitter" href="https://twitter.com/kota_yata">
-          <Icon data={twitter} scale="3" />
+        <a id="speakerdeck" href="https://speakerdeck.com/kota_yata">
+          <Icon data={faSpeakerDeck} scale="3" />
+        </a>
+      </span>
+      <span transition:fade={{ delay: 3000, duration: 700 }}>
+        <a id="quora" href="https://jp.quora.com/profile/Kota-Yatagai">
+          <Icon data={faQuora} scale="3" />
         </a>
       </span>
     </div>
@@ -52,6 +62,8 @@
     }
     #icon_container {
       @extend %completely-center;
+      @extend %center;
+      width: 100vw;
       top: 50%;
       span {
         a {
@@ -66,6 +78,12 @@
         }
         #twitter:hover {
           color: $twitter;
+        }
+        #speakerdeck:hover {
+          color: $speakerdeck;
+        }
+        #quora:hover {
+          color: $quora;
         }
         margin-left: 15px;
         margin-right: 15px;
