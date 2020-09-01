@@ -3,3 +3,6 @@
 .DS_Store
 
 **/.DS_Store
+
+public/build/bundle.js.map
+public/build/bundle.css.map

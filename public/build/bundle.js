@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+/* (function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document); */
 var app = (function () {
     'use strict';
 
@@ -3909,34 +3909,34 @@ var app = (function () {
     			div2 = element("div");
     			t6 = space();
     			div3 = element("div");
-    			attr_dev(span0, "class", "svelte-18c79v3");
+    			attr_dev(span0, "class", "svelte-1o56z1r");
     			add_location(span0, file$9, 17, 4, 437);
     			attr_dev(a0, "id", "github");
     			attr_dev(a0, "href", "https://github.com/kota-yata");
-    			attr_dev(a0, "class", "svelte-18c79v3");
+    			attr_dev(a0, "class", "svelte-1o56z1r");
     			add_location(a0, file$9, 22, 8, 646);
-    			attr_dev(span1, "class", "svelte-18c79v3");
+    			attr_dev(span1, "class", "svelte-1o56z1r");
     			add_location(span1, file$9, 21, 6, 582);
     			attr_dev(a1, "id", "twitter");
     			attr_dev(a1, "href", "https://twitter.com/kota_yata");
-    			attr_dev(a1, "class", "svelte-18c79v3");
+    			attr_dev(a1, "class", "svelte-1o56z1r");
     			add_location(a1, file$9, 27, 8, 840);
-    			attr_dev(span2, "class", "svelte-18c79v3");
+    			attr_dev(span2, "class", "svelte-1o56z1r");
     			add_location(span2, file$9, 26, 6, 776);
     			attr_dev(a2, "id", "speakerdeck");
     			attr_dev(a2, "href", "https://speakerdeck.com/kota_yata");
-    			attr_dev(a2, "class", "svelte-18c79v3");
+    			attr_dev(a2, "class", "svelte-1o56z1r");
     			add_location(a2, file$9, 32, 8, 1037);
-    			attr_dev(span3, "class", "svelte-18c79v3");
+    			attr_dev(span3, "class", "svelte-1o56z1r");
     			add_location(span3, file$9, 31, 6, 973);
     			attr_dev(a3, "id", "quora");
     			attr_dev(a3, "href", "https://jp.quora.com/profile/Kota-Yatagai");
-    			attr_dev(a3, "class", "svelte-18c79v3");
+    			attr_dev(a3, "class", "svelte-1o56z1r");
     			add_location(a3, file$9, 37, 8, 1246);
-    			attr_dev(span4, "class", "svelte-18c79v3");
+    			attr_dev(span4, "class", "svelte-1o56z1r");
     			add_location(span4, file$9, 36, 6, 1182);
     			attr_dev(div0, "id", "icon_container");
-    			attr_dev(div0, "class", "svelte-18c79v3");
+    			attr_dev(div0, "class", "svelte-1o56z1r");
     			add_location(div0, file$9, 20, 4, 550);
     			attr_dev(div1, "class", "chevron");
     			add_location(div1, file$9, 45, 8, 1498);
@@ -3944,12 +3944,12 @@ var app = (function () {
     			add_location(div2, file$9, 46, 8, 1530);
     			attr_dev(div3, "class", "chevron");
     			add_location(div3, file$9, 47, 8, 1562);
-    			attr_dev(div4, "class", "arrow-container svelte-18c79v3");
+    			attr_dev(div4, "class", "arrow-container svelte-1o56z1r");
     			add_location(div4, file$9, 44, 6, 1460);
-    			attr_dev(span5, "class", "svelte-18c79v3");
+    			attr_dev(span5, "class", "svelte-1o56z1r");
     			add_location(span5, file$9, 43, 4, 1397);
     			attr_dev(div5, "id", "top_page");
-    			attr_dev(div5, "class", "svelte-18c79v3");
+    			attr_dev(div5, "class", "svelte-1o56z1r");
     			add_location(div5, file$9, 16, 2, 413);
     		},
     		m: function mount(target, anchor) {
