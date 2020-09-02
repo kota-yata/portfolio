@@ -1,6 +1,8 @@
 <script>
   import Icon from 'svelte-awesome';
   import { externalLink } from 'svelte-awesome/icons';
+  import { _ } from 'svelte-i18n';
+  import '../localization/i18n.js';
 
   export let imgPath;
   export let title;

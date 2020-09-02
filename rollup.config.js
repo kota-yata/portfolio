@@ -5,6 +5,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
+import json from '@rollup/plugin-json';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -38,6 +39,7 @@ export default {
     file: 'public/build/bundle.js',
   },
   plugins: [
+    json(),
     svelte({
       // enable run-time checks when not in production
       dev: production,

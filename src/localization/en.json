@@ -1,0 +1,24 @@
+{
+  "description": {
+    "javascript": "I can develop npm packages and web apps with JavaScript, and understand general specifications such as spread syntax and type behavior.",
+    "typescript": "I don't have works using TypeScript now, but I can develop web apps with TypeScript instead of JavaScript, or in Svelte project.",
+    "svelte": "I can develop websites and web apps like this portfolio website. I'm learning Sapper now.",
+    "html": "I'm not currently use HTML to make website, but I almost understand the specifications of HTML5 such as SRI and API",
+    "css": "I love flexbox. That's all.",
+    "scss": "I almost use SCSS for stylesheet currently. I understand general specifications like mixin and template.",
+    "python": "I can develop Web scraping system with Selenium. Automate the Boring Stuff with Python - Someone",
+    "unity": "I can develop 3D game with Unity. I'm not so familiar with how to develop 2D game, but I'm learning it now.",
+    "firebase": "Mainly Authentication, Realtime Database and Hosting. I'm learning Firestore now."
+  },
+  "memberof": {
+    "code_for_japan": "Working as a event management intern. I'm running Civictech Challenge Cup 2020 now!",
+    "sgg": "The student organization in Japan. If you want to join SGG, contact me on Twitter!"
+  },
+  "mywork": {
+    "neornd": "neornd makes Math.random() simple and safe by using crypto module. You can get a random number with number of decimal place you want easily.",
+    "multimd": "Multi-MD is a markdown web editor. On Chrome, you can overwrite you local markdown file. PWA is available.",
+    "percom": "Percom is a calculation npm module that is to simplify the calculation of permutations and combinations",
+    "syncmovie": "On Syncmovie, you can watch YouTube videos with someone, and it will sync together. Besides, You can see how many people are connecting.",
+    "iso-639-1-jp": "Conversion module of ISO-639 language code to Japanese name."
+  }
+}

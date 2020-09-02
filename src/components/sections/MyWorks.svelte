@@ -4,7 +4,8 @@
   import WorkCard from '../WorkCard.svelte';
   import { isMobile } from '../isMobile.js';
   import BlogCard from '../BlogCard.svelte';
-  import AboutMe from './AboutMe.svelte';
+  import { _ } from 'svelte-i18n';
+  import '../../localization/i18n.js';
 
   const isTouchable = isMobile();
 
@@ -46,8 +47,7 @@
         <WorkCard
           imgPath="./img/neornd.jpg"
           title="neornd"
-          description="neornd makes Math.random() simple and safe by using crypto module. You can get a random number
-          with number of decimal place you want easily."
+          description={$_('mywork.neornd')}
           url="https://neornd.netlify.app/"
           urlMessage="Document" />
       </SwiperSlide>
@@ -55,8 +55,7 @@
         <WorkCard
           imgPath="./img/multimd 13.14.44.png"
           title="Multi-MD"
-          description="Multi-MD is a markdown web editor. On Chrome, you can overwrite you local markdown file. PWA is
-          available."
+          description={$_('mywork.multimd')}
           url="https://multimd.cf"
           urlMessage="Web app" />
       </SwiperSlide>
@@ -64,8 +63,7 @@
         <WorkCard
           imgPath="./img/percom.jpg"
           title="Percom"
-          description="Percom is a calculation npm module that is to simplify the calculation of permutations and
-          combinations"
+          description={$_('mywork.percom')}
           url="https://percom.netlify.app/"
           urlMessage="Document" />
       </SwiperSlide>
@@ -73,8 +71,7 @@
         <WorkCard
           imgPath="./img/syncmovie.jpg"
           title="Syncmovie"
-          description="On Syncmovie, you can watch YouTube videos with someone, and it will sync together. Besides, You
-          can see how many people are connecting."
+          description={$_('mywork.syncmovie')}
           url="https://syncmovie.herokuapp.com"
           urlMessage="Web app" />
       </SwiperSlide>
@@ -82,7 +79,7 @@
         <WorkCard
           imgPath="./img/iso.png"
           title="iso-639-1-jp"
-          description="Conversion module of ISO-639 language code to Japanese name."
+          description={$_('mywork.iso-639-1-jp')}
           url="https://iso-639-1-jp.netlify.app/"
           urlMessage="Document" />
       </SwiperSlide>

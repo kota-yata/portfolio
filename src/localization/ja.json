@@ -1,0 +1,24 @@
+{
+  "description": {
+    "javascript": "npmパッケージやWebアプリなどをJavaScriptで書いています。スプレッド構文や標準APIなど基本的な仕様は理解し、使用したことがあります。",
+    "typescript": "現在TypeScriptを使った作品はありませんが、今後SvelteでWebアプリを作る際はTypeScriptで書く予定です。",
+    "svelte": "このWebサイトもSvelteで制作しています。現在開発している個人のWebアプリは全てSvelteで開発しています。",
+    "html": "OGPや各タグの仕様などは開発に差し支えない程度に理解しています。CDNを使う際はSRIを必ず利用するなど、セキュアなWeb開発を心がけています。",
+    "css": "position:absoluteが好きなんです。はい。",
+    "scss": "mixinやtemplateなどの構文は理解していて、基本的にはSCSSをスタイルシートとして使っています。",
+    "python": "SeleniumやBeautifulSoupを使ってWebスクレイピングをして遊んでいます。自動化したいなと思ったらとりあえずPythonに頼ります。",
+    "unity": "プログラミングスクールに通っていた時に習い、その後興味を持って3Dゲームを開発しています。レベルとしてはそこまで高くありません。",
+    "firebase": "Realtime DatabaseやFireStore、Authなどを主に開発で使っています。Firebase functionなどもかなり興味あります。"
+  },
+  "memberof": {
+    "code_for_japan": "イベント運営のインターンとして所属しています。たまにプロジェクトの開発に首を突っ込むことがあります。",
+    "sgg": "技術が好きな学生が各地から集まってSlackで色々やっています。メンバー数に対してつよつよの比率がすごく高いです。こわいこわい"
+  },
+  "mywork": {
+    "neornd": "使いにくいcryptoモジュールを使いやすくし、Math.randomよりもセキュアな乱数を自由自在に生成できるnpmモジュールです。非常に軽量で、Unpacked Sizeは15KBに収まっています。",
+    "multimd": "マークダウンファイルをブラウザで作成、編集できるWebアプリです。Chrome Origin TrialのNativeFileSystemによりChromeでのみローカルファイルの上書きが可能です。",
+    "percom": "組み合わせと順列を計算するnpmモジュールです。使い勝手はRubyのpermutation/combinationメソッドを目指して作りました。",
+    "syncmovie": "ブラウザで同期的に動画再生ができるWebアプリです。Socket.ioの練習として開発を始め、現在も開発中なので実用性はまだありませんが、Zoom飲み会などで使えるようにするのが目標です。",
+    "iso-639-1-jp": "ISO-639の言語コードを日本語名に変換するnpmモジュールです。iso-639-1モジュールのForkです。"
+  }
+}
