@@ -2,6 +2,7 @@
   "name": "sveltemplate",
   "version": "1.0.0",
   "author": "Kota Yatagai <kota@yatagai.com>",
+  "keywords": ["kotayatagai", "kota-yata", "yatagai", "八谷","航太","八谷航太","ヤタガイコウタ"],
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
