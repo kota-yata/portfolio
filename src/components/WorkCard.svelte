@@ -20,7 +20,7 @@
         <Icon data={github} scale="2" />
       </a>
     </div>
-    <span>{description}</span>
+    <span class="work-description">{description}</span>
     <span class="work-url">
       <a href={url} target="blank">
         <Icon data={externalLink} class="external-link" />
@@ -64,6 +64,9 @@
           transition: 0.3s;
         }
       }
+    }
+    .work-description {
+      word-wrap: break-word;
     }
     .work-url {
       position: absolute;

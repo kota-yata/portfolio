@@ -4,5 +4,8 @@
 
 **/.DS_Store
 
+.vscode
+.metals
+
 public/build/bundle.js.map
 public/build/bundle.css.map

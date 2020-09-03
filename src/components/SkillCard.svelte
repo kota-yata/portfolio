@@ -65,7 +65,7 @@
         margin-top: 5px;
         padding-left: 10px;
         text-align: left;
-        word-break: keep-all;
+        word-wrap: break-word;
       }
       .works-in {
         position: absolute;
