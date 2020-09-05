@@ -3,11 +3,11 @@
   export let imgPath;
 </script>
 
-<div class="blog-container">
-  <a href={url}>
+<a href={url}>
+  <div class="blog-container">
     <img alt="blog" src={imgPath} />
-  </a>
-</div>
+  </div>
+</a>
 
 <style lang="scss">
   @import '../assets/definition.scss';

@@ -2,7 +2,7 @@
   import Description from '../Description.svelte';
   import { Swiper, SwiperSlide } from 'svelte-swiper';
   import WorkCard from '../WorkCard.svelte';
-  import { isMobile } from '../isMobile.js';
+  import { isMobile } from '../../../scripts/isMobile.js';
   import BlogCard from '../BlogCard.svelte';
   import { _ } from 'svelte-i18n';
   import '../../localization/i18n.js';
@@ -48,7 +48,7 @@
           imgPath="./img/neornd.jpg"
           title="neornd"
           description={$_('mywork.neornd')}
-          url="https://neornd.netlify.app/"
+          url="https://neornd.kota-yata.com/"
           urlMessage="Document" />
       </SwiperSlide>
       <SwiperSlide>
@@ -64,7 +64,7 @@
           imgPath="./img/percom.jpg"
           title="Percom"
           description={$_('mywork.percom')}
-          url="https://percom.netlify.app/"
+          url="https://percom.kota-yata.com/"
           urlMessage="Document" />
       </SwiperSlide>
       <SwiperSlide>
@@ -80,7 +80,7 @@
           imgPath="./img/iso.png"
           title="iso-639-1-jp"
           description={$_('mywork.iso-639-1-jp')}
-          url="https://iso-639-1-jp.netlify.app/"
+          url="https://iso-639-1-jp.kota-yata.com"
           urlMessage="Document" />
       </SwiperSlide>
 
@@ -91,7 +91,7 @@
   </div>
   <h1 id="tech_blog">Tech Blog</h1>
   <div id="blog_container">
-    <BlogCard url="https://blog.kotayatagai.cf" imgPath="./img/innout.png" />
+    <BlogCard url="https://blog.kota-yata.com" imgPath="./img/innout.png" />
     <BlogCard url="https://qiita.com/kota-yata" imgPath="./img/qiita.png" />
   </div>
 </div>

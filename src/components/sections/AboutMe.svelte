@@ -2,7 +2,7 @@
   import Description from '../Description.svelte';
   import MemberCard from '../MemberCard.svelte';
   import SkillCard from '../SkillCard.svelte';
-  import { isMobile } from '../isMobile.js';
+  import { isMobile } from '../../../scripts/isMobile.js';
   import { _ } from 'svelte-i18n';
   import '../../localization/i18n.js';
 

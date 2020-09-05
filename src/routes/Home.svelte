@@ -14,7 +14,7 @@
       easing: 'easeOutExpo',
       scrollSpeed: 200,
       offset: 0,
-      updateHash: true,
+      updateHash: false,
       scrollbars: true,
       touchScroll: false
     });

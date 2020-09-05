@@ -1,6 +1,11 @@
+<script>
+  import Reaction from './Reaction.svelte';
+</script>
+
 <div role="button" id="back_to_top">
   <h3>Back to top</h3>
 </div>
+<Reaction />
 <div id="footer">
   <span>© 2020 Kota Yatagai</span>
 </div>
