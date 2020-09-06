@@ -6,6 +6,8 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import json from '@rollup/plugin-json';
+import { config } from 'dotenv';
+import replace from '@rollup/plugin-replace';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -57,6 +59,14 @@ export default {
 
         handler(warning);
       },
+    }),
+    replace({
+      _myapp: JSON.stringify({
+        env: {
+          isProd: production,
+          ...config().parsed
+        }
+      }),
     }),
     postcss(),
 
