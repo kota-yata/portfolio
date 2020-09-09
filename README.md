@@ -1,3 +1,1 @@
-VueがLanguage判定あるならSvelteのLanguage判定してくれたって良いじゃんか。
-
-そもそもSvelteの方がコンパイル言語なんだしaltJSみたいな扱いで言語判定してくれよ
+ポートフォリオ
