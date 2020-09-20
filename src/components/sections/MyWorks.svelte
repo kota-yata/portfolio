@@ -83,6 +83,14 @@
           url="https://iso-639-1-jp.kota-yata.com"
           urlMessage="Document" />
       </SwiperSlide>
+      <SwiperSlide>
+        <WorkCard
+          imgPath="./img/bs.png"
+          title="Bullshit-Trivia"
+          description={$_('mywork.bullshit-trivia')}
+          url="https://bullshit-trivia.com"
+          urlMessage="Website" />
+      </SwiperSlide>
 
       <div class="swiper-pagination" slot="pagination" />
       <div class="swiper-button-next" slot="button-next" />
