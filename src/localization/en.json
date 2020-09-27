@@ -1,7 +1,7 @@
 {
   "description": {
     "javascript": "I can develop npm packages and web apps with JavaScript, and understand general specifications such as spread syntax and type behavior.",
-    "typescript": "I don't have works using TypeScript now, but I can develop web apps with TypeScript instead of JavaScript, or in Svelte project.",
+    "typescript": "I can develop web apps with TypeScript instead of JavaScript, or in Svelte project.",
     "svelte": "I can develop websites and web apps like this portfolio website. I'm learning Sapper now.",
     "html": "I'm not currently use HTML to make website, but I almost understand the specifications of HTML5 such as SRI and API",
     "css": "I love flexbox. That's all.",

@@ -1,4 +1,6 @@
 <script>
+  import Icon from 'svelte-awesome';
+  import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
   import Reaction from './Reaction.svelte';
 </script>
 
@@ -7,7 +9,11 @@
 </div>
 <Reaction />
 <div id="footer">
-  <span>© 2020 Kota Yatagai</span>
+  <div class="email-address">
+    <Icon data={faPaperPlane} />
+    kota@yatagai.com
+  </div>
+  <span class="licence">© 2020 Kota Yatagai</span>
 </div>
 
 <style lang="scss">
@@ -40,12 +46,20 @@
     @extend %center;
     padding: 2em 0em;
     border-top: 0.5px $h-color solid;
-    span {
+    .email-address {
+      color: $h-color;
+      text-shadow: -1px -1px 3px rgba(255, 255, 255, 0.4), 1px 1px 5px rgba(0, 0, 0, 0.08);
+      caret-color: #262626;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .licence {
       color: $h-color;
       text-shadow: -1px -1px 3px rgba(255, 255, 255, 0.4), 1px 1px 5px rgba(0, 0, 0, 0.08);
       caret-color: #262626;
       font-size: 30px;
       user-select: none;
+      font-weight: bold;
     }
   }
 </style>

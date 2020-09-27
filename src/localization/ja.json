@@ -1,7 +1,7 @@
 {
   "description": {
     "javascript": "npmパッケージやWebアプリなどをJavaScriptで書いています。スプレッド構文や標準APIなど基本的な仕様は理解し、使用したことがあります。",
-    "typescript": "現在TypeScriptを使った作品はありませんが、今後SvelteでWebアプリを作る際はTypeScriptで書く予定です。",
+    "typescript": "様々な趣味プロジェクトをJavaScriptからTypeScriptへ移行しているところです。ほとんどの型については理解していますがTS固有の仕様はまだです。",
     "svelte": "このWebサイトもSvelteで制作しています。現在開発している個人のWebアプリは全てSvelteで開発しています。",
     "html": "OGPや各タグの仕様などは開発に差し支えない程度に理解しています。CDNを使う際はSRIを必ず利用するなど、セキュアなWeb開発を心がけています。",
     "css": "position:absoluteが好きなんです。はい。",
