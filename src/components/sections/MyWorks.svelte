@@ -101,6 +101,7 @@
   <div id="blog_container">
     <BlogCard url="https://blog.kota-yata.com" imgPath="./img/innout.png" />
     <BlogCard url="https://qiita.com/kota-yata" imgPath="./img/qiita.png" />
+    <BlogCard url="https://zenn.dev/kota_yata" imgPath="./img/zenn.png" />
   </div>
 </div>
 
