@@ -1,19 +1,23 @@
 {
   "description": {
-    "javascript": "I can develop npm packages and web apps with JavaScript, and understand general specifications such as spread syntax and type behavior.",
-    "typescript": "I can develop web apps with TypeScript instead of JavaScript, or in Svelte project.",
-    "svelte": "I can develop websites and web apps like this portfolio website. I'm learning Sapper now.",
-    "html": "I'm not currently use HTML to make website, but I almost understand the specifications of HTML5 such as SRI and API",
-    "css": "I love flexbox. That's all.",
+    "javascript": "Writing non-worth npm packages and web app. I understand the basic specifications such as spread syntax and type behavior.",
+    "typescript": "Mainly in Svelte project, or as an altJS. Following up the basic specifications like Type definition.",
+    "svelte": "The only JS framework I'm familiar with. Localization, TS/SCSS plugin, Formatter&Linter plugin(Eslint, Prettier).",
+    "html": "I'm not currently use HTML to make website, but I almost understand the specifications of HTML5 such as SRI and APIs",
+    "css": "I have enough knowledge of CSS to use in Web design.",
     "scss": "I almost use SCSS for stylesheet currently. I understand general specifications like mixin and template.",
-    "python": "I can develop Web scraping system with Selenium. Automate the Boring Stuff with Python - Someone",
-    "unity": "I can develop 3D game with Unity. I'm not so familiar with how to develop 2D game, but I'm learning it now.",
-    "firebase": "Mainly Authentication, Realtime Database and Hosting. I'm learning Firestore now."
+    "python": "For web scraping with Selenium/BeautifulSoup4. Automate the Boring Stuff with Python - Somebody famous",
+    "firebase": "Mainly Authentication, Firestore and Realtime Database."
   },
   "memberof": {
-    "code_for_japan": "Working as a event management intern. I'm running Civictech Challenge Cup 2020 now!",
+    "code_for_japan": "Working as a event management intern.",
     "sgg": "The student organization in Japan. If you want to join SGG, contact me on Twitter!"
   },
+  "education": {
+    "keio": "The private high school in Yokohama, Kanagawa. The 2nd grade (Sophomore) now."
+  },
+  "interests": "I've been researching <a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a> and <a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a> as my senior thesis in high school. I've just started reading specifications of DID/VC, and I will study with SGG members.<br>Since I also have interest in Network Architecture and Security, I've been studying the fundamental cryptographic algorithm and logic, congestion control of TCP, HTTP/3(QUIC <i style=\"font-size: 13px; color: #999999;\">- a new protocol for web</i>).<br>Furthermore, I'm going to study more the basic knowledges a web developer has to have (Docker,AWS etc..).",
+
   "mywork": {
     "neornd": "neornd makes Math.random() simple and safe by using crypto module. You can get a random number with number of decimal place you want easily.",
     "multimd": "Multi-MD is a markdown web editor. On Chrome, you can overwrite you local markdown file. PWA is available.",

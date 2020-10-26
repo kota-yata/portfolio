@@ -4,16 +4,19 @@
     "typescript": "様々な趣味プロジェクトをJavaScriptからTypeScriptへ移行しているところです。ほとんどの型については理解していますがTS固有の仕様はまだです。",
     "svelte": "このWebサイトもSvelteで制作しています。現在開発している個人のWebアプリは全てSvelteで開発しています。",
     "html": "OGPや各タグの仕様などは開発に差し支えない程度に理解しています。CDNを使う際はSRIを必ず利用するなど、セキュアなWeb開発を心がけています。",
-    "css": "position:absoluteが好きなんです。はい。",
+    "css": "HTMLとともに開発には差し支えない程度に理解しています。最近は専らSCSSに移行しています。",
     "scss": "mixinやtemplateなどの構文は理解していて、基本的にはSCSSをスタイルシートとして使っています。",
     "python": "SeleniumやBeautifulSoupを使ってWebスクレイピングをして遊んでいます。自動化したいなと思ったらとりあえずPythonに頼ります。",
-    "unity": "プログラミングスクールに通っていた時に習い、その後興味を持って3Dゲームを開発しています。レベルとしてはそこまで高くありません。",
     "firebase": "Realtime DatabaseやFireStore、Authなどを主に開発で使っています。Firebase functionなどもかなり興味あります。"
   },
   "memberof": {
     "code_for_japan": "イベント運営のインターンとして所属しています。たまにプロジェクトの開発に首を突っ込むことがあります。",
     "sgg": "技術が好きな学生が各地から集まってSlackで色々やっています。メンバー数に対してつよつよの比率がすごく高いです。こわいこわい"
   },
+  "education": {
+    "keio": "神奈川県の私立高校。現在高校2年生として在学中です。"
+  },
+  "interests": "高校の卒業研究テーマとして<a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a>/<a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a>を選び、研究を進めています。詳しいテーマについては未定ですが<a href=\"https://www.kota-yata.com#:~:text=sgg,-技術\">SGG</a>のメンバーとも協力し、仕様書・論文を読んでいる段階です。<br>また、ネットワークアーキテクチャー・セキュリティに関する興味もあり、TCPの輻輳制御や基礎的な暗号アルゴリズムと理論、HTTP/3(QUIC)に関する勉強も進めています。<br>今後は上述の研究と勉強を進めると共に、Go言語でのCLIツールの開発やWeb開発者として得ていなければならない知識（Docker, AWS etc.）の習得にも励んでいきます。",
   "mywork": {
     "neornd": "使いにくいcryptoモジュールを使いやすくし、Math.randomよりもセキュアな乱数を自由自在に生成できるnpmモジュールです。非常に軽量で、Unpacked Sizeは15KBに収まっています。",
     "multimd": "マークダウンファイルをブラウザで作成、編集できるWebアプリです。Chrome Origin TrialのNativeFileSystemによりChromeでのみローカルファイルの上書きが可能です。",

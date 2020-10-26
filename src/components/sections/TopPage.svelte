@@ -1,7 +1,7 @@
 <script>
   import NeumoTitle from '../NeumoTitle.svelte';
   import Icon from 'svelte-awesome';
-  import { faGithub, faTwitter, faSpeakerDeck, faQuora } from '@fortawesome/free-brands-svg-icons';
+  import { faGithub, faTwitter, faSpeakerDeck } from '@fortawesome/free-brands-svg-icons';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import '../../assets/arrow.scss';
@@ -34,11 +34,6 @@
           <Icon data={faSpeakerDeck} scale="3" />
         </a>
       </span>
-      <span transition:fade={{ delay: 3000, duration: 700 }}>
-        <a id="quora" href="https://jp.quora.com/profile/Kota-Yatagai">
-          <Icon data={faQuora} scale="3" />
-        </a>
-      </span>
     </div>
 
     <span transition:fade={{ delay: 4000, duration: 2000 }}>
@@ -64,7 +59,7 @@
       @extend %completely-center;
       @extend %center;
       width: 100vw;
-      top: 50%;
+      top: 55%;
       span {
         a {
           color: $shadow-white1;
