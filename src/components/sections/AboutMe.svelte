@@ -67,6 +67,7 @@
 <style lang="scss">
   @import '../../assets/definition.scss';
   #about {
+    padding-bottom: 8em;
     .aboutme-containers {
       @extend %center;
       padding-bottom: 10px;
