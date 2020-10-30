@@ -53,9 +53,6 @@
       title="SGG"
       description={$_('memberof.sgg')}
       url="https://qiita.com/organizations/sgg" />
-  </div>
-  <h2>Education</h2>
-  <div id="edu_container" class="aboutme-containers">
     <MemberCard
       imgPath="./img/keio.png"
       title="Keio High"
@@ -94,8 +91,8 @@
         text-align: left;
       }
     }
-    #edu_container {
-      padding-bottom: 4em;
+    #member_container {
+      padding-bottom: 3em;
     }
   }
 
