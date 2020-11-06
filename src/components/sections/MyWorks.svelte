@@ -6,7 +6,6 @@
   import BlogCard from '../BlogCard.svelte';
   import { _ } from 'svelte-i18n';
   import '../../localization/i18n.js';
-  import { url } from 'inspector';
 
   const isTouchable = isMobile();
 
