@@ -81,7 +81,7 @@
       margin: 10px 0px;
       .card {
         width: 20em;
-        height: 10em;
+        height: 12em;
         .img_and_title {
           padding: 0px;
           img {
@@ -95,7 +95,7 @@
         }
         .description {
           margin-top: 2px;
-          height: 80px;
+          height: 100px;
         }
       }
     }

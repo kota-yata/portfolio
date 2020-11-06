@@ -13,6 +13,37 @@
     const sentenceContainer = document.getElementById('interests_container_sentence');
     sentenceContainer.innerHTML = parsedInterests;
   });
+
+  const skillCardList = [
+    { imgPath: './img/javascript.png', title: 'JavaScript', description: $_('description.javascript') },
+    { imgPath: './img/typescript.png', title: 'TypeScript', description: $_('description.typescript') },
+    { imgPath: './img/svelte.png', title: 'Svelte', description: $_('description.svelte') },
+    { imgPath: './img/html5.png', title: 'HTML', description: $_('description.html') },
+    { imgPath: './img/css3.png', title: 'CSS', description: $_('description.css') },
+    { imgPath: './img/python.png', title: 'Python', description: $_('description.python') },
+    { imgPath: './img/firebase.png', title: 'Firebase', description: $_('description.firebase') }
+  ];
+
+  const memberCardList = [
+    {
+      imgPath: './img/C4J.png',
+      title: 'Code for Japan',
+      description: $_('memberof.code_for_japan'),
+      url: 'https://www.code4japan.org/'
+    },
+    {
+      imgPath: './img/sgg.png',
+      title: 'SGG',
+      description: $_('memberof.sgg'),
+      url: 'https://qiita.com/organizations/sgg'
+    },
+    {
+      imgPath: './img/keio.png',
+      title: 'Keio High',
+      description: $_('education.keio'),
+      url: 'https://www.hs.keio.ac.jp/'
+    }
+  ];
 </script>
 
 <div id="about">
@@ -32,32 +63,15 @@
   </div>
   <h2>Skills</h2>
   <div id="skills_container" class="aboutme-containers">
-    <SkillCard imgPath="./img/javascript.png" title="JavaScript" description={$_('description.javascript')} />
-    <SkillCard imgPath="./img/typescript.png" title="TypeScript" description={$_('description.typescript')} />
-    <SkillCard imgPath="./img/svelte.png" title="Svelte" description={$_('description.svelte')} />
-    <SkillCard imgPath="./img/html5.png" title="HTML" description={$_('description.html')} />
-    <SkillCard imgPath="./img/css3.png" title="CSS" description={$_('description.css')} />
-    <SkillCard imgPath="./img/scss.png" title="SCSS" description={$_('description.scss')} />
-    <SkillCard imgPath="./img/python.png" title="Python" description={$_('description.python')} />
-    <SkillCard imgPath="./img/firebase.png" title="Firebase" description={$_('description.firebase')} />
+    {#each skillCardList as { imgPath, title, description }, i}
+      <SkillCard {imgPath} {title} {description} />
+    {/each}
   </div>
   <h2>Member of...</h2>
   <div id="member_container" class="aboutme-containers">
-    <MemberCard
-      imgPath="./img/C4J.png"
-      title="Code for Japan"
-      description={$_('memberof.code_for_japan')}
-      url="https://www.code4japan.org/" />
-    <MemberCard
-      imgPath="./img/sgg.png"
-      title="SGG"
-      description={$_('memberof.sgg')}
-      url="https://qiita.com/organizations/sgg" />
-    <MemberCard
-      imgPath="./img/keio.png"
-      title="Keio High"
-      description={$_('education.keio')}
-      url="https://www.hs.keio.ac.jp/" />
+    {#each memberCardList as { imgPath, title, description, url }, i}
+      <MemberCard {imgPath} {title} {description} {url} />
+    {/each}
   </div>
 </div>
 

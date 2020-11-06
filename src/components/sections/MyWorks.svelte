@@ -6,6 +6,7 @@
   import BlogCard from '../BlogCard.svelte';
   import { _ } from 'svelte-i18n';
   import '../../localization/i18n.js';
+  import { url } from 'inspector';
 
   const isTouchable = isMobile();
 
@@ -33,6 +34,57 @@
       }
     }
   };
+
+  const workCardList = [
+    {
+      imgPath: './img/neornd.jpg',
+      title: 'neornd',
+      description: $_('mywork.neornd'),
+      url: 'https://neornd.kota-yata.com',
+      urlMessage: 'Document'
+    },
+    {
+      imgPath: './img/multimd 13.14.44.png',
+      title: 'Multi-MD',
+      description: $_('mywork.multimd'),
+      url: 'https://multimd.cf',
+      urlMessage: 'Web app'
+    },
+    {
+      imgPath: './img/percom.jpg',
+      title: 'Percom',
+      description: $_('mywork.percom'),
+      url: 'https://percom.kota-yata.com',
+      urlMessage: 'Document'
+    },
+    {
+      imgPath: './img/syncmovie.jpg',
+      title: 'Syncmovie',
+      description: $_('mywork.syncmovie'),
+      url: 'https://syncmovie.herokuapp.com',
+      urlMessage: 'Web app'
+    },
+    {
+      imgPath: './img/iso.png',
+      title: 'iso-639-1-jp',
+      description: $_('mywork.iso-639-1-jp'),
+      url: 'https://iso-639-1-jp.kota-yata.com',
+      urlMessage: 'Document'
+    },
+    {
+      imgPath: './img/bs.png',
+      title: 'Bullshit-Trivia',
+      description: $_('mywork.bullshit-trivia'),
+      url: 'https://bullshit-trivia.com',
+      urlMessage: 'Website'
+    }
+  ];
+
+  const blogCardList = [
+    { url: 'https://blog.kota-yata.com', imgPath: './img/innout.png' },
+    { url: 'https://qiita.com/kota-yata', imgPath: './img/qiita.png' },
+    { url: 'https://zenn.dev/kota_yata', imgPath: './img/zenn.png' }
+  ];
 </script>
 
 <div id="works">
@@ -43,55 +95,11 @@
   {/if}
   <div class="slide-div">
     <Swiper {options}>
-      <SwiperSlide>
-        <WorkCard
-          imgPath="./img/neornd.jpg"
-          title="neornd"
-          description={$_('mywork.neornd')}
-          url="https://neornd.kota-yata.com/"
-          urlMessage="Document" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <WorkCard
-          imgPath="./img/multimd 13.14.44.png"
-          title="Multi-MD"
-          description={$_('mywork.multimd')}
-          url="https://multimd.cf"
-          urlMessage="Web app" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <WorkCard
-          imgPath="./img/percom.jpg"
-          title="Percom"
-          description={$_('mywork.percom')}
-          url="https://percom.kota-yata.com/"
-          urlMessage="Document" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <WorkCard
-          imgPath="./img/syncmovie.jpg"
-          title="Syncmovie"
-          description={$_('mywork.syncmovie')}
-          url="https://syncmovie.herokuapp.com"
-          urlMessage="Web app" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <WorkCard
-          imgPath="./img/iso.png"
-          title="iso-639-1-jp"
-          description={$_('mywork.iso-639-1-jp')}
-          url="https://iso-639-1-jp.kota-yata.com"
-          urlMessage="Document" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <WorkCard
-          imgPath="./img/bs.png"
-          title="Bullshit-Trivia"
-          description={$_('mywork.bullshit-trivia')}
-          url="https://bullshit-trivia.com"
-          urlMessage="Website" />
-      </SwiperSlide>
-
+      {#each workCardList as { imgPath, title, description, url, urlMessage }}
+        <SwiperSlide>
+          <WorkCard {imgPath} {title} {description} {url} {urlMessage} />
+        </SwiperSlide>
+      {/each}
       <div class="swiper-pagination" slot="pagination" />
       <div class="swiper-button-next" slot="button-next" />
       <div class="swiper-button-prev" slot="button-prev" />
@@ -99,9 +107,9 @@
   </div>
   <h1 id="tech_blog">Tech Blog</h1>
   <div id="blog_container">
-    <BlogCard url="https://blog.kota-yata.com" imgPath="./img/innout.png" />
-    <BlogCard url="https://qiita.com/kota-yata" imgPath="./img/qiita.png" />
-    <BlogCard url="https://zenn.dev/kota_yata" imgPath="./img/zenn.png" />
+    {#each blogCardList as { url, imgPath }}
+      <BlogCard {url} {imgPath} />
+    {/each}
   </div>
 </div>
 

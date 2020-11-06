@@ -16,7 +16,7 @@
   "education": {
     "keio": "The private high school in Yokohama, Kanagawa. The 2nd grade (Sophomore) now."
   },
-  "interests": "I've been researching <a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a> and <a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a> as my senior thesis in high school. I've just started reading specifications of DID/VC, and I will study with SGG members.<br>Since I also have interest in Network Architecture and Security, I've been studying the fundamental cryptographic algorithm and logic, congestion control of TCP, HTTP/3(QUIC <i style=\"font-size: 13px; color: #999999;\">- a new protocol for web</i>).<br>Furthermore, I'm going to study more the basic knowledges a web developer has to have (Docker,AWS etc..).",
+  "interests": "I've been researching <a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a> and <a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a> as my senior thesis in high school. I've just started reading specifications of DID/VC, and I will study with SGG members.<br>Since I also have interest in Network Architecture and Security, I've been studying the fundamental cryptographic algorithm and logic, congestion control of TCP.<br>Furthermore, I'm going to study more the basic knowledges a web developer has to have (Docker,AWS etc..).",
 
   "mywork": {
     "neornd": "neornd makes Math.random() simple and safe by using crypto module. You can get a random number with number of decimal place you want easily.",
