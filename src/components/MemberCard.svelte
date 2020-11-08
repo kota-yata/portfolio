@@ -35,7 +35,7 @@
 
   .member-card {
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
     .card {
       position: relative;
       width: 30em;

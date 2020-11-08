@@ -79,6 +79,7 @@
   @import '../../assets/definition.scss';
   #about {
     padding-bottom: 8em;
+    margin-bottom: 2em;
     .aboutme-containers {
       @extend %center;
       padding-bottom: 10px;
