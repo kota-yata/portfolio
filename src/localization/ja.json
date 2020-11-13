@@ -7,7 +7,9 @@
     "css": "HTMLとともに開発には差し支えない程度に理解しています。最近は専らSCSSに移行しています。",
     "scss": "mixinやtemplateなどの構文は理解していて、基本的にはSCSSをスタイルシートとして使っています。",
     "python": "SeleniumやBeautifulSoupを使ってWebスクレイピングをして遊んでいます。自動化したいなと思ったらとりあえずPythonに頼ります。",
-    "firebase": "Realtime DatabaseやFireStore、Authなどを主に開発で使っています。Firebase functionなどもかなり興味あります。"
+    "firebase": "Realtime DatabaseやFireStore、Authなどを主に開発で使っています。Firebase functionなどもかなり興味あります。",
+    "docker": "コンテナの作成・起動、Dockerfileの記述など基本的な作業は可能です。まだ他人のDockerfileを環境に合わせて書き換えることができないので勉強中です。",
+    "git": "OSSに関わったり共同作業をしたりした経験があるのでGitで開発する分には十分な知識があります。GitHub Actionsは現在勉強中です。"
   },
   "memberof": {
     "code_for_japan": "イベント運営のインターンとして所属しています。たまにプロジェクトの開発に首を突っ込むことがあります。",
@@ -16,7 +18,7 @@
   "education": {
     "keio": "神奈川県の私立高校。現在高校2年生として在学中です。"
   },
-  "interests": "高校の卒業研究テーマとして<a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a>/<a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a>を選び、研究を進めています。詳しいテーマについては未定ですが<a href=\"https://www.kota-yata.com#:~:text=sgg,-技術\">SGG</a>のメンバーとも協力し、仕様書・論文を読んでいる段階です。<br>また、ネットワークアーキテクチャー・セキュリティに関する興味もあり、TCPの輻輳制御や基礎的な暗号アルゴリズムと理論、HTTP/3(QUIC)に関する勉強も進めています。<br>今後は上述の研究と勉強を進めると共に、Go言語でのCLIツールの開発やWeb開発者として得ていなければならない知識（Docker, AWS etc.）の習得にも励んでいきます。",
+  "interests": "高校の卒業研究テーマとして<a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a>/<a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a>を選び、研究を進めています。詳しいテーマについては未定ですが<a href=\"https://www.kota-yata.com#:~:text=sgg,-技術\">SGG</a>のメンバーとも協力し、仕様書・論文を読んでいる段階です。また、ネットワークアーキテクチャー・セキュリティに関する興味もあり、TCPの輻輳制御や初歩的な暗号アルゴリズムと理論の勉強も進めています。<br>今後は上述の研究と勉強を進めると共に、Go言語でのCLIツールの開発やWeb開発者として得ていなければならない知識（GCP, AWS etc.）の習得にも励んでいきます。",
   "mywork": {
     "neornd": "使いにくいcryptoモジュールを使いやすくし、Math.randomよりもセキュアな乱数を自由自在に生成できるnpmモジュールです。非常に軽量で、Unpacked Sizeは15KBに収まっています。",
     "multimd": "マークダウンファイルをブラウザで作成、編集できるWebアプリです。Chrome Origin TrialのNativeFileSystemによりChromeでのみローカルファイルの上書きが可能です。",

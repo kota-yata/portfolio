@@ -7,7 +7,9 @@
     "css": "I have enough knowledge of CSS to use in Web design.",
     "scss": "I almost use SCSS for stylesheet currently. I understand general specifications like mixin and template.",
     "python": "For web scraping with Selenium/BeautifulSoup4. Automate the Boring Stuff with Python - Somebody famous",
-    "firebase": "Mainly Authentication, Firestore and Realtime Database."
+    "firebase": "Mainly Authentication, Firestore and Realtime Database.",
+    "docker": "Writing Dockerfile, build&run container. I am currently not so familiar with it that I can't rewrite other's dockerfile for my local environment, and I keep studying.",
+    "git": "I've contributed to some OSS project on GitHub, so I have enough knowledge to develop in a joint effort."
   },
   "memberof": {
     "code_for_japan": "Working as a event management intern.",

@@ -21,7 +21,9 @@
     { imgPath: './img/html5.png', title: 'HTML', description: $_('description.html') },
     { imgPath: './img/css3.png', title: 'CSS', description: $_('description.css') },
     { imgPath: './img/python.png', title: 'Python', description: $_('description.python') },
-    { imgPath: './img/firebase.png', title: 'Firebase', description: $_('description.firebase') }
+    { imgPath: './img/firebase.png', title: 'Firebase', description: $_('description.firebase') },
+    { imgPath: './img/docker.png', title: 'Docker', description: $_('description.docker') },
+    { imgPath: './img/git.png', title: 'Git & GitHub', description: $_('description.git') }
   ];
 
   const memberCardList = [
@@ -85,8 +87,10 @@
       padding-bottom: 10px;
     }
     #me_img {
+      padding: 10px;
       width: 200px;
       border-radius: 50%;
+      box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4), 8px 8px 12px rgba(0, 0, 0, 0.08);
     }
     #skills_container {
       width: 100vw;
@@ -107,7 +111,7 @@
       }
     }
     #member_container {
-      padding-bottom: 3em;
+      padding-bottom: 6em;
     }
   }
 
