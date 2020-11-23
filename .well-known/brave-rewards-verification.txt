@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: kota-yata.com
+Token: a9b2ef18c48b7611675024487c4fd5f885dfd2afc1f5cfbbb5ddd85ac87542bb
