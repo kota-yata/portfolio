@@ -14,16 +14,21 @@
     sentenceContainer.innerHTML = parsedInterests;
   });
 
-  const skillCardList = [
+  const languageCardList = [
     { imgPath: './img/javascript.png', title: 'JavaScript', description: $_('description.javascript') },
     { imgPath: './img/typescript.png', title: 'TypeScript', description: $_('description.typescript') },
     { imgPath: './img/svelte.png', title: 'Svelte', description: $_('description.svelte') },
     { imgPath: './img/html5.png', title: 'HTML', description: $_('description.html') },
     { imgPath: './img/css3.png', title: 'CSS', description: $_('description.css') },
-    { imgPath: './img/python.png', title: 'Python', description: $_('description.python') },
+    { imgPath: './img/python.png', title: 'Python', description: $_('description.python') }
+  ];
+
+  const toolCardList = [
     { imgPath: './img/firebase.png', title: 'Firebase', description: $_('description.firebase') },
     { imgPath: './img/docker.png', title: 'Docker', description: $_('description.docker') },
-    { imgPath: './img/git.png', title: 'Git & GitHub', description: $_('description.git') }
+    { imgPath: './img/git.png', title: 'Git & GitHub', description: $_('description.git') },
+    { imgPath: './img/vagrant.png', title: 'Vagrant', description: $_('description.vagrant') },
+    { imgPath: './img/heroku.png', title: 'Heroku', description: $_('description.heroku') }
   ];
 
   const memberCardList = [
@@ -63,9 +68,15 @@
     <h2>Study & Interests</h2>
     <div id="interests_container_sentence" />
   </div>
-  <h2>Skills</h2>
-  <div id="skills_container" class="aboutme-containers">
-    {#each skillCardList as { imgPath, title, description }, i}
+  <h2>Languages</h2>
+  <div id="languages_container" class="aboutme-containers">
+    {#each languageCardList as { imgPath, title, description }, i}
+      <SkillCard {imgPath} {title} {description} />
+    {/each}
+  </div>
+  <h2>Tools</h2>
+  <div id="tools_container" class="aboutme-containers">
+    {#each toolCardList as { imgPath, title, description }, i}
       <SkillCard {imgPath} {title} {description} />
     {/each}
   </div>
@@ -92,7 +103,7 @@
       border-radius: 50%;
       box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4), 8px 8px 12px rgba(0, 0, 0, 0.08);
     }
-    #skills_container {
+    #languages_container {
       width: 100vw;
     }
     #interests_container {
