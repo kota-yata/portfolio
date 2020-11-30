@@ -76,6 +76,13 @@
       description: $_('mywork.bullshit-trivia'),
       url: 'https://bullshit-trivia.com',
       urlMessage: 'Website'
+    },
+    {
+      imgPath: './img/kec.png',
+      title: 'KEC',
+      description: $_('mywork.kec'),
+      url: 'https://github.com/kota-yata/kec',
+      urlMessage: 'Repository'
     }
   ];
 

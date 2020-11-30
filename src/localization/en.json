@@ -28,6 +28,7 @@
     "percom": "Percom is a calculation npm module that is to simplify the calculation of permutations and combinations",
     "syncmovie": "On Syncmovie, you can watch YouTube videos with someone, and it will sync together. Besides, You can see how many people are connecting.",
     "iso-639-1-jp": "Conversion module of ISO-639 language code to Japanese name.",
-    "bullshit-trivia": "Bullshit Trivia provides tidbits that you won't use for the rest of your life."
+    "bullshit-trivia": "Bullshit Trivia provides tidbits that you won't use for the rest of your life. Waste your time with useless trivia facts.",
+    "kec": "Kota Extension Converter is Image format extension converter written in Golang. Only for jpg/png/gif image, but I have been coding for SVG conversion."
   }
 }

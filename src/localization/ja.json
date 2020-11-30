@@ -27,6 +27,7 @@
     "percom": "組み合わせと順列を計算するnpmモジュールです。使い勝手はRubyのpermutation/combinationメソッドを目指して作りました。",
     "syncmovie": "ブラウザで同期的に動画再生ができるWebアプリです。Socket.ioの練習として開発を始め、現在も開発中なので実用性はまだありませんが、Zoom飲み会などで使えるようにするのが目標です。",
     "iso-639-1-jp": "ISO-639の言語コードを日本語名に変換するnpmモジュールです。iso-639-1モジュールのForkです。",
-    "bullshit-trivia": "Bullshit Triviaは一生使うことのない豆知識と、トランプのBullshitなツイートを様々なAPIを使って提供します。全て英語ですのでご了承ください。"
+    "bullshit-trivia": "Bullshit Triviaは一生使うことのない豆知識と、トランプのBullshitなツイートを様々なAPIを使って提供します。全て英語ですのでご了承ください。",
+    "kec": "jpg/png/gif画像の拡張子を変換するCLIです。GO言語で書いており、現在SVG形式の変換を実装しています。"
   }
 }
