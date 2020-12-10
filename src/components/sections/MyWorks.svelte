@@ -1,6 +1,7 @@
 <script>
   import Description from '../Description.svelte';
   import { Swiper, SwiperSlide } from 'svelte-swiper';
+  import MediaCard from '../MediaCard.svelte';
   import WorkCard from '../WorkCard.svelte';
   import { isMobile } from '../../../scripts/isMobile.js';
   import BlogCard from '../BlogCard.svelte';
@@ -86,10 +87,15 @@
     }
   ];
 
+  const mediaCardList = [
+    { imgPath: './img/g0v.png', title: 'g0v Summit 2020', description: $_('media.g0v'), urlMessage: 'My session page' }
+  ];
+
   const blogCardList = [
     { url: 'https://blog.kota-yata.com', imgPath: './img/innout.png' },
     { url: 'https://qiita.com/kota-yata', imgPath: './img/qiita.png' },
-    { url: 'https://zenn.dev/kota_yata', imgPath: './img/zenn.png' }
+    { url: 'https://zenn.dev/kota_yata', imgPath: './img/zenn.png' },
+    { url: 'https://note.com/kotay', imgPath: './img/note.png' }
   ];
 </script>
 
@@ -111,7 +117,13 @@
       <div class="swiper-button-prev" slot="button-prev" />
     </Swiper>
   </div>
-  <h1 id="tech_blog">Tech Blog</h1>
+  <!--<h1 class="works-title">Media</h1>
+  <div id="media_container">
+    {#each mediaCardList as { imgPath, title, description, url, urlMessage}}
+      <MediaCard {imgPath} {title} {description} {url} {urlMessage} />
+    {/each}
+  </div>!-->
+  <h1 class="works-title">Tech Blogs</h1>
   <div id="blog_container">
     {#each blogCardList as { url, imgPath }}
       <BlogCard {url} {imgPath} />
@@ -122,7 +134,7 @@
 <style lang="scss">
   @import '../../assets/definition.scss';
 
-  #tech_blog {
+  .works-title {
     margin-bottom: 5px;
     font-size: 30px;
   }

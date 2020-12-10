@@ -21,7 +21,6 @@
     "keio": "The private high school in Yokohama, Kanagawa. The 2nd grade (Sophomore) now."
   },
   "interests": "I've been researching <a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a> and <a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a> as my senior thesis in high school. I've just started reading specifications of DID/VC, and I will study with SGG members.<br>Since I also have interest in Network Architecture and Security, I've been studying the fundamental cryptographic algorithm and logic, congestion control of TCP.<br>Furthermore, I'm going to study more the basic knowledges a web developer has to have (Docker,AWS etc..).",
-
   "mywork": {
     "neornd": "neornd makes Math.random() simple and safe by using crypto module. You can get a random number with number of decimal place you want easily.",
     "multimd": "Multi-MD is a markdown web editor. On Chrome, you can overwrite you local markdown file. PWA is available.",
@@ -30,5 +29,8 @@
     "iso-639-1-jp": "Conversion module of ISO-639 language code to Japanese name.",
     "bullshit-trivia": "Bullshit Trivia provides tidbits that you won't use for the rest of your life. Waste your time with useless trivia facts.",
     "kec": "Kota Extension Converter is Image format extension converter written in Golang. Only for jpg/png/gif image, but I have been coding for SVG conversion."
+  },
+  "media": {
+    "g0v": "Technology summit held by g0v:The biggest civic tech community in Taiwan. I talked on the subject of my job as a student intern at Code for Japan and event/contest we held."
   }
 }
