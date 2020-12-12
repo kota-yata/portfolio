@@ -1,4 +1,4 @@
-//Color
+//Color variables
 $black: #333;
 $shadow-black1: #111;
 $shadow-black2: #1d1d1d;
@@ -13,12 +13,13 @@ $speakerdeck: #118174;
 $quora: #b92b27;
 $linkedin: #2867b2;
 
-//centering
+// Centering (horizontal)
 %center{
   text-align:center;
   margin:0 auto;
 }
 
+// Centering (horizontal&vertical)
 %completely-center{
   position: absolute;
   transform: translate(-50%, -50%);

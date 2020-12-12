@@ -10,9 +10,7 @@
 </script>
 
 <div class="work-card">
-  <div>
-    <img class="work-img" alt="img" src={imgPath} />
-  </div>
+  <div><img class="work-img" alt="img" src={imgPath} /></div>
   <div class="work-sentences">
     <div class="work-title">
       <span>{title}</span>
@@ -77,6 +75,7 @@
   }
   @media screen and (max-width: 750px) {
     .work-card {
+      margin: 0 auto;
       width: 95vw !important;
       height: 60vh !important;
       .work-img {

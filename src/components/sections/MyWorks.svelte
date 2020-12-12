@@ -88,7 +88,13 @@
   ];
 
   const mediaCardList = [
-    { imgPath: './img/g0v.png', title: 'g0v Summit 2020', description: $_('media.g0v'), urlMessage: 'My session page' }
+    {
+      imgPath: './img/g0v.png',
+      title: 'g0v Summit 2020',
+      description: $_('media.g0v'),
+      url: '',
+      urlMessage: 'My session page'
+    }
   ];
 
   const blogCardList = [
@@ -117,14 +123,14 @@
       <div class="swiper-button-prev" slot="button-prev" />
     </Swiper>
   </div>
-  <!--<h1 class="works-title">Media</h1>
-  <div id="media_container">
-    {#each mediaCardList as { imgPath, title, description, url, urlMessage}}
+  <h1 class="works-title">Media</h1>
+  <div class="works-container">
+    {#each mediaCardList as { imgPath, title, description, url, urlMessage }}
       <MediaCard {imgPath} {title} {description} {url} {urlMessage} />
     {/each}
-  </div>!-->
+  </div>
   <h1 class="works-title">Tech Blogs</h1>
-  <div id="blog_container">
+  <div class="works-container">
     {#each blogCardList as { url, imgPath }}
       <BlogCard {url} {imgPath} />
     {/each}
@@ -134,12 +140,15 @@
 <style lang="scss">
   @import '../../assets/definition.scss';
 
-  .works-title {
-    margin-bottom: 5px;
-    font-size: 30px;
-  }
-  #blog_container {
-    @extend %center;
-    margin-bottom: 5em;
+  #works {
+    padding-bottom: 10em;
+    .works-title {
+      margin-bottom: 5px;
+      font-size: 30px;
+    }
+    .works-container {
+      @extend %center;
+      margin-bottom: 5em;
+    }
   }
 </style>

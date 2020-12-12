@@ -2,9 +2,7 @@
   export let name;
 </script>
 
-<div>
-  <span>{name}</span>
-</div>
+<div><span>{name}</span></div>
 
 <style lang="scss">
   @import '../assets/definition.scss';

@@ -12,7 +12,7 @@
 <div class="media-card">
   <span> <img class="media-img" alt="img" src={imgPath} /> </span>
   <span class="media-sentences">
-    <div class="media-title"><span>{title}</span></div>
+    <span class="media-title">{title}<br /></span>
     <span class="media-description">{description}</span>
     <span class="media-url">
       <a href={url} target="blank">
@@ -27,52 +27,65 @@
   @import '../assets/definition.scss';
 
   .media-card {
-    position: relative;
-    width: 30vw;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin: 0 auto;
+    display: flex;
     border-radius: 20px;
+    width: 600px;
+    height: 250px;
     background: $white;
     box-shadow: 5px 5px 7px $shadow-white1, -5px -5px 7px $shadow-white2;
     .media-sentences {
+      text-align: left;
+      position: relative;
       padding: 1em;
-    }
-    .media-img {
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      width: 20vw;
-    }
-    .media-title {
-      font-size: 30px;
-      font-weight: 500;
-      a {
-        color: $black;
-        transition: 0.3s;
-        &:hover {
-          color: $light-black;
-          transition: 0.3s;
-        }
+      .media-title {
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .media-description {
+        display: inline-block;
+        word-wrap: break-word;
+        padding-top: 10px;
+      }
+      .media-url {
+        position: absolute;
+        bottom: 0.5em;
+        right: 0.5em;
+        font-size: 15px;
       }
     }
-    .media-description {
-      word-wrap: break-word;
-    }
-    .media-url {
-      position: absolute;
-      bottom: 1em;
-      right: 1em;
-      font-size: 15px;
+    .media-img {
+      display: inline-block;
+      margin: 0 auto;
+      width: 250px;
     }
   }
+
   @media screen and (max-width: 750px) {
     .media-card {
-      width: 95vw !important;
-      height: 60vh !important;
+      width: 75vw;
+      height: 40vh;
+      display: block;
+      .media-sentences {
+        display: block;
+        padding: 0.5em;
+        height: calc(40vh - 75vw / 3 - 1em);
+        .media-title {
+          font-size: 20px;
+        }
+        .media-description {
+          font-size: 15px;
+          padding-top: 5px;
+        }
+        .media-url {
+          font-size: 10px;
+        }
+      }
       .media-img {
-        width: 95vw;
+        display: block;
+        width: 75vw;
+        height: calc(75vw / 3);
+        object-fit: cover;
       }
     }
   }

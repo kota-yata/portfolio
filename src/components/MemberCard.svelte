@@ -12,19 +12,14 @@
 
 <span class="member-card">
   <div class="card">
-    <div class="img_and_title">
-      <img alt="icon" src={imgPath} />
-      <span class="title">{title}</span>
-      <br />
-    </div>
-    <div class="description">
-      <span>{description}</span>
-    </div>
+    <div class="img_and_title"><img alt="icon" src={imgPath} /> <span class="title">{title}</span> <br /></div>
+    <div class="description"><span>{description}</span></div>
     <br />
     <span class="works-in">
       <a href={url} target="blank">
         <Icon data={externalLink} class="external-link" />
-        {title} Website
+        {title}
+        Website
       </a>
     </span>
   </div>

@@ -9,19 +9,14 @@
 
 <span class="skill-card">
   <div class="card">
-    <div class="img_and_title">
-      <img alt="icon" src={imgPath} />
-      <span class="title">{title}</span>
-      <br />
-    </div>
-    <div class="description">
-      <span>{description}</span>
-    </div>
+    <div class="img_and_title"><img alt="icon" src={imgPath} /> <span class="title">{title}</span> <br /></div>
+    <div class="description"><span>{description}</span></div>
     <br />
     <span class="works-in">
       <a href="https://github.com/search?q=user%3Akota-yata+{title}" target="blank">
         <Icon data={externalLink} class="external-link" />
-        My works with {title}
+        My works with
+        {title}
       </a>
     </span>
   </div>
@@ -80,14 +75,14 @@
     .skill-card {
       margin: 10px 0px;
       .card {
-        width: 20em;
-        height: 12em;
+        width: 90vw;
+        height: 25vh;
         .img_and_title {
           padding: 0px;
           img {
             margin: 5px;
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
           }
           .title {
             font-size: 1.7em;
@@ -95,7 +90,7 @@
         }
         .description {
           margin-top: 2px;
-          height: 100px;
+          height: calc(25vh - 50px);
         }
       }
     }

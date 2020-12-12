@@ -4,9 +4,7 @@
   export let paddingTop;
 </script>
 
-<div style="padding-top: {paddingTop};">
-  <span style="font-size:{size};">{words}</span>
-</div>
+<div style="padding-top: {paddingTop};"><span style="font-size:{size};">{words}</span></div>
 
 <style lang="scss">
   @import '../assets/definition.scss';
