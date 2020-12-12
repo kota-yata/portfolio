@@ -92,7 +92,7 @@
       imgPath: './img/g0v.png',
       title: 'g0v Summit 2020',
       description: $_('media.g0v'),
-      url: '',
+      url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
       urlMessage: 'My session page'
     }
   ];

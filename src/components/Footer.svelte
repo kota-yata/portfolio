@@ -23,7 +23,7 @@
     cursor: pointer;
     position: relative;
     @extend %center;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 5em;
     width: 200px;
     height: 80px;
