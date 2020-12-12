@@ -79,9 +79,9 @@
       @extend %completely-center;
       color: $white;
       text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.08);
-      -webkit-text-stroke: 0.3px $christmas-green;
+      -webkit-text-stroke: 0.5px $christmas-green;
       font-size: 50px;
-      font-family: Brush Script MT;
+      font-family: 'Allura';
       top: 47%;
       @media screen and (max-width: 750px) {
         text-align: center;
