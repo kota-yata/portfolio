@@ -61,6 +61,7 @@
     "firebase": "^7.19.1",
     "firebase-admin": "^9.1.1",
     "firebase-functions": "^3.11.0",
+    "ityped": "^1.0.3",
     "jquery": "^3.5.1",
     "jquery-scrollify": "^1.0.20",
     "sirv-cli": "^1.0.0",

@@ -4,7 +4,26 @@
   import { faGithub, faTwitter, faSpeakerDeck } from '@fortawesome/free-brands-svg-icons';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
+  import { init } from 'ityped';
   import '../../assets/arrow.scss';
+
+  window.addEventListener('DOMContentLoaded', () => {
+    init(document.querySelector('#ityped'), {
+      strings: [
+        'Happy Christmas!',
+        'Greetings of the season',
+        'Sending you warm winter wishes',
+        'Wishing you Christmas cheer'
+      ],
+      startDelay: 2500,
+      typeSpeed: 120,
+      loop: true,
+      backSpeed: 80,
+      backDelay: 2000,
+      showCursor: true,
+      cursorChar: '|'
+    });
+  });
 
   let isVisible = false;
 
@@ -18,18 +37,19 @@
     <span transition:fade={{ delay: 300, duration: 1000 }}>
       <NeumoTitle name="KOTA YATAGAI" />
     </span>
+    <div id="happy_christmas" transition:fade={{ delay: 1250, duration: 700 }}><span id="ityped" /></div>
     <div id="icon_container">
-      <span transition:fade={{ delay: 1500, duration: 700 }}>
+      <span transition:fade={{ delay: 300, duration: 1500 }}>
         <a id="github" href="https://github.com/kota-yata">
           <Icon data={faGithub} scale="3" />
         </a>
       </span>
-      <span transition:fade={{ delay: 2000, duration: 700 }}>
+      <span transition:fade={{ delay: 1500, duration: 700 }}>
         <a id="twitter" href="https://twitter.com/kota_yata">
           <Icon data={faTwitter} scale="3" />
         </a>
       </span>
-      <span transition:fade={{ delay: 2500, duration: 700 }}>
+      <span transition:fade={{ delay: 1750, duration: 700 }}>
         <a id="speakerdeck" href="https://speakerdeck.com/kota_yata">
           <Icon data={faSpeakerDeck} scale="3" />
         </a>
@@ -55,6 +75,20 @@
       @extend %completely-center;
       top: 95%;
     }
+    #happy_christmas {
+      @extend %completely-center;
+      color: $white;
+      text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.08);
+      -webkit-text-stroke: 0.3px $christmas-green;
+      font-size: 50px;
+      font-family: Brush Script MT;
+      top: 47%;
+      @media screen and (max-width: 750px) {
+        text-align: center;
+        width: 100vw;
+        font-size: 30px;
+      }
+    }
     #icon_container {
       @extend %completely-center;
       @extend %center;
@@ -76,9 +110,6 @@
         }
         #speakerdeck:hover {
           color: $speakerdeck;
-        }
-        #quora:hover {
-          color: $quora;
         }
         margin-left: 15px;
         margin-right: 15px;
