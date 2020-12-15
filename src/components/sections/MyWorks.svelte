@@ -95,6 +95,13 @@
       url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
       urlMessage: 'My session page'
     }
+    /* {
+      imgPath: './img/ccc.png',
+      title: 'CCC U-22',
+      description: $_('media.g0v'),
+      url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
+      urlMessage: 'My session page'
+    },*/
   ];
 
   const blogCardList = [
@@ -124,7 +131,7 @@
     </Swiper>
   </div>
   <h1 class="works-title">Media</h1>
-  <div class="works-container">
+  <div class="works-container" id="media_container">
     {#each mediaCardList as { imgPath, title, description, url, urlMessage }}
       <MediaCard {imgPath} {title} {description} {url} {urlMessage} />
     {/each}
@@ -143,7 +150,6 @@
   #works {
     padding-bottom: 10em;
     .works-title {
-      margin-bottom: 5px;
       font-size: 30px;
     }
     .works-container {
@@ -151,4 +157,12 @@
       margin-bottom: 5em;
     }
   }
+
+  /* #media_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    height: 300px;
+  } */
 </style>

@@ -9,15 +9,10 @@
 
   window.addEventListener('DOMContentLoaded', () => {
     init(document.querySelector('#ityped'), {
-      strings: [
-        'Happy Christmas!',
-        'Greetings of the season',
-        'Sending you warm winter wishes',
-        'Wishing you Christmas cheer'
-      ],
+      strings: ['Happy Christmas!'],
       startDelay: 2500,
       typeSpeed: 120,
-      loop: true,
+      loop: false,
       backSpeed: 80,
       backDelay: 2000,
       showCursor: true,
@@ -80,13 +75,13 @@
       color: $white;
       text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.08);
       -webkit-text-stroke: 0.5px $christmas-green;
-      font-size: 50px;
+      font-size: 45px;
       font-family: 'Allura';
       top: 47%;
       @media screen and (max-width: 750px) {
         text-align: center;
         width: 100vw;
-        font-size: 30px;
+        font-size: 25px;
       }
     }
     #icon_container {

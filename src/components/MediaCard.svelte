@@ -27,8 +27,9 @@
   @import '../assets/definition.scss';
 
   .media-card {
-    margin: 0 auto;
+    @extend %center;
     display: flex;
+    // flex: 0 0 auto;
     border-radius: 20px;
     width: 600px;
     height: 250px;
@@ -65,6 +66,7 @@
     .media-card {
       width: 75vw;
       height: 40vh;
+      padding: 10px;
       display: block;
       .media-sentences {
         display: block;
