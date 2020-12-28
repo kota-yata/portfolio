@@ -37,28 +37,28 @@
 
   const workCardList = [
     {
-      imgPath: './img/neornd.jpg',
+      imgPath: './img/neornd.png',
       title: 'neornd',
       description: $_('mywork.neornd'),
       url: 'https://neornd.kota-yata.com',
       urlMessage: 'Document'
     },
     {
-      imgPath: './img/multimd 13.14.44.png',
+      imgPath: './img/multimd.png',
       title: 'Multi-MD',
       description: $_('mywork.multimd'),
       url: 'https://multimd.cf',
       urlMessage: 'Web app'
     },
     {
-      imgPath: './img/percom.jpg',
+      imgPath: './img/percom.png',
       title: 'Percom',
       description: $_('mywork.percom'),
       url: 'https://percom.kota-yata.com',
       urlMessage: 'Document'
     },
     {
-      imgPath: './img/syncmovie.jpg',
+      imgPath: './img/syncmovie.png',
       title: 'Syncmovie',
       description: $_('mywork.syncmovie'),
       url: 'https://syncmovie.herokuapp.com',
@@ -148,7 +148,7 @@
   @import '../../assets/definition.scss';
 
   #works {
-    padding-bottom: 10em;
+    padding-bottom: 5em;
     .works-title {
       font-size: 30px;
     }

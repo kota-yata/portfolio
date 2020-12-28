@@ -61,7 +61,9 @@
     <Description words="About Me" size="100px" paddingTop="20px" />
     <h2>High school student, Front-end Developer</h2>
   {/if}
-  <div id="me_container" class="aboutme-containers"><img id="me_img" alt="" src="./img/me.jpeg" /></div>
+  <div id="me_container" class="aboutme-containers">
+    <img id="me_img" alt="profile" class="lazyload" data-src="./img/raccoon.png" />
+  </div>
   <div id="interests_container" class="aboutme-containers">
     <h2>Study & Interests</h2>
     <div id="interests_container_sentence" />

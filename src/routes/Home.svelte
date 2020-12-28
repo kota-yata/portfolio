@@ -2,7 +2,6 @@
   import '../assets/main.scss';
   import AboutMe from '../components/sections/AboutMe.svelte';
   import TopPage from '../components/sections/TopPage.svelte';
-
   import jquery from 'jquery';
   import scrollify from 'jquery-scrollify';
   import MyWorks from '../components/sections/MyWorks.svelte';
@@ -25,6 +24,7 @@
     backToTop.addEventListener('click', () => {
       jquery.scrollify.move(0);
     });
+    lazyload();
   });
 </script>
 
@@ -33,9 +33,7 @@
     <TopPage />
   </section>
   <section class="section">
-    <div id="section_content">
-      <AboutMe />
-    </div>
+    <AboutMe />
   </section>
   <section class="section">
     <MyWorks />

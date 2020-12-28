@@ -10,7 +10,7 @@
 </script>
 
 <div class="media-card">
-  <span> <img class="media-img" alt="img" src={imgPath} /> </span>
+  <span> <img class="media-img lazyload" alt="img" data-src={imgPath} /> </span>
   <span class="media-sentences">
     <span class="media-title">{title}<br /></span>
     <span class="media-description">{description}</span>

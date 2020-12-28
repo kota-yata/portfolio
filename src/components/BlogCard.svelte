@@ -4,7 +4,7 @@
 </script>
 
 <a href={url}>
-  <div class="blog-container"><img alt="blog" src={imgPath} /></div>
+  <div class="blog-container"><img alt="blog" class="lazyload" data-src={imgPath} /></div>
 </a>
 
 <style lang="scss">

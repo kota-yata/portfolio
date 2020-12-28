@@ -10,7 +10,7 @@
 </script>
 
 <div class="work-card">
-  <div><img class="work-img" alt="img" src={imgPath} /></div>
+  <div><img class="work-img lazyload" alt="img" data-src={imgPath} /></div>
   <div class="work-sentences">
     <div class="work-title">
       <span>{title}</span>

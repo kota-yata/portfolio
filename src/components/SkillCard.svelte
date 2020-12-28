@@ -9,7 +9,11 @@
 
 <span class="skill-card">
   <div class="card">
-    <div class="img_and_title"><img alt="icon" src={imgPath} /> <span class="title">{title}</span> <br /></div>
+    <div class="img_and_title">
+      <img alt="icon" class="lazyload" data-src={imgPath} />
+      <span class="title">{title}</span>
+      <br />
+    </div>
     <div class="description"><span>{description}</span></div>
     <br />
     <span class="works-in">

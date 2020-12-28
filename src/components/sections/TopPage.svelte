@@ -8,16 +8,18 @@
   import '../../assets/arrow.scss';
 
   window.addEventListener('DOMContentLoaded', () => {
-    init(document.querySelector('#ityped'), {
-      strings: ['Happy Christmas!'],
-      startDelay: 2500,
-      typeSpeed: 120,
-      loop: false,
-      backSpeed: 80,
-      backDelay: 2000,
-      showCursor: true,
-      cursorChar: '|'
-    });
+    if (christmasDecoration) {
+      init(document.querySelector('#ityped'), {
+        strings: ['Happy Christmas!'],
+        startDelay: 2500,
+        typeSpeed: 120,
+        loop: false,
+        backSpeed: 80,
+        backDelay: 2000,
+        showCursor: true,
+        cursorChar: '|'
+      });
+    }
   });
 
   let isVisible = false;
@@ -25,6 +27,16 @@
   onMount(() => {
     isVisible = true;
   });
+
+  const isChristmasSeason = () => {
+    const today = new Date();
+    const thisMonth = today.getMonth() + 1;
+    if (thisMonth !== 12) return false;
+    const thisDate = today.getDate();
+    if (thisDate > 25) return false;
+    return true;
+  };
+  const christmasDecoration = isChristmasSeason();
 </script>
 
 {#if isVisible}
@@ -32,9 +44,11 @@
     <span transition:fade={{ delay: 300, duration: 1000 }}>
       <NeumoTitle name="KOTA YATAGAI" />
     </span>
-    <div id="happy_christmas" transition:fade={{ delay: 1250, duration: 700 }}><span id="ityped" /></div>
+    {#if christmasDecoration}
+      <div id="happy_christmas" transition:fade={{ delay: 1250, duration: 700 }}><span id="ityped" /></div>
+    {/if}
     <div id="icon_container">
-      <span transition:fade={{ delay: 300, duration: 1500 }}>
+      <span transition:fade={{ delay: 1250, duration: 1500 }}>
         <a id="github" href="https://github.com/kota-yata">
           <Icon data={faGithub} scale="3" />
         </a>
