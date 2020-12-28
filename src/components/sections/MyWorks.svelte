@@ -93,15 +93,22 @@
       title: 'g0v Summit 2020',
       description: $_('media.g0v'),
       url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
+      urlMessage: 'Session page'
+    },
+    {
+      imgPath: './img/sgg-media.png',
+      title: 'SGG忘年LT会2020',
+      description: $_('media.sgg-1226'),
+      url: 'https://www.youtube.com/watch?v=UYZw55-2kGQ',
+      urlMessage: 'Session video'
+    },
+    {
+      imgPath: './img/sgg-media.png',
+      title: '年越しLT for 2021',
+      description: 'Coming Soon',
+      url: '',
       urlMessage: 'My session page'
     }
-    /* {
-      imgPath: './img/ccc.png',
-      title: 'CCC U-22',
-      description: $_('media.g0v'),
-      url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
-      urlMessage: 'My session page'
-    },*/
   ];
 
   const blogCardList = [
@@ -133,7 +140,7 @@
   <h1 class="works-title">Media</h1>
   <div class="works-container" id="media_container">
     {#each mediaCardList as { imgPath, title, description, url, urlMessage }}
-      <MediaCard {imgPath} {title} {description} {url} {urlMessage} />
+      <span class="media-contents"><MediaCard {imgPath} {title} {description} {url} {urlMessage} /></span>
     {/each}
   </div>
   <h1 class="works-title">Tech Blogs</h1>
@@ -148,7 +155,7 @@
   @import '../../assets/definition.scss';
 
   #works {
-    padding-bottom: 5em;
+    padding-bottom: 2em;
     .works-title {
       font-size: 30px;
     }
@@ -158,11 +165,22 @@
     }
   }
 
-  /* #media_container {
+  #media_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow-x: scroll;
+    width: 100vw;
     height: 300px;
-  } */
+    .media-contents {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    #media_container {
+      height: 55vh;
+    }
+  }
 </style>

@@ -31,6 +31,7 @@
     "kec": "Kota Extension Converter is Image format extension converter written in Golang. Only for jpg/png/gif image, but I have been coding for SVG conversion."
   },
   "media": {
-    "g0v": "Technology summit held by g0v:The biggest civic tech community in Taiwan. I talked on the subject of my job as a student intern at Code for Japan and event/contest we held."
+    "g0v": "Technology summit held by g0v:The biggest civic tech community in Taiwan. I talked on the subject of my job as a student intern at Code for Japan and event/contest we held.",
+    "sgg-1226": "Year-end lightning talk event held by SGG. I had a talk about Self-Sovereign Identity. The title is \"Principle of SSI\"."
   }
 }

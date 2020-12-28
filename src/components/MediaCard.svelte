@@ -9,7 +9,7 @@
   export let urlMessage;
 </script>
 
-<div class="media-card">
+<span class="media-card">
   <span> <img class="media-img lazyload" alt="img" data-src={imgPath} /> </span>
   <span class="media-sentences">
     <span class="media-title">{title}<br /></span>
@@ -21,7 +21,7 @@
       </a>
     </span>
   </span>
-</div>
+</span>
 
 <style lang="scss">
   @import '../assets/definition.scss';
@@ -65,7 +65,7 @@
   @media screen and (max-width: 750px) {
     .media-card {
       width: 75vw;
-      height: 40vh;
+      height: 45vh;
       padding: 10px;
       display: block;
       .media-sentences {
@@ -86,7 +86,7 @@
       .media-img {
         display: block;
         width: 75vw;
-        height: calc(75vw / 3);
+        height: calc(75vw / 2);
         object-fit: cover;
       }
     }
