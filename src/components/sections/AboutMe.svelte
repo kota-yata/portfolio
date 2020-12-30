@@ -5,6 +5,7 @@
   import { isMobile } from '../../../scripts/isMobile.js';
   import { _ } from 'svelte-i18n';
   import '../../localization/i18n.js';
+  import InfraCard from '../InfraCard.svelte';
 
   const isTouchable = isMobile();
 
@@ -24,11 +25,13 @@
   ];
 
   const toolCardList = [
-    { imgPath: './img/firebase.png', title: 'Firebase', description: $_('description.firebase') },
-    { imgPath: './img/docker.png', title: 'Docker', description: $_('description.docker') },
-    { imgPath: './img/git.png', title: 'Git & GitHub', description: $_('description.git') },
-    { imgPath: './img/vagrant.png', title: 'Vagrant', description: $_('description.vagrant') },
-    { imgPath: './img/heroku.png', title: 'Heroku', description: $_('description.heroku') }
+    { imgPath: './img/firebase.png', title: 'Firebase' },
+    { imgPath: './img/docker.png', title: 'Docker' },
+    { imgPath: './img/git.png', title: 'Git' },
+    { imgPath: './img/vagrant.png', title: 'Vagrant' },
+    { imgPath: './img/heroku.png', title: 'Heroku' },
+    { imgPath: './img/netlify.png', title: 'Netlify' },
+    { imgPath: './img/vercel.png', title: 'Vercel' }
   ];
 
   const memberCardList = [
@@ -68,16 +71,16 @@
     <h2>Study & Interests</h2>
     <div id="interests_container_sentence" />
   </div>
-  <h2>Languages</h2>
+  <h2>Development</h2>
   <div id="languages_container" class="aboutme-containers">
     {#each languageCardList as { imgPath, title, description }, i}
       <SkillCard {imgPath} {title} {description} />
     {/each}
   </div>
-  <h2>Tools</h2>
-  <div id="tools_container" class="aboutme-containers">
-    {#each toolCardList as { imgPath, title, description }, i}
-      <SkillCard {imgPath} {title} {description} />
+  <h2>Infrastructure</h2>
+  <div id="infra_container" class="aboutme-containers">
+    {#each toolCardList as { imgPath, title }, i}
+      <InfraCard {imgPath} {title} />
     {/each}
   </div>
   <h2>Member of...</h2>
@@ -91,11 +94,12 @@
 <style lang="scss">
   @import '../../assets/definition.scss';
   #about {
-    padding-bottom: 5em;
-    margin-bottom: 2em;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
     .aboutme-containers {
       @extend %center;
-      padding-bottom: 10px;
+      margin-bottom: 1em;
+      padding-bottom: 1em;
     }
     #me_img {
       padding: 10px;
@@ -103,7 +107,8 @@
       border-radius: 50%;
       box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4), 8px 8px 12px rgba(0, 0, 0, 0.08);
     }
-    #languages_container {
+    #languages_container,
+    #infra_container {
       width: 100vw;
     }
     #interests_container {
