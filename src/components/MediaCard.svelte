@@ -29,12 +29,13 @@
   .media-card {
     @extend %center;
     display: flex;
-    // flex: 0 0 auto;
     border-radius: 20px;
     width: 600px;
     height: 250px;
     background: $white;
     box-shadow: 5px 5px 7px $shadow-white1, -5px -5px 7px $shadow-white2;
+    margin-left: 10px;
+    margin-right: 10px;
     .media-sentences {
       text-align: left;
       position: relative;
@@ -80,7 +81,7 @@
           padding-top: 5px;
         }
         .media-url {
-          font-size: 10px;
+          font-size: 13px;
         }
       }
       .media-img {

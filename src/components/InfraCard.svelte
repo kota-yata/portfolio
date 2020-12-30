@@ -3,7 +3,7 @@
   export let title;
 </script>
 
-<span class="skill-card">
+<span class="infra-card">
   <div class="card">
     <div class="img_and_title">
       <img alt="icon" class="lazyload" data-src={imgPath} />
@@ -16,7 +16,7 @@
 <style lang="scss">
   @import '../assets/definition.scss';
 
-  .skill-card {
+  .infra-card {
     display: inline-block;
     margin: 20px;
     .card {
@@ -48,9 +48,10 @@
   }
 
   @media screen and (max-width: 750px) {
-    .skill-card {
-      margin: 10px 0px;
+    .infra-card {
+      margin: 10px;
       .card {
+        width: 250px;
         .img_and_title {
           padding: 0px;
           img {

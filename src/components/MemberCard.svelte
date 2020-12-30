@@ -80,7 +80,7 @@
 
   @media screen and (max-width: 750px) {
     .member-card {
-      margin: 10px 0px;
+      margin: 10px;
       .card {
         width: 20em;
         height: 10em;

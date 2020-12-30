@@ -65,7 +65,7 @@
       </span>
     </div>
 
-    <span transition:fade={{ delay: 4000, duration: 2000 }}>
+    <span transition:fade={{ delay: 2000, duration: 2000 }}>
       <div class="arrow-container">
         <div class="chevron" />
         <div class="chevron" />

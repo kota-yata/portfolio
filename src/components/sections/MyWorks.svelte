@@ -173,8 +173,7 @@
     width: 100vw;
     height: 300px;
     .media-contents {
-      margin-left: 10px;
-      margin-right: 10px;
+      padding: 0 1em;
     }
   }
 

@@ -33,7 +33,7 @@
 
   .work-card {
     position: relative;
-    height: 55vh !important;
+    min-height: 55vh !important;
     width: 30vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;

@@ -7,17 +7,24 @@
   import MyWorks from '../components/sections/MyWorks.svelte';
   import Footer from '../components/Footer.svelte';
 
-  jquery(function () {
-    jquery.scrollify({
-      section: '.section',
-      easing: 'easeOutExpo',
-      scrollSpeed: 200,
-      offset: 0,
-      updateHash: false,
-      scrollbars: true,
-      touchScroll: false
+  // IEとSafariでは全画面スクロールを無効にする
+  const userAgent = window.navigator.userAgent.toLowerCase();
+  const isIE = userAgent.indexOf('msie') !== -1 || userAgent.indexOf('Trident') !== -1;
+  const isSafari = userAgent.indexOf('safari') !== -1 && userAgent.indexOf('chrome') === -1;
+
+  if (!isIE && !isSafari) {
+    jquery(function () {
+      jquery.scrollify({
+        section: '.section',
+        easing: 'easeOutExpo',
+        scrollSpeed: 200,
+        offset: 0,
+        updateHash: false,
+        scrollbars: true,
+        touchScroll: false
+      });
     });
-  });
+  }
 
   window.addEventListener('DOMContentLoaded', () => {
     const backToTop = document.getElementById('back_to_top');
