@@ -66,7 +66,7 @@
   @media screen and (max-width: 750px) {
     .media-card {
       width: 75vw;
-      height: 50vh;
+      height: 45vh;
       padding: 10px;
       display: block;
       .media-sentences {

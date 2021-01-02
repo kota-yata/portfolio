@@ -105,9 +105,9 @@
     {
       imgPath: './img/sgg-media.png',
       title: '年越しLT for 2021',
-      description: 'Coming Soon',
-      url: '',
-      urlMessage: 'My session page'
+      description: $_('media.sgg-1231'),
+      url: 'https://www.youtube.com/watch?v=-JLTdhtyDGc',
+      urlMessage: 'Session video'
     }
   ];
 
@@ -138,7 +138,7 @@
     </Swiper>
   </div>
   <h1 class="works-title">Media</h1>
-  <div class="works-container" id="media_container">
+  <div class="works-container js-scrollable" id="media_container">
     {#each mediaCardList as { imgPath, title, description, url, urlMessage }}
       <span class="media-contents"><MediaCard {imgPath} {title} {description} {url} {urlMessage} /></span>
     {/each}
