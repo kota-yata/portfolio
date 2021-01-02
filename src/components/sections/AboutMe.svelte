@@ -94,8 +94,7 @@
 <style lang="scss">
   @import '../../assets/definition.scss';
   #about {
-    padding-bottom: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     .aboutme-containers {
       @extend %center;
       margin-bottom: 1em;

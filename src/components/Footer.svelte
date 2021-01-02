@@ -4,9 +4,11 @@
   import Reaction from './Reaction.svelte';
 </script>
 
-<div role="button" id="back_to_top">
-  <h3>Back to top</h3>
-</div>
+<a data-scroll href="#top_page">
+  <div role="button" id="back_to_top">
+    <h3>Back to top</h3>
+  </div>
+</a>
 <Reaction />
 <div id="footer">
   <div class="email-address">
