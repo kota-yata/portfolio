@@ -28,7 +28,8 @@
     "syncmovie": "On Syncmovie, you can watch YouTube videos with someone, and it will sync together. Besides, You can see how many people are connecting.",
     "iso-639-1-jp": "Conversion module of ISO-639 language code to Japanese name.",
     "bullshit-trivia": "Bullshit Trivia provides tidbits that you won't use for the rest of your life. Waste your time with useless trivia facts.",
-    "kec": "Kota Extension Converter (KEC) is Image format extension converter written in Golang. Only for jpg/png/gif image, but I have been coding for SVG conversion."
+    "kec": "Kota Extension Converter (KEC) is Image format extension converter written in Golang. Only for jpg/png/gif image, but I have been coding for SVG conversion.",
+    "pics": "My personal photo gallery. Almost done."
   },
   "media": {
     "g0v": "Technology summit held by g0v:The biggest civic tech community in Taiwan. I talked on the subject of my job as a student intern at Code for Japan and event/contest we held.",

@@ -37,6 +37,13 @@
 
   const workCardList = [
     {
+      imgPath: './img/pics.png',
+      title: 'Photo Gallery',
+      description: $_('mywork.pics'),
+      url: 'https://pics.kota-yata.com',
+      urlMessage: 'Gallery'
+    },
+    {
       imgPath: './img/neornd.png',
       title: 'neornd',
       description: $_('mywork.neornd'),
@@ -56,13 +63,6 @@
       description: $_('mywork.percom'),
       url: 'https://percom.kota-yata.com',
       urlMessage: 'Document'
-    },
-    {
-      imgPath: './img/syncmovie.png',
-      title: 'Syncmovie',
-      description: $_('mywork.syncmovie'),
-      url: 'https://syncmovie.herokuapp.com',
-      urlMessage: 'Web app'
     },
     {
       imgPath: './img/iso.png',
