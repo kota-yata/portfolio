@@ -16,42 +16,36 @@
   });
 
   const languageCardList = [
-    { imgPath: './img/javascript.png', title: 'JavaScript', description: $_('description.javascript') },
-    { imgPath: './img/typescript.png', title: 'TypeScript', description: $_('description.typescript') },
-    { imgPath: './img/svelte.png', title: 'Svelte', description: $_('description.svelte') },
-    { imgPath: './img/html5.png', title: 'HTML', description: $_('description.html') },
-    { imgPath: './img/css3.png', title: 'CSS', description: $_('description.css') },
-    { imgPath: './img/python.png', title: 'Python', description: $_('description.python') }
+    { imgPath: './img/javascript.webp', title: 'JavaScript', description: $_('description.javascript') },
+    { imgPath: './img/typescript.webp', title: 'TypeScript', description: $_('description.typescript') },
+    { imgPath: './img/svelte.webp', title: 'Svelte', description: $_('description.svelte') },
+    { imgPath: './img/html5.webp', title: 'HTML', description: $_('description.html') },
+    { imgPath: './img/css3.webp', title: 'CSS', description: $_('description.css') },
+    { imgPath: './img/python.webp', title: 'Python', description: $_('description.python') }
   ];
 
   const toolCardList = [
-    { imgPath: './img/firebase.png', title: 'Firebase' },
-    { imgPath: './img/docker.png', title: 'Docker' },
-    { imgPath: './img/git.png', title: 'Git' },
-    { imgPath: './img/vagrant.png', title: 'Vagrant' },
-    { imgPath: './img/heroku.png', title: 'Heroku' },
-    { imgPath: './img/netlify.png', title: 'Netlify' },
-    { imgPath: './img/vercel.png', title: 'Vercel' }
+    { imgPath: './img/firebase.webp', title: 'Firebase' },
+    { imgPath: './img/docker.webp', title: 'Docker' },
+    { imgPath: './img/git.webp', title: 'Git' },
+    { imgPath: './img/vagrant.webp', title: 'Vagrant' },
+    { imgPath: './img/heroku.webp', title: 'Heroku' },
+    { imgPath: './img/netlify.webp', title: 'Netlify' },
+    { imgPath: './img/vercel.webp', title: 'Vercel' }
   ];
 
   const memberCardList = [
     {
-      imgPath: './img/C4J.png',
+      imgPath: './img/C4J.webp',
       title: 'Code for Japan',
       description: $_('memberof.code_for_japan'),
       url: 'https://www.code4japan.org/'
     },
     {
-      imgPath: './img/sgg.png',
+      imgPath: './img/sgg.webp',
       title: 'SGG',
       description: $_('memberof.sgg'),
       url: 'https://qiita.com/organizations/sgg'
-    },
-    {
-      imgPath: './img/keio.png',
-      title: 'Keio High',
-      description: $_('education.keio'),
-      url: 'https://www.hs.keio.ac.jp/'
     }
   ];
 </script>
@@ -65,7 +59,7 @@
     <h2>High school student, Front-end Developer</h2>
   {/if}
   <div id="me_container" class="aboutme-containers">
-    <img id="me_img" alt="profile" class="lazyload" data-src="./img/raccoon.png" />
+    <img id="me_img" alt="profile" class="lazyload" data-src="./img/me.webp" />
   </div>
   <div id="interests_container" class="aboutme-containers">
     <h2>Study & Interests</h2>

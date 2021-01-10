@@ -37,49 +37,49 @@
 
   const workCardList = [
     {
-      imgPath: './img/pics.png',
-      title: 'Photo Gallery',
+      imgPath: './img/pics.webp',
+      title: 'photo-gallery',
       description: $_('mywork.pics'),
       url: 'https://pics.kota-yata.com',
       urlMessage: 'Gallery'
     },
     {
-      imgPath: './img/neornd.png',
+      imgPath: './img/neornd.webp',
       title: 'neornd',
       description: $_('mywork.neornd'),
-      url: 'https://neornd.kota-yata.com',
+      url: 'https://neornd.netlify.app',
       urlMessage: 'Document'
     },
     {
-      imgPath: './img/multimd.png',
+      imgPath: './img/multimd.webp',
       title: 'Multi-MD',
       description: $_('mywork.multimd'),
       url: 'https://multimd.cf',
       urlMessage: 'Web app'
     },
     {
-      imgPath: './img/percom.png',
+      imgPath: './img/percom.webp',
       title: 'Percom',
       description: $_('mywork.percom'),
-      url: 'https://percom.kota-yata.com',
+      url: 'https://percom.netlify.com',
       urlMessage: 'Document'
     },
     {
-      imgPath: './img/iso.png',
+      imgPath: './img/iso.webp',
       title: 'iso-639-1-jp',
       description: $_('mywork.iso-639-1-jp'),
-      url: 'https://iso-639-1-jp.kota-yata.com',
+      url: 'https://iso-639-1-jp.netlify.com',
       urlMessage: 'Document'
     },
     {
-      imgPath: './img/bs.png',
+      imgPath: './img/bs.webp',
       title: 'Bullshit-Trivia',
       description: $_('mywork.bullshit-trivia'),
       url: 'https://bullshit-trivia.com',
       urlMessage: 'Website'
     },
     {
-      imgPath: './img/kec.png',
+      imgPath: './img/kec.webp',
       title: 'KEC',
       description: $_('mywork.kec'),
       url: 'https://github.com/kota-yata/kec',
@@ -89,21 +89,21 @@
 
   const mediaCardList = [
     {
-      imgPath: './img/g0v.png',
+      imgPath: './img/g0v.webp',
       title: 'g0v Summit 2020',
       description: $_('media.g0v'),
       url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
       urlMessage: 'Session page'
     },
     {
-      imgPath: './img/sgg-media.png',
+      imgPath: './img/sgg-media.webp',
       title: 'SGG忘年LT会2020',
       description: $_('media.sgg-1226'),
       url: 'https://www.youtube.com/watch?v=UYZw55-2kGQ',
       urlMessage: 'Session video'
     },
     {
-      imgPath: './img/sgg-media.png',
+      imgPath: './img/sgg-media.webp',
       title: '年越しLT for 2021',
       description: $_('media.sgg-1231'),
       url: 'https://www.youtube.com/watch?v=-JLTdhtyDGc',
@@ -112,10 +112,10 @@
   ];
 
   const blogCardList = [
-    { url: 'https://blog.kota-yata.com', imgPath: './img/innout.png' },
-    { url: 'https://qiita.com/kota-yata', imgPath: './img/qiita.png' },
-    { url: 'https://zenn.dev/kota_yata', imgPath: './img/zenn.png' },
-    { url: 'https://note.com/kotay', imgPath: './img/note.png' }
+    { url: 'https://blog.kota-yata.com', imgPath: './img/raccoon.webp' },
+    { url: 'https://qiita.com/kota-yata', imgPath: './img/qiita.webp' },
+    { url: 'https://zenn.dev/kota_yata', imgPath: './img/zenn.webp' },
+    { url: 'https://note.com/kotay', imgPath: './img/note.webp' }
   ];
 </script>
 
