@@ -41,31 +41,31 @@
 
 {#if isVisible}
   <div id="top_page">
-    <span transition:fade={{ delay: 300, duration: 1000 }}>
+    <span>
       <NeumoTitle name="KOTA YATAGAI" />
     </span>
     {#if christmasDecoration}
       <div id="happy_christmas" transition:fade={{ delay: 1250, duration: 700 }}><span id="ityped" /></div>
     {/if}
     <div id="icon_container">
-      <span transition:fade={{ delay: 1250, duration: 1500 }}>
+      <span>
         <a id="github" href="https://github.com/kota-yata">
           <Icon data={faGithub} scale="3" />
         </a>
       </span>
-      <span transition:fade={{ delay: 1500, duration: 700 }}>
+      <span>
         <a id="twitter" href="https://twitter.com/kota_yata">
           <Icon data={faTwitter} scale="3" />
         </a>
       </span>
-      <span transition:fade={{ delay: 1750, duration: 700 }}>
+      <span>
         <a id="speakerdeck" href="https://speakerdeck.com/kota_yata">
           <Icon data={faSpeakerDeck} scale="3" />
         </a>
       </span>
     </div>
 
-    <span transition:fade={{ delay: 2000, duration: 2000 }}>
+    <span>
       <div class="arrow-container">
         <div class="chevron" />
         <div class="chevron" />
