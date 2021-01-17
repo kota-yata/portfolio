@@ -23,7 +23,7 @@
   "interests": "I've been researching Self-Sovereign Identity. I'm to write my senior thesis in high school on <a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a> and <a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a> which is the technology to realize SSI. I've just started reading specifications of DID/VC, and I will study with SGG members.<br>Since I also have interest in Network Architecture and Security, I've been studying the fundamental cryptographic algorithm and logic, congestion control of TCP.<br>Furthermore, I'm going to study more the basic knowledges a web developer has to have (Docker,AWS etc..).",
   "mywork": {
     "neornd": "neornd makes Math.random() simple and safe by using crypto module. You can get a random number with number of decimal place you want easily.",
-    "multimd": "Multi-MD is a markdown web editor. On Chrome, you can overwrite you local markdown file. PWA is available.",
+    "multimd": "Multi-MD is a markdown web editor. PWA & Overwriting local files are available on most of browsers",
     "percom": "Percom is a calculation npm module that is to simplify the calculation of permutations and combinations",
     "syncmovie": "On Syncmovie, you can watch YouTube videos with someone, and it will sync together. Besides, You can see how many people are connecting.",
     "iso-639-1-jp": "Conversion module of ISO-639 language code to Japanese name.",

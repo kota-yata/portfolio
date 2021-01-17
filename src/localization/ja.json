@@ -20,10 +20,10 @@
   "education": {
     "keio": "神奈川県の私立高校。現在高校2年生として在学中です。"
   },
-  "interests": "八谷航太。自己主権型アイデンティティ(SSI)に興味をもち、勉強を進めています。高校の卒業研究テーマではSSIを取り巻く技術、<a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a>/<a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a>について書く予定です。<br>今後は上述の研究と勉強を進めると共に、Web開発者として得ていなければならない知識（GCP, AWS etc.）の習得にも励んでいきます。",
+  "interests": "八谷航太。暗号理論やSSIに興味があり、高校の卒業研究でも既存のサービスを非中央集権化する提案をする予定です。圧縮や暗号のアルゴリズムにも興味がありますが、フロントエンド開発者として得ていなければならない技術（AWSやDocker）が怪しいのでインフラの勉強もしています。",
   "mywork": {
     "neornd": "使いにくいcryptoモジュールを使いやすくし、Math.randomよりもセキュアな乱数を自由自在に生成できるnpmモジュールです。非常に軽量で、Unpacked Sizeは15KBに収まっています。",
-    "multimd": "マークダウンファイルをブラウザで作成、編集できるWebアプリです。Chrome Origin TrialのNativeFileSystemによりChromeでのみローカルファイルの上書きが可能です。",
+    "multimd": "マークダウンファイルをブラウザで作成、編集できるWebアプリです。File System Access APIによりほとんどのブラウザでローカルファイルの上書きが可能です。",
     "percom": "組み合わせと順列を計算するnpmモジュールです。使い勝手はRubyのpermutation/combinationメソッドを目指して作りました。",
     "syncmovie": "ブラウザで同期的に動画再生ができるWebアプリです。Socket.ioの練習として開発を始め、現在も開発中なので実用性はまだありませんが、Zoom飲み会などで使えるようにするのが目標です。",
     "iso-639-1-jp": "ISO-639の言語コードを日本語名に変換するnpmモジュールです。iso-639-1モジュールのForkです。",
