@@ -22,6 +22,7 @@
   },
   "interests": "I've been researching Self-Sovereign Identity. I'm to write my senior thesis in high school on <a href=\"https://www.w3.org/TR/did-core/\">DID(Decentralized Identifiers)</a> and <a href=\"https://www.w3.org/TR/vc-data-model/\">VC(Verifiable Credentials)</a> which is the technology to realize SSI. I've just started reading specifications of DID/VC, and I will study with SGG members.<br>Since I also have interest in Network Architecture and Security, I've been studying the fundamental cryptographic algorithm and logic, congestion control of TCP.<br>Furthermore, I'm going to study more the basic knowledges a web developer has to have (Docker,AWS etc..).",
   "mywork": {
+    "sha256": "SHA-256 algorithm written in TypeScript. Wrote to understand how SHA-256 works.",
     "neornd": "neornd makes Math.random() simple and safe by using crypto module. You can get a random number with number of decimal place you want easily.",
     "multimd": "Multi-MD is a markdown web editor. PWA & Overwriting local files are available on most of browsers",
     "percom": "Percom is a calculation npm module that is to simplify the calculation of permutations and combinations",
@@ -34,6 +35,7 @@
   "media": {
     "g0v": "Technology summit held by g0v:The biggest civic tech community in Taiwan. I talked on the subject of my job as a student intern at Code for Japan and event/contest we held.",
     "sgg-1226": "Year-end lightning talk event held by SGG. I had a talk about Self-Sovereign Identity. The title is \"Principle of SSI\".",
-    "sgg-1231": "New Year's Eve to New Year lightning talk event held by SGG. I had a talk about the history of Digital Identity."
+    "sgg-1231": "New Year's Eve to New Year lightning talk event held by SGG. I had a talk about the history of Digital Identity.",
+    "sd202102": "Wrote the article about Civictech Challenge Cup U-22 which we held as student interns at Code for Japan."
   }
 }

@@ -37,6 +37,13 @@
 
   const workCardList = [
     {
+      imgPath: './img/sha256.webp',
+      title: 'Organic-SHA256',
+      description: $_('mywork.sha256'),
+      url: 'https://github.com/kota-yata/organic-sha256',
+      urlMessage: 'Repository'
+    },
+    {
       imgPath: './img/pics.webp',
       title: 'photo-gallery',
       description: $_('mywork.pics'),
@@ -108,6 +115,13 @@
       description: $_('media.sgg-1231'),
       url: 'https://www.youtube.com/watch?v=-JLTdhtyDGc',
       urlMessage: 'Session video'
+    },
+    {
+      imgPath: './img/sd.webp',
+      title: 'Software Design 2月号',
+      description: $_('media.sd202102'),
+      url: 'https://gihyo.jp/magazine/SD/archive/2021/202102',
+      urlMessage: 'Official page'
     }
   ];
 

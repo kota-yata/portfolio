@@ -26,7 +26,6 @@
 
   const toolCardList = [
     { imgPath: './img/firebase.webp', title: 'Firebase' },
-    { imgPath: './img/docker.webp', title: 'Docker' },
     { imgPath: './img/git.webp', title: 'Git' },
     { imgPath: './img/vagrant.webp', title: 'Vagrant' },
     { imgPath: './img/heroku.webp', title: 'Heroku' },
