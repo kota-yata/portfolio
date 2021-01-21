@@ -21,6 +21,7 @@
     { imgPath: './img/svelte.webp', title: 'Svelte', description: $_('description.svelte') },
     { imgPath: './img/html5.webp', title: 'HTML', description: $_('description.html') },
     { imgPath: './img/css3.webp', title: 'CSS', description: $_('description.css') },
+    { imgPath: './img/scss.webp', title: 'SCSS', description: $_('description.scss') },
     { imgPath: './img/python.webp', title: 'Python', description: $_('description.python') }
   ];
 
