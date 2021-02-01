@@ -51,8 +51,8 @@
       }
       .media-url {
         position: absolute;
-        bottom: 0.5em;
-        right: 0.5em;
+        bottom: 10px;
+        right: 10px;
         font-size: 15px;
       }
     }
@@ -66,13 +66,13 @@
   @media screen and (max-width: 750px) {
     .media-card {
       width: 75vw;
-      height: 45vh;
+      height: 380px;
       padding: 10px;
       display: block;
       .media-sentences {
         display: block;
         padding: 0.5em;
-        height: calc(40vh - 75vw / 3 - 1em);
+        height: calc(380px - 75vw / 2 - 1em);
         .media-title {
           font-size: 20px;
         }

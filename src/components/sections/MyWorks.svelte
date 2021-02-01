@@ -96,11 +96,11 @@
 
   const mediaCardList = [
     {
-      imgPath: './img/g0v.webp',
-      title: 'g0v Summit 2020',
-      description: $_('media.g0v'),
-      url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
-      urlMessage: 'Session page'
+      imgPath: './img/sd.webp',
+      title: 'Software Design 2月号',
+      description: $_('media.sd202102'),
+      url: 'https://gihyo.jp/magazine/SD/archive/2021/202102',
+      urlMessage: 'Official page'
     },
     {
       imgPath: './img/sgg-media.webp',
@@ -110,19 +110,26 @@
       urlMessage: 'Session video'
     },
     {
+      imgPath: './img/g0v.webp',
+      title: 'g0v Summit 2020',
+      description: $_('media.g0v'),
+      url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
+      urlMessage: 'Session page'
+    },
+    {
+      imgPath: './img/ccc.webp',
+      title: 'CCC 2020',
+      description: $_('media.ccc'),
+      url: 'https://ccc2020.code4japan.org/',
+      urlMessage: 'Official page'
+    }
+    /*{
       imgPath: './img/sgg-media.webp',
       title: '年越しLT for 2021',
       description: $_('media.sgg-1231'),
       url: 'https://www.youtube.com/watch?v=-JLTdhtyDGc',
       urlMessage: 'Session video'
-    },
-    {
-      imgPath: './img/sd.webp',
-      title: 'Software Design 2月号',
-      description: $_('media.sd202102'),
-      url: 'https://gihyo.jp/magazine/SD/archive/2021/202102',
-      urlMessage: 'Official page'
-    }
+    },*/
   ];
 
   const blogCardList = [
@@ -193,7 +200,7 @@
 
   @media screen and (max-width: 750px) {
     #media_container {
-      height: 55vh;
+      height: 500px;
     }
   }
 </style>
