@@ -1,21 +1,9 @@
 <script>
+  import { fade } from 'svelte/transition';
   export let name;
-  import { init } from 'ityped';
-  window.addEventListener('DOMContentLoaded', () => {
-    init(document.querySelector('#ityped_title'), {
-      strings: [name],
-      startDelay: 2500,
-      typeSpeed: 200,
-      loop: false,
-      backSpeed: 80,
-      backDelay: 2000,
-      showCursor: true,
-      cursorChar: '|'
-    });
-  });
 </script>
 
-<div><span id="ityped_title" /></div>
+<div><span transition:fade={{ delay: 1000, duration: 700 }}>{name}</span></div>
 
 <style lang="scss">
   @import '../assets/definition.scss';
