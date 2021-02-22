@@ -60,7 +60,7 @@
       }
       .description {
         height: 80px;
-        overflow: scroll;
+        overflow: auto;
         margin-top: 5px;
         padding-left: 10px;
         text-align: left;

@@ -24,7 +24,7 @@
     div {
       top: 30% !important;
       span {
-        font-size: 20vw !important;
+        font-size: 50px;
       }
     }
   }
