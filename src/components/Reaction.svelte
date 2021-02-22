@@ -69,7 +69,7 @@
       border: none;
       cursor: pointer;
       margin: 0px 20px;
-      color: $h-color;
+      color: $sentence-white;
       transition: 0.2s;
       &:focus {
         outline: none !important;
@@ -81,7 +81,7 @@
     }
   }
   .after-click {
-    color: $black !important;
+    color: $deep-pink !important;
     transition: 0.2s;
   }
 </style>

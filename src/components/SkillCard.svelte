@@ -38,8 +38,8 @@
       height: 13em;
       padding: 0.5em;
       border-radius: 20px;
-      background: $white;
-      box-shadow: 5px 5px 7px $shadow-white1, -5px -5px 7px $shadow-white2;
+      background: $black;
+      box-shadow: $neumorphismic-shadow;
       .img_and_title {
         display: flex;
         padding: 5px;

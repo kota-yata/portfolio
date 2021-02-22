@@ -61,9 +61,11 @@
   <div id="me_container" class="aboutme-containers">
     <img id="me_img" alt="profile" class="lazyload" data-src="./img/me.webp" />
   </div>
-  <div id="interests_container" class="aboutme-containers">
-    <h2>Study & Interests</h2>
-    <div id="interests_container_sentence" />
+  <div id="interests_container_wrap" class="aboutme-containers">
+    <div id="interests_container">
+      <h2>Study & Interests</h2>
+      <div id="interests_container_sentence" />
+    </div>
   </div>
   <h2>Development</h2>
   <div id="languages_container" class="aboutme-containers">
@@ -95,28 +97,31 @@
       padding-bottom: 1em;
     }
     #me_img {
+      @extend %gradient-border;
       padding: 10px;
       width: 200px;
       border-radius: 50%;
-      box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4), 8px 8px 12px rgba(0, 0, 0, 0.08);
+      box-shadow: $neumorphismic-shadow;
     }
     #languages_container,
     #infra_container {
       width: 100vw;
     }
-    #interests_container {
-      margin-top: 1em;
-      margin-bottom: 3em;
-      border-bottom: 3px $h-color solid;
-      border-top: 3px $h-color solid;
+    #interests_container_wrap {
+      padding-bottom: 15px;
+      margin-bottom: 2em;
+      background: $fusion-gradient;
       width: 50vw;
-      font-weight: bold;
-      color: $light-black;
-      h2 {
-        margin-top: 10px;
-      }
-      div {
-        text-align: left;
+      #interests_container {
+        background: $black;
+        padding: 2px 0px;
+        font-weight: bold;
+        h2 {
+          margin-top: 10px;
+        }
+        div {
+          text-align: left;
+        }
       }
     }
     #member_container {
@@ -125,12 +130,12 @@
   }
 
   @media screen and (max-width: 1000px) {
-    #interests_container {
+    #interests_container_wrap {
       width: 70vw !important;
     }
   }
   @media screen and (max-width: 750px) {
-    #interests_container {
+    #interests_container_wrap {
       width: 80vw !important;
     }
   }

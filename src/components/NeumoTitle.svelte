@@ -1,8 +1,21 @@
 <script>
   export let name;
+  import { init } from 'ityped';
+  window.addEventListener('DOMContentLoaded', () => {
+    init(document.querySelector('#ityped_title'), {
+      strings: [name],
+      startDelay: 2500,
+      typeSpeed: 200,
+      loop: false,
+      backSpeed: 80,
+      backDelay: 2000,
+      showCursor: true,
+      cursorChar: '|'
+    });
+  });
 </script>
 
-<div><span>{name}</span></div>
+<div><span id="ityped_title" /></div>
 
 <style lang="scss">
   @import '../assets/definition.scss';
@@ -12,12 +25,10 @@
     @extend %center;
     width: 100vw;
     span {
+      @extend %gradient-text;
       user-select: none;
-      color: $white;
       font-weight: bold;
       font-size: 10vw;
-      text-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4), 8px 8px 12px rgba(0, 0, 0, 0.08);
-      caret-color: #262626;
     }
   }
 
@@ -26,7 +37,6 @@
       top: 30% !important;
       span {
         font-size: 20vw !important;
-        text-shadow: -3px -3px 5px rgba(255, 255, 255, 0.4), 3px 3px 7px rgba(0, 0, 0, 0.08) !important;
       }
     }
   }

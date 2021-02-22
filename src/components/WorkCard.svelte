@@ -38,8 +38,8 @@
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     border-radius: 20px;
-    background: $white;
-    box-shadow: 5px 5px 7px $shadow-white1, -5px -5px 7px $shadow-white2;
+    background: $black;
+    box-shadow: $neumorphismic-shadow;
     .work-sentences {
       padding: 1em;
     }
@@ -55,7 +55,7 @@
       font-size: 30px;
       font-weight: 500;
       a {
-        color: $black;
+        color: $sentence-white;
         transition: 0.3s;
         &:hover {
           color: $light-black;

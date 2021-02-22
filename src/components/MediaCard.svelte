@@ -32,8 +32,8 @@
     border-radius: 20px;
     width: 600px;
     height: 250px;
-    background: $white;
-    box-shadow: 5px 5px 7px $shadow-white1, -5px -5px 7px $shadow-white2;
+    background: $black;
+    box-shadow: $neumorphismic-shadow;
     margin-left: 10px;
     margin-right: 10px;
     .media-sentences {
@@ -57,6 +57,9 @@
       }
     }
     .media-img {
+      background: $light-black;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
       display: inline-block;
       margin: 0 auto;
       width: 250px;
@@ -85,6 +88,7 @@
         }
       }
       .media-img {
+        border-radius: 20px;
         display: block;
         width: 75vw;
         height: calc(75vw / 2);

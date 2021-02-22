@@ -7,8 +7,8 @@ html{
   padding:0;
   margin:0;
   scroll-behavior: smooth;
-  background: $white;
-  color: $light-black;
+  background: $black;
+  color: $complete-white;
 }
 body{
   width: 100vw;
@@ -19,14 +19,21 @@ body{
   font-family:'Poppins','Noto Sans JP',sans-serif;
 }
 
-h1,h2,h3 {
+h3 {
   text-align: center;
-  color: $h-color;
+  color: $sentence-white;
+  user-select: none;
+}
+
+h1,h2 {
+  @extend %gradient-text;
+
+  text-align: center;
   user-select: none;
 }
 
 .section {
-  color: $light-black;
+  color: $sentence-white;
   width: 100vw;
   #section_content {
     margin: 0 auto;

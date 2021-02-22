@@ -111,9 +111,6 @@
             transition: 0.3s;
           }
         }
-        #github:hover {
-          color: $black;
-        }
         #twitter:hover {
           color: $twitter;
         }

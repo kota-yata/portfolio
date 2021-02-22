@@ -19,7 +19,9 @@
     border-radius: 50%;
     width: 15vw;
     height: 15vw;
-    box-shadow: inset 5px 5px 10px $shadow-white1, inset -5px -5px 10px $shadow-white2;
+    background: $light-black;
+    box-shadow: inset $neumorphismic-shadow;
+    transition: 0.3s;
     img {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -30,7 +32,8 @@
       object-fit: contain;
     }
     &:hover {
-      box-shadow: 5px 5px 10px $shadow-white1, -5px -5px 10px $shadow-white2;
+      background: $sentence-white;
+      transition: 0.3s;
     }
   }
 
