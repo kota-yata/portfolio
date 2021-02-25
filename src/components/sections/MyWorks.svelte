@@ -44,6 +44,13 @@
       urlMessage: 'Repository'
     },
     {
+      imgPath: './img/slouch.webp',
+      title: 'SLOUCH',
+      description: $_('mywork.slouch'),
+      url: 'https://slouch.dev',
+      urlMessage: 'Web app'
+    },
+    {
       imgPath: './img/pics.webp',
       title: 'photo-gallery',
       description: $_('mywork.pics'),
@@ -78,13 +85,13 @@
       url: 'https://iso-639-1-jp.netlify.com',
       urlMessage: 'Document'
     },
-    {
+    /*{
       imgPath: './img/bs.webp',
       title: 'Bullshit-Trivia',
       description: $_('mywork.bullshit-trivia'),
       url: 'https://bullshit-trivia.com',
       urlMessage: 'Website'
-    },
+    }*/
     {
       imgPath: './img/kec.webp',
       title: 'KEC',
