@@ -57,7 +57,7 @@
       }
     }
     .media-img {
-      background: $light-black;
+      background: $sentence-white;
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px;
       display: inline-block;

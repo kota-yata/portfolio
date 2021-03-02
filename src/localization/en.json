@@ -34,10 +34,9 @@
     "pics": "My personal photo gallery. Almost done."
   },
   "media": {
+    "hacktrek": "2days Hackathon organized by EPSON. Our team developed Web app using EPSON Connect API, and won the first prize!",
     "ccc": "Social Issue Solving Competition. The interns at Code for Japan including me held in 2020",
     "g0v": "Technology summit held by g0v:The biggest civic tech community in Taiwan. I talked on the subject of my job as a student intern at Code for Japan and event/contest we held.",
-    "sgg-1226": "Year-end lightning talk event held by SGG. I had a talk about Self-Sovereign Identity. The title is \"Principle of SSI\".",
-    "sgg-1231": "New Year's Eve to New Year lightning talk event held by SGG. I had a talk about the history of Digital Identity.",
     "sd202102": "Wrote the article about Civictech Challenge Cup U-22 which we held as student interns at Code for Japan."
   }
 }

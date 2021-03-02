@@ -13,9 +13,9 @@
   const options = {
     centeredSlides: true,
     slidesPerView: 1,
-    speed: 4000,
+    speed: 5000,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
       disableOnInteraction: false
     },
     loop: true,
@@ -65,13 +65,6 @@
       urlMessage: 'Document'
     },
     {
-      imgPath: './img/multimd.webp',
-      title: 'Multi-MD',
-      description: $_('mywork.multimd'),
-      url: 'https://multimd.cf',
-      urlMessage: 'Web app'
-    },
-    {
       imgPath: './img/percom.webp',
       title: 'Percom',
       description: $_('mywork.percom'),
@@ -85,13 +78,6 @@
       url: 'https://iso-639-1-jp.netlify.com',
       urlMessage: 'Document'
     },
-    /*{
-      imgPath: './img/bs.webp',
-      title: 'Bullshit-Trivia',
-      description: $_('mywork.bullshit-trivia'),
-      url: 'https://bullshit-trivia.com',
-      urlMessage: 'Website'
-    }*/
     {
       imgPath: './img/kec.webp',
       title: 'KEC',
@@ -103,18 +89,18 @@
 
   const mediaCardList = [
     {
-      imgPath: './img/sd.webp',
-      title: 'Software Design 2月号',
-      description: $_('media.sd202102'),
-      url: 'https://gihyo.jp/magazine/SD/archive/2021/202102',
+      imgPath: './img/hacktrek.webp',
+      title: 'Hack Trek',
+      description: $_('media.hacktrek'),
+      url: 'https://gsacademy.jp/hack-trek-2021/',
       urlMessage: 'Official page'
     },
     {
-      imgPath: './img/sgg-media.webp',
-      title: 'SGG忘年LT会2020',
-      description: $_('media.sgg-1226'),
-      url: 'https://www.youtube.com/watch?v=UYZw55-2kGQ',
-      urlMessage: 'Session video'
+      imgPath: './img/sd.webp',
+      title: 'Software Design',
+      description: $_('media.sd202102'),
+      url: 'https://gihyo.jp/magazine/SD/archive/2021/202102',
+      urlMessage: 'Official page'
     },
     {
       imgPath: './img/g0v.webp',
@@ -130,13 +116,6 @@
       url: 'https://ccc2020.code4japan.org/',
       urlMessage: 'Official page'
     }
-    /*{
-      imgPath: './img/sgg-media.webp',
-      title: '年越しLT for 2021',
-      description: $_('media.sgg-1231'),
-      url: 'https://www.youtube.com/watch?v=-JLTdhtyDGc',
-      urlMessage: 'Session video'
-    },*/
   ];
 
   const blogCardList = [
