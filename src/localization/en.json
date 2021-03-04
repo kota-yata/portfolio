@@ -31,7 +31,8 @@
     "iso-639-1-jp": "Conversion module of ISO-639 language code to Japanese name.",
     "bullshit-trivia": "Bullshit Trivia provides tidbits that you won't use for the rest of your life. Waste your time with useless trivia facts.",
     "kec": "Kota Extension Converter (KEC) is Image format extension converter written in Golang. Only for jpg/png/gif image, but I have been coding for SVG conversion.",
-    "pics": "My personal photo gallery. Almost done."
+    "pics": "My personal photo gallery. Almost done.",
+    "summarizy": "Markdown memo app with PDF preview feature. Main use is summarizing a paper."
   },
   "media": {
     "hacktrek": "2days Hackathon organized by EPSON. Our team developed Web app using EPSON Connect API, and won the first prize!",

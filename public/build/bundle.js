@@ -6424,7 +6424,8 @@ var app = (function () {
     	"iso-639-1-jp": "ISO-639の言語コードを日本語名に変換するnpmモジュールです。iso-639-1モジュールのForkです。",
     	"bullshit-trivia": "Bullshit Triviaは一生使うことのない豆知識と、トランプのBullshitなツイートを様々なAPIを使って提供します。全て英語ですのでご了承ください。",
     	kec: "jpg/png/gif画像の拡張子を変換するCLIです。GO言語で書いており、現在SVG形式の変換を実装しています。",
-    	pics: "個人のフォトギャラリー。旅行に行った時の写真や一眼で撮った写真を掲載しています。検索機能は実装途中です。"
+    	pics: "個人のフォトギャラリー。旅行に行った時の写真や一眼で撮った写真を掲載しています。検索機能は実装途中です。",
+    	summarizy: "論文を読みながら左のエディタでMD形式でメモっていくWebアプリ。WYSIWYG形式のエディタを導入しています。"
     };
     var media = {
     	hacktrek: "EPSONが主催するハッカソン。チームで出場してスキャンとプリントを利用したWebアプリを開発し、優勝しました。",
@@ -6473,7 +6474,8 @@ var app = (function () {
     	"iso-639-1-jp": "Conversion module of ISO-639 language code to Japanese name.",
     	"bullshit-trivia": "Bullshit Trivia provides tidbits that you won't use for the rest of your life. Waste your time with useless trivia facts.",
     	kec: "Kota Extension Converter (KEC) is Image format extension converter written in Golang. Only for jpg/png/gif image, but I have been coding for SVG conversion.",
-    	pics: "My personal photo gallery. Almost done."
+    	pics: "My personal photo gallery. Almost done.",
+    	summarizy: "Markdown memo app with PDF preview feature. Main use is summarizing a paper."
     };
     var media$1 = {
     	hacktrek: "2days Hackathon organized by EPSON. Our team developed Web app using EPSON Connect API, and won the first prize!",
@@ -8355,7 +8357,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (132:2) {:else}
+    // (139:2) {:else}
     function create_else_block$1(ctx) {
     	let description;
     	let current;
@@ -8391,7 +8393,7 @@ var app = (function () {
     	};
     }
 
-    // (130:2) {#if isTouchable}
+    // (137:2) {#if isTouchable}
     function create_if_block$3(ctx) {
     	let description;
     	let current;
@@ -8427,7 +8429,7 @@ var app = (function () {
     	};
     }
 
-    // (138:8) <SwiperSlide>
+    // (145:8) <SwiperSlide>
     function create_default_slot_1(ctx) {
     	let workcard;
     	let current;
@@ -8466,7 +8468,7 @@ var app = (function () {
     	};
     }
 
-    // (137:6) {#each workCardList as { imgPath, title, description, url, urlMessage }}
+    // (144:6) {#each workCardList as { imgPath, title, description, url, urlMessage }}
     function create_each_block_2$1(ctx) {
     	let swiperslide;
     	let current;
@@ -8510,7 +8512,7 @@ var app = (function () {
     	};
     }
 
-    // (142:6) <div class="swiper-pagination" slot="pagination" />
+    // (149:6) <div class="swiper-pagination" slot="pagination" />
     function create_pagination_slot(ctx) {
     	let div;
 
@@ -8529,7 +8531,7 @@ var app = (function () {
     	};
     }
 
-    // (143:6) <div class="swiper-button-next" slot="button-next" />
+    // (150:6) <div class="swiper-button-next" slot="button-next" />
     function create_button_next_slot(ctx) {
     	let div;
 
@@ -8548,7 +8550,7 @@ var app = (function () {
     	};
     }
 
-    // (144:6) <div class="swiper-button-prev" slot="button-prev" />
+    // (151:6) <div class="swiper-button-prev" slot="button-prev" />
     function create_button_prev_slot(ctx) {
     	let div;
 
@@ -8567,7 +8569,7 @@ var app = (function () {
     	};
     }
 
-    // (136:4) <Swiper {options}>
+    // (143:4) <Swiper {options}>
     function create_default_slot$1(ctx) {
     	let t0;
     	let t1;
@@ -8659,7 +8661,7 @@ var app = (function () {
     	};
     }
 
-    // (149:4) {#each mediaCardList as { imgPath, title, description, url, urlMessage }}
+    // (156:4) {#each mediaCardList as { imgPath, title, description, url, urlMessage }}
     function create_each_block_1$2(ctx) {
     	let span;
     	let mediacard;
@@ -8703,7 +8705,7 @@ var app = (function () {
     	};
     }
 
-    // (155:4) {#each blogCardList as { url, imgPath }}
+    // (162:4) {#each blogCardList as { url, imgPath }}
     function create_each_block$2(ctx) {
     	let blogcard;
     	let current;
@@ -9015,13 +9017,6 @@ var app = (function () {
     			urlMessage: "Gallery"
     		},
     		{
-    			imgPath: "./img/neornd.webp",
-    			title: "neornd",
-    			description: $_("mywork.neornd"),
-    			url: "https://neornd.netlify.app",
-    			urlMessage: "Document"
-    		},
-    		{
     			imgPath: "./img/percom.webp",
     			title: "Percom",
     			description: $_("mywork.percom"),
@@ -9033,6 +9028,20 @@ var app = (function () {
     			title: "iso-639-1-jp",
     			description: $_("mywork.iso-639-1-jp"),
     			url: "https://iso-639-1-jp.netlify.com",
+    			urlMessage: "Document"
+    		},
+    		{
+    			imgPath: "./img/summarizy.webp",
+    			title: "Summarizy",
+    			description: $_("mywork.summarizy"),
+    			url: "https://summarizy.vercel.app",
+    			urlMessage: "Web app"
+    		},
+    		{
+    			imgPath: "./img/neornd.webp",
+    			title: "neornd",
+    			description: $_("mywork.neornd"),
+    			url: "https://neornd.netlify.app",
     			urlMessage: "Document"
     		},
     		{

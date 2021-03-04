@@ -58,13 +58,6 @@
       urlMessage: 'Gallery'
     },
     {
-      imgPath: './img/neornd.webp',
-      title: 'neornd',
-      description: $_('mywork.neornd'),
-      url: 'https://neornd.netlify.app',
-      urlMessage: 'Document'
-    },
-    {
       imgPath: './img/percom.webp',
       title: 'Percom',
       description: $_('mywork.percom'),
@@ -76,6 +69,20 @@
       title: 'iso-639-1-jp',
       description: $_('mywork.iso-639-1-jp'),
       url: 'https://iso-639-1-jp.netlify.com',
+      urlMessage: 'Document'
+    },
+    {
+      imgPath: './img/summarizy.webp',
+      title: 'Summarizy',
+      description: $_('mywork.summarizy'),
+      url: 'https://summarizy.vercel.app',
+      urlMessage: 'Web app'
+    },
+    {
+      imgPath: './img/neornd.webp',
+      title: 'neornd',
+      description: $_('mywork.neornd'),
+      url: 'https://neornd.netlify.app',
       urlMessage: 'Document'
     },
     {
