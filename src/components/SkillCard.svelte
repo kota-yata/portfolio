@@ -1,102 +1,61 @@
 <script>
   import Icon from 'svelte-awesome';
-  import { externalLink } from 'svelte-awesome/icons';
+  import { faCode, faNetworkWired, faDesktop } from '@fortawesome/free-solid-svg-icons';
 
-  export let imgPath;
+  export let icon;
   export let title;
-  export let description;
+  export let className;
+  export let desc;
+
+  let specifiedIcon;
+  if (icon === 'faCode') specifiedIcon = faCode;
+  if (icon === 'faNetworkWired') specifiedIcon = faNetworkWired;
+  if (icon === 'faDesktop') specifiedIcon = faDesktop;
 </script>
 
-<span class="skill-card">
-  <div class="card">
-    <div class="img_and_title">
-      <img alt="icon" class="lazyload" data-src={imgPath} />
-      <span class="title">{title}</span>
-      <br />
+<div class="skillcard {className}">
+  <div class="skillcard-red">
+    <div class="skillcard-red-icon">
+      <Icon data={specifiedIcon} scale="4" />
     </div>
-    <div class="description"><span>{description}</span></div>
-    <br />
-    <span class="works-in">
-      <a href="https://github.com/search?q=user%3Akota-yata+{title}" target="blank">
-        <Icon data={externalLink} class="external-link" />
-        My works with
-        {title}
-      </a>
-    </span>
+    <div class="skillcard-red-title">
+      <h3>{title}</h3>
+    </div>
   </div>
-</span>
+  <div class="skillcard-desc"><span>{desc}</span></div>
+</div>
 
 <style lang="scss">
   @import '../assets/definition.scss';
 
-  .skill-card {
-    display: inline-block;
-    margin: 20px;
-    .card {
-      position: relative;
-      width: 30em;
-      height: 13em;
-      padding: 0.5em;
-      border-radius: 20px;
-      background: $black;
-      box-shadow: $neumorphismic-shadow;
-      .img_and_title {
-        display: flex;
-        padding: 5px;
-        img {
-          margin: 10px;
-          display: inline-block;
-          width: 60px;
-          height: 60px;
-          object-fit: contain;
+  .skillcard {
+    border: 2px $red solid;
+    width: 90vw;
+    max-width: 400px;
+    min-height: 250px;
+    margin: 2vw;
+    padding: 10px;
+    &-red {
+      padding-left: 15px;
+      color: $red;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      &-title {
+        padding: 35px 0 35px 30px;
+        h3 {
+          margin: 0;
+          color: $red;
+          font-size: 24px;
         }
-        .title {
-          display: flex;
-          align-items: center;
-          padding-left: 2px;
-          font-size: 2em;
-          font-weight: 500;
-        }
-      }
-      .description {
-        height: 80px;
-        overflow: auto;
-        margin-top: 5px;
-        padding-left: 10px;
-        text-align: left;
-        word-wrap: break-word;
-      }
-      .works-in {
-        position: absolute;
-        bottom: 1em;
-        right: 1em;
-        font-size: 12px;
       }
     }
-  }
-
-  @media screen and (max-width: 750px) {
-    .skill-card {
-      margin: 10px 0px;
-      .card {
-        width: 90vw;
-        height: 25vh;
-        .img_and_title {
-          padding: 0px;
-          img {
-            margin: 5px;
-            width: 50px;
-            height: 50px;
-          }
-          .title {
-            font-size: 1.7em;
-          }
-        }
-        .description {
-          margin-top: 2px;
-          height: calc(25vh - 50px);
-        }
-      }
+    &-desc {
+      padding-left: 10px;
+      font-family: 'inter';
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
     }
   }
 </style>

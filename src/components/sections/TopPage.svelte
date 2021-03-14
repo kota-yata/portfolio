@@ -1,124 +1,79 @@
 <script>
-  import NeumoTitle from '../NeumoTitle.svelte';
   import Icon from 'svelte-awesome';
-  import { faGithub, faTwitter, faSpeakerDeck } from '@fortawesome/free-brands-svg-icons';
+  import { faGithub } from '@fortawesome/free-brands-svg-icons';
   import { onMount } from 'svelte';
-  import { fade } from 'svelte/transition';
-  import { init } from 'ityped';
-  import '../../assets/arrow.scss';
-
-  window.addEventListener('DOMContentLoaded', () => {
-    if (christmasDecoration) {
-      init(document.querySelector('#ityped'), {
-        strings: ['Happy Christmas!'],
-        startDelay: 2500,
-        typeSpeed: 120,
-        loop: false,
-        backSpeed: 80,
-        backDelay: 2000,
-        showCursor: true,
-        cursorChar: '|'
-      });
-    }
-  });
+  import { fade, fly } from 'svelte/transition';
 
   let isVisible = false;
 
   onMount(() => {
     isVisible = true;
   });
-
-  const isChristmasSeason = () => {
-    const today = new Date();
-    const thisMonth = today.getMonth() + 1;
-    if (thisMonth !== 12) return false;
-    const thisDate = today.getDate();
-    if (thisDate > 25) return false;
-    return true;
-  };
-  const christmasDecoration = isChristmasSeason();
 </script>
 
 {#if isVisible}
-  <div id="top_page">
-    <span>
-      <NeumoTitle name="KOTA YATAGAI" />
-    </span>
-    {#if christmasDecoration}
-      <div id="happy_christmas" transition:fade={{ delay: 1250, duration: 700 }}><span id="ityped" /></div>
-    {/if}
-    <div id="icon_container">
-      <span>
-        <a id="github" href="https://github.com/kota-yata">
-          <Icon data={faGithub} scale="3" />
-        </a>
-      </span>
-      <span>
-        <a id="twitter" href="https://twitter.com/kota_yata">
-          <Icon data={faTwitter} scale="3" />
-        </a>
-      </span>
-      <span>
-        <a id="speakerdeck" href="https://speakerdeck.com/kota_yata">
-          <Icon data={faSpeakerDeck} scale="3" />
-        </a>
-      </span>
-    </div>
-
-    <span>
-      <div class="arrow-container">
-        <div class="chevron" />
-        <div class="chevron" />
-        <div class="chevron" />
+  <div class="top">
+    <div class="top-left">
+      <div class="top-left-name" transition:fade={{ delay: 500, duration: 1500 }}>
+        <h1>Kota Yatagai</h1>
       </div>
-    </span>
+      <div class="top-left-desc" transition:fade={{ delay: 750, duration: 1500 }}>
+        <h3>High school student & Front-end developer</h3>
+      </div>
+      <div class="top-left-icon" transition:fade={{ delay: 1000, duration: 1500 }}>
+        <a href="https://github.com/kota-yata"><Icon data={faGithub} scale="3" /></a>
+      </div>
+    </div>
+    <div class="top-right" transition:fly={{ delay: 750, duration: 2000, x: 500 }} />
   </div>
 {/if}
 
 <style lang="scss">
   @import '../../assets/definition.scss';
 
-  #top_page {
+  .top {
+    width: 100vw;
     height: 100vh;
-    .arrow-container {
-      @extend %completely-center;
-      top: 95%;
-    }
-    #happy_christmas {
-      @extend %completely-center;
-      color: $white;
-      text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.08);
-      -webkit-text-stroke: 0.5px $christmas-green;
-      font-size: 45px;
-      font-family: 'Allura';
-      top: 47%;
-      @media screen and (max-width: 750px) {
-        text-align: center;
-        width: 100vw;
-        font-size: 25px;
+    display: flex;
+    &-left {
+      @extend %center;
+      width: 70vw;
+      height: 100vh;
+      &-name {
+        padding-top: 25vh;
+        h1 {
+          font-size: 100px;
+          margin: 0;
+        }
+      }
+      &-desc {
+        h3 {
+          font-size: 24px;
+        }
+      }
+      &-icon {
+        padding-top: 5vh;
+        a {
+          color: $complete-black;
+        }
       }
     }
-    #icon_container {
-      @extend %completely-center;
-      @extend %center;
-      width: 100vw;
-      top: 55%;
-      span {
-        a {
-          color: $shadow-white1;
-          transition: 0.3s;
-          &:hover {
-            transition: 0.3s;
-          }
-        }
-        #twitter:hover {
-          color: $twitter;
-        }
-        #speakerdeck:hover {
-          color: $speakerdeck;
-        }
-        margin-left: 15px;
-        margin-right: 15px;
+    &-right {
+      width: 30vw;
+      height: 100vh;
+      background: url('../img/me.webp');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 100%;
+      &::before {
+        background-color: rgba(17, 17, 17, 0.6);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: ' ';
       }
     }
   }
