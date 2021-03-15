@@ -58,4 +58,18 @@
       line-height: 30px;
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    .skillcard {
+      &-red {
+        &-title {
+          padding: 30px 0 30px 15px;
+        }
+      }
+      &-desc {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
 </style>

@@ -114,8 +114,33 @@
 
   @media screen and (max-width: 1000px) {
     .about {
+      flex-direction: column;
       &-image {
         width: 100vw;
+        padding-right: 0;
+        justify-content: center;
+        &-inner {
+          width: 60vw;
+          &-caption {
+            font-size: 12px;
+          }
+        }
+      }
+      &-desc {
+        width: 90vw;
+        padding-top: 20px;
+        &-title {
+          width: 100vw;
+          h2 {
+            font-size: 30px;
+            padding: 0;
+          }
+        }
+        &-sentence {
+          width: 100%;
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }

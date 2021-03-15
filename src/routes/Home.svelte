@@ -12,7 +12,7 @@
     delay: 50,
     duration: 2000,
     useDelay: 'once',
-    mobile: true
+    mobile: false
   };
 
   const optsForSlideLeft = {
@@ -21,7 +21,7 @@
     duration: 2000,
     origin: 'left',
     useDelay: 'once',
-    mobile: true
+    mobile: false
   };
 
   const optsForSlideRight = {
@@ -30,7 +30,7 @@
     duration: 2000,
     origin: 'right',
     useDelay: 'once',
-    mobile: true
+    mobile: false
   };
 
   window.addEventListener('DOMContentLoaded', () => {
