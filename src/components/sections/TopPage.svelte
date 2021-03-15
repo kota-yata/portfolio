@@ -21,7 +21,7 @@
         <h3>High school student & Front-end developer</h3>
       </div>
       <div class="top-left-icon" transition:fade={{ delay: 1000, duration: 1500 }}>
-        <a href="https://github.com/kota-yata"><Icon data={faGithub} scale="3" /></a>
+        <a href="https://github.com/kota-yata"><img class="github" alt="github" src="../svg/github.svg" /></a>
       </div>
     </div>
     <div class="top-right" transition:fly={{ delay: 750, duration: 2000, x: 500 }} />
@@ -54,7 +54,10 @@
       &-icon {
         padding-top: 5vh;
         a {
-          color: $complete-black;
+          color: $github;
+          img {
+            width: 60px;
+          }
         }
       }
     }

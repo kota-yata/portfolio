@@ -39,9 +39,9 @@
         project, feel free to send an email or contact me on Twitter!
       </span>
     </div>
-    <div class="about-desc-data">
+    <div class="data">
       {#each aboutDataList as { title, sentence }}
-        <div><span class="about-desc-data-red">{title} : </span>{sentence}</div>
+        <div><span class="data-red">{title} : </span>{sentence}</div>
       {/each}
     </div>
   </div>
@@ -53,7 +53,7 @@
   .about {
     @extend %completely-center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     &-image {
       width: 45vw;
       padding-right: 20px;
@@ -99,11 +99,14 @@
         line-height: 30px;
         color: $white;
       }
-      &-data {
-        line-height: 40px;
-        font-weight: bold;
-        &-red {
-          color: $red;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    .about {
+      &-desc {
+        &-sentence {
+          width: 50vw;
         }
       }
     }

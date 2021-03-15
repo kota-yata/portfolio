@@ -4,6 +4,9 @@
   import TopPage from '../components/sections/TopPage.svelte';
   import MyWorks from '../components/sections/MyWorks.svelte';
   import MySkills from '../components/sections/MySkills.svelte';
+  import Social from '../components/sections/Social.svelte';
+  import AboutMyLogo from '../components/sections/AboutMyLogo.svelte';
+  import Footer from '../components/sections/Footer.svelte';
 
   const optsForNormal = {
     delay: 50,
@@ -47,5 +50,14 @@
   </section>
   <section class="section">
     <MyWorks />
+  </section>
+  <section class="section">
+    <Social />
+  </section>
+  <section class="section">
+    <AboutMyLogo />
+  </section>
+  <section class="section">
+    <Footer />
   </section>
 </main>

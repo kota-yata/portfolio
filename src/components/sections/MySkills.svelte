@@ -58,9 +58,9 @@
       <span class="skills-card-container"><SkillCard {icon} {title} {className} {desc} /></span>
     {/each}
   </div>
-  <div class="skills-data">
+  <div class="data-center data">
     {#each skillsDataList as { title, sentence }}
-      <div><span class="skills-data-red">{title} : </span>{sentence}</div>
+      <div><span class="data-red">{title} : </span>{sentence}</div>
     {/each}
   </div>
 </div>
@@ -70,24 +70,10 @@
 
   .skills {
     width: 100vw;
-    height: 100vh;
+    padding-bottom: 10vh;
     &-card {
       @extend %center-flex;
       flex-wrap: wrap;
-    }
-    &-data {
-      @extend %center-flex;
-      width: 40vw;
-      min-width: 700px;
-      flex-direction: column;
-      padding-top: 5vh;
-      margin: 0 auto;
-      line-height: 60px;
-      font-size: 24px;
-      font-weight: bold;
-      &-red {
-        color: $red;
-      }
     }
   }
 </style>
