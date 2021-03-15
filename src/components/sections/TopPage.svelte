@@ -1,6 +1,4 @@
 <script>
-  import Icon from 'svelte-awesome';
-  import { faGithub } from '@fortawesome/free-brands-svg-icons';
   import { onMount } from 'svelte';
   import { fade, fly } from 'svelte/transition';
 
@@ -54,7 +52,6 @@
       &-icon {
         padding-top: 5vh;
         a {
-          color: $github;
           img {
             width: 60px;
           }
@@ -64,7 +61,7 @@
     &-right {
       width: 30vw;
       height: 100vh;
-      background: url('../img/me.webp');
+      background-image: url('../img/me.webp');
       background-size: cover;
       background-position: center;
       position: relative;
@@ -77,6 +74,45 @@
         bottom: 0;
         left: 0;
         content: ' ';
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .top {
+      flex-direction: column;
+      &-left {
+        width: 100vw;
+        z-index: 3;
+        &-name {
+          padding-top: 15vh;
+          h1 {
+            font-size: 70px;
+          }
+        }
+        &-desc {
+          h3 {
+            font-size: 20px;
+            color: $gray;
+          }
+        }
+        &-icon {
+          display: none;
+        }
+      }
+      &-right {
+        position: absolute;
+        width: 60vw;
+        z-index: 2;
+        height: 35vh;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        &,
+        &::before {
+          border-top-left-radius: 50px;
+          border-bottom-right-radius: 50px;
+        }
       }
     }
   }

@@ -111,4 +111,12 @@
       }
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    .about {
+      &-image {
+        width: 100vw;
+      }
+    }
+  }
 </style>

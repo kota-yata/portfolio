@@ -26,6 +26,7 @@
     height: 380px;
     pointer-events: none;
     transition: 0.2s;
+    box-shadow: 6px 7px 0px 0px $red;
     &-image {
       width: 100%;
       pointer-events: auto;
@@ -43,7 +44,7 @@
       letter-spacing: 2%;
     }
     &:hover {
-      box-shadow: 6px 7px 0px 0px $red;
+      box-shadow: 6px 7px 0px 0px $white;
       transition: 0.2s;
     }
   }

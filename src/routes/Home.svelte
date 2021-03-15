@@ -11,7 +11,8 @@
   const optsForNormal = {
     delay: 50,
     duration: 2000,
-    useDelay: 'once'
+    useDelay: 'once',
+    mobile: true
   };
 
   const optsForSlideLeft = {
@@ -19,7 +20,8 @@
     distance: '100px',
     duration: 2000,
     origin: 'left',
-    useDelay: 'once'
+    useDelay: 'once',
+    mobile: true
   };
 
   const optsForSlideRight = {
@@ -27,7 +29,8 @@
     distance: '100px',
     duration: 2000,
     origin: 'right',
-    useDelay: 'once'
+    useDelay: 'once',
+    mobile: true
   };
 
   window.addEventListener('DOMContentLoaded', () => {
