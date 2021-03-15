@@ -1,25 +1,12 @@
 //Color variables
 $black: #333;
-$shadow-black1: #2b2b2b;
-$shadow-black2: #3b3b3b;
-$light-black: #555;
-$deep-black: #171717;
-$shadow-white1: #d3d7dd;
-$shadow-white2: #edf3f9;
-$white: #e0e5eb;
-$sentence-white: #bdbdbd;
-$complete-white: #fff;
-$twitter: #1da1f2;
-$speakerdeck: #118174;
-$quora: #b92b27;
-$linkedin: #2867b2;
-$christmas-green: #84aa95;
-$christmas-red: #bb2528;
-$deep-pink: #f0c;
-$deep-purple: #339;
-
-$fusion-gradient: linear-gradient(45deg, $deep-pink, $deep-purple);
-$neumorphismic-shadow: 5px 5px 10px #2b2b2b, -5px -5px 10px #3b3b3b;
+$complete-black: #000;
+$white: #f5f5f5;
+$light-white: #ececec;
+$gray: #acacac;
+$red: #fa6e77;
+$green: #55d17f;
+$github: #181717;
 
 // Centering (horizontal)
 %center {
@@ -27,24 +14,14 @@ $neumorphismic-shadow: 5px 5px 10px #2b2b2b, -5px -5px 10px #3b3b3b;
   margin:0 auto;
 }
 
+%center-flex {
+  display: flex;
+  justify-content: center;
+}
+
 // Centering (horizontal&vertical)
 %completely-center {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 35%;
-  left: 50%;
-}
-
-// Make border gradient
-%gradient-border {
-  background-image: linear-gradient(#fff, #fff), $fusion-gradient;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-%gradient-text {
-  background: $fusion-gradient;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

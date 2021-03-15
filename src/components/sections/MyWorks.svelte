@@ -1,199 +1,127 @@
 <script>
-  import Description from '../Description.svelte';
-  import { Swiper, SwiperSlide } from 'svelte-swiper';
-  import MediaCard from '../MediaCard.svelte';
   import WorkCard from '../WorkCard.svelte';
-  import { isMobile } from '../../../scripts/isMobile.js';
-  import BlogCard from '../BlogCard.svelte';
-  import { _ } from 'svelte-i18n';
-  import '../../localization/i18n.js';
 
-  const isTouchable = isMobile();
-
-  const options = {
-    centeredSlides: true,
-    slidesPerView: 1,
-    speed: 5000,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
-    },
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    breakpoints: {
-      750: {
-        slidesPerView: 3,
-        spaceBetween: 10
-      }
-    }
-  };
-
-  const workCardList = [
+  const workCardAlgorithm = [
     {
-      imgPath: './img/sha256.webp',
-      title: 'Organic-SHA256',
-      description: $_('mywork.sha256'),
       url: 'https://github.com/kota-yata/organic-sha256',
-      urlMessage: 'Repository'
-    },
+      alt: 'Organic-SHA256',
+      src: '../img/sha256.webp',
+      className: 'scroll-reveal',
+      desc:
+        'SHA-256 implementation from scratch in TypeScript. It was really hard to deal with full-width symbols like Japanese and emoji.'
+    }
+  ];
+
+  const workCardWeb = [
     {
-      imgPath: './img/slouch.webp',
-      title: 'SLOUCH',
-      description: $_('mywork.slouch'),
       url: 'https://slouch.dev',
-      urlMessage: 'Web app'
+      alt: 'SLOUCH',
+      src: '../img/slouch.webp',
+      className: 'scroll-reveal-slide-left',
+      desc:
+        'Markdown editor which enables to edit local document from browser and overwrite them. You can also save the documents in cloud database.'
     },
     {
-      imgPath: './img/pics.webp',
-      title: 'photo-gallery',
-      description: $_('mywork.pics'),
       url: 'https://pics.kota-yata.com',
-      urlMessage: 'Gallery'
+      alt: 'Photo Gallery',
+      src: '../img/pics.webp',
+      className: 'scroll-reveal',
+      desc:
+        'My personal photo gallery. You can search tags from the upper right search box. Though not every photo was taken by DSLR, my good old days are in this place :)'
     },
     {
-      imgPath: './img/percom.webp',
-      title: 'Percom',
-      description: $_('mywork.percom'),
-      url: 'https://percom.netlify.com',
-      urlMessage: 'Document'
-    },
-    {
-      imgPath: './img/iso.webp',
-      title: 'iso-639-1-jp',
-      description: $_('mywork.iso-639-1-jp'),
-      url: 'https://iso-639-1-jp.netlify.com',
-      urlMessage: 'Document'
-    },
-    {
-      imgPath: './img/summarizy.webp',
-      title: 'Summarizy',
-      description: $_('mywork.summarizy'),
       url: 'https://summarizy.vercel.app',
-      urlMessage: 'Web app'
-    },
-    {
-      imgPath: './img/neornd.webp',
-      title: 'neornd',
-      description: $_('mywork.neornd'),
-      url: 'https://neornd.netlify.app',
-      urlMessage: 'Document'
-    },
-    {
-      imgPath: './img/kec.webp',
-      title: 'KEC',
-      description: $_('mywork.kec'),
-      url: 'https://github.com/kota-yata/kec',
-      urlMessage: 'Repository'
+      alt: 'Summarizy',
+      src: '../img/summarizy.webp',
+      className: 'scroll-reveal-slide-right',
+      desc:
+        'Markdown memo app which make it easy to summarize while reading the paper or tech document. Memo area on left side is WYSIWYG editor so that there’s no preview.'
     }
   ];
 
-  const mediaCardList = [
+  const workCardNpm = [
     {
-      imgPath: './img/hacktrek.webp',
-      title: 'Hack Trek',
-      description: $_('media.hacktrek'),
-      url: 'https://gsacademy.jp/hack-trek-2021/',
-      urlMessage: 'Official page'
+      url: 'https://www.npmjs.com/package/percom',
+      alt: 'Percom',
+      src: '../img/percom.webp',
+      className: 'scroll-reveal-slide-left',
+      desc:
+        'Permutation & Combination library. Since it’s little backbreaking to implement permutation or combination, I recommend to use this library instead.'
     },
     {
-      imgPath: './img/sd.webp',
-      title: 'Software Design',
-      description: $_('media.sd202102'),
-      url: 'https://gihyo.jp/magazine/SD/archive/2021/202102',
-      urlMessage: 'Official page'
+      url: 'https://www.npmjs.com/package/neornd',
+      alt: 'neornd',
+      src: '../img/neornd.webp',
+      className: 'scroll-reveal',
+      desc:
+        'A library which do boring random stuff instead of you. Random sorting, generating random number/string are availble on this library. Don’t use Math.random() for essential contents.'
     },
     {
-      imgPath: './img/g0v.webp',
-      title: 'g0v Summit 2020',
-      description: $_('media.g0v'),
-      url: 'https://summit.g0v.tw/2020/en/agenda/2020-12-04/5f02d14ee88a4948daf87fb7',
-      urlMessage: 'Session page'
-    },
-    {
-      imgPath: './img/ccc.webp',
-      title: 'CCC 2020',
-      description: $_('media.ccc'),
-      url: 'https://ccc2020.code4japan.org/',
-      urlMessage: 'Official page'
+      url: 'https://www.npmjs.com/package/iso-639-1-jp',
+      alt: 'ISO-639-1-JP',
+      src: '../img/iso.webp',
+      className: 'scroll-reveal-slide-right',
+      desc: 'ISO’s country code to country name in Japanese converter. Original repository is meikidd/iso-639-1.'
     }
-  ];
-
-  const blogCardList = [
-    { url: 'https://blog.kota-yata.com', imgPath: './img/raccoon.webp' },
-    { url: 'https://qiita.com/kota-yata', imgPath: './img/qiita.webp' },
-    { url: 'https://zenn.dev/kota_yata', imgPath: './img/zenn.webp' },
-    { url: 'https://note.com/kotay', imgPath: './img/note.webp' }
   ];
 </script>
 
-<div id="works">
-  {#if isTouchable}
-    <Description words="My Works" size="50px" paddingTop="20px" />
-  {:else}
-    <Description words="My Works" size="100px" paddingTop="20px" />
-  {/if}
-  <div class="slide-div">
-    <Swiper {options}>
-      {#each workCardList as { imgPath, title, description, url, urlMessage }}
-        <SwiperSlide>
-          <WorkCard {imgPath} {title} {description} {url} {urlMessage} />
-        </SwiperSlide>
+<div class="works">
+  <div class="works-title titles">
+    <h2>My Works</h2>
+  </div>
+  <div class="works-section">
+    <h3>Algorithm</h3>
+    <div class="works-section-card">
+      {#each workCardAlgorithm as { url, alt, src, className, desc }}
+        <span class="works-section-card-contents">
+          <WorkCard {url} {alt} {src} {className} {desc} />
+        </span>
       {/each}
-      <div class="swiper-pagination" slot="pagination" />
-      <div class="swiper-button-next" slot="button-next" />
-      <div class="swiper-button-prev" slot="button-prev" />
-    </Swiper>
+    </div>
   </div>
-  <h1 class="works-title">Media</h1>
-  <div class="works-container js-scrollable" id="media_container">
-    {#each mediaCardList as { imgPath, title, description, url, urlMessage }}
-      <span class="media-contents"><MediaCard {imgPath} {title} {description} {url} {urlMessage} /></span>
-    {/each}
+  <div class="works-section">
+    <h3>Web Apps</h3>
+    <div class="works-section-card">
+      {#each workCardWeb as { url, alt, src, className, desc }}
+        <span class="works-section-card-contents">
+          <WorkCard {url} {alt} {src} {className} {desc} />
+        </span>
+      {/each}
+    </div>
   </div>
-  <h1 class="works-title">Tech Blogs</h1>
-  <div class="works-container">
-    {#each blogCardList as { url, imgPath }}
-      <BlogCard {url} {imgPath} />
-    {/each}
+  <div class="works-section">
+    <h3>npm packages</h3>
+    <div class="works-section-card">
+      {#each workCardNpm as { url, alt, src, className, desc }}
+        <span class="works-section-card-contents">
+          <WorkCard {url} {alt} {src} {className} {desc} />
+        </span>
+      {/each}
+    </div>
   </div>
 </div>
 
 <style lang="scss">
   @import '../../assets/definition.scss';
 
-  #works {
-    padding-bottom: 2em;
-    .works-title {
-      font-size: 30px;
-    }
-    .works-container {
-      @extend %center;
-      margin-bottom: 5em;
-    }
-  }
-
-  #media_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow-x: scroll;
-    width: 100vw;
-    height: 300px;
-    .media-contents {
-      padding: 0 1em;
-    }
-  }
-
-  @media screen and (max-width: 750px) {
-    #media_container {
-      height: 500px;
+  .works {
+    padding-bottom: 40px;
+    &-section {
+      padding: 20px 0;
+      h3 {
+        margin: 0;
+        font-size: 24px;
+        color: $red;
+      }
+      &-card {
+        @extend %center-flex;
+        display: flex;
+        flex-wrap: wrap;
+        &-contents {
+          margin: 0 10px;
+        }
+      }
     }
   }
 </style>
