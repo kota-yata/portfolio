@@ -7,7 +7,7 @@
 </script>
 
 <div class="workcard {className}">
-  <div class="workcard-image"><a href={url}><img {alt} {src} /></a></div>
+  <div class="workcard-image"><a href={url}><img class="lazyload" {alt} data-src={src} /></a></div>
   <div class="workcard-desc"><span>{desc}</span></div>
 </div>
 
