@@ -52,6 +52,7 @@
 
   .about {
     @extend %completely-center;
+
     width: 100vw;
     min-height: 100vh;
     &-image {
@@ -62,15 +63,16 @@
       &-inner {
         width: 30vw;
         img {
-          box-shadow: 6px 7px 0px 0px $red;
+          box-shadow: 6px 7px 0 0 $red;
           width: 100%;
         }
         &-caption {
           @extend %center;
+
           padding-top: 5px;
           color: $gray;
           font-size: 14px;
-          font-family: 'inter';
+          font-family: 'inter', Arial, Helvetica, sans-serif;
           font-weight: normal;
         }
       }
@@ -94,7 +96,7 @@
       }
       &-sentence {
         width: 30vw;
-        font-family: 'inter';
+        font-family: 'inter', Arial, Helvetica, sans-serif;
         padding: 30px 0 40px 0;
         line-height: 30px;
         color: $white;
