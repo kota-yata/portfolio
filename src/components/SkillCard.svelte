@@ -52,7 +52,7 @@
     }
     &-desc {
       padding-left: 10px;
-      font-family: 'inter';
+      font-family: 'inter', Arial, Helvetica, sans-serif;
       font-size: 18px;
       font-weight: 300;
       line-height: 30px;

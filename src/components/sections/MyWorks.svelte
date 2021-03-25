@@ -9,6 +9,13 @@
       className: 'scroll-reveal',
       desc:
         'SHA-256 implementation from scratch in TypeScript. It was really hard to deal with full-width symbols like Japanese and emoji.'
+    },
+    {
+      url: 'https://github.com/kota-yata/deno-huffman',
+      alt: 'Deno-Huffman',
+      src: '../img/huffman.webp',
+      className: 'scroll-reveal',
+      desc: 'Huffman Coding Algorithm written in TypeScript. You can encode/decode ASCII string.'
     }
   ];
 
@@ -116,6 +123,7 @@
       }
       &-card {
         @extend %center-flex;
+
         display: flex;
         flex-wrap: wrap;
         &-contents {
