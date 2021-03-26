@@ -23,7 +23,7 @@
   .top {
     width: 100vw;
     height: 100vh;
-    background-image: url('../img/bg.gif');
+    background-image: url('../img/bg.webp');
     background-size: cover;
     position: relative;
     &-name {
@@ -31,8 +31,9 @@
       top: 20px;
       left: 20px;
       h1 {
-        color: $black;
+        color: $light-white;
         text-align: right;
+        opacity: 0.5;
         font-size: 30px;
         font-family: 'Poppins', Arial, Helvetica, sans-serif;
         margin: 0;

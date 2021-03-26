@@ -3,16 +3,19 @@
 /* 全ページ共通スタイル */
 html{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding:0;
   margin:0;
   scroll-behavior: smooth;
-  background: $black;
-  color: $white;
+  background: $white;
+  background-image: url('../img/bg-geometric.webp');
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: repeat;
+  color: $black;
 }
 body{
   width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
   padding:0;
   margin:0;
@@ -25,7 +28,7 @@ a {
 
 h3 {
   text-align: center;
-  color: $white;
+  color: $black;
   user-select: none;
 }
 
@@ -35,7 +38,7 @@ h1,h2 {
 }
 
 .section {
-  color: $white;
+  color: $black;
   width: 100vw;
   #section_content {
     margin: 0 auto;

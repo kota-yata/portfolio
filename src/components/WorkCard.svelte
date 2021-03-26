@@ -26,7 +26,8 @@
     height: 380px;
     pointer-events: none;
     transition: 0.2s;
-    box-shadow: 6px 7px 0px 0px $red;
+    box-shadow: 6px 7px 0 0 $red;
+    background: $white;
     &-image {
       width: 100%;
       pointer-events: auto;
@@ -37,14 +38,14 @@
     &-desc {
       text-align: left;
       padding: 10px 10px 15px 10px;
-      font-family: 'inter';
-      font-weight: 300;
-      color: $white;
+      font-family: 'inter', Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      color: $black;
       line-height: 25px;
       letter-spacing: 2%;
     }
     &:hover {
-      box-shadow: 6px 7px 0px 0px $white;
+      box-shadow: none;
       transition: 0.2s;
     }
   }

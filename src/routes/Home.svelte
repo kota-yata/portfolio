@@ -64,3 +64,9 @@
     <Footer />
   </section>
 </main>
+
+<style lang="scss">
+  main {
+    backdrop-filter: blur(5px);
+  }
+</style>

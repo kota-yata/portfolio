@@ -35,6 +35,7 @@
     min-height: 250px;
     margin: 2vw;
     padding: 10px;
+    background: $white;
     &-red {
       padding-left: 15px;
       color: $red;

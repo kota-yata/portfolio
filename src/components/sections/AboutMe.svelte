@@ -99,7 +99,7 @@
         font-family: 'inter', Arial, Helvetica, sans-serif;
         padding: 30px 0 40px 0;
         line-height: 30px;
-        color: $white;
+        color: $black;
       }
     }
   }

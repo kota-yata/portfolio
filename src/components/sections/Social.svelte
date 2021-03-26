@@ -71,6 +71,7 @@
         &-icons {
           a {
             @extend %center-flex;
+
             font-size: 34px;
             font-weight: bold;
             color: $gray;
