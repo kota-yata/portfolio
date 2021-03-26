@@ -62,7 +62,7 @@
     &-container {
       width: 100vw;
       padding: 40px 0;
-      background: $white;
+      background: $light-white;
       &-type {
         display: flex;
         justify-content: center;
@@ -83,7 +83,7 @@
               margin-right: 10px;
             }
             &:hover {
-              background: $light-white;
+              opacity: 0.5;
               text-decoration: none;
               transition: 0.2s;
             }
