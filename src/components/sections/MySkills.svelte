@@ -1,79 +1,53 @@
 <script>
   import SkillCard from '../SkillCard.svelte';
 
-  const skillCardList = [
+  const skills = [
     {
-      icon: 'faCode',
-      title: 'Web Development',
-      className: 'scroll-reveal-slide-left',
+      name: '☕️ JS & TS',
       desc:
-        'I’m familiar enough with HTML/CSS, also can develop website or web app using Nuxt.js and Svelte.js with TypeScript. FYI, this website is made with Svelte.js :)'
+        'My main language. I usually use them for front-end, and also when learning algorithm in order not to make it hard to learn because of language.'
     },
     {
-      icon: 'faNetworkWired',
-      title: 'Infrastructure',
-      className: 'scroll-reveal',
+      name: '🔬 Svelte',
       desc:
-        'I usually use Firebase as the infrastructure of my project. Sometimes I use AWS or GCP on the team project, but I prefer Firebase.'
+        'Since the ecosystem is not expanded as much as Nuxt.js, I usually use Svelte for small website such as this portfolio website.'
     },
     {
-      icon: 'faDesktop',
-      title: 'Other Skills',
-      className: 'scroll-reveal-slide-right',
+      name: '⛑ Nuxt',
       desc:
-        'As a hobby, I have set up NAS server on Rasberry Pi 4. I have been trying Go and C++ in order to develop image processing CLI and my own OS in the future.'
-    }
-  ];
-
-  const skillsDataList = [
-    {
-      title: 'Languages',
-      sentence: 'JavaScript, TypeScript, Japanese'
+        'I used Nuxt.js for the first time at the hackathon held this spring, means I’m not familiar with this framwork yet, but I like to use this as the main framework.'
     },
     {
-      title: 'Infrastructure',
-      sentence: 'Firebase, Vagrant, Docker'
+      name: '🔥️ Firebase',
+      desc:
+        'Firestore is totally suitable for me since I like KVS. Currently I’m working on the project which use AWS cognito, but I usually use Firebase Authentication for authentication backend.'
     },
     {
-      title: 'OS',
-      sentence: 'Mac, Windows, Ubuntu, Alpine Linux , Rasberry Pi OS'
+      name: '🍓️ Rasberry Pi',
+      desc:
+        'As a hobby, I’ve set up my own NAS server on Rasberry Pi 4. I’m going to set up VPN server to connect to NAS outside my house.'
     },
     {
-      title: 'Award',
-      sentence: 'EPSON HackTrek 2021 1st prize'
-    },
-    {
-      title: 'Licenses',
-      sentence: '基本情報技術者'
+      name: '🎙 Go',
+      desc:
+        'I made integrated RSS feed of my blogs (note, Zenn, blog.kota-yata.com), and image file extension converter in Go. I’m using Go just as a hobby, but I hope I can use this language as my main one someday.'
     }
   ];
 </script>
 
-<div class="skills">
-  <div class="skills-title titles">
-    <h2>My Skills</h2>
-  </div>
-  <div class="skills-card">
-    {#each skillCardList as { icon, title, className, desc }}
-      <span class="skills-card-container"><SkillCard {icon} {title} {className} {desc} /></span>
-    {/each}
-  </div>
-  <div class="data-center data">
-    {#each skillsDataList as { title, sentence }}
-      <div><span class="data-red">{title} : </span>{sentence}</div>
-    {/each}
-  </div>
+<div class="myskills">
+  {#each skills as { name, desc }, i}
+    <SkillCard {name} {desc} order={i} />
+  {/each}
 </div>
 
 <style lang="scss">
   @import '../../assets/definition.scss';
-
-  .skills {
-    width: 100vw;
-    padding-bottom: 10vh;
-    &-card {
-      @extend %center-flex;
-      flex-wrap: wrap;
-    }
+  .myskills {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 </style>

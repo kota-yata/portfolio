@@ -1,135 +1,109 @@
 <script>
+  import PresentationCard from '../PresentationCard.svelte';
   import WorkCard from '../WorkCard.svelte';
 
-  const workCardAlgorithm = [
+  const works = [
     {
-      url: 'https://github.com/kota-yata/organic-sha256',
-      alt: 'Organic-SHA256',
-      src: '../img/sha256.webp',
-      className: 'scroll-reveal',
-      desc:
-        'SHA-256 implementation from scratch in TypeScript. It was really hard to deal with full-width symbols like Japanese and emoji.'
+      title: 'Algorithms',
+      contents: [
+        {
+          url: 'https://github.com/kota-yata/organic-sha256',
+          alt: 'Organic-SHA256',
+          src: '../img/sha256.webp',
+          desc:
+            'SHA-256 implementation from scratch in TypeScript. It was really hard to deal with full-width symbols like Japanese and emoji.'
+        },
+        {
+          url: 'https://github.com/kota-yata/deno-huffman',
+          alt: 'Deno-Huffman',
+          src: '../img/huffman.webp',
+          desc: 'Huffman Coding Algorithm written in TypeScript. You can encode/decode ASCII string.'
+        }
+      ]
     },
     {
-      url: 'https://github.com/kota-yata/deno-huffman',
-      alt: 'Deno-Huffman',
-      src: '../img/huffman.webp',
-      className: 'scroll-reveal',
-      desc: 'Huffman Coding Algorithm written in TypeScript. You can encode/decode ASCII string.'
+      title: 'Web apps',
+      contents: [
+        {
+          url: 'https://slouch.dev',
+          alt: 'SLOUCH',
+          src: '../img/slouch.webp',
+          desc:
+            'Markdown editor which enables to edit local document from browser and overwrite them. You can also save the documents in cloud database.'
+        },
+        {
+          url: 'https://pics.kota-yata.com',
+          alt: 'Photo Gallery',
+          src: '../img/pics.webp',
+          desc:
+            'My personal photo gallery. You can search tags from the upper right search box. Though not every photo was taken by DSLR, my good old days are in this place :)'
+        },
+        {
+          url: 'https://summarizy.vercel.app',
+          alt: 'Summarizy',
+          src: '../img/summarizy.webp',
+          desc:
+            'Markdown memo app which make it easy to summarize while reading the paper or tech document. Memo area on left side is WYSIWYG editor so that there’s no preview.'
+        }
+      ]
+    },
+    {
+      title: 'npm packages',
+      contents: [
+        {
+          url: 'https://www.npmjs.com/package/percom',
+          alt: 'Percom',
+          src: '../img/percom.webp',
+          desc:
+            'Permutation & Combination library. Since it’s little backbreaking to implement permutation or combination, I recommend to use this library instead.'
+        },
+        {
+          url: 'https://www.npmjs.com/package/neornd',
+          alt: 'neornd',
+          src: '../img/neornd.webp',
+          desc:
+            'A library which do boring random stuff instead of you. Random sorting, generating random number/string are availble on this library. Don’t use Math.random() for essential contents.'
+        },
+        {
+          url: 'https://www.npmjs.com/package/iso-639-1-jp',
+          alt: 'ISO-639-1-JP',
+          src: '../img/iso.webp',
+          desc: 'ISO’s country code to country name in Japanese converter. Original repository is meikidd/iso-639-1.'
+        }
+      ]
     }
   ];
 
-  const workCardWeb = [
-    {
-      url: 'https://slouch.dev',
-      alt: 'SLOUCH',
-      src: '../img/slouch.webp',
-      className: 'scroll-reveal-slide-left',
-      desc:
-        'Markdown editor which enables to edit local document from browser and overwrite them. You can also save the documents in cloud database.'
-    },
-    {
-      url: 'https://pics.kota-yata.com',
-      alt: 'Photo Gallery',
-      src: '../img/pics.webp',
-      className: 'scroll-reveal',
-      desc:
-        'My personal photo gallery. You can search tags from the upper right search box. Though not every photo was taken by DSLR, my good old days are in this place :)'
-    },
-    {
-      url: 'https://summarizy.vercel.app',
-      alt: 'Summarizy',
-      src: '../img/summarizy.webp',
-      className: 'scroll-reveal-slide-right',
-      desc:
-        'Markdown memo app which make it easy to summarize while reading the paper or tech document. Memo area on left side is WYSIWYG editor so that there’s no preview.'
-    }
-  ];
-
-  const workCardNpm = [
-    {
-      url: 'https://www.npmjs.com/package/percom',
-      alt: 'Percom',
-      src: '../img/percom.webp',
-      className: 'scroll-reveal-slide-left',
-      desc:
-        'Permutation & Combination library. Since it’s little backbreaking to implement permutation or combination, I recommend to use this library instead.'
-    },
-    {
-      url: 'https://www.npmjs.com/package/neornd',
-      alt: 'neornd',
-      src: '../img/neornd.webp',
-      className: 'scroll-reveal',
-      desc:
-        'A library which do boring random stuff instead of you. Random sorting, generating random number/string are availble on this library. Don’t use Math.random() for essential contents.'
-    },
-    {
-      url: 'https://www.npmjs.com/package/iso-639-1-jp',
-      alt: 'ISO-639-1-JP',
-      src: '../img/iso.webp',
-      className: 'scroll-reveal-slide-right',
-      desc: 'ISO’s country code to country name in Japanese converter. Original repository is meikidd/iso-639-1.'
-    }
-  ];
+  const presentations = ['1WOFGFyNl4k', '-JLTdhtyDGc', 'UYZw55-2kGQ'];
 </script>
 
-<div class="works">
-  <div class="works-title titles">
-    <h2>My Works</h2>
-  </div>
-  <div class="works-section">
-    <h3>Algorithm</h3>
-    <div class="works-section-card">
-      {#each workCardAlgorithm as { url, alt, src, className, desc }}
-        <span class="works-section-card-contents">
-          <WorkCard {url} {alt} {src} {className} {desc} />
-        </span>
+{#each works as { title, contents }}
+  <div class="container container-large container-info myworks">
+    <div class="container-title">{title}</div>
+    <div class="myworks-works">
+      {#each contents as { url, alt, src, desc }}
+        <WorkCard {url} {alt} {src} {desc} />
       {/each}
     </div>
   </div>
-  <div class="works-section">
-    <h3>Web Apps</h3>
-    <div class="works-section-card">
-      {#each workCardWeb as { url, alt, src, className, desc }}
-        <span class="works-section-card-contents">
-          <WorkCard {url} {alt} {src} {className} {desc} />
-        </span>
-      {/each}
-    </div>
-  </div>
-  <div class="works-section">
-    <h3>npm packages</h3>
-    <div class="works-section-card">
-      {#each workCardNpm as { url, alt, src, className, desc }}
-        <span class="works-section-card-contents">
-          <WorkCard {url} {alt} {src} {className} {desc} />
-        </span>
-      {/each}
-    </div>
+{/each}
+<div class="container container-large container-info myworks">
+  <div class="container-title">Presentations</div>
+  <div class="myworks-works">
+    {#each presentations as id}
+      <PresentationCard {id} />
+    {/each}
   </div>
 </div>
 
 <style lang="scss">
-  @import '../../assets/definition.scss';
-
-  .works {
-    padding-bottom: 40px;
-    &-section {
-      padding: 20px 0;
-      h3 {
-        margin: 0;
-        font-size: 24px;
-        color: $red;
-      }
-      &-card {
-        @extend %center-flex;
-
-        display: flex;
-        flex-wrap: wrap;
-        &-contents {
-          margin: 0 10px;
-        }
-      }
+  .myworks {
+    margin-bottom: 30px;
+    &-works {
+      overflow-x: scroll;
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: nowrap;
     }
   }
 </style>
