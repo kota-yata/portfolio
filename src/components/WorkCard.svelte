@@ -30,7 +30,7 @@
       }
     }
     &-desc {
-      font-family: $generic-fonts-desc;
+      font-family: $generic-fonts-jp;
       font-weight: 300;
       font-size: 14px;
       padding: 10px 10px 20px 10px;
