@@ -1,20 +1,23 @@
 <script>
+  import { _ } from 'svelte-i18n';
+  import '../../localization/i18n.js';
+
   const extras = [
     {
       name: 'License',
-      value: 'Fundamental Engineering Japan'
+      value: $_('extra.license')
     },
     {
       name: 'Award',
-      value: 'EPSON HackTrek 2021 First Prize 🥇'
+      value: $_('extra.award')
     },
     {
       name: 'Favorite',
-      value: 'Cycling, Rebuild.fm, KANDYTOWN, Eminem'
+      value: $_('extra.favorite')
     },
     {
       name: 'Email',
-      value: 'kota@yatagai.com'
+      value: $_('extra.email')
     }
   ];
 </script>
@@ -32,20 +35,15 @@
   @import '../../assets/definition.scss';
 
   .extra {
-    background: $light-green;
     margin-bottom: 30px;
-    &-title {
-      color: $dark-black;
-    }
     &-data {
       margin-top: 25px;
       line-height: 40px;
-      color: $black;
       font-weight: bold;
       font-size: 18px;
       margin-bottom: 10px;
       &-title {
-        color: $dark-black;
+        color: $gray;
       }
     }
   }

@@ -1,4 +1,7 @@
 <script>
+  import { _ } from 'svelte-i18n';
+  import '../../localization/i18n.js';
+
   import PresentationCard from '../PresentationCard.svelte';
   import WorkCard from '../WorkCard.svelte';
 
@@ -10,14 +13,13 @@
           url: 'https://github.com/kota-yata/organic-sha256',
           alt: 'Organic-SHA256',
           src: '../img/sha256.webp',
-          desc:
-            'SHA-256 implementation from scratch in TypeScript. It was really hard to deal with full-width symbols like Japanese and emoji.'
+          desc: $_('works.sha256')
         },
         {
           url: 'https://github.com/kota-yata/deno-huffman',
           alt: 'Deno-Huffman',
           src: '../img/huffman.webp',
-          desc: 'Huffman Coding Algorithm written in TypeScript. You can encode/decode ASCII string.'
+          desc: $_('works.huffman')
         }
       ]
     },
@@ -28,22 +30,19 @@
           url: 'https://slouch.dev',
           alt: 'SLOUCH',
           src: '../img/slouch.webp',
-          desc:
-            'Markdown editor which enables to edit local document from browser and overwrite them. You can also save the documents in cloud database.'
+          desc: $_('works.slouch')
         },
         {
           url: 'https://pics.kota-yata.com',
           alt: 'Photo Gallery',
           src: '../img/pics.webp',
-          desc:
-            'My personal photo gallery. You can search tags from the upper right search box. Though not every photo was taken by DSLR, my good old days are in this place :)'
+          desc: $_('works.pics')
         },
         {
           url: 'https://summarizy.vercel.app',
           alt: 'Summarizy',
           src: '../img/summarizy.webp',
-          desc:
-            'Markdown memo app which make it easy to summarize while reading the paper or tech document. Memo area on left side is WYSIWYG editor so that there’s no preview.'
+          desc: $_('works.summarizy')
         }
       ]
     },
@@ -54,21 +53,19 @@
           url: 'https://www.npmjs.com/package/percom',
           alt: 'Percom',
           src: '../img/percom.webp',
-          desc:
-            'Permutation & Combination library. Since it’s little backbreaking to implement permutation or combination, I recommend to use this library instead.'
+          desc: $_('works.percom')
         },
         {
           url: 'https://www.npmjs.com/package/neornd',
           alt: 'neornd',
           src: '../img/neornd.webp',
-          desc:
-            'A library which do boring random stuff instead of you. Random sorting, generating random number/string are availble on this library. Don’t use Math.random() for essential contents.'
+          desc: $_('works.neornd')
         },
         {
           url: 'https://www.npmjs.com/package/iso-639-1-jp',
           alt: 'ISO-639-1-JP',
           src: '../img/iso.webp',
-          desc: 'ISO’s country code to country name in Japanese converter. Original repository is meikidd/iso-639-1.'
+          desc: $_('works.iso')
         }
       ]
     }
