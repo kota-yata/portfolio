@@ -7,23 +7,20 @@ html{
   padding:0;
   margin:0;
   scroll-behavior: smooth;
-  background: $white;
-  background-image: url('../img/bg-geometric.webp');
+  background: $black;
   background-size: cover;
   background-attachment: scroll;
   background-repeat: repeat;
-  color: $black;
+  color: $white;
 }
 body{
   width: 100vw;
   overflow-x: hidden;
   padding:0;
   margin:0;
-  font-family: 'Poppins', 'Noto Sans JP', sans-serif;
-}
-
-a {
-  color: $red;
+  font-family: $generic-fonts;
+  background: $black;
+  color: $white;
 }
 
 h3 {
@@ -37,62 +34,45 @@ h1,h2 {
   user-select: none;
 }
 
-.section {
-  color: $black;
-  width: 100vw;
-  #section_content {
-    margin: 0 auto;
+.container {
+  background: $dark-black;
+  border: 1px $border-gray solid;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 7px rgba($color: $dark-black, $alpha: 0.25);
+  &-info {
+    padding: 30px 50px;
   }
-}
-
-.titles {
-  @extend %center;
-
-  width: 300px;
-  padding-bottom: 20px;
-  h2 {
-    margin: 0;
-    font-size: 36px;
-    border-bottom: 2px $red solid;
-  }
-}
-
-.data {
-  line-height: 40px;
-  font-weight: bold;
-  &-center {
-    @extend %center-flex;
-
-    width: 75vw;
-    max-width: 700px;
-    flex-direction: column;
-    padding-top: 5vh;
-    margin: 0 auto;
-    line-height: 60px;
+  &-title {
+    font-weight: bold;
     font-size: 24px;
+    color: $gray;
   }
-  &-red {
-    color: $red;
+  &-desc {
+    margin-top: 20px;
+    font-family: $generic-fonts-desc;
+    line-height: 25px;
+    letter-spacing: 2%;
+    color: $white;
+    font-weight: 300;
+  }
+  &-large {
+    font-size: 18px;
+  }
+  &-small {
+    font-size: 14px;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  html {
-    overflow-x: hidden;
-    .titles {
-      margin-top: 30px;
-      h2 {
-        font-size: 30px;
-      }
+@media screen and (max-width: 800px) {
+  .container {
+    &-info {
+      padding: 20px 30px;
     }
-    .data {
-      &, &-center {
-        line-height: 20px;
-        font-size: 13px;
-      }
-      &-red {
-        display: block;
-      }
+    &-large {
+      font-size: 14px;
+    }
+    &-small {
+      font-size: 12px;
     }
   }
 }

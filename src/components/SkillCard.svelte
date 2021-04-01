@@ -1,76 +1,50 @@
 <script>
-  import Icon from 'svelte-awesome';
-  import { faCode, faNetworkWired, faDesktop } from '@fortawesome/free-solid-svg-icons';
-
-  export let icon;
-  export let title;
-  export let className;
+  export let name;
   export let desc;
+  export let order;
 
-  let specifiedIcon;
-  if (icon === 'faCode') specifiedIcon = faCode;
-  if (icon === 'faNetworkWired') specifiedIcon = faNetworkWired;
-  if (icon === 'faDesktop') specifiedIcon = faDesktop;
+  if (order % 3 === 1) {
+    order = 'odd';
+  } else if (order % 3 === 2) {
+    order = 'threen';
+  }
 </script>
 
-<div class="skillcard {className}">
-  <div class="skillcard-red">
-    <div class="skillcard-red-icon">
-      <Icon data={specifiedIcon} scale="4" />
-    </div>
-    <div class="skillcard-red-title">
-      <h3>{title}</h3>
-    </div>
-  </div>
-  <div class="skillcard-desc"><span>{desc}</span></div>
+<div class="container container-small skillcard {order}">
+  <div class="container-title">{name}</div>
+  <div class="container-desc">{desc}</div>
 </div>
 
 <style lang="scss">
   @import '../assets/definition.scss';
-
   .skillcard {
-    border: 2px $red solid;
-    width: 90vw;
-    max-width: 400px;
-    min-height: 250px;
-    margin: 2vw;
-    padding: 10px;
-    background: $white;
-    &-red {
-      padding-left: 15px;
-      color: $red;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      &-title {
-        padding: 35px 0 35px 30px;
-        h3 {
-          margin: 0;
-          color: $red;
-          font-size: 24px;
-        }
-      }
+    width: 400px;
+    padding: 20px 20px 30px 20px;
+    margin: 10px;
+  }
+  .odd {
+    background: $light-white;
+    .container-title,
+    .container-desc {
+      color: $black;
     }
-    &-desc {
-      padding-left: 10px;
-      font-family: 'inter', Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 30px;
+  }
+  .threen {
+    background: $light-black;
+    .container-title {
+      color: $white;
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1300px) {
     .skillcard {
-      &-red {
-        &-title {
-          padding: 30px 0 30px 15px;
-        }
-      }
-      &-desc {
-        font-size: 16px;
-        line-height: 25px;
-      }
+      width: 25vw;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .skillcard {
+      width: 90vw;
+      max-width: 400px;
     }
   }
 </style>

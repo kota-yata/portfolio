@@ -1,66 +1,68 @@
 <script>
-  import '../assets/main.scss';
   import AboutMe from '../components/sections/AboutMe.svelte';
-  import TopPage from '../components/sections/TopPage.svelte';
-  import MyWorks from '../components/sections/MyWorks.svelte';
+  import Header from '../components/sections/Header.svelte';
   import MySkills from '../components/sections/MySkills.svelte';
-  import Social from '../components/sections/Social.svelte';
-  import AboutMyLogo from '../components/sections/AboutMyLogo.svelte';
+  import MyWorks from '../components/sections/MyWorks.svelte';
+  import Profile from '../components/sections/Profile.svelte';
+  import { onMount } from 'svelte';
+  import Posts from '../components/sections/Posts.svelte';
   import Footer from '../components/sections/Footer.svelte';
+  import Extra from '../components/sections/Extra.svelte';
 
-  const optsForNormal = {
-    delay: 50,
-    duration: 2000,
-    useDelay: 'once',
-    mobile: false
-  };
-
-  const optsForSlideLeft = {
-    delay: 100,
-    distance: '100px',
-    duration: 2000,
-    origin: 'left',
-    useDelay: 'once',
-    mobile: false
-  };
-
-  const optsForSlideRight = {
-    delay: 100,
-    distance: '100px',
-    duration: 2000,
-    origin: 'right',
-    useDelay: 'once',
-    mobile: false
-  };
-
-  window.addEventListener('DOMContentLoaded', () => {
-    ScrollReveal().reveal('.scroll-reveal-slide-left', optsForSlideLeft);
-    ScrollReveal().reveal('.scroll-reveal-slide-right', optsForSlideRight);
-    ScrollReveal().reveal('.scroll-reveal', optsForNormal);
+  onMount(() => {
     lazyload();
   });
 </script>
 
 <main>
-  <section class="section" id="top_page">
-    <TopPage />
-  </section>
-  <section class="section">
-    <AboutMe />
-  </section>
-  <section class="section">
-    <MySkills />
-  </section>
-  <section class="section">
-    <MyWorks />
-  </section>
-  <section class="section">
-    <Social />
-  </section>
-  <section class="section">
-    <AboutMyLogo />
-  </section>
-  <section class="section">
-    <Footer />
-  </section>
+  <Header />
+  <div class="contents">
+    <div class="contents-right">
+      <Profile />
+      <Posts />
+    </div>
+    <div class="contents-left">
+      <AboutMe />
+      <MySkills />
+      <MyWorks />
+      <Extra />
+      <Footer />
+    </div>
+  </div>
 </main>
+
+<style lang="scss">
+  @import '../assets/definition.scss';
+  main {
+    width: 100vw;
+
+    .contents {
+      display: flex;
+      padding-top: 60px;
+      &-right {
+        position: fixed;
+        right: 0;
+        width: 25vw;
+        height: calc(100vh - 60px);
+      }
+      &-left {
+        padding: 0 20px;
+        width: calc(75vw - 40px);
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .contents {
+      flex-direction: column;
+      &-right {
+        position: relative !important;
+        width: 100vw !important;
+      }
+      &-left {
+        padding: 0 5px !important;
+        width: calc(100vw - 10px) !important;
+      }
+    }
+  }
+</style>

@@ -2,51 +2,41 @@
   export let url;
   export let alt;
   export let src;
-  export let className;
   export let desc;
 </script>
 
-<div class="workcard {className}">
-  <div class="workcard-image"><a href={url}><img class="lazyload" {alt} data-src={src} /></a></div>
-  <div class="workcard-desc"><span>{desc}</span></div>
+<div class="workcard">
+  <div class="workcard-image"><a href={url}><img {alt} class="lazyload" data-src={src} /></a></div>
+  <div class="workcard-desc">{desc}</div>
 </div>
 
 <style lang="scss">
   @import '../assets/definition.scss';
-
   .workcard {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 2px $red solid;
-    flex-direction: column;
-    width: 90vw;
-    max-width: 400px;
-    height: 380px;
-    pointer-events: none;
-    transition: 0.2s;
-    box-shadow: 6px 7px 0 0 $red;
-    background: $white;
+    margin: 10px 20px 10px 0;
+    background: $black;
+    width: 300px;
+    min-width: 250px;
+    border: 1px $border-gray solid;
+    border-radius: 10px;
     &-image {
-      width: 100%;
-      pointer-events: auto;
-      img {
+      a {
         width: 100%;
+        img {
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
       }
     }
     &-desc {
-      text-align: left;
-      padding: 10px 10px 15px 10px;
-      font-family: 'inter', Arial, Helvetica, sans-serif;
-      font-weight: 500;
-      color: $black;
-      line-height: 25px;
+      font-family: $generic-fonts-desc;
+      font-weight: 300;
+      font-size: 14px;
+      padding: 10px 10px 20px 10px;
+      min-height: 100px;
+      line-height: 20px;
       letter-spacing: 2%;
-    }
-    &:hover {
-      box-shadow: none;
-      transition: 0.2s;
     }
   }
 </style>
