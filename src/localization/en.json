@@ -16,7 +16,9 @@
     "summarizy": "Markdown memo app which make it easy to summarize while reading the paper or tech document. Memo area on left side is WYSIWYG editor so that there’s no preview.",
     "percom": "Permutation & Combination library. Since it’s little backbreaking to implement permutation or combination, I recommend to use this library instead.",
     "neornd": "A library which do boring random stuff instead of you. Random sorting, generating random number/string are availble on this library. Don’t use Math.random() for essential contents.",
-    "iso": "ISO’s country code to country name in Japanese converter. Original repository is meikidd/iso-639-1."
+    "iso": "ISO’s country code to country name in Japanese converter. Original repository is meikidd/iso-639-1.",
+    "rss": "Integrated Feed of my blogs written in Golang. Including Zenn, note, blog.kota-yata.com. Available formats are RSS and JSON.",
+    "kec": "Image format extension converter written in Golang. I'm looking for the suitable algorithm for resizing."
   },
   "extra": {
     "license": "Fundamental Engineering Japan",

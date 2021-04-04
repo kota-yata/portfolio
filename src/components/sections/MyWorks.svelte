@@ -68,6 +68,23 @@
           desc: $_('works.iso')
         }
       ]
+    },
+    {
+      title: 'Others',
+      contents: [
+        {
+          url: 'https://github.com/kota-yata/integrated-rss',
+          alt: 'integrated rss',
+          src: '../img/rss.webp',
+          desc: $_('works.rss')
+        },
+        {
+          url: 'https://github.com/kota-yata/kec',
+          alt: 'kec',
+          src: '../img/kec.webp',
+          desc: $_('works.kec')
+        }
+      ]
     }
   ];
 
