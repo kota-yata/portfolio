@@ -3,7 +3,7 @@
   import dayjs from 'dayjs';
   let articles = [];
   onMount(async () => {
-    const response = await fetch('https://integrated-rss.appspot.com/api', {
+    const response = await fetch('https://feed.kota-yata.com/api', {
       method: 'GET',
       mode: 'cors',
       headers: {
