@@ -14,10 +14,15 @@
     const items = result.items;
     for (let i = 0; i < 6; i++) {
       const date = dayjs(items[i].date_published).format('YYYY-MM-DD');
+      const url = items[i].id;
+      let service = 'blog.kota-yata.com';
+      if (url.includes('zenn.dev')) service = 'zenn.dev';
+      if (url.includes('note.com')) service = 'note.com';
       const info = {
         title: items[i].title,
         date: date,
-        url: items[i].id
+        url: url,
+        service
       };
       articles = articles.concat(info);
     }
@@ -27,12 +32,13 @@
 <div class="posts">
   <div class="posts-title">Recent Posts</div>
   <div class="posts-contents container">
-    {#each articles as { title, date, url }}
+    {#each articles as { title, date, url, service }}
       <div class="posts-contents-article">
         <div class="posts-contents-article-title">{title}</div>
         <div class="posts-contents-article-info">
           <div class="posts-contents-article-info-date">{date}</div>
           <div class="posts-contents-article-info-link">
+            <span class="posts-contents-article-info-link-service">{service}</span>
             <a href={url}><img alt="external link" src="../svg/link.svg" /></a>
           </div>
         </div>
@@ -80,6 +86,11 @@
             font-size: 12px;
           }
           &-link {
+            display: flex;
+            &-service {
+              font-size: 12px;
+              margin-right: 10px;
+            }
             a {
               display: flex;
               align-items: center;
