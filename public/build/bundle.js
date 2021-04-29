@@ -4772,7 +4772,8 @@ var app = (function () {
   	neornd: "Cryptoモジュールを使ってランダムな数値や文字列、ランダムソートをするライブラリです。Math.random()も結構進化しているようなので段々使い道は減っていくかもしれませんが、またそれも良し。",
   	iso: "ISOの国コードから日本語名に変換するライブラリです。英語版からForkしてTypeScriptへの移行やツールの変更を加えて公開しています。",
   	rss: "Goで書いた僕のブログフィードをまとめたフィードです。Zenn、note、個人ブログのRSSを取ってきて、新しいフィードに統合してRSSとJSON形式で配信しています。",
-  	kec: "Goで書いた、画像拡張子変換のCLIです。jpg/png/gifに対応していて、画像圧縮も一応作ったのですが、結構画像が荒くなったのでここのアルゴリズムも良いものを探していきたいです。"
+  	kec: "Goで書いた、画像拡張子変換のCLIです。jpg/png/gifに対応していて、画像圧縮も一応作ったのですが、結構画像が荒くなったのでここのアルゴリズムも良いものを探していきたいです。",
+  	"sgg-feed": "Goで書いたSGGメンバーのRSSをまとめたフィードです。RSSとJSON形式で配信しており、自分の勉強と速度向上のためにgoroutineを使おうと四苦八苦しています。"
   };
   var extra = {
   	license: "基本情報技術者",
@@ -4806,7 +4807,8 @@ var app = (function () {
   	neornd: "A library which do boring random stuff instead of you. Random sorting, generating random number/string are availble on this library. Don’t use Math.random() for essential contents.",
   	iso: "ISO’s country code to country name in Japanese converter. Original repository is meikidd/iso-639-1.",
   	rss: "Integrated Feed of my blogs written in Golang. Including Zenn, note, blog.kota-yata.com. Available formats are RSS and JSON.",
-  	kec: "Image format extension converter written in Golang. I'm looking for the suitable algorithm for resizing."
+  	kec: "Image format extension converter written in Golang. I'm looking for the suitable algorithm for resizing.",
+  	"sgg-feed": "RSS/JSON feed of SGG members. Currently, I'm trying to use goroutine to make this faster."
   };
   var extra$1 = {
   	license: "Fundamental Engineering Japan",
@@ -5391,7 +5393,7 @@ var app = (function () {
   	return child_ctx;
   }
 
-  // (98:6) {#each contents as { url, alt, src, desc }}
+  // (104:6) {#each contents as { url, alt, src, desc }}
   function create_each_block_2(ctx) {
   	let workcard;
   	let current;
@@ -5429,7 +5431,7 @@ var app = (function () {
   	};
   }
 
-  // (94:0) {#each works as { title, contents }}
+  // (100:0) {#each works as { title, contents }}
   function create_each_block_1(ctx) {
   	let div2;
   	let div0;
@@ -5531,7 +5533,7 @@ var app = (function () {
   	};
   }
 
-  // (107:4) {#each presentations as id}
+  // (113:4) {#each presentations as id}
   function create_each_block$2(ctx) {
   	let presentationcard;
   	let current;
@@ -5792,6 +5794,12 @@ var app = (function () {
   			title: "Others",
   			contents: [
   				{
+  					url: "https://sgg-feed.appspot.com/",
+  					alt: "sgg feed",
+  					src: "../img/sgg-feed.webp",
+  					desc: $_("works.sgg-feed")
+  				},
+  				{
   					url: "https://github.com/kota-yata/integrated-rss",
   					alt: "integrated rss",
   					src: "../img/rss.webp",
@@ -5807,7 +5815,7 @@ var app = (function () {
   		}
   	];
 
-  	const presentations = ["1WOFGFyNl4k", "-JLTdhtyDGc", "UYZw55-2kGQ"];
+  	const presentations = ["BcaPCnWZuvY", "-JLTdhtyDGc", "UYZw55-2kGQ", "1WOFGFyNl4k"];
   	return [works, presentations];
   }
 

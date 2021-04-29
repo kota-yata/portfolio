@@ -73,6 +73,12 @@
       title: 'Others',
       contents: [
         {
+          url: 'https://sgg-feed.appspot.com/',
+          alt: 'sgg feed',
+          src: '../img/sgg-feed.webp',
+          desc: $_('works.sgg-feed')
+        },
+        {
           url: 'https://github.com/kota-yata/integrated-rss',
           alt: 'integrated rss',
           src: '../img/rss.webp',
