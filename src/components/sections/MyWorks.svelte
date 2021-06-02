@@ -39,9 +39,9 @@
           desc: $_('works.pics')
         },
         {
-          url: 'https://summarizy.vercel.app',
-          alt: 'Summarizy',
-          src: '../img/summarizy.webp',
+          url: 'https://editor.kota-yata.com',
+          alt: 'Editor',
+          src: '../img/ogp.webp',
           desc: $_('works.summarizy')
         }
       ]
