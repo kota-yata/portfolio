@@ -4,7 +4,7 @@
   </div>
   <div class="profile-social">
     <div><a href="https://zenn.dev/kota_yata"><img alt="zenn" src="../svg/zenn.svg" /></a></div>
-    <div><a href="https://t.me/kota_yata"><img alt="telegram" src="../svg/telegram.svg" /></a></div>
+    <div><a href="https://scrapbox.io/chicken"><img alt="telegram" src="../svg/scrapbox.svg" /></a></div>
     <div><a href="https://github.com/kota-yata"><img alt="github" src="../svg/github.svg" /></a></div>
     <div><a href="https://www.twitter.com/kota_yata"><img alt="twitter" src="../svg/twitter.svg" /></a></div>
   </div>

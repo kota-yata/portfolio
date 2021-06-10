@@ -118,7 +118,10 @@
 
 <style lang="scss">
   .myworks {
-    margin-bottom: 30px;
+    margin: 15px 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
     &-works {
       overflow-x: scroll;
       margin-top: 25px;

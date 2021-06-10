@@ -23,7 +23,7 @@
     </div>
     <div class="contents-left">
       <AboutMe />
-      <MySkills />
+      <!--<MySkills />-->
       <MyWorks />
       <Extra />
       <Footer />

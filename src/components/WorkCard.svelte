@@ -17,7 +17,7 @@
     background: $black;
     width: 300px;
     min-width: 250px;
-    border: 1px $border-gray solid;
+    border: 1px $border-works-gray solid;
     border-radius: 10px;
     &-image {
       a {
