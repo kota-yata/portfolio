@@ -7,11 +7,13 @@
     defer
     width="400px"
     height="225px"
-    src="https://www.youtube.com/embed/{id}"
-    title="YouTube video player"
+    class="speakerdeck-embed"
+    src="https://speakerdeck.com/player/{id}"
+    title="Speaker Deck"
     frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen />
+    allowfullscreen
+    scrolling="no"
+    allow="encrypted-media" />
 </div>
 
 <style lang="scss">

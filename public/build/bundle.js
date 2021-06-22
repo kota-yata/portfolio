@@ -5001,12 +5001,13 @@ var app = (function () {
   			attr(iframe, "defer", "");
   			attr(iframe, "width", "400px");
   			attr(iframe, "height", "225px");
-  			if (iframe.src !== (iframe_src_value = "https://www.youtube.com/embed/" + /*id*/ ctx[0])) attr(iframe, "src", iframe_src_value);
-  			attr(iframe, "title", "YouTube video player");
+  			attr(iframe, "class", "speakerdeck-embed svelte-4lqy9o");
+  			if (iframe.src !== (iframe_src_value = "https://speakerdeck.com/player/" + /*id*/ ctx[0])) attr(iframe, "src", iframe_src_value);
+  			attr(iframe, "title", "Speaker Deck");
   			attr(iframe, "frameborder", "0");
-  			attr(iframe, "allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
   			iframe.allowFullscreen = true;
-  			attr(iframe, "class", "svelte-4lqy9o");
+  			attr(iframe, "scrolling", "no");
+  			attr(iframe, "allow", "encrypted-media");
   			attr(div, "class", "presentation svelte-4lqy9o");
   		},
   		m(target, anchor) {
@@ -5014,7 +5015,7 @@ var app = (function () {
   			append(div, iframe);
   		},
   		p(ctx, [dirty]) {
-  			if (dirty & /*id*/ 1 && iframe.src !== (iframe_src_value = "https://www.youtube.com/embed/" + /*id*/ ctx[0])) {
+  			if (dirty & /*id*/ 1 && iframe.src !== (iframe_src_value = "https://speakerdeck.com/player/" + /*id*/ ctx[0])) {
   				attr(iframe, "src", iframe_src_value);
   			}
   		},
@@ -5573,7 +5574,14 @@ var app = (function () {
   		}
   	];
 
-  	const presentations = ["BcaPCnWZuvY", "-JLTdhtyDGc", "UYZw55-2kGQ", "1WOFGFyNl4k"];
+  	const presentations = [
+  		"b7efe2f944a84c468b77d28f094a3085",
+  		"d86317a929784054a1a80e9c79ff50c5",
+  		"e7a66d512fe24fcbb57c0ba5dcce42d8",
+  		"3101a4f8ee9a49c693d3b6f82e32a451",
+  		"3021690019cf457f9139d13466c3037e"
+  	];
+
   	return [works, presentations];
   }
 
