@@ -1,0 +1,78 @@
+@import './variable.scss';
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  background: $black;
+  color: $white;
+  font-size: 20px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.section {
+  min-height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 7vw;
+  margin: 0;
+  line-height: 8vw;
+}
+h2 {
+  font-size: 4vw;
+  margin: 0;
+  padding: 0 0 3vw 0;
+}
+h3 {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+h4 {
+  color: $light-gray;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+p {
+  margin: 0;
+  color: $light-gray;
+  line-height: 35px;
+}
+
+a {
+  color: inherit;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.6;
+    transition: 0.2s;
+  }
+}
+
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 10vw;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 8vw;
+  }
+  h3 {
+    font-size: 28px;
+    margin: 20px 0 15px 0;
+  }
+  p {
+    font-size: 15px;
+  }
+}
