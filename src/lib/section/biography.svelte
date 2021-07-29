@@ -22,7 +22,7 @@
     </div>
     <div class="links">
       {#each links as link}
-        <a href={link.url}><img alt={link.name} src="/{link.name}.svg" /></a>
+        <a href={link.url}><img alt={link.name} src="/{link.name}.svg" width="30px" height="30px" /></a>
       {/each}
     </div>
   </section>
