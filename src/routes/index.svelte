@@ -9,15 +9,6 @@
   <title>KOTA YATAGAI - 八谷航太</title>
 </svelte:head>
 
-<div class="sections">
-  <Top />
-  <Biography />
-  <Works />
-</div>
-
-<style lang="scss">
-  .sections {
-    height: 100vh;
-    overflow-y: auto;
-  }
-</style>
+<Top />
+<Biography />
+<Works />
