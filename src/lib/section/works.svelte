@@ -27,9 +27,10 @@
         {
           name: 'Slouch',
           url: 'https://github.com/kota-yata/Slouch',
-          desc: ['Markdown editor', 'Save & overwrite to local files', 'Written with Svelte.js']
+          desc: ['Markdown editor', 'Save & overwrite to local files', 'Made with Svelte.js']
         },
-        { name: 'Photo gallery', url: 'https://pics.kota-yata.com/', desc: ['Written with Svelte.js'] }
+        { name: 'Photo gallery', url: 'https://pics.kota-yata.com/', desc: ['Made with Svelte.js'] },
+        { name: 'SmileScore', url: 'https://smilescore.vercel.app/', desc: ['Using Amazon Rekognition', 'Made with Svelte.js'] }
       ]
     },
     {
