@@ -3,7 +3,7 @@ export const thumbnails: thumbnails[] = [
     location: 'Universal Studio Japan',
     short: 'usj',
     date: 'August 2021',
-    description: `The last trip in before studying abroad. \
+    description: `The last trip before studying abroad. \
     Though I and my friends had already been to Universal Studio Hollywood, we had so much fun the original rides in Osaka. \
     I was exhausted when we leave there because of motion sickness, but was also satisfied with that we could make a great memory.`,
     image: 9
