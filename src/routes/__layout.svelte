@@ -4,7 +4,7 @@
 
 <header>
   <a href="/">Home</a>
-  <a href="/trip">Trip</a>
+  <a href="/trip" sveltekit:prefetch>Trip</a>
 </header>
 
 <main>
