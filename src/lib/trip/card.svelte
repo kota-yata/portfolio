@@ -6,7 +6,7 @@ export let description: string;
 </script>
 
 <div class="container">
-  <img alt="thumbnail" src={image} width="100%" />
+  <img alt="thumbnail" src={image} />
   <h2>{location}</h2>
   <span class="date">{date}</span>
   <p>{description}</p>
@@ -14,12 +14,15 @@ export let description: string;
 
 <style lang="scss">
   @import '../../styles/variable.scss';
+  $width: 45vw;
+  $responsiveWidth: calc(100vw - 20px);
 
   .container {
-    width: 45vw;
+    width: $width;
     padding: 10px 20px;
     img {
-      aspect-ratio: 1.5;
+      width: $width;
+      height: calc(#{$width} / 1.5);
       object-fit: cover;
       filter: contrast(0.9);
     }
@@ -58,8 +61,12 @@ export let description: string;
 
   @media screen and (max-width: 750px) {
     .container {
-      width: calc(100vw - 20px);
+      width: $responsiveWidth;
       padding: 10px;
+      img {
+        width: $responsiveWidth;
+        height: calc(#{$responsiveWidth} / 1.5);
+      }
     }
   }
 </style>
