@@ -29,7 +29,11 @@
           url: 'https://github.com/kota-yata/Slouch',
           desc: ['Markdown editor', 'Save & overwrite to local files', 'Made with Svelte.js']
         },
-        { name: 'Photo gallery', url: 'https://pics.kota-yata.com/', desc: ['Made with Svelte.js'] },
+        {
+          name: 'Personal Markdown Editor',
+          url: 'https://editor.kota-yata.com',
+          desc: ['Useful when summarizing PDF such as paper', 'Made with Nuxt.js']
+        },
         { name: 'SmileScore', url: 'https://smilescore.vercel.app/', desc: ['Using Amazon Rekognition', 'Made with Svelte.js'] }
       ]
     },
@@ -47,7 +51,7 @@
     {
       title: 'Others',
       contents: [
-        { name: 'Blog RSS feed', url: 'https://github.com/kota-yata/integrated-rss', desc: ['Written in Golang'] },
+        { name: 'Blog RSS Feed', url: 'https://github.com/kota-yata/integrated-rss', desc: ['Written in Golang'] },
         {
           name: 'KEC',
           url: 'https://github.com/kota-yata/kec',
