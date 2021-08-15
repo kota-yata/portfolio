@@ -18,6 +18,11 @@
           name: 'Huffman coding',
           url: 'https://github.com/kota-yata/deno-huffman',
           desc: ['Written in TypeScript', 'Running on Deno']
+        },
+        {
+          name: 'Base64',
+          url: 'https://github.com/kota-yata/base64',
+          desc: ['UTF-8 encoding is available', 'Written in TypeScript', 'Running on Deno']
         }
       ]
     },
