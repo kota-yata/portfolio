@@ -3,6 +3,7 @@
     { name: 'github', url: 'https://github.com/kota-yata' },
     { name: 'spotify', url: 'https://open.spotify.com/user/jgm80x9h1j84hnk4nv3hozlaf?si=149aa7cf000b4948' },
     { name: 'twitter', url: 'https://twitter.com/kota_yata' },
+    { name: 'instagram', url: 'https://www.instagram.com/kota_yata/' },
     { name: 'speakerdeck', url: 'https://speakerdeck.com/kota_yata' }
   ];
 </script>
