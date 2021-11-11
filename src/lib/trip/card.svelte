@@ -38,7 +38,6 @@ export let description: string;
     p {
       font-size: 0.9em;
       padding-top: 10px;
-      color: $light-gray;
       font-weight: 500;
       line-height: 1.5em;
     }

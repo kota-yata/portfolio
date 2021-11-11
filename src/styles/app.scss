@@ -4,44 +4,38 @@ html, body {
   padding: 0;
   margin: 0;
   width: 100vw;
-  background: $black;
-  color: $white;
-  font-size: 20px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-weight: 500;
-}
-
-.section {
-  min-height: 100vh;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background: $white;
+  color: $black;
+  font-size: 18px;
+  font-family: $normal;
 }
 
 h1 {
-  font-size: 7vw;
+  font-size: 6vw;
+  color: $vermilion;
+  font-family: $heading;
   margin: 0;
   line-height: 8vw;
 }
 h2 {
-  font-size: 4vw;
+  font-size: 3vw;
+  color: $vermilion;
+  font-family: $heading;
   margin: 0;
   padding: 0 0 3vw 0;
 }
 h3 {
-  font-size: 30px;
+  font-size: 28px;
+  font-family: $heading;
   margin: 0 0 10px 0;
 }
 h4 {
-  color: $light-gray;
   font-size: 24px;
   margin: 10px 0;
 }
 
 p {
   margin: 0;
-  color: $light-gray;
   line-height: 35px;
 }
 
@@ -58,6 +52,51 @@ input,
 button {
   font-size: inherit;
   font-family: inherit;
+}
+
+// Because svelte detect these selector as fucking "unused", I wrote them here, the global file.
+
+// Top.svelte
+.biography {
+  width: calc(95% - 120px);
+  margin-top: -30px;
+  & > p {
+    font-size: 20px;
+  }
+}
+.communication {
+  .links {
+    margin-top: 30px;
+    img {
+      margin: 0 15px;
+    }
+  }
+}
+.research {
+  & > p {
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  & > a {
+    color: $vermilion;
+  }
+}
+.top-square {
+  margin-bottom: $default-square-margin;
+}
+
+// Work.svelte
+.algo {
+  background: $beige;
+}
+.web {
+  background: $orange;
+}
+.npm {
+  background: $purple;
+}
+.others {
+  background: $blue;
 }
 
 @media screen and (max-width: 600px) {
