@@ -1,10 +1,10 @@
 <script lang="ts">
-import { page } from '$app/stores';
-import { thumbnails } from './_data';
+  import { page } from '$app/stores';
+  import { thumbnails } from './_data';
 
-const short = $page.params.slug;
+  const short = $page.params.slug;
 
-const found = thumbnails.find((thumbnail) => thumbnail.short === short);
+  const found = thumbnails.find((thumbnail) => thumbnail.short === short);
 </script>
 
 <svelte:head>
@@ -19,7 +19,7 @@ const found = thumbnails.find((thumbnail) => thumbnail.short === short);
   <h1>{found.location}</h1>
   <div class="images">
     {#each Array(found.image) as _, index}
-    <img alt={`${found.short} ${index}`} src={`/trip/${found.short}/${index}.webp`} />
+      <img alt={`${found.short} ${index}`} src={`/trip/${found.short}/${index}.webp`} />
     {/each}
   </div>
 </div>

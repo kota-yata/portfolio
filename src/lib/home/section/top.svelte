@@ -1,21 +1,19 @@
 <script lang="ts">
-  import Card from "../card.svelte";
+  import Card from '../card.svelte';
 
-  const links: { name: string, url: string }[] = [
+  const links: { name: string; url: string }[] = [
     { name: 'github', url: 'https://github.com/kota-yata' },
     { name: 'spotify', url: 'https://open.spotify.com/user/jgm80x9h1j84hnk4nv3hozlaf?si=149aa7cf000b4948' },
     { name: 'twitter', url: 'https://twitter.com/kota_yata' },
-    { name: 'instagram', url: 'https://www.instagram.com/kota_yata/' },
+    { name: 'instagram', url: 'https://www.instagram.com/kota_yata/' }
   ];
 
-  const researches: { name: string, url: string }[] = [
-    { name: 'Scrapbox', url: 'https://scrapbox.io/senior' }
-  ]
+  const researches: { name: string; url: string }[] = [{ name: 'Scrapbox', url: 'https://scrapbox.io/senior' }];
 </script>
 
 <div class="top">
   <div class="basic">
-    <img alt="profile" src="/me.webp"/>
+    <img alt="profile" src="/me.webp" />
     <h1>Kota Yatagai</h1>
   </div>
   <div class="info">
@@ -48,13 +46,12 @@
       <div class="detail-right">
         <Card className="research top-square" bg="#f1e6bd" title="Research">
           <p>
-            Currently I am researching blockchain system, especially DHT, 
-            which is the protocol for non-structual overlay P2P network. Although I have not published 
-            any implementation or paper on the basis of this research yet, I have been reading 
-            the paper of DHT algorithms and steadily writing note on Scrapbox. This section will be 
-            updated when I published systemized blog posts or any kind of implementations about this topic. 
-            If you can read Japanese, it would be great if you help me know about this topic further 
-            by visiting my Scrapbox and send some comments to me on Twitter or something.
+            Currently I am researching blockchain system, especially DHT, which is the protocol for non-structual
+            overlay P2P network. Although I have not published any implementation or paper on the basis of this research
+            yet, I have been reading the paper of DHT algorithms and steadily writing note on Scrapbox. This section
+            will be updated when I published systemized blog posts or any kind of implementations about this topic. If
+            you can read Japanese, it would be great if you help me know about this topic further by visiting my
+            Scrapbox and send some comments to me on Twitter or something.
           </p>
           {#each researches as link}
             <a href={link.url}>{link.name}</a>
@@ -101,7 +98,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          width: calc(55% - #{$default-square-margin})
+          width: calc(55% - #{$default-square-margin});
         }
         &-right {
           display: flex;

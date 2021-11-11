@@ -5,7 +5,7 @@
     lang: string;
     date: string;
     note: string;
-    article?: { title: string, url: string };
+    article?: { title: string; url: string };
   }
   interface works {
     title: string;
@@ -18,7 +18,7 @@
       title: 'Algorithm implementation',
       class: 'algo',
       contents: [
-        { 
+        {
           name: 'SHA-256',
           url: 'https://github.com/kota-yata/organic-sha256',
           lang: 'TypeScript',
@@ -83,7 +83,7 @@
           url: 'https://www.npmjs.com/package/iso-639-1-jp',
           lang: 'JavaScript',
           date: '2020/07',
-          note: 'Translation of ISO country code into Japanese',
+          note: 'Translation of ISO country code into Japanese'
         }
       ]
     },
@@ -117,19 +117,25 @@
       <h2>{works.title}</h2>
       <div class="repositories">
         {#each works.contents as work}
-        <div class={works.class}>
-          <div class="name"><h3>{work.name}</h3><a href="{work.url}"><img alt="github" src="/github.svg" width="30px" height="30px" /></a></div>
-          <div class="info">
-            <p>
-              <b>Lang :</b> {work.lang}<br />
-              <b>Date :</b> {work.date}<br />
-              <b>Note :</b> {work.note}<br />
-            </p>
-            {#if work.article}
-            <a href={work.article.url}>{work.article.title}</a>
-            {/if}
+          <div class={works.class}>
+            <div class="name">
+              <h3>{work.name}</h3>
+              <a href={work.url}><img alt="github" src="/github.svg" width="30px" height="30px" /></a>
+            </div>
+            <div class="info">
+              <p>
+                <b>Lang :</b>
+                {work.lang}<br />
+                <b>Date :</b>
+                {work.date}<br />
+                <b>Note :</b>
+                {work.note}<br />
+              </p>
+              {#if work.article}
+                <a href={work.article.url}>{work.article.title}</a>
+              {/if}
+            </div>
           </div>
-        </div>
         {/each}
       </div>
     </section>

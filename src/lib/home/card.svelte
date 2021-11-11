@@ -6,7 +6,7 @@
 
 <div class="square {className}" style="background-color: {bg}; ">
   {#if title}
-  <h2>{title}</h2>
+    <h2>{title}</h2>
   {/if}
   <slot />
 </div>
@@ -23,4 +23,3 @@
     }
   }
 </style>
-

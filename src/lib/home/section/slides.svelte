@@ -1,5 +1,5 @@
 <script lang="ts">
-  const slides: { image: string, url: string }[] = [
+  const slides: { image: string; url: string }[] = [
     { image: 'tco', url: 'https://speakerdeck.com/kota_yata/mo-wei-hu-bichu-sizui-shi-hua-tojavascript' },
     { image: 'principle', url: 'https://speakerdeck.com/kota_yata/principle-of-ssi' },
     { image: 'history', url: 'https://speakerdeck.com/kota_yata/nian-yue-siaidenteitei' },
@@ -11,7 +11,7 @@
   <h2>Slides</h2>
   <div>
     {#each slides as slide}
-    <a href={slide.url}><img alt="slide" src="/slides/{slide.image}.webp" width="360px" /></a>
+      <a href={slide.url}><img alt="slide" src="/slides/{slide.image}.webp" width="360px" /></a>
     {/each}
   </div>
 </section>

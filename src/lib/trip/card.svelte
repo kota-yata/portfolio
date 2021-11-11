@@ -1,8 +1,8 @@
 <script lang="ts">
-export let location: string;
-export let image: string;
-export let date: string;
-export let description: string;
+  export let location: string;
+  export let image: string;
+  export let date: string;
+  export let description: string;
 </script>
 
 <div class="container">
@@ -49,7 +49,7 @@ export let description: string;
         font-size: 1.3em;
         padding: 15px 0 0 0;
       }
-      .date { 
+      .date {
         font-size: 0.6em;
       }
       p {
