@@ -1,15 +1,27 @@
 <script lang="ts">
+import { onMount } from 'svelte';
+
+  import { fade } from 'svelte/transition';
   export let bg: string;
   export let title: string = '';
   export let className = '';
+  export let delay = 0;
+  export let isVisible = false;
+
+  onMount(() => {
+    console.log('onMount');
+    isVisible = true;
+  })
 </script>
 
-<div class="square {className}" style="background-color: {bg}; ">
+{#if isVisible}
+<div class="square {className}" transition:fade={{ delay, duration: 1000 }} style="background-color: {bg}; ">
   {#if title}
     <h2>{title}</h2>
   {/if}
   <slot />
 </div>
+{/if}
 
 <style lang="scss">
   .square {

@@ -109,6 +109,7 @@
       ]
     }
   ];
+
 </script>
 
 <div class="work">
@@ -152,7 +153,6 @@
     flex-direction: column;
     align-items: center;
     section {
-      width: 85%;
       padding-bottom: 40px;
       & > h2 {
         color: $vermilion;

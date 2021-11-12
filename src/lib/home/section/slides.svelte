@@ -20,7 +20,6 @@
   @import '../../../styles/variable.scss';
 
   section {
-    width: 85%;
     & > div {
       display: flex;
       flex-wrap: wrap;

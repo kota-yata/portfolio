@@ -10,6 +10,10 @@ html, body {
   font-family: $normal;
 }
 
+section {
+  width: 85vw;
+}
+
 h1 {
   font-size: 6vw;
   color: $vermilion;
@@ -97,6 +101,11 @@ button {
 }
 .others {
   background: $blue;
+}
+
+// bookInterview.svelte
+.interview {
+  margin-top: 35px;
 }
 
 @media screen and (max-width: 600px) {

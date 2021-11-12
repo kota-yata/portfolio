@@ -1,5 +1,7 @@
 <script lang="ts">
   import Card from '../card.svelte';
+  import { fade } from 'svelte/transition';
+import { onMount } from 'svelte';
 
   const links: { name: string; url: string }[] = [
     { name: 'github', url: 'https://github.com/kota-yata' },
@@ -9,15 +11,22 @@
   ];
 
   const researches: { name: string; url: string }[] = [{ name: 'Scrapbox', url: 'https://scrapbox.io/senior' }];
+
+  let isVisible = false;
+  onMount(() => {
+    isVisible = true;
+  })
 </script>
 
-<div class="top">
-  <div class="basic">
+<section>
+  {#if isVisible}
+  <div class="basic" transition:fade={{ delay: 200 }}>
     <img alt="profile" src="/me.webp" />
     <h1>Kota Yatagai</h1>
   </div>
+  {/if}
   <div class="info">
-    <Card className="top-square biography" bg="#efd9d2">
+    <Card className="top-square biography" bg="#efd9d2" delay={500}>
       <p>
         > Front-end Developer<br />
         > Learning cryptography and distributed system<br />
@@ -27,10 +36,10 @@
     </Card>
     <div class="detail">
       <div class="detail-left">
-        <Card className="top-square" bg="#85d7c8" title="Qualifications">
+        <Card className="top-square" bg="#85d7c8" title="Qualifications" delay={600}>
           <p>> Fundamental of Engineering (Japanese)<br />> The 1st prize at EPSON HackTrek</p>
         </Card>
-        <Card className="top-square communication" bg="#d3d3f4" title="Communication">
+        <Card className="top-square communication" bg="#d3d3f4" title="Communication" delay={750}>
           <p>
             > Email : kota@yatagai.com<br />
             > Native : Japanese<br />
@@ -44,7 +53,7 @@
         </Card>
       </div>
       <div class="detail-right">
-        <Card className="research top-square" bg="#f1e6bd" title="Research">
+        <Card className="research top-square" bg="#f1e6bd" title="Research" delay={1000}>
           <p>
             Currently I am researching blockchain system, especially DHT, which is the protocol for non-structual
             overlay P2P network. Although I have not published any implementation or paper on the basis of this research
@@ -60,13 +69,12 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <style lang="scss">
   @import '../../../styles/variable.scss';
 
-  .top {
-    width: 85vw;
+  section {
     .basic {
       z-index: 2;
       padding-top: 10vh;
@@ -111,7 +119,7 @@
   }
 
   @media screen and (max-width: 600px) {
-    .top {
+    section {
       text-align: center;
     }
   }
