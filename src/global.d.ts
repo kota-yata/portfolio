@@ -5,4 +5,9 @@ interface thumbnails {
   date: string,
   description: string,
   image: number
-}
+};
+
+interface post {
+  frontMatter: FrontMatterResult<unknown>,
+  content: string
+};
