@@ -8,6 +8,14 @@ interface thumbnails {
 };
 
 interface post {
-  frontMatter: FrontMatterResult<unknown>,
-  content: string
+  meta: FrontMatterResult<unknown>,
+  body: string
 };
+
+interface meta {
+  title: string,
+  date: string,
+  category: string,
+  description: string,
+  ogp?: string
+}

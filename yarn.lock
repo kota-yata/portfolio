@@ -2776,6 +2776,16 @@ yargs@^16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
+zenn-content-css@^0.1.98:
+  version "0.1.98"
+  resolved "https://registry.yarnpkg.com/zenn-content-css/-/zenn-content-css-0.1.98.tgz#550366b3a05b11c40bade1849ae99f52477986fe"
+  integrity sha512-GcLDNXOeHiNIfKWq/gAJKVpwCQ98A0SFtd6fJXn0nM5ADHXMo3KDc1QkyXFDI0vxEg3SpSE7Veslgmz4XCf+OA==
+
+zenn-embed-elements@^0.1.98:
+  version "0.1.98"
+  resolved "https://registry.yarnpkg.com/zenn-embed-elements/-/zenn-embed-elements-0.1.98.tgz#c81a9b48e29b8c69a78c734b06209da692c085fb"
+  integrity sha512-V2XgvdGnr9tX9vnhmJ7HY3GtqnNCBOLzDewDClYMVG6H7sBGpMCSOKr8PZHwBvPsOz+4rYgkgJHVuOhSGKWhKQ==
+
 zenn-markdown-html@^0.1.98:
   version "0.1.98"
   resolved "https://registry.yarnpkg.com/zenn-markdown-html/-/zenn-markdown-html-0.1.98.tgz#b8c1ec65e48d825b02f4cc35a117ee651f8c84c2"
