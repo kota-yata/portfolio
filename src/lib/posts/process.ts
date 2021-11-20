@@ -7,12 +7,12 @@ const separateData = (data: string): { meta: string[], body: string } => {
   return { meta, body };
 };
 
-const getFrontMatter = (data: string[]): meta => {
+const formatMeta = (data: string[]): meta => {
   const lines = data.slice(1, data.length - 1);
   const frontMatter = {} as meta;
   lines.map(c => {
     const content = c.split(':');
-    content[1] = content[1].split(' ')[1];
+    content[1] = content[1].split(' ').slice(1).join(' ');
     frontMatter[content[0]] = content[1];
   });
   return frontMatter;
@@ -25,7 +25,13 @@ const getHTML = (data: string): string => {
 
 export const process = (data: string): post => {
   const separatedData = separateData(data);
-  const meta = getFrontMatter(separatedData.meta);
+  const meta = formatMeta(separatedData.meta);
   const body = getHTML(separatedData.body);
   return { meta, body };
+};
+
+export const getMeta = (data: string): meta => {
+  const separatedData = separateData(data);
+  const meta = formatMeta(separatedData.meta);
+  return meta;
 };

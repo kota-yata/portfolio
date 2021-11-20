@@ -1,9 +1,9 @@
 ---
 title: TCPが繋がって切れるまで
-date: "2020-10-22"
-category: "ネットワーク"
-description: "TCPのハンドシェイクの概略"
-ogp: "/ogp.jpeg"
+date: 2020-10-22
+category: 計算機科学
+description: TCPのハンドシェイクの概略
+ogp: /ogp.jpeg
 ---
 
 最近ふと、「あれ？俺TCP通信理解してなくね？」と思ったので軽くTCPの働きをまとめておきます

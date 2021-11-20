@@ -17,7 +17,6 @@
   @import '../styles/variable.scss';
 
   header {
-    position: fixed;
     width: calc(100vw - 40px);
     text-align: right;
     height: 40px;
@@ -35,6 +34,6 @@
   footer {
     width: 100vw;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 100px 0 10px 0;
   }
 </style>

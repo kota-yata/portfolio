@@ -1,9 +1,9 @@
 ---
-title: "ローカルとクラウドのハイブリッド的なエディタ"
-date: "2021-02-22"
-category: "コーディング"
-description: "SvelteでMarkdownエディタ作ったよという話"
-ogp: "/ogp.jpeg"
+title: ローカルとクラウドのハイブリッド的なエディタ
+date: 2021-02-22
+category: 実装
+description: SvelteでMarkdownエディタ作ったよという話
+ogp: /ogp.jpeg
 ---
 
 去年の8月ごろにSvelteを知って、それ以来ちまちまとWebサイト作ったりWebアプリ作ったりしてたんですが、NuxtとかReactやったことがないのもあって仮想DOMへの憧れが捨てられませんでした。というわけで、しばらくSvelteと距離を置くための最後の作品としてMarkdownエディタを作りました。

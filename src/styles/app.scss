@@ -4,11 +4,12 @@ html, body {
   padding: 0;
   margin: 0;
   width: 100vw;
+  overflow-x: hidden;
   background: $black;
   color: $white;
-  font-size: 20px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Inter', 'Noto Sans JP', Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 .section {
@@ -20,31 +21,40 @@ html, body {
 }
 
 h1 {
-  font-size: 7vw;
+  font-size: 35px;
   margin: 0;
-  line-height: 8vw;
+  padding: 30px 0 20px 0;
 }
 h2 {
-  font-size: 4vw;
+  font-size: 30px;
   margin: 0;
-  padding: 0 0 3vw 0;
+  padding: 30px 0 20px 0;
 }
 h3 {
-  font-size: 30px;
-  margin: 0 0 10px 0;
+  font-size: 25px;
+  margin: 0;
+  padding: 30px 0 10px 0;
 }
 h4 {
   color: $light-gray;
-  font-size: 24px;
-  margin: 10px 0;
+  font-size: 20px;
+  margin: 0;
+  padding: 30px 0 10px 0;
 }
-
+h5 {
+  color: $gray;
+  font-size: 18px;
+  margin: 0;
+  padding: 30px 0 10px 0;
+}
 p {
   margin: 0;
   color: $light-gray;
-  line-height: 35px;
+  line-height: 25px;
+  letter-spacing: 0.25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 a {
   color: inherit;
   transition: 0.2s;
@@ -53,11 +63,52 @@ a {
     transition: 0.2s;
   }
 }
-
 input,
 button {
   font-size: inherit;
   font-family: inherit;
+}
+img {
+  max-width: 100%;
+}
+
+p, .embed-zenn-link {
+  width: calc(100% - 10px);
+  padding-left: 10px;
+}
+.embed-zenn-link {
+  padding-top: 10px;
+  & > iframe {
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
+  }
+}
+.code-block-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 15px 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: $code;
+}
+.algorithm {
+  color: $pink;
+}
+.research {
+  color: $green;
+}
+.cryptography {
+  color: $orange;
+}
+.non-tech {
+  color: $yellow;
+}
+.coding {
+  color: $blue;
+}
+.cs {
+  color: $red;
 }
 
 @media screen and (max-width: 600px) {

@@ -19,3 +19,10 @@ interface meta {
   description: string,
   ogp?: string
 }
+
+interface postMeta {
+  path: string,
+  meta: meta
+}
+
+interface postsProps { props: { posts: postMeta[] } };
