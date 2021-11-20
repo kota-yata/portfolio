@@ -1,15 +1,13 @@
 <script context="module" lang="ts">
   export const load = async ({ fetch }): Promise<{ props: { posts: postMeta[] } }> => {
-    const url = '/posts.json';
-    const res = await fetch(url);
-    if (!res.ok) return;
-    const posts: postMeta[] = await res.json();
+    const posts = await getPosts(fetch);
     return { props: { posts } };
   };
 </script>
 
 <script lang="ts">
   import Page from '$lib/page.svelte';
+import { getPosts } from '$lib/posts/getPosts';
   import PostCard from '$lib/posts/postCard.svelte';
   export let posts: postMeta[] = [];
 </script>

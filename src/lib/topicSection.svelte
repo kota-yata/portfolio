@@ -1,7 +1,7 @@
 <script lang="ts">
-import { onMount } from "svelte";
-import PostCard from "./posts/postCard.svelte";
-
+  import { onMount } from "svelte";
+  import PostCard from "./posts/postCard.svelte";
+  import { getPosts } from "./posts/getPosts";
 
   export let enName: string;
   export let category: string;
@@ -10,11 +10,7 @@ import PostCard from "./posts/postCard.svelte";
   $: posts = [];
 
   onMount(async () => {
-    const url = '/posts.json';
-    const res = await fetch(url);
-    if (!res.ok) return;
-    const all: postMeta[] = await res.json();
-    posts = all.filter((post) => post.meta.category === category);
+    posts = await getPosts(fetch, 0, category);
   })
 </script>
 

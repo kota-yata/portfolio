@@ -1,5 +1,11 @@
 <script lang="ts">
-  const pages = [
+  const icons: { image: string, link: string }[] = [
+    { image: '/github.svg', link: 'https://github.com/kota-yata' },
+    { image: '/spotify.svg', link: 'https://open.spotify.com/user/jgm80x9h1j84hnk4nv3hozlaf' },
+    { image: '/twitter.svg', link: 'https://twitter.com/kota_yata' },
+    { image: '/speakerdeck.svg', link: 'https://speakerdeck.com/kota_yata/' }
+  ]
+  const pages: { name: string, path: string }[] = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Works', path: '/works' },
@@ -18,6 +24,11 @@
     <li><a href={page.path}>{page.name}</a></li>
     {/each}
   </ul>
+  <div class="icons">
+    {#each icons as icon}
+    <a href={icon.link}><img alt="icon" src={icon.image} width="20px" height="20px" /></a>
+    {/each}
+  </div>
 </div>
 
 <style lang="scss">
@@ -25,6 +36,7 @@
 
   .container {
     min-width: 280px;
+    overflow-y: visible;
     & > img {
       border-radius: 50%;
     }
@@ -38,6 +50,12 @@
         color: $gray;
         width: 100%;
         padding: 0;
+      }
+    }
+    .icons {
+      margin-top: 20px;
+      & > a {
+        padding-right: 15px;
       }
     }
     & > ul {

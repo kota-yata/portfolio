@@ -18,7 +18,7 @@ const formatMeta = (data: string[]): meta => {
   return frontMatter;
 };
 
-const getHTML = (data: string): string => {
+export const parseMD = (data: string): string => {
   const html = markdownToHTML(data);
   return html;
 };
@@ -26,7 +26,7 @@ const getHTML = (data: string): string => {
 export const process = (data: string): post => {
   const separatedData = separateData(data);
   const meta = formatMeta(separatedData.meta);
-  const body = getHTML(separatedData.body);
+  const body = parseMD(separatedData.body);
   return { meta, body };
 };
 

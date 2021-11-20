@@ -26,3 +26,7 @@ interface postMeta {
 }
 
 interface postsProps { props: { posts: postMeta[] } };
+
+interface pages {
+  html: string
+}

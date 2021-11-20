@@ -2,7 +2,7 @@
   import { getPage } from '$lib/pages/getPage';
 
   export const load = async ({ fetch }): Promise<{ props: { html: string } }> => {
-    const url = '/about.json';
+    const url = '/contacts.json';
     const html = await getPage(fetch, url);
     return html;
   };
