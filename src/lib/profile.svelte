@@ -8,7 +8,7 @@
   const pages: { name: string, path: string }[] = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Works', path: '/works' },
+    { name: 'Works', path: '/' },
     { name: 'Contacts', path: '/contacts' }
   ];
 </script>
@@ -26,7 +26,7 @@
   </ul>
   <div class="icons">
     {#each icons as icon}
-    <a href={icon.link}><img alt="icon" src={icon.image} width="20px" height="20px" /></a>
+    <a href={icon.link} sveltekit:prefetch><img alt="icon" src={icon.image} width="20px" height="20px" /></a>
     {/each}
   </div>
 </div>

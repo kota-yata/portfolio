@@ -35,8 +35,7 @@
     "svelte-check": "^2.0.0",
     "svelte-preprocess": "^4.0.0",
     "tslib": "^2.0.0",
-    "typescript": "^4.0.0",
-    "zenn-markdown-html": "^0.1.98"
+    "typescript": "^4.0.0"
   },
   "type": "module",
   "dependencies": {
@@ -44,6 +43,7 @@
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
     "zenn-content-css": "^0.1.98",
-    "zenn-embed-elements": "^0.1.98"
+    "zenn-embed-elements": "^0.1.98",
+    "zenn-markdown-html": "^0.1.98"
   }
 }

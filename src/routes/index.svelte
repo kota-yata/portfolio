@@ -6,8 +6,8 @@
 </script>
 
 <script lang="ts">
+  import { getPosts } from "$lib/posts/getPosts";
   import Page from "$lib/page.svelte";
-import { getPosts } from "$lib/posts/getPosts";
   import PostCard from "$lib/posts/postCard.svelte";
   import TopicSection from "$lib/topicSection.svelte";
   export let posts;
