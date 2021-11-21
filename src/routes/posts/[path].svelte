@@ -11,11 +11,6 @@
 <script lang="ts">
   import Page from '$lib/page.svelte';
   import { getClassName } from '$lib/posts/className';
-  import { onMount } from 'svelte';
-  import 'zenn-content-css';
-  onMount(() => {
-    import('zenn-embed-elements');
-  });
   export let post: post;
   const className = getClassName(post.meta.category);
 </script>

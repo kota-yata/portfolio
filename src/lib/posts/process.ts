@@ -1,4 +1,5 @@
 import markdownToHTML from 'markdown-it';
+import markdownItKatex from 'markdown-it-katex';
 
 const md = markdownToHTML({
   html: true,
@@ -7,6 +8,8 @@ const md = markdownToHTML({
   typographer: true,
   highlight: (/*str, lang*/) => ''
 });
+
+md.use(markdownItKatex);
 
 const separateData = (data: string): { meta: string[], body: string } => {
   const separated = data.split('---');

@@ -13,10 +13,12 @@ RSA暗号そのものについての歴史とか概要は数多の記事があ�
 ## アルゴリズム
 前提条件として、公開鍵を$(E,N)$、秘密鍵を$D$とします。
 #### 暗号化と復号
+
+$$ 
+\text{Cipher} = \text{Plain Text} ^ E \mod N\\
+\text{Plain Text} = \text{Cipher} ^ D\mod N
 $$
-\text{暗号文} = \text{平文} ^ E \bmod N\\
-\text{平文} = \text{暗号文} ^ D \bmod N
-$$
+
 何というこの単純さ。
 
 #### 電子署名

@@ -43,8 +43,9 @@
     "@fontsource/fira-mono": "^4.2.2",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
+    "katex": "^0.15.1",
     "markdown-it": "^12.2.0",
-    "zenn-content-css": "^0.1.98",
-    "zenn-embed-elements": "^0.1.98"
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-latex": "^0.2.0"
   }
 }
