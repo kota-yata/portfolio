@@ -98,6 +98,12 @@ pre {
     border-radius: 0;
   }
 }
+
+blockquote {
+  margin-left: 10px;
+  border-left: 4px $dark-gray solid;
+}
+
 .algorithm {
   color: $pink;
 }

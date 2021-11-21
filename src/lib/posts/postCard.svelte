@@ -1,6 +1,5 @@
 <script lang="ts">
-import { getClassName } from "./className";
-
+  import { getClassName } from './className';
 
   export let meta: postMeta = {} as postMeta;
   const className = getClassName(meta.meta.category);

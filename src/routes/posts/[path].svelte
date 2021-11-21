@@ -5,7 +5,7 @@
     if (!res.ok) return;
     const post = await res.json();
     return { props: { post } };
-  }
+  };
 </script>
 
 <script lang="ts">

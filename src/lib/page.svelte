@@ -1,6 +1,7 @@
 <script lang="ts">
-  import Profile from "./profile.svelte";
+  import Profile from './profile.svelte';
 </script>
+
 <div class="container">
   <div class="profile"><Profile /></div>
   <div class="slot"><slot /></div>
@@ -16,7 +17,7 @@
     .profile {
       width: 280px;
       height: 400px;
-      border-right: 1px $dark-gray solid;;
+      border-right: 1px $dark-gray solid;
     }
     .slot {
       width: calc(100% - 280px - 100px);

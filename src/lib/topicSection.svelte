@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import PostCard from "./posts/postCard.svelte";
-  import { getPosts } from "./posts/getPosts";
+  import { onMount } from 'svelte';
+  import PostCard from './posts/postCard.svelte';
+  import { getPosts } from './posts/getPosts';
 
   export let enName: string;
   export let category: string;
@@ -11,7 +11,7 @@
 
   onMount(async () => {
     posts = await getPosts(fetch, 0, category);
-  })
+  });
 </script>
 
 <section>
@@ -19,7 +19,7 @@
   <p>{description}</p>
   <div class="post-container">
     {#each posts as post}
-    <div class="post"><PostCard meta={post} /></div>
+      <div class="post"><PostCard meta={post} /></div>
     {/each}
   </div>
 </section>

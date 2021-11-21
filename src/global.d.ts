@@ -30,3 +30,12 @@ interface postsProps { props: { posts: postMeta[] } };
 interface pages {
   html: string
 }
+
+interface work {
+  title: string,
+  github: string,
+  lang: string,
+  date: string,
+  note: string,
+  articles?: { text: string, url: string }[],
+}
