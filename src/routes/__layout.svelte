@@ -36,4 +36,10 @@
     text-align: center;
     padding: 100px 0 10px 0;
   }
+
+  @media screen and (max-width: 600px) {
+    main {
+      width: 95%;
+    }
+  }
 </style>

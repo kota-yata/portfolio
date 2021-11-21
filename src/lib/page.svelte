@@ -24,4 +24,17 @@
       padding-left: 100px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      display: block;
+      .profile {
+        border: none;
+      }
+      .slot {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
 </style>
