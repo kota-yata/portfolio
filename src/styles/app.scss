@@ -54,6 +54,8 @@ p {
   letter-spacing: 0.25px;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: calc(100% - 10px);
+  padding-left: 10px;
 }
 a {
   color: inherit;
@@ -70,11 +72,6 @@ button {
 }
 img {
   max-width: 100%;
-}
-
-p {
-  width: calc(100% - 10px);
-  padding-left: 10px;
 }
 
 table {
