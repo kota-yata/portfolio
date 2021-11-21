@@ -1,4 +1,12 @@
-import markdownToHTML from 'zenn-markdown-html';
+import markdownToHTML from 'markdown-it';
+
+const md = markdownToHTML({
+  html: true,
+  breaks: true,
+  linkify: true,
+  typographer: true,
+  highlight: (/*str, lang*/) => ''
+});
 
 const separateData = (data: string): { meta: string[], body: string } => {
   const separated = data.split('---');
@@ -19,7 +27,7 @@ const formatMeta = (data: string[]): meta => {
 };
 
 export const parseMD = (data: string): string => {
-  const html = markdownToHTML(data);
+  const html = md.render(data);
   return html;
 };
 

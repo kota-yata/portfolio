@@ -76,21 +76,27 @@ p, .embed-zenn-link {
   width: calc(100% - 10px);
   padding-left: 10px;
 }
-.embed-zenn-link {
-  padding-top: 10px;
-  & > iframe {
-    width: 90%;
-    max-width: 500px;
-    min-width: 300px;
-  }
+
+code {
+  background: $code;
+  padding: 0 5px;
+  margin: 0 3px;
+  border-radius: 5px;
 }
-.code-block-container {
+
+pre {
   width: 100%;
   overflow-x: auto;
   margin: 15px 0;
-  padding: 10px 30px;
+  padding: 20px 30px;
   border-radius: 5px;
   background: $code;
+  & > code {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
 }
 .algorithm {
   color: $pink;
