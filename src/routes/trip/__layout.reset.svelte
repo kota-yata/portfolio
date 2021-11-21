@@ -3,10 +3,9 @@
 </script>
 
 <header>
-  <div>Trip Scrap</div>
+  <div class="title">Trip Scrap | KOTA YATAGAI</div>
   <div>
     <a href="/">Home</a>
-    <a href="/trip">Trip</a>
   </div>
 </header>
 
@@ -26,6 +25,9 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    .title {
+      font-weight: 600;
+    }
     a {
       text-decoration: none;
       font-size: 15px;

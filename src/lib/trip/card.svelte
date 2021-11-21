@@ -31,11 +31,12 @@
       padding: 20px 0 8px 0;
     }
     .date {
-      font-size: 0.8em;
+      font-size: 0.9em;
       color: $gray;
       font-weight: 500;
     }
     p {
+      padding-left: 0;
       font-size: 0.9em;
       padding-top: 10px;
       color: $light-gray;
@@ -44,7 +45,7 @@
     }
   }
 
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1000px) {
     .container {
       h2 {
         font-size: 1.3em;

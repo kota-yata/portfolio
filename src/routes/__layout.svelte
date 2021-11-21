@@ -3,8 +3,7 @@
 </script>
 
 <header>
-  <a href="/">Home</a>
-  <a href="/trip" sveltekit:prefetch>Trip</a>
+  <a href="/trip" sveltekit:prefetch><img alt="to trip page" src="/aircraft.svg" width="30px" height="30px" /></a>
 </header>
 
 <main>
