@@ -13,6 +13,9 @@
     "format:prettier": "prettier --write --svelte-sort-order scripts-markup-styles 'src/**/*.svelte'",
     "format:stylelint": "stylelint --fix '**/*.{css,scss,sass}'"
   },
+  "engines" : { 
+    "node" : ">=16.0.0" 
+  },
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.16",
     "@sveltejs/adapter-vercel": "^1.0.0-next.26",
