@@ -39,7 +39,7 @@
       .post {
         width: 100%;
         max-width: 370px;
-        margin: 10px 30px 10px 0;
+        margin: 20px 30px 20px 0;
       }
     }
   }

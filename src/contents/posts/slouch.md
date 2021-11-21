@@ -1,7 +1,7 @@
 ---
 title: ローカルとクラウドのハイブリッド的なエディタ
 date: 2021-02-22
-category: 実装
+category: プログラミング
 description: SvelteでMarkdownエディタ作ったよという話
 ogp: /ogp.jpeg
 ---

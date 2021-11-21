@@ -38,6 +38,12 @@
         '上記のどのカテゴリーにも引っかからない計算機科学分野の記事はここにまとめています。プロセッサーやネットワークに関する記事がメインになる予定です。'
     },
     {
+      category: 'プログラミング',
+      enName: 'Programming',
+      description:
+        'Webアプリの実装やAPIに関する記事はここにまとめています。一時期ChromeのProject Fuguを追ってた時期があり、その時に書いた記事も何個かZennから移行しています。'
+    },
+    {
       category: '非技術',
       enName: 'Non-Tech',
       description:

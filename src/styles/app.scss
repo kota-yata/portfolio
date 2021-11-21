@@ -130,11 +130,19 @@ blockquote {
 .non-tech {
   color: $yellow;
 }
-.coding {
+.programming {
   color: $blue;
 }
 .cs {
   color: $red;
+}
+
+.message {
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #71b419, #25a521);
+  color: $black;
+  font-weight: 600;
 }
 
 .pages {
