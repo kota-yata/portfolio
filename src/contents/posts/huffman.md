@@ -445,13 +445,12 @@ for (let i = 0; i < bitsTable.length; i++) {
 
 # 圧縮の結果
 以下が「go go gophers」をハフマン符号化した際の結果です。
-![](https://storage.googleapis.com/zenn-user-upload/xljbq6dbmsh30kvzr4jjsqvuujzq)
+![image](https://storage.googleapis.com/zenn-user-upload/xljbq6dbmsh30kvzr4jjsqvuujzq)
 お分かりいただけただろうか。全然successfullじゃありませんね。
 「go go gophers」のような短い文字列の場合、ヘッダーがオーバーヘッドになってむしろエンコード後のサイズの方が大きくなることがあります。実際にこんな短い文字列を圧縮することはないので気にしなくても良いと思いますがサイズが大きくなったら元のデータを返すみたいな処理を加えておいても良さげです。
-![](https://storage.googleapis.com/zenn-user-upload/xaxovlwww9ygj7bfpt0j7gsifrdv =200x)
 
 ちなみにかの有名な「Lorem ipsum...」のテキストをエンコードした結果は以下の通りです。
-![](https://storage.googleapis.com/zenn-user-upload/0s923xjodsxkxlu9k0vbk6e4rd6y)
+![image](https://storage.googleapis.com/zenn-user-upload/0s923xjodsxkxlu9k0vbk6e4rd6y)
 文字数は450文字くらいですが、60%なのでまあまあ良いんじゃないでしょうか。
 
 # おわりに

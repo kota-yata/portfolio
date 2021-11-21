@@ -72,9 +72,9 @@ img {
   max-width: 100%;
 }
 
-p, blockquote {
+p {
   width: calc(100% - 10px);
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 table {
@@ -113,6 +113,8 @@ pre {
 }
 
 blockquote {
+  width: calc(100% - 10px);
+  margin-left: 10px;
   border-left: 4px $dark-gray solid;
 }
 
