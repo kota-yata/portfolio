@@ -98,7 +98,7 @@ code {
 }
 
 pre {
-  width: 100%;
+  width: calc(100% - 60px);
   overflow-x: auto;
   margin: 15px 0;
   padding: 20px 30px;
@@ -147,5 +147,23 @@ blockquote {
   img {
     width: 60%;
     min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 33px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 19px;
+  }
+  h5 {
+    font-size: 17px;
   }
 }

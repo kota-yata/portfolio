@@ -43,4 +43,12 @@
       padding-right: 10px;
     }
   }
+
+  @media screen and (max-width: 700px) {
+    .info {
+      &-title {
+        font-size: 35px;
+      }
+    }
+  }
 </style>

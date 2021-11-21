@@ -25,11 +25,17 @@
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .container {
       display: block;
       .profile {
+        width: 100%;
+        text-align: center;
         border: none;
+        height: auto;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px $dark-gray solid;
       }
       .slot {
         width: 100%;
