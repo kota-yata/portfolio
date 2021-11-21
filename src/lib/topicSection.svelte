@@ -38,8 +38,8 @@
       padding-left: 10px;
       .post {
         width: 100%;
-        max-width: 400px;
-        margin: 10px 50px 10px 0;
+        max-width: 370px;
+        margin: 10px 30px 10px 0;
       }
     }
   }

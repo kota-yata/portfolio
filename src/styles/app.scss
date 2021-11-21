@@ -72,9 +72,22 @@ img {
   max-width: 100%;
 }
 
-p, .embed-zenn-link {
+p, blockquote {
   width: calc(100% - 10px);
-  padding-left: 10px;
+  margin-left: 10px;
+}
+
+table {
+  margin-left: 10px;
+  border: 1px $dark-gray solid;
+  border-collapse: collapse;
+  thead {
+    background: $dark-gray;
+  }
+  th, td {
+    border: 1px $dark-gray solid;
+    padding: 5px;
+  }
 }
 
 code {
@@ -100,7 +113,6 @@ pre {
 }
 
 blockquote {
-  margin-left: 10px;
   border-left: 4px $dark-gray solid;
 }
 
