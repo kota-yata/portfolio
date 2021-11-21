@@ -1,5 +1,6 @@
 import markdownToHTML from 'markdown-it';
-import markdownItKatex from 'markdown-it-katex';
+import markdownItKatex from 'markdown-it-texmath';
+import katex from 'katex';
 
 import hljs from 'highlight.js';
 
@@ -14,7 +15,10 @@ const md = markdownToHTML({
   }
 });
 
-md.use(markdownItKatex);
+md.use(markdownItKatex, {
+  engine: katex,
+  delimiters: 'dollars',
+});
 
 const separateData = (data: string): { meta: string[], body: string } => {
   const separated = data.split('---');
