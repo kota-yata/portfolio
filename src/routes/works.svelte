@@ -1,7 +1,15 @@
 <script lang="ts">
   import Page from '$lib/page.svelte';
   import WorkCard from '$lib/workCard.svelte';
-  import { works } from '$lib/pages/works';
+  import { onMount } from 'svelte';
+  import { getCountry } from '$lib/getCountry';
+  import { works as enWorks } from '$lib/pages/works/en';
+  import { works as jpWorks } from '$lib/pages/works/jp';
+  let works = enWorks;
+  onMount(async () => {
+    const countryCode = await getCountry();
+    if (countryCode === 'JP') works = jpWorks;
+  });
 </script>
 
 <Page>
