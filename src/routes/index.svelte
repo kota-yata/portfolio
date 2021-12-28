@@ -12,40 +12,34 @@
   import TopicSection from '$lib/topicSection.svelte';
   export let posts;
 
-  const topics: { category: string; enName: string; description: string }[] = [
+  const topics: { category: string; description: string }[] = [
     {
-      category: '研究',
-      enName: 'Research',
+      category: 'Research',
       description:
         '現在僕はブロックチェーン、特にDHTについてリサーチをしています。高校の卒研も「分散型フリマの提案」なるテーマで研究をしており、ブロックチェーンやP2Pネットワーク、非中央集権型システムに関わる技術のリサーチ記事を研究カテゴリとしてまとめています。体系化する前段階のメモはScrapboxに置いてあります。'
     },
     {
-      category: 'アルゴリズム',
-      enName: 'Algorithm',
+      category: 'Algorithm',
       description:
         '既存のアルゴリズム実装や自作のライブラリで使うアルゴリズムなどに関する記事はここにまとめています。ほとんどの記事内の実装はGItHubに上がってると思うので改善点や指摘がある場合はそっちでIssueを立ててもらえればなるはやで確認します。'
     },
     {
-      category: '暗号',
-      enName: 'Cryptography',
+      category: 'Cryptography',
       description:
         '暗号学に関する記事はここにまとめています。暗号に関する記事でもアルゴリズムを実装しているものはアルゴリズムカテゴリーにあり、研究カテゴリーに置かれてる場合もがあります。'
     },
     {
-      category: '計算機科学',
-      enName: 'Computer Science',
+      category: 'Computer Science',
       description:
         '上記のどのカテゴリーにも引っかからない計算機科学分野の記事はここにまとめています。プロセッサーやネットワークに関する記事がメインになる予定です。'
     },
     {
-      category: 'プログラミング',
-      enName: 'Programming',
+      category: 'Programming',
       description:
         'Webアプリの実装やAPIに関する記事はここにまとめています。一時期ChromeのProject Fuguを追ってた時期があり、その時に書いた記事も何個かZennから移行しています。'
     },
     {
-      category: '非技術',
-      enName: 'Non-Tech',
+      category: 'Non-Tech',
       description:
         'プログラミングやコンピューターサイエンスに直接関係のない記事はここにまとめています。哲学とかの話も体系化できるようになったら書いていきたいな。'
     }
@@ -60,7 +54,7 @@
 </Page>
 <div class="to-posts"><a href="/posts">View All Posts</a></div>
 {#each topics as topic}
-  <TopicSection category={topic.category} enName={topic.enName} description={topic.description} />
+  <TopicSection category={topic.category} description={topic.description} />
 {/each}
 
 <style lang="scss">

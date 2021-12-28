@@ -1,7 +1,7 @@
 ---
 title: RSAと安全性
 date: 2021-06-06
-category: 暗号
+category: Cryptography
 description: RSA暗号、RSA署名の仕組みと安全性
 ogp: /ogp.jpeg
 ---

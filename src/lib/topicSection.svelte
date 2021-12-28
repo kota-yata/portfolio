@@ -3,7 +3,6 @@
   import PostCard from './posts/postCard.svelte';
   import { getPosts } from './posts/getPosts';
 
-  export let enName: string;
   export let category: string;
   export let description: string;
 
@@ -15,7 +14,7 @@
 </script>
 
 <section>
-  <h2>{enName}</h2>
+  <h2>{category}</h2>
   <p>{description}</p>
   <div class="post-container">
     {#each posts as post}

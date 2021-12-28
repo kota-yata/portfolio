@@ -1,7 +1,7 @@
 ---
 title: パイプライン処理と高速化
 date: 2021-01-14
-category: 計算機科学
+category: Computer Science
 description: プロセッサーの役割分担と人海戦術
 ogp: /ogp.jpeg
 ---

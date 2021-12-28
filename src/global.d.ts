@@ -31,6 +31,8 @@ interface pages {
   html: string
 }
 
+interface localizedProps { JP: string, EN: string };
+
 interface work {
   title: string,
   github: string,
