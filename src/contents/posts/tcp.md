@@ -1,7 +1,7 @@
 ---
 title: TCPが繋がって切れるまで
 date: 2020-10-22
-category: 計算機科学
+category: Computer Science
 description: TCPのハンドシェイクの概略
 ogp: /ogp.jpeg
 ---

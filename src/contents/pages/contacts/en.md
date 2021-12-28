@@ -2,7 +2,7 @@
 Email : kota@yatagai.com
 Language : Japanese, English
 
-I would reply within two days to messages via Twitter and email. My first language is Japanese, and I can also communicate in English. My grammar goes crazy sometimes, but I could make myself understood at least.
+I would reply within two days to messages via Twitter and email. My first language is Japanese, and I can also communicate in English. My grammar goes crazy sometimes, but I am able to make myself understood at least.
 
 ## Job Seeking
 I would like to work in a job related to decentralized systems

@@ -1,7 +1,7 @@
 ---
 title: 毎朝5時にGoogle Formに自動回答したい
 date: 2020-08-11
-category: プログラミング
+category: Programming
 description: SeleniumとLambdaを使った自動化の記事
 ogp: /ogp.jpeg
 ---

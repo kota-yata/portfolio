@@ -1,9 +1,9 @@
 export const getClassName = (category: string): string => {
-  if (category === '暗号') return 'cryptography';
-  if (category === '研究') return 'research';
-  if (category === 'アルゴリズム') return 'algorithm';
-  if (category === '非技術') return 'non-tech';
-  if (category === 'プログラミング') return 'programming';
-  if (category === '計算機科学') return 'cs';
+  if (category === 'Cryptography') return 'cryptography';
+  if (category === 'Research') return 'research';
+  if (category === 'Algorithm') return 'algorithm';
+  if (category === 'Non-Tech') return 'non-tech';
+  if (category === 'Programming') return 'programming';
+  if (category === 'Computer Science') return 'cs';
   return '';
 };
