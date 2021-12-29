@@ -15,15 +15,10 @@
 
 <script lang="ts">
   import Page from '$lib/page.svelte';
-  import { getCountry } from '$lib/getCountry';
-  import { onMount } from 'svelte';
+  import { countryCode } from '$lib/getCountry';
   export let html: localizedProps;
 
-  let content: string = html.EN;
-  onMount(async () => {
-    const countryCode = await getCountry();
-    if (countryCode === 'JP') content = html.JP;
-  });
+  $: content = html[$countryCode];
 </script>
 
 <Page>

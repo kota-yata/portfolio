@@ -1,6 +1,10 @@
-export const getCountry = async (): Promise<string> => {
-  const res: Response = await fetch('http://ip-api.com/json');
-  if (!res.ok) throw new Error('Response failed');
-  const json = await res.json();
-  return json.countryCode;
+import { writable } from 'svelte/store';
+
+export const getCountry = (): string => {
+  const countryCode: string | undefined = localStorage.getItem('countryCode');
+  if (countryCode) return countryCode;
+  localStorage.setItem('countryCode', 'JP');
+  return 'JP';
 };
+
+export const countryCode = writable('JP');
