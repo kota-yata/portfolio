@@ -10,40 +10,13 @@
   import Page from '$lib/page.svelte';
   import PostCard from '$lib/posts/postCard.svelte';
   import TopicSection from '$lib/topicSection.svelte';
+  import { localization } from '$lib/localization/index';
+  import { countryCode } from '$lib/getCountry';
+
+  $: topics = localization[$countryCode].topics;
+
   export let posts;
 
-  const topics: { category: string; description: string }[] = [
-    {
-      category: 'Research',
-      description:
-        '現在僕はブロックチェーン、特にDHTについてリサーチをしています。高校の卒研も「分散型フリマの提案」なるテーマで研究をしており、ブロックチェーンやP2Pネットワーク、非中央集権型システムに関わる技術のリサーチ記事を研究カテゴリとしてまとめています。体系化する前段階のメモはScrapboxに置いてあります。'
-    },
-    {
-      category: 'Algorithm',
-      description:
-        '既存のアルゴリズム実装や自作のライブラリで使うアルゴリズムなどに関する記事はここにまとめています。ほとんどの記事内の実装はGItHubに上がってると思うので改善点や指摘がある場合はそっちでIssueを立ててもらえればなるはやで確認します。'
-    },
-    {
-      category: 'Cryptography',
-      description:
-        '暗号学に関する記事はここにまとめています。暗号に関する記事でもアルゴリズムを実装しているものはアルゴリズムカテゴリーにあり、研究カテゴリーに置かれてる場合もがあります。'
-    },
-    {
-      category: 'Computer Science',
-      description:
-        '上記のどのカテゴリーにも引っかからない計算機科学分野の記事はここにまとめています。プロセッサーやネットワークに関する記事がメインになる予定です。'
-    },
-    {
-      category: 'Programming',
-      description:
-        'Webアプリの実装やAPIに関する記事はここにまとめています。一時期ChromeのProject Fuguを追ってた時期があり、その時に書いた記事も何個かZennから移行しています。'
-    },
-    {
-      category: 'Non-Tech',
-      description:
-        'プログラミングやコンピューターサイエンスに直接関係のない記事はここにまとめています。哲学とかの話も体系化できるようになったら書いていきたいな。'
-    }
-  ];
 </script>
 
 <Page>
