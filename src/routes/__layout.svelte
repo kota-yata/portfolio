@@ -1,17 +1,23 @@
 <script lang="ts">
   import { countryCode } from '$lib/getCountry';
-import { onMount } from 'svelte';
+  import { onMount } from 'svelte';
 
   onMount(() => {
     const countryCodeFromSessionStorage = sessionStorage.getItem('countryCode');
     if (countryCodeFromSessionStorage) $countryCode = countryCodeFromSessionStorage;
-  })
+  });
 
   import '../styles/app.scss';
 </script>
 
 <header>
-  <select name="language" bind:value={$countryCode} on:change={() => { sessionStorage.setItem('countryCode', $countryCode) }}>
+  <select
+    name="language"
+    bind:value={$countryCode}
+    on:change={() => {
+      sessionStorage.setItem('countryCode', $countryCode);
+    }}
+  >
     <option value="JP">Japanese</option>
     <option value="EN">English</option>
   </select>

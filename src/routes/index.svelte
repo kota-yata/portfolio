@@ -16,7 +16,6 @@
   $: topics = localization[$countryCode].topics;
 
   export let posts;
-
 </script>
 
 <Page>
