@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { localization } from '$lib/localization/index';
+  import { countryCode } from '$lib/localization/getCountry';
+  $: profile = localization[$countryCode].profile;
   const icons: { image: string; link: string }[] = [
     { image: '/github.svg', link: 'https://github.com/kota-yata' },
     { image: '/spotify.svg', link: 'https://open.spotify.com/user/jgm80x9h1j84hnk4nv3hozlaf' },
@@ -16,8 +19,8 @@
 <div class="container">
   <img alt="myself" src="/me.webp" width="150px" height="150px" />
   <div class="bio">
-    <h4>八谷航太</h4>
-    <p>18yo / ソフトウェア開発者</p>
+    <h4>{profile.name}</h4>
+    <p>{profile.bio}</p>
   </div>
   <ul>
     {#each pages as page}

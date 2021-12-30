@@ -1,7 +1,7 @@
 ---
 title: SvelteでFullCalendarを使う
 date: 2020-09-23
-category: プログラミング
+category: Programming
 description: 今後Svelteの人気が上昇することを願って
 ogp: /ogp.jpeg
 ---

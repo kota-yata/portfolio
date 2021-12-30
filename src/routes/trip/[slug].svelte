@@ -1,10 +1,11 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import { thumbnails } from './_data';
+  import { localization } from '$lib/localization/index';
+  import { countryCode } from '$lib/localization/getCountry';
 
   const short = $page.params.slug;
 
-  const found = thumbnails.find((thumbnail) => thumbnail.short === short);
+  const found = localization[$countryCode].trip.find((thumbnail) => thumbnail.short === short);
 </script>
 
 <svelte:head>

@@ -1,7 +1,7 @@
 ---
 title: TypeScriptでハフマン符号を作る
 date: 2021-03-23
-category: アルゴリズム
+category: Algorithm
 description: バイナリーを文字列で扱うJavaScriptな実装
 ogp: /ogp.jpeg
 ---

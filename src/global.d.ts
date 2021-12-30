@@ -1,11 +1,4 @@
 /// <reference types="@sveltejs/kit" />
-interface thumbnails {
-  location: string,
-  short: string,
-  date: string,
-  description: string,
-  image: number
-};
 
 interface post {
   meta: FrontMatterResult<unknown>,
@@ -31,11 +24,4 @@ interface pages {
   html: string
 }
 
-interface work {
-  title: string,
-  github: string,
-  lang: string,
-  date: string,
-  note: string,
-  articles?: { text: string, url: string }[],
-}
+interface localizedProps { JP: string, EN: string };

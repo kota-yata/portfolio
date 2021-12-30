@@ -1,7 +1,7 @@
 ---
 title: 工業的製法
 date: 2021-01-31
-category: 非技術
+category: Non-Tech
 description: 化学のテスト用にまとめたもの
 ogp: /ogp.jpeg
 ---

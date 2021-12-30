@@ -1,7 +1,7 @@
 ---
 title: はじめてカジュアル面接なるものを受けた
 date: 2021-03-26
-category: 非技術
+category: Non-Tech
 description: 普通に楽しかった
 ogp: /ogp.jpeg
 ---

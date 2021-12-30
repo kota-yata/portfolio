@@ -1,7 +1,7 @@
 ---
 title: 久々に順列列挙アルゴリズムを書いた
 date: 2021-03-30
-category: アルゴリズム
+category: Algorithm
 description: Percomのリファクタリングと末尾呼び出し最適化の話
 ogp: /ogp.jpeg
 ---

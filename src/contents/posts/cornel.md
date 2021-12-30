@@ -1,7 +1,7 @@
 ---
 title: SSIの論文を和訳してみる
 date: 2020-12-20
-category: 研究
+category: Research
 description: SSIの論文、'Self-sovereign Identity − Opportunities and Challenges for the Digital Revolution'を和訳します
 ogp: /ogp.jpeg
 ---

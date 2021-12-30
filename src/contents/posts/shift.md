@@ -1,7 +1,7 @@
 ---
 title: コンピューターの掛け算と割り算
 date: 2021-03-29
-category: 計算機科学
+category: Computer Science
 description: シフト演算を勉強したで
 ogp: /ogp.jpeg
 ---
