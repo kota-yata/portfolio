@@ -70,6 +70,14 @@ button {
   font-size: inherit;
   font-family: inherit;
 }
+select {
+  background: transparent;
+  color: $gray;
+  border: none;
+  margin-right: 20px;
+  font-family: 'Inter';
+  font-size: 16px;
+}
 img {
   max-width: 100%;
 }

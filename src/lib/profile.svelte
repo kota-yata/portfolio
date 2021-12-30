@@ -1,6 +1,6 @@
 <script lang="ts">
   import { localization } from '$lib/localization/index';
-  import { countryCode } from '$lib/getCountry';
+  import { countryCode } from '$lib/localization/getCountry';
   $: profile = localization[$countryCode].profile;
   const icons: { image: string; link: string }[] = [
     { image: '/github.svg', link: 'https://github.com/kota-yata' },

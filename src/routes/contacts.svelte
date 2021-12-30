@@ -15,7 +15,7 @@
 
 <script lang="ts">
   import Page from '$lib/page.svelte';
-  import { countryCode } from '$lib/getCountry';
+  import { countryCode } from '$lib/localization/getCountry';
   export let html: localizedProps;
 
   $: content = html[$countryCode];

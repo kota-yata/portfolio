@@ -1,7 +1,7 @@
 <script lang="ts">
   import { localization } from '$lib/localization/index';
   import type { workBodyContents, localization as localizationObject } from '$lib/localization/type';
-  import { countryCode } from '$lib/getCountry';
+  import { countryCode } from '$lib/localization/getCountry';
   export let work: workBodyContents;
   export let color: string;
 

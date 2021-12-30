@@ -1,6 +1,7 @@
 <script lang="ts">
   import Card from '$lib/trip/card.svelte';
-  import { thumbnails } from './_data';
+  import { localization } from '$lib/localization/index';
+  import { countryCode } from '$lib/localization/getCountry';
 </script>
 
 <svelte:head>
@@ -8,7 +9,7 @@
 </svelte:head>
 
 <div class="container">
-  {#each thumbnails as thumbnail}
+  {#each localization[$countryCode].trip as thumbnail}
     <a href={`/trip/${thumbnail.short}`} class="card" sveltekit:prefetch
       ><Card
         location={thumbnail.location}

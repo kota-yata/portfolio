@@ -2,7 +2,7 @@
   import Page from '$lib/page.svelte';
   import WorkCard from '$lib/workCard.svelte';
   import { localization } from '$lib/localization/index';
-  import { countryCode } from '$lib/getCountry';
+  import { countryCode } from '$lib/localization/getCountry';
   $: works = localization[$countryCode].works.body;
 </script>
 

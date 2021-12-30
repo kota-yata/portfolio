@@ -11,7 +11,7 @@
   import PostCard from '$lib/posts/postCard.svelte';
   import TopicSection from '$lib/topicSection.svelte';
   import { localization } from '$lib/localization/index';
-  import { countryCode } from '$lib/getCountry';
+  import { countryCode } from '$lib/localization/getCountry';
 
   $: topics = localization[$countryCode].topics;
 

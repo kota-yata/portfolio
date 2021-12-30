@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { countryCode } from '$lib/getCountry';
+  import { countryCode } from '$lib/localization/getCountry';
   import { onMount } from 'svelte';
 
   onMount(() => {
@@ -21,7 +21,7 @@
     <option value="JP">Japanese</option>
     <option value="EN">English</option>
   </select>
-  <a href="/trip" sveltekit:prefetch><img alt="to trip page" src="/aircraft.svg" width="30px" height="30px" /></a>
+  <a href="/trip" sveltekit:prefetch><img alt="to trip page" src="/airplane.svg" width="50px" height="50px" /></a>
 </header>
 
 <main>
@@ -40,17 +40,9 @@
     justify-content: flex-end;
     height: 40px;
     padding: 20px;
-    & > select {
-      background: transparent;
-      color: $dark-gray;
-      font-weight: 700;
-      border: none;
-      margin-right: 20px;
-    }
     & > a {
       text-decoration: none;
       font-size: 15px;
-      color: $gray;
     }
   }
   main {

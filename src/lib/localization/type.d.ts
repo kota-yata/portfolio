@@ -13,6 +13,14 @@ export interface workBody {
   contents: workBodyContents[]
 }
 
+interface thumbnails {
+  location: string,
+  short: string,
+  date: string,
+  description: string,
+  image: number
+};
+
 export interface localization {
   profile: {
     name: string,
@@ -26,5 +34,6 @@ export interface localization {
       note: string
     };
     body: workBody[]
-  }
+  },
+  trip: thumbnails[]
 };
