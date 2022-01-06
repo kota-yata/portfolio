@@ -190,5 +190,7 @@ export const EN: localization = {
       We've enjoyed the beauty of the beaches, and deliciousness of the local foods for 4 days. Nothing can spare this wonderful time.`,
       image: 12
     },
-  ]
+  ],
+  dialog: `Most of, if not all, the posts are in Japanese and those are not going to be translated. \
+  About/Contact/Works page and the description for each topic are translated.`
 };

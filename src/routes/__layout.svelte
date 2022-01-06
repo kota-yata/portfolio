@@ -1,11 +1,22 @@
 <script lang="ts">
   import { countryCode } from '$lib/localization/getCountry';
+  import { localization } from '$lib/localization/index';
   import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
+
+  $: dialog = localization[$countryCode].dialog;
 
   onMount(() => {
     const countryCodeFromSessionStorage = sessionStorage.getItem('countryCode');
     if (countryCodeFromSessionStorage) $countryCode = countryCodeFromSessionStorage;
   });
+
+  const triggerDialog = () => {
+    isDialogVisible = true;
+    setTimeout(() => { isDialogVisible = false; }, 6000);
+  };
+
+  let isDialogVisible = false;
 
   import '../styles/app.scss';
 </script>
@@ -16,6 +27,7 @@
     bind:value={$countryCode}
     on:change={() => {
       sessionStorage.setItem('countryCode', $countryCode);
+      triggerDialog();
     }}
   >
     <option value="JP">Japanese</option>
@@ -25,6 +37,9 @@
 </header>
 
 <main>
+  {#if isDialogVisible}
+  <div class="dialog" transition:fade>{dialog}</div>
+  {/if}
   <slot />
 </main>
 
@@ -48,6 +63,15 @@
   main {
     margin: 0 auto;
     width: 85%;
+    .dialog {
+      width: calc(100vw - 20px);
+      padding: 20px 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background: $orange;
+      color: $black;
+    }
   }
   footer {
     width: 100vw;

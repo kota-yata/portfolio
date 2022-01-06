@@ -35,5 +35,6 @@ export interface localization {
     };
     body: workBody[]
   },
-  trip: thumbnails[]
+  trip: thumbnails[],
+  dialog: string
 };
