@@ -3,7 +3,7 @@ title: ブラウザでファイルの上書き保存ができるぞぉぉ
 date: 2020-11-07
 category: Programming
 description: File System Access APIを使ってみる
-ogp: /ogp.jpeg
+ogp: /ogp.webp
 ---
 
 <div class="message">

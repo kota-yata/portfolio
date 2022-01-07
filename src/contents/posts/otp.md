@@ -3,7 +3,7 @@ title: ワンタイムパッドはなぜ安心安全なのか
 date: 2021-01-03
 category: Cryptography
 description: OTPの安全性を証明する
-ogp: /ogp.jpeg
+ogp: /ogp.webp
 ---
 
 現代のインターネット通信において利用されるケースはほとんどありませんが、安全性に関してはほぼ完璧なランダム性を誇るワンタイムパッドについて少し紹介します。

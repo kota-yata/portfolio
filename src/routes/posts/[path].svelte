@@ -17,6 +17,12 @@
 
 <svelte:head>
   <title>{post.meta.title}</title>
+  <meta property="og:url" content="https://kota-yata.com" />
+  <meta property="og:title" content="{post.meta.title}" />
+  <meta property="og:image" content="https://kota-yata.com{post.meta.ogp}" />
+  <meta property="og:description" content="{post.meta.description}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@kota_yata" />
 </svelte:head>
 
 <Page>

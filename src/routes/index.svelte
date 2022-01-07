@@ -18,6 +18,15 @@
   export let posts;
 </script>
 
+<svelte:head>
+  <meta property="og:url" content="https://kota-yata.com" />
+  <meta property="og:title" content="KOTA YATAGAI - 八谷航太" />
+  <meta property="og:image" content="https://kota-yata.com/ogp.webp" />
+  <meta property="og:description" content="Kota Yatagai, a high school student" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@kota_yata" />
+</svelte:head>
+
 <Page>
   <h2 class="slot-h2">Latest 3 Posts</h2>
   {#each posts as post}

@@ -3,7 +3,7 @@ title: Pythonで円周率を求めてみる
 date: 2020-09-25
 category: Programming
 description: 確率的モデルで実際に計算してみる。図も描いてみちゃう
-ogp: /ogp.jpeg
+ogp: /ogp.webp
 ---
 
 単に円周率を使いたいなら
