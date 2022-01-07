@@ -6,7 +6,7 @@ export const JP: localization = {
   },
   topics: [
     {
-      category: 'Research',
+      category: 'Decentralized',
       description:
         '現在僕はブロックチェーン、特にDHTについてリサーチをしています。高校の卒研も「分散型フリマの提案」なるテーマで研究をしており、ブロックチェーンやP2Pネットワーク、非中央集権型システムに関わる技術のリサーチ記事を研究カテゴリとしてまとめています。体系化する前段階のメモはScrapboxに置いてあります。'
     },

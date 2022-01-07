@@ -6,7 +6,7 @@ export const EN: localization = {
   },
   topics: [
     {
-      category: 'Research',
+      category: 'Decentralized',
       description: `Currently I am researching blockchain system, especially DHT, \
       which is the protocol for non-structual overlay P2P network. Although I have not published any \
       implementation or paper on the basis of this research yet, I have been reading the paper of DHT \

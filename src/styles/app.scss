@@ -118,6 +118,10 @@ pre {
   }
 }
 
+strong {
+  color: $orange;
+}
+
 blockquote {
   width: calc(100% - 10px);
   margin-left: 10px;
@@ -127,7 +131,7 @@ blockquote {
 .algorithm {
   color: $pink;
 }
-.research {
+.decentralized {
   color: $green;
 }
 .cryptography {
