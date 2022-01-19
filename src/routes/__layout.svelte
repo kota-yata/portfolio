@@ -13,7 +13,9 @@
 
   const triggerDialog = () => {
     isDialogVisible = true;
-    setTimeout(() => { isDialogVisible = false; }, 6000);
+    setTimeout(() => {
+      isDialogVisible = false;
+    }, 6000);
   };
 
   let isDialogVisible = false;
@@ -38,7 +40,7 @@
 
 <main>
   {#if isDialogVisible}
-  <div class="dialog" transition:fade>{dialog}</div>
+    <div class="dialog" transition:fade>{dialog}</div>
   {/if}
   <slot />
 </main>

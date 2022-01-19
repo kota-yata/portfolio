@@ -1,6 +1,6 @@
 <script lang="ts">
-import { countryCode } from '$lib/localization/getCountry';
-import { onMount } from 'svelte';
+  import { countryCode } from '$lib/localization/getCountry';
+  import { onMount } from 'svelte';
 
   import '../../styles/app.scss';
 
