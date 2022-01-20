@@ -3,7 +3,7 @@ title: 芸術家は本当にNFTで救われるのか
 date: 2022-01-08
 category: Decentralized
 description: NFTの誤謬と本質
-ogp: /media/nft-ogp.jpg
+ogp: /media/nft.webp
 ---
 
 僕が観測している限りでは「アーティストに公平にコンテンツの売上が還元される」という触れ込みでNFTが流行し、バブルになっているのだと思っている。ACMの記事: [Non-Fungible Tokens and the Future of Art](https://cacm.acm.org/magazines/2021/9/255029-non-fungible-tokens-and-the-future-of-art/fulltext#:~:text=It%20was%20a%20stunning%20event,then%20sold%2C%20just%20like%20Bitcoin.&text=This%20dynamic%20creates%20a%20simple,it%20makes%20digital%20art%20exclusive.) でも

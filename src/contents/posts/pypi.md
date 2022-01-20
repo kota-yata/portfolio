@@ -3,7 +3,7 @@ title: Pythonで円周率を求めてみる
 date: 2020-09-25
 category: Programming
 description: 確率的モデルで実際に計算してみる。図も描いてみちゃう
-ogp: /ogp.webp
+ogp: /media/pypi.webp
 ---
 
 単に円周率を使いたいなら
@@ -97,7 +97,7 @@ plt.show()
 ```
 10秒くらい待つと...
 
-![スクリーンショット 2020-08-17 13.46.37.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/502570/d2bc12c7-f00d-5a81-d959-de0bee92d04c.png)
+![スクリーンショット 2020-08-17 13.46.37.png](/media/pypi.webp)
 
 イマイチ分かりにくいので1000万回バージョンをみてみましょう。
 

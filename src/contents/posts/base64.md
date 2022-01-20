@@ -3,7 +3,7 @@ title: UTF-8対応のBase64を自作する
 date: 2021-08-21
 category: Algorithm
 description: バイナリーを型付配列で扱う美しい実装
-ogp: /ogp.webp
+ogp: /media/base64.webp
 ---
 
 TypeScriptでBase64を自作します。Denoの場合標準ライブラリにBase64が実装されていますので実際に利用する際はそちらを使ってください。

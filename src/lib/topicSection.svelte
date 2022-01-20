@@ -18,7 +18,7 @@
   <p>{description}</p>
   <div class="post-container">
     {#each posts as post}
-      <div class="post"><PostCard meta={post} /></div>
+      <div class="post"><PostCard meta={post} displayEyecatch /></div>
     {/each}
   </div>
 </section>

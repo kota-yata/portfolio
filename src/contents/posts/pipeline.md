@@ -3,7 +3,7 @@ title: パイプライン処理と高速化
 date: 2021-01-14
 category: Computer Science
 description: プロセッサーの役割分担と人海戦術
-ogp: /ogp.webp
+ogp: /media/pipeline.png
 ---
 
 最近、基本情報技術者試験の勉強をする中でパイプライン処理について少し調べたので備忘録的に書き残しておきます。Zennに書こうとも思いましたがあっちにはもっと有益な記事だけ残していきたいのでしょうもない備忘録はこっちに書きます。
@@ -17,7 +17,7 @@ ogp: /ogp.webp
 
 の4段階に分かれます。もっと細かく分ける場合もありますがとりあえずこの4ステップということにしておきます。
 従来の原始的なCPUの処理であれば、この4段階を順番に実行し、一つの命令が完了したら次の命令に移るという逐次処理を行うのですが、命令が複雑になるにつれそれではスループットが大幅に低下し処理性能が落ちてしまいます。そこで考案されたのがパイプライン処理です。パイプライン処理ではこの4段階を一つずつずらして並列処理を行うことで、従来の処理よりも高速に、複数の命令の実行を可能にしたのです。
-![pipeline-processing](https://www.researchgate.net/profile/Jean_Christophe_Le_Lann/publication/269393735/figure/fig2/AS:392334681362441@1470551285619/Execution-configuration-of-three-stages-pipeline-processing-three-consecutive-bursts.png)
+![pipeline-processing](/media/pipeline.png)
 <span style="font-style:italic; font-size: 13px; color:#888888;">Uploaded by Jean-Christophe Le Lann - researchgate.net</span><br>
 
 ### スーパー・パイプライン

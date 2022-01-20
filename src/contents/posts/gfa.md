@@ -3,7 +3,7 @@ title: 毎朝5時にGoogle Formに自動回答したい
 date: 2020-08-11
 category: Programming
 description: SeleniumとLambdaを使った自動化の記事
-ogp: /ogp.webp
+ogp: /media/gfa.webp
 ---
 
 みなさんこんにちは。夏ですね。
@@ -100,7 +100,7 @@ driver.close
 driver.quit
 ```
 
-<img width="500" alt="スクリーンショット 2020-08-07 17.23.49.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/502570/8f8adde5-f6fe-62f3-ad8f-76d6fb22f50d.png">
+![img](/media/gfa.webp)
 
 しっかり送信できました。
 

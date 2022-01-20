@@ -3,7 +3,7 @@ title: ブラウザからローカルフォントを取得する
 date: 2020-11-25
 category: Programming
 description: Font Access APIでローカルにアクセス
-ogp: /ogp.webp
+ogp: /media/faapi.webp
 ---
 
 Chrome87よりブラウザ上でインストール済みのフォントを調べるFont Access APIがOrigin Trialsに公開されました。正直このAPIで何か作ろうとは思っていませんが、このAPIを欲するいつの日かのために少し調べたので書き残しておきます。

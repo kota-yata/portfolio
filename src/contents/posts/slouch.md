@@ -3,7 +3,7 @@ title: ローカルとクラウドのハイブリッド的なエディタ
 date: 2021-02-22
 category: Programming
 description: SvelteでMarkdownエディタ作ったよという話
-ogp: /ogp.webp
+ogp: /media/slouch.webp
 ---
 
 去年の8月ごろにSvelteを知って、それ以来ちまちまとWebサイト作ったりWebアプリ作ったりしてたんですが、NuxtとかReactやったことがないのもあって仮想DOMへの憧れが捨てられませんでした。というわけで、しばらくSvelteと距離を置くための最後の作品としてMarkdownエディタを作りました。

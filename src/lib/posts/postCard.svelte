@@ -2,10 +2,14 @@
   import { getClassName } from './className';
 
   export let meta: postMeta = {} as postMeta;
+  export let displayEyecatch = false;
   const className = getClassName(meta.meta.category);
 </script>
 
 <div class="container">
+  {#if displayEyecatch}
+    <img alt="eyecatch" src={meta.meta.ogp} width="100%" height="200px" />
+  {/if}
   <div class="info">
     <span class="info-category {className}">{meta.meta.category}</span>
     <span class="info-date">{meta.meta.date}</span>
@@ -18,7 +22,11 @@
   @import '../../styles/variable.scss';
   .container {
     width: 100%;
+    & > img {
+      object-fit: cover;
+    }
     .info {
+      padding: 10px 0 0 0;
       font-size: 14px;
       font-weight: 600;
       &-category {
@@ -29,7 +37,7 @@
       }
     }
     & > h3 {
-      padding: 5px 0 20px 0;
+      padding: 5px 0 10px 0;
       & > a {
         text-decoration: none;
       }
