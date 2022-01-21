@@ -24,18 +24,23 @@
 </script>
 
 <header>
-  <select
-    name="language"
-    bind:value={$countryCode}
-    on:change={() => {
-      sessionStorage.setItem('countryCode', $countryCode);
-      triggerDialog();
-    }}
-  >
-    <option value="JP">Japanese</option>
-    <option value="EN">English</option>
-  </select>
-  <a href="/trip" sveltekit:prefetch><img alt="to trip page" src="/airplane.svg" width="50px" height="50px" /></a>
+  <div class="left">
+    <a href="/">KOTA YATAGAI</a>
+  </div>
+  <div class="right">
+    <select
+      name="language"
+      bind:value={$countryCode}
+      on:change={() => {
+        sessionStorage.setItem('countryCode', $countryCode);
+        triggerDialog();
+      }}
+    >
+      <option value="JP">Japanese</option>
+      <option value="EN">English</option>
+    </select>
+    <a href="/trip" sveltekit:prefetch><img alt="to trip page" src="/airplane.svg" width="30px" height="30px" /></a>
+  </div>
 </header>
 
 <main>
@@ -54,12 +59,24 @@
     width: calc(100vw - 40px);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 40px;
     padding: 20px;
-    & > a {
-      text-decoration: none;
-      font-size: 15px;
+    & > .left {
+      & > a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+        color: $gray;
+      }
+    }
+    & > .right {
+      display: flex;
+      align-items: center;
+      & > a {
+        text-decoration: none;
+        font-size: 15px;
+      }
     }
   }
   main {

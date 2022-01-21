@@ -25,7 +25,7 @@
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 700px) and (max-aspect-ratio: 1) {
     .container {
       display: block;
       .profile {
