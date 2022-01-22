@@ -31,7 +31,7 @@ jobs:
         path: ./build
         verbose: true
         service: ipfs
-        timeout: 180000
+        timeout: 540000
         # pinataKey: ${{ secrets.PINATA_KEY }}
         # pinataSecret: ${{ secrets.PINATA_SECRET }}
         key: k51qzi5uqu5dkifu11s495phzpduvac2ibog9laoh9fnuk07zlkznm1yigx7mk
