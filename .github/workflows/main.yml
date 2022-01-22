@@ -32,4 +32,5 @@ jobs:
         service: pinata
         pinataKey: 3218f055d5dfeb5729e2
         pinataSecret: 23b5a758ccaf95cbc26f887ce2285f2705a7c79857f2a00a03fe9f344c28e5ee
+        key: k51qzi5uqu5dkifu11s495phzpduvac2ibog9laoh9fnuk07zlkznm1yigx7mk
   
