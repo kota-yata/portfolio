@@ -29,8 +29,9 @@ jobs:
       name: Deploy to Pinata
       with:
         path: ./build
-        service: pinata
-        pinataKey: ${{ secrets.PINATA_KEY }}
-        pinataSecret: ${{ secrets.PINATA_SECRET }}
+        verbose: true
+        service: ipfs
+        # pinataKey: ${{ secrets.PINATA_KEY }}
+        # pinataSecret: ${{ secrets.PINATA_SECRET }}
         key: k51qzi5uqu5dkifu11s495phzpduvac2ibog9laoh9fnuk07zlkznm1yigx7mk
   
