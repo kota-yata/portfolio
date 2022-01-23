@@ -1,4 +1,4 @@
-name: Upload to IPFS
+name: Upload to IPFS 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the v7 branch
@@ -25,14 +25,15 @@ jobs:
         yarn install
         yarn build
       name: Build
-    - uses: aquiladev/ipfs-action@v0.2.1-alpha.4
-      name: Deploy to Pinata
+    - uses: kota-yata/ipfs-action@v1.0.0
+      name: Deploy to Pinata, and add DNSlink to Vercel
       with:
         path: ./build
         verbose: true
         service: ipfs
-        timeout: 540000
-        # pinataKey: ${{ secrets.PINATA_KEY }}
-        # pinataSecret: ${{ secrets.PINATA_SECRET }}
-        key: k51qzi5uqu5dkifu11s495phzpduvac2ibog9laoh9fnuk07zlkznm1yigx7mk
+        timeout: 60000
+        pinataKey: ${{ secrets.PINATA_KEY }}
+        pinataSecret: ${{ secrets.PINATA_SECRET }}
+        vercelDomain: kota-yata.com
+        vercelToken: ${{ secrets.VERCEL_TOKEN }}
   
