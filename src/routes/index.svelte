@@ -34,7 +34,7 @@
     <div class="slot-post"><PostCard meta={post} /></div>
   {/each}
 </Page>
-<div class="to-posts"><a href="/posts">View All Posts</a></div>
+<div class="to-posts"><a href="/posts/">View All Posts</a></div>
 {#each topics as topic}
   <TopicSection category={topic.category} description={topic.description} />
 {/each}

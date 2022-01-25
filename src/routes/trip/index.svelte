@@ -10,7 +10,7 @@
 
 <div class="container">
   {#each localization[$countryCode].trip as thumbnail}
-    <a href={`/trip/${thumbnail.short}`} class="card" sveltekit:prefetch
+    <a href={`/trip/${thumbnail.short}/`} class="card" sveltekit:prefetch
       ><Card
         location={thumbnail.location}
         image={`/trip/${thumbnail.short}/thumbnail.webp`}

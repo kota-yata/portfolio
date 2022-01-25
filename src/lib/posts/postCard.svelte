@@ -14,7 +14,7 @@
     <span class="info-category {className}">{meta.meta.category}</span>
     <span class="info-date">{meta.meta.date}</span>
   </div>
-  <h3><a href="/posts/{meta.path}">{meta.meta.title}</a></h3>
+  <h3><a href="/posts/{meta.path}/">{meta.meta.title}</a></h3>
   <p>{meta.meta.description}</p>
 </div>
 

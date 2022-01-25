@@ -39,7 +39,7 @@
       <option value="JP">Japanese</option>
       <option value="EN">English</option>
     </select>
-    <a href="/trip" sveltekit:prefetch><img alt="to trip page" src="/airplane.svg" width="30px" height="30px" /></a>
+    <a href="/trip/" sveltekit:prefetch><img alt="to trip page" src="/airplane.svg" width="30px" height="30px" /></a>
   </div>
 </header>
 
