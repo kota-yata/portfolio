@@ -30,7 +30,8 @@ jobs:
       with:
         path: ./build
         verbose: true
-        service: ipfs
+        service: pinata
+        port: 5001
         timeout: 60000
         pinataKey: ${{ secrets.PINATA_KEY }}
         pinataSecret: ${{ secrets.PINATA_SECRET }}
