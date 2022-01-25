@@ -25,7 +25,7 @@ jobs:
         yarn install
         yarn build
       name: Build
-    - uses: kota-yata/ipfs-action@v1.0.1
+    - uses: kota-yata/ipfs-action@v1.0.3
       name: Deploy to Pinata, and add DNSlink to Vercel
       with:
         path: ./build
