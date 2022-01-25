@@ -1,5 +1,6 @@
 import type { localization } from '$lib/localization/type';
 export const JP: localization = {
+  ipfs: '分散型ネットワークである<a href="https://ipfs.io/">IPFS</a>でこのサイトが閲覧可能になりました！ => ipns://kota-yata.com',
   profile: {
     name: '八谷航太',
     bio: '18yo / ソフトウェア開発者'

@@ -22,6 +22,7 @@ interface thumbnails {
 };
 
 export interface localization {
+  ipfs: string
   profile: {
     name: string,
     bio: string

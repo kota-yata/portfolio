@@ -1,5 +1,6 @@
 import type { localization } from '$lib/localization/type';
 export const EN: localization = {
+  ipfs: 'This website is now available on <a href="https://ipfs.io/">IPFS</a>! => ipns://kota-yata.com',
   profile: {
     name: 'Kota Yatagai',
     bio: '18yo / Software Developer'

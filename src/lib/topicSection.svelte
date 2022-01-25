@@ -42,4 +42,14 @@
       }
     }
   }
+
+  @media screen and (max-width: 700px), screen and (orientation: portrait) {
+    .post-container {
+      width: 100% !important;
+      padding-left: 0 !important;
+      .post {
+        margin: 0 auto !important;
+      }
+    }
+  }
 </style>

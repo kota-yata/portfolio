@@ -14,6 +14,7 @@
   import { countryCode } from '$lib/localization/getCountry';
 
   $: topics = localization[$countryCode].topics;
+  $: ipfs = localization[$countryCode].ipfs;
 
   export let posts;
 </script>
@@ -35,6 +36,10 @@
   {/each}
 </Page>
 <div class="to-posts"><a href="/posts/">View All Posts</a></div>
+<div class="special-ipfs">
+  <h4>🚀 Launched On The Future 🚀</h4>
+  <p>{@html ipfs}</p>
+</div>
 {#each topics as topic}
   <TopicSection category={topic.category} description={topic.description} />
 {/each}
@@ -59,6 +64,29 @@
       text-decoration: none;
       font-weight: 600;
       font-size: 14px;
+    }
+  }
+  .special-ipfs {
+    margin-top: 60px;
+    padding: 10px 10px 10px 20px;
+    background: $ipfs-blue;
+    border-left: 0.5rem solid $ipfs-dark-blue;
+    & > h4 {
+      padding-top: 10px;
+      color: $black;
+    }
+    & > p {
+      color: $black;
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (max-width: 700px), screen and (orientation: portrait) {
+    .special-ipfs {
+      padding-left: 10px;
+      & > p {
+        font-size: 14px;
+      }
     }
   }
 </style>
