@@ -49,6 +49,8 @@
       padding-left: 0 !important;
       .post {
         margin: 0 auto !important;
+        padding-bottom: 15px;
+        padding-top: 15px;
       }
     }
   }

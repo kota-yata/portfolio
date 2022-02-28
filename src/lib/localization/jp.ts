@@ -92,7 +92,7 @@ export const JP: localization = {
             note: 'ローカルファイルを上書きできるマークダウンエディター',
             articles: [
               { text: '説明記事', url: '/posts/slouch' },
-              { text: 'Webサイト', url: 'https://slouch.dev' }
+              { text: 'Webサイト', url: 'https://slouch.kota-yata.com' }
             ]
           },
           {

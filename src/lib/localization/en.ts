@@ -96,7 +96,7 @@ export const EN: localization = {
             note: 'Markdown editor on which you can rewrite your local files',
             articles: [
               { text: 'Explanation Article (Japanese)', url: '/posts/slouch' },
-              { text: 'URL (Japanese)', url: 'https://slouch.dev' }
+              { text: 'URL (Japanese)', url: 'https://slouch.kota-yata.com' }
             ]
           },
           {
