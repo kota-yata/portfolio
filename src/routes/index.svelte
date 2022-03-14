@@ -1,12 +1,12 @@
 <script context="module" lang="ts">
   export const load = async ({ fetch }): Promise<postsProps> => {
-    const posts = await getPosts(fetch, 3);
+    const posts = await getPostsClient(fetch, 3);
     return { props: { posts } };
   };
 </script>
 
 <script lang="ts">
-  import { getPosts } from '$lib/posts/getPosts';
+  import { getPostsClient } from '$lib/posts/getPosts';
   import Page from '$lib/page.svelte';
   import PostCard from '$lib/posts/postCard.svelte';
   import TopicSection from '$lib/topicSection.svelte';
@@ -24,7 +24,7 @@
   <meta property="og:url" content="https://kota-yata.com" />
   <meta property="og:title" content="KOTA YATAGAI - 八谷航太" />
   <meta property="og:image" content="https://kota-yata.com/ogp.webp" />
-  <meta property="og:description" content="Decentralize all the thing" />
+  <meta property="og:description" content="Personal Website & Blog by a (physically) tiny little student" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@kota_yata" />
 </svelte:head>

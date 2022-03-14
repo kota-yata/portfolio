@@ -20,14 +20,14 @@ md.use(markdownItKatex, {
   delimiters: 'dollars',
 });
 
-const separateData = (data: string): { meta: string[], body: string } => {
+export const separateData = (data: string): { meta: string[], body: string } => {
   const separated = data.split('---');
   const meta = separated[1].split(/\n/g);
   const body = separated.slice(2).join('---');
   return { meta, body };
 };
 
-const formatMeta = (data: string[]): meta => {
+export const formatMeta = (data: string[]): meta => {
   const lines = data.slice(1, data.length - 1);
   const frontMatter = {} as meta;
   lines.map(c => {
@@ -48,10 +48,4 @@ export const process = (data: string): post => {
   const meta = formatMeta(separatedData.meta);
   const body = parseMD(separatedData.body);
   return { meta, body };
-};
-
-export const getMeta = (data: string): meta => {
-  const separatedData = separateData(data);
-  const meta = formatMeta(separatedData.meta);
-  return meta;
 };
