@@ -1,13 +1,13 @@
 <script context="module" lang="ts">
   export const load = async ({ fetch }): Promise<{ props: { posts: postMeta[] } }> => {
-    const posts = await getPosts(fetch);
+    const posts = await getPostsClient(fetch);
     return { props: { posts } };
   };
 </script>
 
 <script lang="ts">
   import Page from '$lib/page.svelte';
-  import { getPosts } from '$lib/posts/getPosts';
+  import { getPostsClient } from '$lib/posts/getPosts';
   import PostCard from '$lib/posts/postCard.svelte';
   export let posts: postMeta[] = [];
 </script>

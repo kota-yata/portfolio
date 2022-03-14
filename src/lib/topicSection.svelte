@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import PostCard from './posts/postCard.svelte';
-  import { getPosts } from './posts/getPosts';
+  import { getPostsClient } from './posts/getPosts';
 
   export let category: string;
   export let description: string;
@@ -9,7 +9,7 @@
   $: posts = [];
 
   onMount(async () => {
-    posts = await getPosts(fetch, 0, category);
+    posts = await getPostsClient(fetch, 0, category);
   });
 </script>
 
