@@ -6,7 +6,7 @@
     { image: '/github.svg', link: 'https://github.com/kota-yata' },
     { image: '/twitter.svg', link: 'https://twitter.com/kota_yata' },
     { image: '/speakerdeck.svg', link: 'https://speakerdeck.com/kota_yata/' },
-    { image: '/rss.svg', link: 'https://kota-yata.com/rss.xml' }
+    { image: '/rss.svg', link: '/feed' }
   ];
   const pages: { name: string; path: string }[] = [
     { name: 'Home', path: '/' },
