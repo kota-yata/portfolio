@@ -30,7 +30,7 @@ export const getPosts = (num = 0, category = ''): postMeta[] => {
     const bDate = Date.parse(b.meta.date);
     return aDate > bDate ? -1 : 1;
   });
-  const result = filterPosts(posts);
+  const result = filterPosts(posts, num, category);
   return result;
 };
 
