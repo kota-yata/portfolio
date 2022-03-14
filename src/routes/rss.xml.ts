@@ -10,11 +10,11 @@ const xml = (posts: postMeta[]) => `<rss xmlns:dc="https://purl.org/dc/elements/
       <item>
         <title><![CDATA[${post.meta.title}]]></title>
         <description><![CDATA[${post.meta.description}]]></description>
-        <category><![CDATA[${post.meta.category}]]></category>
-        <link><![CDATA[https://kota-yata.com/posts/${post.path}/]]></link>
-        <guid isPermaLink="true"><![CDATA[https://kota-yata.com/posts/${post.path}/]]></guid>
+        <category>${post.meta.category}</category>
+        <link>https://kota-yata.com/posts/${post.path}</link>
+        <guid isPermaLink="true">https://kota-yata.com/posts/${post.path}</guid>
         <pubDate><![CDATA[ ${post.meta.date}]]></pubDate>
-        <enclosure url="<![CDATA[ ${post.meta.ogp || `https://kota-yata.com/ogp.webp`}]]>" length="0" type="image/webp"/>
+        <enclosure url="${post.meta.ogp || `https://kota-yata.com/ogp.webp`}" length="0" type="image/webp"/>
         <dc:creator>Kota Yatagai</dc:creator>
       </item>
     `
