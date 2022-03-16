@@ -25,12 +25,12 @@
   </div>
   <ul>
     {#each pages as page}
-      <li><a href={page.path}>{page.name}</a></li>
+      <li><a href={page.path} sveltekit:prefetch>{page.name}</a></li>
     {/each}
   </ul>
   <div class="icons">
     {#each icons as icon}
-      <a href={icon.link} sveltekit:prefetch><img alt="icon" src={icon.image} width="20px" height="20px" /></a>
+      <a href={icon.link} rel="external"><img alt="icon" src={icon.image} width="20px" height="20px" /></a>
     {/each}
   </div>
 </div>

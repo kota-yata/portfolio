@@ -24,7 +24,7 @@ const xml = (posts: postMeta[]) => `<?xml version="1.0" encoding="UTF-8" ?>
 </rss>`;
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-export const get = () => {
+export const get = async () => {
   const headers = {
     'Cache-Control': 'max-age=0, s-maxage=600',
     'Content-Type': 'application/xml',
