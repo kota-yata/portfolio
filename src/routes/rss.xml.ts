@@ -23,12 +23,13 @@ const xml = (posts: postMeta[]) => `<?xml version="1.0" encoding="UTF-8" ?>
 </channel>
 </rss>`;
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const get = () => {
-  // const headers = {
-  //   'Cache-Control': 'max-age=0, s-maxage=3600',
-  //   'Content-Type': 'application/xml',
-  // };
+  const headers = {
+    'Cache-Control': 'max-age=0, s-maxage=600',
+    'Content-Type': 'application/xml',
+  };
   const posts = getPosts();
   const body = xml(posts);
-  return { body };
+  return { body, headers };
 };

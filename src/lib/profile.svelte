@@ -6,7 +6,8 @@
     { image: '/github.svg', link: 'https://github.com/kota-yata' },
     { image: '/twitter.svg', link: 'https://twitter.com/kota_yata' },
     { image: '/speakerdeck.svg', link: 'https://speakerdeck.com/kota_yata/' },
-    { image: '/spotify.svg', link: 'https://open.spotify.com/user/jgm80x9h1j84hnk4nv3hozlaf' }
+    // { image: '/spotify.svg', link: 'https://open.spotify.com/user/jgm80x9h1j84hnk4nv3hozlaf' }
+    { image: '/rss.svg', link: '/rss.xml' }
   ];
   const pages: { name: string; path: string }[] = [
     { name: 'Home', path: '/' },
