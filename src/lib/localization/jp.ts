@@ -144,6 +144,13 @@ export const JP: localization = {
             lang: 'Go',
             date: '2020年11月',
             note: 'jpg/png/gifに対応した画像の拡張子変換CLI',
+          },
+          {
+            title: 'meta getter',
+            github: 'meta-getter',
+            lang: 'Rust',
+            date: '2022年3月',
+            note: '指定されたURLのメタタグを返すサーバー',
           }
         ]
       }

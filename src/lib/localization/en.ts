@@ -148,6 +148,13 @@ export const EN: localization = {
             lang: 'Go',
             date: 'Nov 2020',
             note: 'File extension converter for png/jpg/gif',
+          },
+          {
+            title: 'meta getter',
+            github: 'meta-getter',
+            lang: 'Rust',
+            date: 'March 2022',
+            note: 'Multithread web server serving meta tags of a given url',
           }
         ]
       }
