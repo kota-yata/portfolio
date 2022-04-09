@@ -6,7 +6,7 @@ As a web front-end developer, I mainly use Svelte to develop web apps and create
 ![image](/media/golf.jpg)
 
 ## Awards
-- [EPSON Hacktrek 2021 1st place](https://openinnovation.epson.com/en/topics/20210826_2/)
+- [EPSON Hacktrek 2021 Champion](https://openinnovation.epson.com/en/topics/20210826_2/)
 
 ## About My Blog
 Although most of the contents are written in Japanese so far, I'm thinking of writing all posts in English during this exchange year. If you find something wrong in my posts, please let me know via Twitter, GitHub or email.

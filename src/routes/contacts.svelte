@@ -22,10 +22,11 @@
 </script>
 
 <svelte:head>
+  <meta name="description" content="Contact information" />
   <meta property="og:url" content="https://kota-yata.com/contacts" />
-  <meta property="og:title" content="KOTA YATAGAI - 八谷航太" />
+  <meta property="og:title" content="Contacts - KOTA YATAGAI" />
   <meta property="og:image" content="https://kota-yata.com/ogp.webp" />
-  <meta property="og:description" content="Kota Yatagai, a high school student" />
+  <meta property="og:description" content="Contact information" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@kota_yata" />
 </svelte:head>

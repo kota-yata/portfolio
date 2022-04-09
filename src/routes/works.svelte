@@ -7,10 +7,11 @@
 </script>
 
 <svelte:head>
+  <meta name="description" content="Works and implementations by Kota Yatagai" />
   <meta property="og:url" content="https://kota-yata.com/works" />
-  <meta property="og:title" content="KOTA YATAGAI - 八谷航太" />
+  <meta property="og:title" content="Works - KOTA YATAGAI" />
   <meta property="og:image" content="https://kota-yata.com/ogp.webp" />
-  <meta property="og:description" content="Kota Yatagai, a high school student" />
+  <meta property="og:description" content="Works and implementations by Kota Yatagai" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@kota_yata" />
 </svelte:head>
