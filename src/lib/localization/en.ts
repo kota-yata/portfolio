@@ -162,6 +162,15 @@ export const EN: localization = {
   },
   trip: [
     {
+      location: 'Chicago',
+      short: 'chicago',
+      date: 'November 2021',
+      description: `The first overnight trip since I came to the US as an exchange student. \
+      We stayed at my host grandparents' house, a skyscraper in the downtown. It was so much fun walking the downtown,\
+      looking at the view of Lake Michigan. There was already an ice skating rink despite November.`,
+      image: 12
+    },
+    {
       location: 'Universal Studio Japan',
       short: 'usj',
       date: 'August 2021',

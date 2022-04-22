@@ -158,6 +158,15 @@ export const JP: localization = {
   },
   trip: [
     {
+      location: 'シカゴ',
+      short: 'chicago',
+      date: '2021年11月',
+      description: `留学中にした初めての旅行。感謝祭期間で特に大きなイベントもなかったので、\
+      ホスト祖父母が住むダウンタウンの高層タワーで7日間ずっと怠けて過ごした。\
+      ダウンタウンでの買い物やカレッジフットボールの試合はいかにもアメリカという感じで思い出深かった。`,
+      image: 12
+    },
+    {
       location: 'USJ',
       short: 'usj',
       date: '2021年8月',
