@@ -22,6 +22,7 @@
 </script>
 
 <svelte:head>
+  <title>Contacts - KOTA YATAGAI</title>
   <meta name="description" content="Contact information" />
   <meta property="og:url" content="https://kota-yata.com/contacts" />
   <meta property="og:title" content="Contacts - KOTA YATAGAI" />

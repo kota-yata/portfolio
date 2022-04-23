@@ -9,11 +9,13 @@
 </script>
 
 <svelte:head>
-  <title>{found.location} | Trip Scrap</title>
+  <title>{found.location} - Trip Scrap</title>
   <meta property="og:url" content={`https://kota-yata.com/trip/${found.short}`} />
-  <meta property="og:title" content={`${found.location} | Trip Scrap`} />
+  <meta property="og:title" content={`${found.location} - Trip Scrap`} />
   <meta property="og:image" content={`https://kota-yata.com/trip/${found.short}/thumbnail.webp`} />
   <meta property="og:description" content={found.description} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@kota_yata" />
 </svelte:head>
 
 <div class="container">

@@ -43,9 +43,9 @@ export const parseMD = (data: string): string => {
   return html;
 };
 
-export const process = (data: string): post => {
+export const process = (path: string, data: string): post => {
   const separatedData = separateData(data);
   const meta = formatMeta(separatedData.meta);
   const body = parseMD(separatedData.body);
-  return { meta, body };
+  return { path, meta, body };
 };

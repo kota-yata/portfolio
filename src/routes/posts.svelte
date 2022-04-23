@@ -6,6 +6,7 @@
 </script>
 
 <svelte:head>
+  <title>All Posts - KOTA YATAGAI</title>
   <meta name="description" content="All posts by Kota Yatagai" />
   <meta property="og:url" content="https://kota-yata.com/posts" />
   <meta property="og:title" content="All Posts - KOTA YATAGAI" />

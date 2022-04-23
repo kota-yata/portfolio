@@ -162,6 +162,15 @@ export const EN: localization = {
   },
   trip: [
     {
+      location: 'Washington D.C.',
+      short: 'dc',
+      date: 'December 2021',
+      description: `The first visit to the east coast in my life. Although we stayed on the northside of the city and visited some of the famous museums,\
+      I mainly walked around the southside to see the difference from the fancier area. As a man selling newspapers on a road told me,\
+      there were barely white people on the southside in the first place. I felt like that city symbolized the US both in a good way and in a bad way.`,
+      image: 35
+    },
+    {
       location: 'Chicago',
       short: 'chicago',
       date: 'November 2021',

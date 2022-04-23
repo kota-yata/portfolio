@@ -5,7 +5,14 @@
 </script>
 
 <svelte:head>
-  <title>Trip Scrap | KOTA YATAGAI</title>
+  <title>Trip Scrap - KOTA YATAGAI</title>
+  <meta name="description" content="Photos taken while on trips" />
+  <meta property="og:url" content="https://kota-yata.com/trip" />
+  <meta property="og:title" content="Trip Scrap - KOTA YATAGAI" />
+  <meta property="og:image" content="https://kota-yata.com/ogp.webp" />
+  <meta property="og:description" content="Photo gallery by Kota Yatagai" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@kota_yata" />
 </svelte:head>
 
 <div class="container">

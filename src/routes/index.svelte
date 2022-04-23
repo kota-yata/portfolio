@@ -20,6 +20,7 @@
 </script>
 
 <svelte:head>
+  <title>KOTA YATAGAI | 八谷航太</title>
   <meta name="description" content="Kota Yatagai, a high school student" />
   <meta property="og:url" content="https://kota-yata.com" />
   <meta property="og:title" content="KOTA YATAGAI - 八谷航太" />

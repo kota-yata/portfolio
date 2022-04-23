@@ -22,6 +22,7 @@
 </script>
 
 <svelte:head>
+  <title>About - KOTA YATAGAI</title>
   <meta name="description" content="About Kota Yatagai, the author of this blog" />
   <meta property="og:url" content="https://kota-yata.com/about" />
   <meta property="og:title" content="About - KOTA YATAGAI" />

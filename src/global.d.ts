@@ -1,10 +1,5 @@
 /// <reference types="@sveltejs/kit" />
 
-interface post {
-  meta: FrontMatterResult<unknown>,
-  body: string
-};
-
 interface meta {
   title: string,
   date: string,
@@ -12,6 +7,12 @@ interface meta {
   description: string,
   ogp?: string
 }
+
+interface post {
+  path: string
+  meta: meta,
+  body: string
+};
 
 interface postMeta {
   path: string,

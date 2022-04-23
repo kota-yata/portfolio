@@ -3,7 +3,7 @@
     const url = `/posts/${page.params.path}.json`;
     const res: Response = await fetch(url);
     if (!res.ok) return;
-    const post = await res.json();
+    const post: post = await res.json();
     return { props: { post } };
   };
 </script>
@@ -27,7 +27,7 @@
 <svelte:head>
   <title>{post.meta.title}</title>
   <meta name="description" content={post.meta.description} />
-  <meta property="og:url" content="https://kota-yata.com" />
+  <meta property="og:url" content="https://kota-yata.com/posts/{post.path}" />
   <meta property="og:title" content={post.meta.title} />
   <meta property="og:image" content="https://kota-yata.com{post.meta.ogp}" />
   <meta property="og:description" content={post.meta.description} />

@@ -7,6 +7,7 @@
 </script>
 
 <svelte:head>
+  <title>Works - KOTA YATAGAI</title>
   <meta name="description" content="Works and implementations by Kota Yatagai" />
   <meta property="og:url" content="https://kota-yata.com/works" />
   <meta property="og:title" content="Works - KOTA YATAGAI" />
