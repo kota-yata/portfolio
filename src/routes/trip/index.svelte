@@ -1,3 +1,18 @@
+<script context="module" lang="ts">
+  import { Image } from '$lib/trip/image';
+  import type { LoadInput, LoadOutput } from '@sveltejs/kit';
+  
+  export const load = async ({ page }: LoadInput): Promise<LoadOutput> => {
+    const dirs = Image.getDirsInDir('./static/trip');
+    await Promise.all(dirs.map(async (dir) => {
+      await Image.optimizeDirectory(`./static/trip/${dir}`);
+    })).finally(async () => {
+      await Image.closePool();
+    });
+    return { props: { dummy: 'dummy' } };
+  };
+</script>
+
 <script lang="ts">
   import Card from '$lib/trip/card.svelte';
   import { localization } from '$lib/localization/index';
