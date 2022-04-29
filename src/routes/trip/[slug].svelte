@@ -22,7 +22,7 @@
   <h1>{found.location}</h1>
   <div class="images">
     {#each Array(found.image) as _, index}
-      <img alt={`${found.short} ${index}`} src={`/trip/${found.short}/optimized/${index}.webp`} />
+      <img loading="lazy" decoding="async" alt={`${found.short} ${index}`} src={`/trip/${found.short}/${index}.webp`} />
     {/each}
   </div>
 </div>
