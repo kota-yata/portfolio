@@ -43,7 +43,7 @@ export class Image {
         }
       });
     }
-    await image.encode({ webp: { quality: 70 } });
+    await image.encode({ webp: { quality: 80 } });
     const result: { extension: string, binary: NodeJS.ArrayBufferView } = await image.encodedWith.webp;
     return result;
   }
