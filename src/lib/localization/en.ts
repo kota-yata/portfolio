@@ -162,6 +162,15 @@ export const EN: localization = {
   },
   trip: [
     {
+      location: 'Badger BOTS',
+      short: 'badgerbots',
+      date: 'November 2021 ~ June 2022',
+      description: `A robotics team I was on throughout the exchange year. We made a robot named Phoenix in 3 months, and made to semifinal at both \
+      Wisconsin Regional at Milwaukee and Seven Rivers Regional at LaCrosse. After the comptetions we worked on outreach, where we changed the code \
+      for lower-grade students. This was the best memory and experience I had in the US.`,
+      image: 14
+    },
+    {
       location: 'Washington D.C.',
       short: 'dc',
       date: 'December 2021',
