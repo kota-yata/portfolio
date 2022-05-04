@@ -5,7 +5,7 @@
     const res = await fetch('/rss.xml');
     const text = res.text();
     const parser = new DOMParser();
-    const xml = parser.parseFromString(text, "application/xml");
+    const xml = parser.parseFromString(text, 'application/xml');
     return { props: { xml } };
   };
 </script>

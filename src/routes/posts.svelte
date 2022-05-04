@@ -5,6 +5,13 @@
   };
 </script>
 
+<script lang="ts">
+  import Page from '$lib/page.svelte';
+  import { getPostsClient } from '$lib/posts/getPosts';
+  import PostCard from '$lib/posts/postCard.svelte';
+  export let posts: postMeta[] = [];
+</script>
+
 <svelte:head>
   <title>All Posts - KOTA YATAGAI</title>
   <meta name="description" content="All posts by Kota Yatagai" />
@@ -15,13 +22,6 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@kota_yata" />
 </svelte:head>
-
-<script lang="ts">
-  import Page from '$lib/page.svelte';
-  import { getPostsClient } from '$lib/posts/getPosts';
-  import PostCard from '$lib/posts/postCard.svelte';
-  export let posts: postMeta[] = [];
-</script>
 
 <Page>
   {#each posts as post}
