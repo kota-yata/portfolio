@@ -5,6 +5,9 @@ category: Computer Science
 description: How can web services avoid malicious attacks?
 ogp: /ogp.webp
 ---
+<div class="message">
+This is one of the assignment I got in a journalism class. The content might be not as straightforward as you expect, since I needed to meet the requirement of the assignment such as word count and way of writing.
+</div>
 
 The number of attacks attempted on the internet is increasing rapidly along with the number of websites, especially after people start using the internet way more than before due to covid. Of the countless number of types of attacks, I am going to pick one of them called Distributed Denial-of-Service Attack (DDoS Attack), since DDoS Attack is one of the most notorious attacks, and write my opinion on how you can avoid this type of attack.
 
