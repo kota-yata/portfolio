@@ -17,8 +17,5 @@
 - [EPSON Hacktrek 2021 優勝](https://openinnovation.epson.com/topics/20210826_2/)
 - [FRC 2022 Wisconsin Regional 準決勝進出](https://www.thebluealliance.com/event/2022wimi)
 
-## Preferences
-タブ派かスペース派かの議論に関しては本当にどっちでも良い派です。なんかこだわり持った方が技術者としてかっこいいよなと思ったりしたこともあったんですが、心の底からどっちでも良いです。コンパイルしたら一緒だし。
-
 ## About My Blog
 このブログはZennに投稿した記事も含めて掲載しています。個人ブログなので主観が入ることがあります。保険をかけて信憑性を下げるのが嫌なので免責的な内容は記事内に書いていませんが、内容や実装に間違い、改善点がある場合はTwitterもしくはGitHub上で教えていただけると嬉しいです。

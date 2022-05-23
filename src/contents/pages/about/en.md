@@ -1,7 +1,7 @@
 ## About Me
-I'm a high school student living in Wisconsin as a foreign exchange student. My exchange program is until June 2022, and then I'm going back to Japan. I'm not planning to go to a college in the US, but planning to study abroad again during college.
-I've been writing code for 2 years, and currently studying decentralized systems such as P2P network.
-As a web front-end developer, I mainly use Svelte to develop web apps and create websites meanwhile I use Next.js and Nuxt.js when team development since Svelte is not as popular as them (sadly...). This website is made with Svelte by the way.
+I am a high school student in Japan, who had been in Wisconsin for a year as an exchange student before. My current enthusiasm is researching decentralized identity management (a.k.a Self Sovereign Identity), which also had me into blockchain and P2P Network.
+
+Although I spend a lot of time reading documents and papers, I also love to code for my own web applications. I have been working on [a data transfer app using WebRTC](https://github.com/kota-yata/instant-drop) for this two months, as well as maintaining and optimizing this blog. Despite the trend in these days that people love to use React and Vue, I consider myself as a Svelte enthusiast. The biggest reason behind me using Svelte is just that I started using it earlier than any other frameworks simply out of curiosity, but I also love how quick its build is and how intuitive to write.
 
 ![image](/media/golf.jpg)
 
@@ -9,4 +9,4 @@ As a web front-end developer, I mainly use Svelte to develop web apps and create
 - [EPSON Hacktrek 2021 Champion](https://openinnovation.epson.com/en/topics/20210826_2/)
 
 ## About My Blog
-Although most of the contents are written in Japanese so far, I'm thinking of writing all posts in English during this exchange year. If you find something wrong in my posts, please let me know via Twitter, GitHub or email.
+Although most of the contents are written in Japanese so far, I am planning to write some artciles in English. For those who cannot read Japanese, subscribe [my RSS feed](https://kota-yata.com/rss.xml) and wait for it!!
