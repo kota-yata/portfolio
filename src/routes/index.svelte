@@ -12,15 +12,9 @@
   import TopicSection from '$lib/topicSection.svelte';
   import { localization } from '$lib/localization/index';
   import { countryCode } from '$lib/localization/getCountry';
-  import { onMount } from 'svelte';
 
   $: topics = localization[$countryCode].topics;
   $: ipfs = localization[$countryCode].ipfs;
-
-  onMount(() => {
-    const lang = window.navigator.language;
-    $countryCode = lang === 'ja' ? 'JP' : 'EN';
-  });
 
   export let posts;
 </script>

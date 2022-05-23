@@ -8,7 +8,12 @@
 
   onMount(() => {
     const countryCodeFromSessionStorage = sessionStorage.getItem('countryCode');
-    if (countryCodeFromSessionStorage) $countryCode = countryCodeFromSessionStorage;
+    if (countryCodeFromSessionStorage) { 
+      $countryCode = countryCodeFromSessionStorage
+    } else {
+      const lang = window.navigator.language;
+      $countryCode = lang === 'ja' ? 'JP' : 'EN';
+    }
   });
 
   const triggerDialog = () => {
