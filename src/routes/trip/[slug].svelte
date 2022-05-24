@@ -23,7 +23,7 @@
   <div class="images">
     {#each Array(found.image) as _, index}
     <picture>
-      <source srcset={`/trip/${found.short}/optimized-mobile/${index}.webp`} media="(max-width: 400px)" type="image/webp">
+      <source srcset={`/trip/${found.short}/optimized-mobile/${index}.webp`} media="(max-width: 500px)" type="image/webp">
       <source srcset={`/trip/${found.short}/optimized/${index}.webp`} type="image/webp">
         <img
         loading="lazy"
