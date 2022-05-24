@@ -20,7 +20,8 @@
     <a href={`/trip/${thumbnail.short}/`} class="card" sveltekit:prefetch
       ><Card
         location={thumbnail.location}
-        image={`/trip/${thumbnail.short}/thumbnail.webp`}
+        imageMobile={`/trip/${thumbnail.short}/optimized-mobile/thumbnail.webp`}
+        image={`/trip/${thumbnail.short}/optimized/thumbnail.webp`}
         date={thumbnail.date}
         description={thumbnail.description}
       /></a

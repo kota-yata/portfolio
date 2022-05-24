@@ -1,12 +1,17 @@
 <script lang="ts">
   export let location: string;
   export let image: string;
+  export let imageMobile: string
   export let date: string;
   export let description: string;
 </script>
 
 <div class="container">
-  <img alt="thumbnail" src={image} />
+  <picture>
+    <source srcset={imageMobile} media="(max-width: 500px)">
+    <source srcset={image}>
+    <img alt="thumbnail" src={image} loading="lazy"/>
+  </picture>
   <h2>{location}</h2>
   <span class="date">{date}</span>
   <p>{description}</p>
