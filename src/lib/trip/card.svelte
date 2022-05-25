@@ -10,7 +10,7 @@
   <picture>
     <source srcset={imageMobile} media="(max-width: 500px)">
     <source srcset={image}>
-    <img alt="thumbnail" src={image} loading="lazy"/>
+    <img alt="thumbnail" src={image}/>
   </picture>
   <h2>{location}</h2>
   <span class="date">{date}</span>
