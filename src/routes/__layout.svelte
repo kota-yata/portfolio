@@ -26,6 +26,7 @@
   let isDialogVisible = false;
 
   import '../styles/app.scss';
+  import '../styles/fonts.scss';
 </script>
 
 <header>
