@@ -9,4 +9,4 @@ I would like to work in a job related to decentralized systems
 
 ## Job History
 #### [Code for Japan](https://www.code4japan.org/) (Apr 2020 ~ July 2021)
-I was working as an intern planning and running monthly events. Writing code wasn't my main job, but I was also working on [Civictech Challenge Cup U-22](https://www.code4japan.org/activity/cccu22) as a student staff and built website for it.
+I was working as an intern planning and running monthly events. Writing code wasn't my main job, but I was also working on [Civictech Challenge Cup U-22](https://www.code4japan.org/activity/challenge-cup) as a student staff and built website for it.

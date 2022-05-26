@@ -11,4 +11,4 @@
 
 ## Job History
 #### [Code for Japan](https://www.code4japan.org/) (2020年4月~2021年7月)
-学生インターンとして定期イベントの企画・司会、[Civictech Challenge Cup U-22](https://www.code4japan.org/activity/cccu22)の運営メンバーを務めました
+学生インターンとして定期イベントの企画・司会、[Civictech Challenge Cup U-22](https://www.code4japan.org/activity/challenge-cup)の運営メンバーを務めました
