@@ -8,7 +8,11 @@
 
 <div class="container">
   {#if displayEyecatch}
-    <img alt="eyecatch" src={meta.meta.ogp} width="100%" height="200px" />
+    <picture width="100%" height="200px">
+      <source srcset={`/media/optimized-mobile/${meta.meta.ogp}.webp`} media="(max-width: 500px)" type="image/webp">
+      <source srcset={`/media/optimized/${meta.meta.ogp}.webp`} type="image/webp">
+      <img alt="eyecatch" src={`/media/optimized/${meta.meta.ogp}`} width="100%" height="200px" />
+    </picture>
   {/if}
   <div class="info">
     <span class="info-category {className}">{meta.meta.category}</span>
@@ -22,7 +26,7 @@
   @import '../../styles/variable.scss';
   .container {
     width: 100%;
-    & > img {
+    & > picture > img {
       object-fit: cover;
     }
     .info {
