@@ -27,6 +27,8 @@
 
   import '../styles/app.scss';
   import '../styles/fonts.scss';
+  import '../styles/a11y-dark.min.css';
+  import '../styles/katex.min.css';
 </script>
 
 <header>
