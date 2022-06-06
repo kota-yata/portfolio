@@ -20,6 +20,13 @@ html, body {
   justify-content: center;
 }
 
+.post {
+  img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 h1 {
   font-size: 35px;
   margin: 0;
@@ -81,7 +88,6 @@ select {
 img {
   max-width: 100%;
 }
-
 table {
   margin-left: 10px;
   border: 1px $dark-gray solid;
@@ -183,5 +189,11 @@ blockquote {
   }
   h5 {
     font-size: 17px;
+  }
+
+  .post {
+    img {
+      width: 100%;
+    }
   }
 }

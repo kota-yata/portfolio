@@ -208,12 +208,12 @@ def lambda_handler(event, context):
 1. 関数の「Layers」をクリックして「トリガーを追加をクリック」し、ドロップダウンから「EventBridge (CloudWatch Events)」を選択します。
 2. ルールは「新規ルールの作成」で任意のルール名を入力。ルールタイプをスケジュール式にし、今回は毎日朝5時なので```corn(0 20 ? * * *)```と入力(LambdaはUTCでトリガーされるので9時間前をセットすることに留意)。トリガーを有効にして「追加」をクリックします。（cronの書き方は[こちら](https://qiita.com/tossh/items/e135bd063a50087c3d6a)をご覧ください）
 
-<img width="810" alt="スクリーンショット 2020-08-07 18.56.44.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/502570/2c07b4d3-295d-7543-7de7-dc8b0efaf40b.png">
+![CloudWatchのスクショ](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/502570/2c07b4d3-295d-7543-7de7-dc8b0efaf40b.png)
 
 
 ## テスト
 最後にしっかり動くかテストしましょう。Lambda関数画面の「テスト」をクリックします。
-<img width="1613" alt="スクリーンショット 2020-08-07 18.51.28.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/502570/8418067e-0784-9b2c-feeb-624c132e277d.png">
+![Lambda関数画面のスクショ](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/502570/8418067e-0784-9b2c-feeb-624c132e277d.png)
 大丈夫そうですね。
 
 ## おわりに

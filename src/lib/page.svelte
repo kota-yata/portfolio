@@ -21,7 +21,6 @@
     }
     .slot {
       width: calc(100% - 280px - 100px);
-      padding-left: 100px;
     }
   }
 

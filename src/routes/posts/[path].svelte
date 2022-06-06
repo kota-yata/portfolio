@@ -41,7 +41,9 @@
     <span class="info-date">{post.meta.date}</span>
     <span class="info-category {className}">{post.meta.category}</span>
   </div>
-  {@html post.body}
+  <div class="post">
+    {@html post.body}
+  </div>
   <div class="share">
     <a class="share-twitter" href={twitterText} target="blank"
       ><img alt="Twitter share button" src="/twitter.svg" width="25px" height="25px" /></a

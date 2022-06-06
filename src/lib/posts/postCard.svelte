@@ -27,6 +27,7 @@
   .container {
     width: 100%;
     & > picture > img {
+      width: 100%;
       object-fit: cover;
     }
     .info {
