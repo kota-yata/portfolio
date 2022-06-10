@@ -18,3 +18,25 @@ $insta-paper: #f3f3f3;
 
 $ipfs-blue: #d1eaec;
 $ipfs-dark-blue: #378085;
+
+$background: $black;
+$primary: $white;
+$secondary: $light-gray;
+$tertiary: $gray;
+$p-letter: $light-gray;
+
+// @media (prefers-color-scheme: light) {
+//   $background: $white;
+//   $primary: $black;
+//   $secondary: $code;
+//   $tertiary: $dark-gray;
+//   $p-letter: $code;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   $background: $black;
+//   $primary: $white;
+//   $secondary: $light-gray;
+//   $tertiary: $gray;
+//   $p-letter: $light-gray;
+// }
