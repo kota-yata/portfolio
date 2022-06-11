@@ -8,21 +8,19 @@ export const EN: localization = {
   topics: [
     {
       category: 'Decentralized',
-      description: `Currently I am researching blockchain system, especially DHT, \
-      which is the protocol for non-structual overlay P2P network. Although I have not published any \
-      implementation or paper on the basis of this research yet, I have been reading the paper of DHT \
-      algorithms and implementation code.`
+      description: `Posts about decentralized systems. I have been researching P2P network or DHT (Decentralized Hash Table), \
+      but there will also be posts about other kinds of decentralized systems such as Self-Sovereign Identity or NFT.`
     },
     {
       category: 'Algorithm',
-      description: `Posts about the implementation of existing algorithms or algorithms for my original library. \
-      Feel free to create an issue or pull request for those implementations; most of the implemetation, \
+      description: `Posts about the implementation of existing algorithms or algorithms for my original libraries. \
+      Feel free to create an issue or a pull request for those implementations; most of the implemetation, \
       if not all, are on GitHub.`
     },
     {
       category: 'Cryptography',
       description:
-        `Posts about cryptography. Some posts might be categolized in different topic if it is related \
+        `Posts about cryptography. Some posts might be categolized in a different topic if it is related \
         to the topic more than cryptography. (e.g. Implementation of cipher might be tagged as Algorithm)`
     },
     {
@@ -33,12 +31,12 @@ export const EN: localization = {
     {
       category: 'Programming',
       description:
-        'Posts about web development and programming. Mostly explanation of a web api.'
+        'Posts about web development and programming. Mostly explanation of the Web APIs.'
     },
     {
       category: 'Non-Tech',
       description:
-        'Posts not related to any technology.'
+        'Posts not related to technology.'
     }
   ],
   works: {
