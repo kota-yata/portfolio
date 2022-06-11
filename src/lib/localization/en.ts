@@ -86,16 +86,23 @@ export const EN: localization = {
         name: 'Web App',
         color: '#4FE479',
         contents: [
+          // {
+          //   title: 'Slouch',
+          //   github: 'Slouch',
+          //   lang: 'TypeScript, Svelte.js',
+          //   date: 'Jan 2021',
+          //   note: 'Markdown editor on which you can rewrite your local files',
+          //   articles: [
+          //     { text: 'Explanation Article (Japanese)', url: '/posts/slouch' },
+          //     { text: 'URL (Japanese)', url: 'https://slouch.kota-yata.com' }
+          //   ]
+          // },
           {
-            title: 'Slouch',
-            github: 'Slouch',
-            lang: 'TypeScript, Svelte.js',
-            date: 'Jan 2021',
-            note: 'Markdown editor on which you can rewrite your local files',
-            articles: [
-              { text: 'Explanation Article (Japanese)', url: '/posts/slouch' },
-              { text: 'URL (Japanese)', url: 'https://slouch.kota-yata.com' }
-            ]
+            title: 'Instant Drop',
+            github: 'instant-drop',
+            lang: 'TypeScript, Sveltekit',
+            date: 'Jul 2022',
+            note: 'File transfer application using WebRTC Data Channel',
           },
           {
             title: 'SmileScore',
@@ -104,7 +111,17 @@ export const EN: localization = {
             date: 'Jun 2021',
             note: 'Depressing web app scoring your smile',
             articles: [
-              { text: 'URL (English)', url: 'https://smilescore.vercel.app' }
+              { text: 'URL', url: 'https://smilescore.vercel.app' }
+            ]
+          },
+          {
+            title: 'Research Editor',
+            github: 'editor.kota-yata.com',
+            lang: 'TypeScript, NuxtJS',
+            date: 'Mar 2021',
+            note: 'Markdown editor with PDF preview on the right side so that you can take a note while reading a paper',
+            articles: [
+              { text: 'URL', url: 'https://editor.kota-yata.com' }
             ]
           },
         ]
@@ -148,7 +165,7 @@ export const EN: localization = {
             note: 'File extension converter for png/jpg/gif',
           },
           {
-            title: 'meta getter',
+            title: 'Meta Getter',
             github: 'meta-getter',
             lang: 'Rust',
             date: 'March 2022',

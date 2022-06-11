@@ -84,16 +84,23 @@ export const JP: localization = {
         name: 'Web App',
         color: '#4FE479',
         contents: [
+          // {
+          //   title: 'Slouch',
+          //   github: 'Slouch',
+          //   lang: 'TypeScript, Svelte.js',
+          //   date: '2021年1月',
+          //   note: 'ローカルファイルを上書きできるマークダウンエディター',
+          //   articles: [
+          //     { text: '説明記事', url: '/posts/slouch' },
+          //     { text: 'Webサイト', url: 'https://slouch.kota-yata.com' }
+          //   ]
+          // },
           {
-            title: 'Slouch',
-            github: 'Slouch',
-            lang: 'TypeScript, Svelte.js',
-            date: '2021年1月',
-            note: 'ローカルファイルを上書きできるマークダウンエディター',
-            articles: [
-              { text: '説明記事', url: '/posts/slouch' },
-              { text: 'Webサイト', url: 'https://slouch.kota-yata.com' }
-            ]
+            title: 'Instant Drop',
+            github: 'instant-drop',
+            lang: 'TypeScript, Sveltekit',
+            date: '2022年7月',
+            note: 'WebRTCのデータチャンネルを用いたファイル転送アプリ',
           },
           {
             title: 'SmileScore',
@@ -102,7 +109,17 @@ export const JP: localization = {
             date: '2021年6月',
             note: '笑顔に点数をつけるというディストピアWebアプリ',
             articles: [
-              { text: 'Webサイト', url: 'https://smilescore.vercel.app' }
+              { text: 'URL', url: 'https://smilescore.vercel.app' }
+            ]
+          },
+          {
+            title: 'Research Editor',
+            github: 'editor.kota-yata.com',
+            lang: 'TypeScript, NuxtJS',
+            date: '2021年3月',
+            note: 'マークダウンエディタを画面左側、PDFビューワを右側に置くことで論文を読みながらメモが取れるアプリ',
+            articles: [
+              { text: 'URL', url: 'https://editor.kota-yata.com' }
             ]
           },
         ]
