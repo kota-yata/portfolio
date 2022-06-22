@@ -55,6 +55,7 @@
       img {
         margin: 0 0 20px;
         width: 100%;
+        filter: brightness(1.1) saturate(1.2);
       }
     }
   }

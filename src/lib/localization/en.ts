@@ -180,7 +180,7 @@ export const EN: localization = {
       location: 'Badger BOTS',
       short: 'badgerbots',
       date: 'November 2021 ~ June 2022',
-      description: `A robotics team I was on throughout my exchange year. We made a robot named Phoenix in 3 months, and made it to semifinal at both \
+      description: `A robotics team I was on throughout my exchange year. We made a robot named Phoenix in 3 months, and made it to semi-final at both \
       Wisconsin Regional at Milwaukee and Seven Rivers Regional at LaCrosse. They literally have made my year.`,
       image: 14
     },
