@@ -177,6 +177,14 @@ export const EN: localization = {
   },
   trip: [
     {
+      location: 'New York City',
+      short: 'nyc',
+      date: 'June 2022',
+      description: `Trip to NYC at the end of my exchange year. My main plan was just walking around and buying stuff spontaneously, \
+      although it had been changed for the last half of the trip as my leg was dying. While people there are really different, the skyscrapers and the subway reminded me of Tokyo.`,
+      image: 37
+    },
+    {
       location: 'Badger BOTS',
       short: 'badgerbots',
       date: 'November 2021 ~ June 2022',
