@@ -1,5 +1,5 @@
 ## Contact
-Email : kota@yatagai.com
+Email : kota@yatagai.com (<a href="/pubkey.asc" rel="external">OpenPGP Public Key</a>)
 Language : Japanese, English
 
 I would reply within two days to messages via Twitter and email. My first language is Japanese, and I can also communicate in English. My grammar goes crazy sometimes, but I am able to make myself understood at least.
