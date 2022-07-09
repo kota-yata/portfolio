@@ -16,10 +16,11 @@ const xml = (posts: postMeta[]) => `<?xml version="1.0" encoding="UTF-8" ?>
           <title><![CDATA[${post.meta.title}]]></title>
           <description><![CDATA[${post.meta.description}]]></description>
           <category>${post.meta.category}</category>
+          <author>kota-yata</author>
           <link>https://kota-yata.com/posts/${post.path}</link>
           <guid isPermaLink="true">https://kota-yata.com/posts/${post.path}</guid>
           <pubDate><![CDATA[${date.toUTCString()}]]></pubDate>
-          <enclosure url="${post.meta.ogp || `https://kota-yata.com/ogp.webp`}" length="0" type="image/webp"/>
+          <enclosure url="${`https://kota-yata.com/media/optimized/${post.meta.ogp}.webp` || `https://kota-yata.com/ogp.webp`}" length="0" type="image/webp"/>
           <dc:creator>Kota Yatagai</dc:creator>
         </item>
       `;
