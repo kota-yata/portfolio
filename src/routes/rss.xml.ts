@@ -7,18 +7,22 @@ const xml = (posts: postMeta[]) => `<?xml version="1.0" encoding="UTF-8" ?>
   <link>https://kota-yata.com</link>
   <description><![CDATA[Personal Blog & Stuffs by Kota Yatagai]]></description>
   ${posts.map(
-    post => `
-      <item>
-        <title><![CDATA[${post.meta.title}]]></title>
-        <description><![CDATA[${post.meta.description}]]></description>
-        <category>${post.meta.category}</category>
-        <link>https://kota-yata.com/posts/${post.path}</link>
-        <guid isPermaLink="true">https://kota-yata.com/posts/${post.path}</guid>
-        <pubDate><![CDATA[${post.meta.date}T00:00:00+09:00]]></pubDate>
-        <enclosure url="${post.meta.ogp || `https://kota-yata.com/ogp.webp`}" length="0" type="image/webp"/>
-        <dc:creator>Kota Yatagai</dc:creator>
-      </item>
-    `
+    post => {
+      const dateSplitted: number[] = post.meta.date.split('-').map((s) => parseInt(s));
+      const date = new Date(dateSplitted[0], dateSplitted[1], dateSplitted[2], 0, 0, 0, 0);
+      return `
+        <item>
+          <title><![CDATA[${post.meta.title}]]></title>
+          <description><![CDATA[${post.meta.description}]]></description>
+          <category>${post.meta.category}</category>
+          <link>https://kota-yata.com/posts/${post.path}</link>
+          <guid isPermaLink="true">https://kota-yata.com/posts/${post.path}</guid>
+          <pubDate><![CDATA[${date}]]></pubDate>
+          <enclosure url="${post.meta.ogp || `https://kota-yata.com/ogp.webp`}" length="0" type="image/webp"/>
+          <dc:creator>Kota Yatagai</dc:creator>
+        </item>
+      `;
+    }
   ).join('')}
 </channel>
 </rss>`;
