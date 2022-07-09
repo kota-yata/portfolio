@@ -8,6 +8,7 @@ const xml = (posts: postMeta[]) => `<?xml version="1.0" encoding="UTF-8" ?>
   <description><![CDATA[Personal Blog & Stuffs by Kota Yatagai]]></description>
   ${posts.map(
     post => {
+      // Date format adaptation for sugokunaritai-gakusei-group/sgg-feed
       const dateSplitted: number[] = post.meta.date.split('-').map((s) => parseInt(s));
       const date = new Date(dateSplitted[0], dateSplitted[1], dateSplitted[2], 0, 0, 0, 0);
       return `
@@ -17,7 +18,7 @@ const xml = (posts: postMeta[]) => `<?xml version="1.0" encoding="UTF-8" ?>
           <category>${post.meta.category}</category>
           <link>https://kota-yata.com/posts/${post.path}</link>
           <guid isPermaLink="true">https://kota-yata.com/posts/${post.path}</guid>
-          <pubDate><![CDATA[${date}]]></pubDate>
+          <pubDate><![CDATA[${date.toUTCString()}]]></pubDate>
           <enclosure url="${post.meta.ogp || `https://kota-yata.com/ogp.webp`}" length="0" type="image/webp"/>
           <dc:creator>Kota Yatagai</dc:creator>
         </item>
