@@ -10,7 +10,7 @@ const xml = (posts: postMeta[]) => `<?xml version="1.0" encoding="UTF-8" ?>
     post => {
       // Date format adaptation for sugokunaritai-gakusei-group/sgg-feed
       const dateSplitted: number[] = post.meta.date.split('-').map((s) => parseInt(s));
-      const date = new Date(dateSplitted[0], dateSplitted[1], dateSplitted[2], 0, 0, 0, 0);
+      const date = new Date(dateSplitted[0], dateSplitted[1] - 1, dateSplitted[2], 0, 0, 0, 0);
       return `
         <item>
           <title><![CDATA[${post.meta.title}]]></title>
