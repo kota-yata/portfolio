@@ -14,7 +14,7 @@ const xml = (posts: postMeta[]) => `<?xml version="1.0" encoding="UTF-8" ?>
         <category>${post.meta.category}</category>
         <link>https://kota-yata.com/posts/${post.path}</link>
         <guid isPermaLink="true">https://kota-yata.com/posts/${post.path}</guid>
-        <pubDate><![CDATA[ ${post.meta.date}]]></pubDate>
+        <pubDate><![CDATA[${post.meta.date}T00:00:00+09:00]]></pubDate>
         <enclosure url="${post.meta.ogp || `https://kota-yata.com/ogp.webp`}" length="0" type="image/webp"/>
         <dc:creator>Kota Yatagai</dc:creator>
       </item>
