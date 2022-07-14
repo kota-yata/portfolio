@@ -84,17 +84,6 @@ export const JP: localization = {
         name: 'Web App',
         color: '#4FE479',
         contents: [
-          // {
-          //   title: 'Slouch',
-          //   github: 'Slouch',
-          //   lang: 'TypeScript, Svelte.js',
-          //   date: '2021年1月',
-          //   note: 'ローカルファイルを上書きできるマークダウンエディター',
-          //   articles: [
-          //     { text: '説明記事', url: '/posts/slouch' },
-          //     { text: 'Webサイト', url: 'https://slouch.kota-yata.com' }
-          //   ]
-          // },
           {
             title: 'Instant Drop',
             github: 'instant-drop',
@@ -137,6 +126,16 @@ export const JP: localization = {
             articles: [
               { text: '実装記事', url: '/posts/permutation' },
               { text: 'npmページ', url: 'https://www.npmjs.com/package/percom' }
+            ]
+          },
+          {
+            title: 'neornd',
+            github: 'neornd',
+            lang: 'JavaScript',
+            date: '2020年7月',
+            note: 'BigInt型向けの巨大乱数生成器や文字列のランダムソート関数を含む乱数関係のオレ的Utilライブラリ',
+            articles: [
+              { text: 'npmページ', url: 'https://www.npmjs.com/package/neornd' }
             ]
           },
           {

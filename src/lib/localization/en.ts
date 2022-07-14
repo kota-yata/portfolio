@@ -135,10 +135,20 @@ export const EN: localization = {
             github: 'Percom',
             lang: 'JavaScript',
             date: 'Aug 2020',
-            note: 'npm package calculating and listing permutaion & combination',
+            note: 'neornd generates permutaion & combination',
             articles: [
               { text: 'Implementation Article (Japanese)', url: '/posts/permutation' },
               { text: 'npm', url: 'https://www.npmjs.com/package/percom' }
+            ]
+          },
+          {
+            title: 'neornd',
+            github: 'neornd',
+            lang: 'JavaScript',
+            date: 'July 2020',
+            note: 'neornd generates random number/bigint/string, and sort given string randomly',
+            articles: [
+              { text: 'npm', url: 'https://www.npmjs.com/package/neornd' }
             ]
           },
           {
@@ -146,7 +156,7 @@ export const EN: localization = {
             github: 'iso-639-1-jp',
             lang: 'TypeScript',
             date: 'Oct 2020',
-            note: 'npm package translating ISO country code into Japanese',
+            note: 'ISO-639-1-JP translates ISO country code into Japanese',
             articles: [
               { text: 'npm', url: 'https://www.npmjs.com/package/iso-639-1-jp' }
             ]
