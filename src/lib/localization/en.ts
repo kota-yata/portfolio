@@ -135,7 +135,7 @@ export const EN: localization = {
             github: 'Percom',
             lang: 'JavaScript',
             date: 'Aug 2020',
-            note: 'neornd generates permutaion & combination',
+            note: 'permutaion & combination',
             articles: [
               { text: 'Implementation Article (Japanese)', url: '/posts/permutation' },
               { text: 'npm', url: 'https://www.npmjs.com/package/percom' }
