@@ -45,13 +45,14 @@ export class Image {
    * @param directoryPath the path of a directory you want to search
    * @returns the names of directories and files inside the given directory oath
    */
-  static getFilesRecursively(directoryPath, exclude) {
+  static getFilesRecursively(directoryPath, dirName, exclude) {
     const dirents = fs.readdirSync(directoryPath);
+    if (dirents.includes(dirName)) return [];
     const files = [];
     for (const dirent of dirents) {
       if (exclude.includes(dirent)) continue;
       if (fs.statSync(`${directoryPath}/${dirent}`).isDirectory()) {
-        const subs = Image.getFilesRecursively(`${directoryPath}/${dirent}`, exclude);
+        const subs = Image.getFilesRecursively(`${directoryPath}/${dirent}`, dirName, exclude);
         files.push(...subs);
         continue;
       }

@@ -1,16 +1,16 @@
 <script lang="ts">
   export let location: string;
   export let image: string;
-  export let imageMobile: string
+  export let imageMobile: string;
   export let date: string;
   export let description: string;
 </script>
 
 <div class="container">
   <picture>
-    <source srcset={imageMobile} media="(max-width: 500px)">
-    <source srcset={image}>
-    <img alt="thumbnail" src={image}/>
+    <source srcset={imageMobile} media="(max-width: 500px)" />
+    <source srcset={image} />
+    <img alt="thumbnail" src={image} />
   </picture>
   <h2>{location}</h2>
   <span class="date">{date}</span>

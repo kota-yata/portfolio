@@ -9,8 +9,8 @@
 <div class="container">
   {#if displayEyecatch}
     <picture width="100%" height="200px">
-      <source srcset={`/media/optimized-mobile/${meta.meta.ogp}.webp`} media="(max-width: 500px)" type="image/webp">
-      <source srcset={`/media/optimized/${meta.meta.ogp}.webp`} type="image/webp">
+      <source srcset={`/media/optimized-mobile/${meta.meta.ogp}.webp`} media="(max-width: 500px)" type="image/webp" />
+      <source srcset={`/media/optimized/${meta.meta.ogp}.webp`} type="image/webp" />
       <img alt="eyecatch" src={`/media/optimized/${meta.meta.ogp}`} width="100%" height="200px" />
     </picture>
   {/if}

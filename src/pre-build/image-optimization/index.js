@@ -5,12 +5,11 @@ import { Image } from './image.js';
 
 const run = async (directoryPath, width, dirName, isNamingIndex, exclude) => {
   exclude.push(dirName);
-  const files = Image.getFilesRecursively(directoryPath, exclude);
+  const files = Image.getFilesRecursively(directoryPath, dirName, exclude);
   const filtered = Image.filterFiles(files);
   await Promise.all(filtered.map(async (file, index) => {
     const fileNameWithoutExtension = file.fileName.match(/([^/]*)\./)[1];
     const targetPath = `${file.directoryPath}/${file.fileName}`;
-    console.log(`Optimizing ${targetPath}...`);
     const distPath = `${file.directoryPath}/${dirName}`;
     const doesDistDirExist = fs.existsSync(distPath);
     if (!doesDistDirExist) fs.mkdirSync(distPath);
