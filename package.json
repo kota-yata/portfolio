@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "svelte-kit dev --host 0.0.0.0",
-    "build": "svelte-kit build",
+    "build": "node ./src/pre-build/index.js && svelte-kit build",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
