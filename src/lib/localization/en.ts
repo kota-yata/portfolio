@@ -142,7 +142,7 @@ export const EN: localization = {
             ]
           },
           {
-            title: 'neornd',
+            title: 'Neornd',
             github: 'neornd',
             lang: 'JavaScript',
             date: 'July 2020',

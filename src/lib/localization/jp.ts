@@ -129,7 +129,7 @@ export const JP: localization = {
             ]
           },
           {
-            title: 'neornd',
+            title: 'Neornd',
             github: 'neornd',
             lang: 'JavaScript',
             date: '2020年7月',
@@ -162,7 +162,7 @@ export const JP: localization = {
             note: 'jpg/png/gifに対応した画像の拡張子変換CLI',
           },
           {
-            title: 'meta getter',
+            title: 'Meta Getter',
             github: 'meta-getter',
             lang: 'Rust',
             date: '2022年3月',
