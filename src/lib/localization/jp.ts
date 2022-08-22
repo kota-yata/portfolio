@@ -7,11 +7,6 @@ export const JP: localization = {
   },
   topics: [
     {
-      category: 'Decentralized',
-      description:
-        '現在僕はブロックチェーン、特にDHTについてリサーチをしています。高校の卒研も「分散型フリマの提案」なるテーマで研究をしており、ブロックチェーンやP2Pネットワーク、非中央集権型システムに関わる技術のリサーチ記事を研究カテゴリとしてまとめています。体系化する前段階のメモはScrapboxに置いてあります。'
-    },
-    {
       category: 'Algorithm',
       description:
         '既存のアルゴリズム実装や自作のライブラリで使うアルゴリズムなどに関する記事はここにまとめています。ほとんどの記事内の実装はGitHubに上がってると思うので改善点や指摘がある場合はそっちでIssueを立ててもらえればなるはやで確認します。'
@@ -30,6 +25,11 @@ export const JP: localization = {
       category: 'Programming',
       description:
         'Webアプリの実装やAPIに関する記事はここにまとめています。一時期ChromeのProject Fuguを追ってた時期があり、その時に書いた記事も何個かZennから移行しています。'
+    },
+    {
+      category: 'Decentralization',
+      description:
+        'ブロックチェーンやP2Pネットワーク、非中央集権型システムに関わる技術のリサーチ記事を研究カテゴリとしてまとめています。体系化する前段階のメモはScrapboxに置いてあります。'
     },
     {
       category: 'Non-Tech',

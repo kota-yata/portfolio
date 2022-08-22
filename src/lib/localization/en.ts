@@ -7,11 +7,6 @@ export const EN: localization = {
   },
   topics: [
     {
-      category: 'Decentralized',
-      description: `Posts about decentralized systems. I have been researching P2P network or DHT (Decentralized Hash Table), \
-      but there will also be posts about other kinds of decentralized systems such as Self-Sovereign Identity or NFT.`
-    },
-    {
       category: 'Algorithm',
       description: `Posts about the implementation of existing algorithms or algorithms for my original libraries. \
       Feel free to create an issue or a pull request for those implementations; most of the implemetation, \
@@ -32,6 +27,11 @@ export const EN: localization = {
       category: 'Programming',
       description:
         'Posts about web development and programming. Mostly explanation of the Web APIs.'
+    },
+    {
+      category: 'Decentralization',
+      description: `Posts about P2P network or DHT (Decentralization Hash Table), which I have been researching. \
+      There might be posts about other kinds of decentralized systems such as Self-Sovereign Identity or NFT.`
     },
     {
       category: 'Non-Tech',

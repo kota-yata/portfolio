@@ -1,7 +1,7 @@
 ---
 title: SSIの論文を和訳してみる
 date: 2020-12-20
-category: Decentralized
+category: Decentralization
 description: SSIの論文、'Self-sovereign Identity − Opportunities and Challenges for the Digital Revolution'を和訳します
 ogp: cornel
 ---

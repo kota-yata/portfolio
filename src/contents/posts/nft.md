@@ -1,7 +1,7 @@
 ---
 title: 芸術家は本当にNFTで救われるのか
 date: 2022-01-08
-category: Decentralized
+category: Decentralization
 description: NFTの誤謬と本質
 ogp: nft
 ---
