@@ -43,6 +43,7 @@
     overflow-y: visible;
     & > img {
       border-radius: 50%;
+      object-fit: cover;
     }
     .bio {
       & > h4 {
