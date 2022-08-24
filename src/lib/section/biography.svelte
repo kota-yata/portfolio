@@ -12,7 +12,7 @@ import { onMount } from 'svelte';
     { name: 'speakerdeck', url: 'https://speakerdeck.com/kota_yata' }
   ];
 
-  let isMobileDevice = true;
+  let isMobileDevice = false;
   onMount(() => {
     isMobileDevice = isMobile();
   })
