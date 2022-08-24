@@ -27,6 +27,7 @@ select {
   margin-right: 20px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 16px;
+  font-weight: 600;
 }
 
 h1 {
@@ -73,6 +74,9 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+  html, body {
+    font-size: 16px;
+  }
   h1 {
     color: $white;
     font-size: 10vw;
@@ -81,10 +85,11 @@ button {
   h2 {
     color: $white;
     font-size: 8vw;
+    text-align: center;
   }
   h3 {
     color: $white;
-    font-size: 28px;
+    font-size: 26px;
     margin: 20px 0 15px 0;
   }
   p {

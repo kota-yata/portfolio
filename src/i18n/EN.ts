@@ -4,7 +4,7 @@ export const EN: I18N = {
   biography: [
     { text: 'Student at Keio High School' },
     { text: 'Front-end Engineer at Code for Japan' },
-    { text: 'Experience of Studying Abroad (1y in Wisconsin)' },
+    { text: 'Experience of studying abroad (1 year in Wisconsin)' },
     { text: 'Technical Posts : blog.kota-yata.com', url: 'https://blog.kota-yata.com' },
   ],
   qualifications: [

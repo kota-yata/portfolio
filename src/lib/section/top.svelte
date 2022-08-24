@@ -1,12 +1,6 @@
-<script lang="ts">
-  import { isMobile } from '../../utils/isMobile';
-</script>
-
 <div class="section">
   <h1>KOTA YATAGAI</h1>
-  {#if isMobile}
   <p>I think, therefore I am.</p>
-  {/if}
 </div>
 
 <style lang="scss">

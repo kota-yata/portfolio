@@ -23,8 +23,8 @@ import { onMount } from 'svelte';
       sessionStorage.setItem('countryCode', $countryCode);
     }}
   >
-    <option value="JP">Japanese</option>
-    <option value="EN">English</option>
+    <option value="JP">JP</option>
+    <option value="EN">EN</option>
   </select>
 </header>
 
