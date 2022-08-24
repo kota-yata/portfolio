@@ -1,6 +1,12 @@
+<script lang="ts">
+  import { isMobile } from '../../utils/isMobile';
+</script>
+
 <div class="section">
   <h1>KOTA YATAGAI</h1>
-  <p>Front-end Developer, Student intern at Code for Japan</p>
+  {#if isMobile}
+  <p>I think, therefore I am.</p>
+  {/if}
 </div>
 
 <style lang="scss">
@@ -8,6 +14,9 @@
     display: block;
     h1 {
       padding-top: 35vh;
+    }
+    p {
+      font-weight: 600;
     }
   }
 

@@ -5,10 +5,11 @@ html, body {
   margin: 0;
   width: 100vw;
   background: $black;
-  color: $white;
+  color: $light-gray;
   font-size: 20px;
+  line-height: 28px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .section {
@@ -19,19 +20,31 @@ html, body {
   justify-content: center;
 }
 
+select {
+  background: transparent;
+  color: $gray;
+  border: none;
+  margin-right: 20px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
 h1 {
+  color: $white;
   font-size: 7vw;
   margin: 0;
   line-height: 8vw;
 }
 h2 {
-  font-size: 4vw;
+  color: $white;
+  font-size: 3.5vw;
   margin: 0;
-  padding: 0 0 3vw 0;
+  padding: 0 0 2vw 0;
 }
 h3 {
+  color: $white;
   font-size: 30px;
-  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
 }
 h4 {
   color: $light-gray;
@@ -42,7 +55,6 @@ h4 {
 p {
   margin: 0;
   color: $light-gray;
-  line-height: 35px;
 }
 
 a {
@@ -62,13 +74,16 @@ button {
 
 @media screen and (max-width: 600px) {
   h1 {
+    color: $white;
     font-size: 10vw;
     margin-bottom: 30px;
   }
   h2 {
+    color: $white;
     font-size: 8vw;
   }
   h3 {
+    color: $white;
     font-size: 28px;
     margin: 20px 0 15px 0;
   }
