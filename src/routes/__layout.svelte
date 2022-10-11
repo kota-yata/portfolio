@@ -48,7 +48,7 @@ import { onMount } from 'svelte';
     max-width: 1500px;
   }
   footer {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     padding-bottom: 10px;
   }
