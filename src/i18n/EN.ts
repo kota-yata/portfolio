@@ -37,7 +37,8 @@ export const EN: I18N = {
     others: [
       { text: 'Signaling Server for Instant Drop', url: 'https://github.com/kota-yata/instant-drop-server' },
       { text: 'npm Packages', url: 'https://www.npmjs.com/~kota-yata' },
-      { text: 'Meta Getter', url: 'https://github.com/kota-yata/meta-getter' }
+      { text: 'Meta Getter', url: 'https://github.com/kota-yata/meta-getter' },
+      { text: 'TCP Simultaneous Open', url: 'https://github.com/kota-yata/tcp-simultaneous-open' }
     ]
   }
 };

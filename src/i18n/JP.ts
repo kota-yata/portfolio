@@ -38,7 +38,8 @@ export const JP: I18N = {
     others: [
       { text: 'Instant Drop用シグナリングサーバー', url: 'https://github.com/kota-yata/instant-drop-server' },
       { text: 'npmパッケージ一覧', url: 'https://www.npmjs.com/~kota-yata' },
-      { text: 'Webページのmetaタグを取得するサーバー', url: 'https://github.com/kota-yata/meta-getter' }
+      { text: 'Webページのmetaタグを取得するサーバー', url: 'https://github.com/kota-yata/meta-getter' },
+      { text: 'TCP Simultaneous Open実装', url: 'https://github.com/kota-yata/tcp-simultaneous-open' }
     ]
   }
 };
