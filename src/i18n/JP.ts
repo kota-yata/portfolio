@@ -21,8 +21,8 @@ export const JP: I18N = {
   暗号に関して言えばSHA256やRSAを実際に実装してみて安全性に関する知識を得たり、現在では楕円曲線を用いた暗号、署名アルゴリズムや
   安全性のレベル分け、検証方法を独学で学んでいます。P2Pネットワークについては構造化オーバーレイにおける分散型ハッシュテーブル (DHT)
   を実装してみたくて論文を読み進めています。
-  その他の分野に関しても興味の向くままに勉強しているので<a href="https://blog.kota-yata.com">ブログ</a>や
-  <a href="https://scrapbox.io/chiken-hub/">Scrapbox</a>も見ていってください。
+  その他の分野に関しても興味の向くままに勉強しているので<a href="https://blog.kota-yata.com">技術ブログ</a>や
+  <a href="https://scrapbox.io/senior/">Scrapbox</a>も見ていってください。
   `,
   works: {
     algorithmImplementations: [
