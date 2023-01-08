@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
   import Biography from '$lib/section/biography.svelte';
+  import News from '$lib/section/news.svelte';
   import Top from '$lib/section/top.svelte';
   import Works from '$lib/section/works.svelte';
 </script>
@@ -11,3 +12,4 @@
 <Top />
 <Biography />
 <Works />
+<!-- <News /> -->

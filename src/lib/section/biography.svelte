@@ -4,7 +4,7 @@
   import { isMobile } from '../../utils/isMobile';
   import { i18n } from '../../i18n/index';
   import { countryCode } from '../../utils/store';
-import { onMount } from 'svelte';
+  import { onMount } from 'svelte';
   const links = [
     { name: 'github', url: 'https://github.com/kota-yata' },
     { name: 'spotify', url: 'https://open.spotify.com/user/jgm80x9h1j84hnk4nv3hozlaf?si=149aa7cf000b4948' },

@@ -5,11 +5,11 @@ export const EN: I18N = {
     { text: 'Student at Keio High School' },
     { text: 'Front-end Engineer at Code for Japan' },
     { text: 'Experience of studying abroad (1 year in Wisconsin)' },
-    { text: 'Technical Posts : blog.kota-yata.com', url: 'https://blog.kota-yata.com' },
   ],
   qualifications: [
     { text: 'Fundamental of Engineering (Japanese)' },
     { text: '1st prize at EPSON HackTrek 2021', url: 'https://openinnovation.epson.com/en/topics/20210826_2/' },
+    { text: 'Product Development & GMO Pepabo Prize at EFC Award', url: 'https://efc.fukuoka.jp/edd2022/award' }
   ],
   communication: [
     { text: 'Email: kota@yatagai.com' },
@@ -40,5 +40,6 @@ export const EN: I18N = {
       { text: 'Meta Getter', url: 'https://github.com/kota-yata/meta-getter' },
       { text: 'TCP Simultaneous Open', url: 'https://github.com/kota-yata/tcp-simultaneous-open' }
     ]
-  }
+  },
+  news: []
 };

@@ -1,4 +1,4 @@
-import type { TextLinks } from '$lib/types';
+import type { TextLinks, News } from '$lib/types';
 
 export interface I18N {
   biography: TextLinks[],
@@ -9,5 +9,6 @@ export interface I18N {
     algorithmImplementations: TextLinks[],
     webApps: TextLinks[],
     others: TextLinks[]
-  }
+  },
+  news: News[]
 }
