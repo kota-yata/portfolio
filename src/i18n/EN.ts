@@ -20,7 +20,7 @@ export const EN: I18N = {
   interests: `
   Although my field of interest is quite diverse that I don't come up with the primary field, I enjoy implementing protocols on papers or specifications.
   One of my recent work is <a href="https://github.com/kota-yata/tcp-simultaneous-open">an implementation of TCP Simultaneous Open</a>,
-  where you can establish TCP connection without having the conventional three-way handshake. I've also wrote SHA-256 in TypeScript,
+  where you can establish TCP connection without having the conventional three-way handshake. I've also written SHA-256 in TypeScript,
   and have been working on implementing Warp, a live streaming protocol on HTTP/3.<br>
   I also write web apps for fun and research purpose sometimes. As I like tinkering network connection on an application layer WebRTC, WebSocket and WebTransport are what I usually code with
   (e.g. <a href="https://github.com/kota-yata/instant-drop">Instant Drop</a>).<br><br>
