@@ -30,6 +30,9 @@
   @media screen and (max-width: 600px) {
     .section {
       text-align: center;
+      div {
+        justify-content: center;
+      }
     }
   }
 </style>
