@@ -2,9 +2,10 @@ import type { I18N } from './i18n';
 
 export const EN: I18N = {
   biography: [
-    { text: 'Student at Keio High School' },
-    { text: 'Front-end Engineer at Code for Japan' },
-    { text: 'Experience of studying abroad (1 year in Wisconsin)' },
+    { text: 'Undergraduate at Keio Univ. The Faculty of Environment and Information Studies' },
+    { text: 'Security Engineering Intern at PLAID Inc.' },
+    { text: 'Student Staff at Civictech Challenge Cup U-22' },
+    { text: 'Bookworm📚' },
   ],
   qualifications: [
     { text: 'Fundamental of Engineering (Japanese)' },
@@ -13,14 +14,19 @@ export const EN: I18N = {
   ],
   communication: [
     { text: 'Email: kota@yatagai.com' },
-    { text: 'English available although my native toungue is Japanese' },
+    { text: 'I\'m usually on Twitter so DMing me would work better than sending email' },
+    { text: 'English available' },
   ],
   interests: `
-  Although I have not decided which field specifically to reasearch in computer science as I'm not required, 
-  I have strong interest in cryptography and decentralized networks. For cryptography I have been implementing 
-  popular algorithms such as RSA-OAEP, ECDSA or SHA256. For decentralized networks I have read several papers 
-  and white papers about DHT (Decentralized Hash Table), and have been reading the implementation in actual 
-  applications such as IPFS or Ethereum.
+  Although my field of interest is quite diverse that I don't come up with the primary field, I enjoy implementing protocols on papers or specifications.
+  One of my recent work is <a href="https://github.com/kota-yata/tcp-simultaneous-open">an implementation of TCP Simultaneous Open</a>,
+  where you can establish TCP connection without having the conventional three-way handshake. I've also written SHA-256 in TypeScript,
+  and have been working on implementing Warp, a live streaming protocol on HTTP/3.<br>
+  I also write web apps for fun and research purpose sometimes. As I like tinkering network connection on an application layer WebRTC, WebSocket and WebTransport are what I usually code with
+  (e.g. <a href="https://github.com/kota-yata/instant-drop">Instant Drop</a>).<br><br>
+  Besides computer science and software engineering, I spend a great deal of time reading.
+  Sometimes it's just for fun, sometimes for learning English or for self enlightenment. I enjoy reading dystopian novels the most, such as "1984", "Don't let me go" or "Atlas Shrugged".
+  I've even created a dystopian app once that scores smiles using image recognition, inspired by 1984.
   `,
   works: {
     algorithmImplementations: [
