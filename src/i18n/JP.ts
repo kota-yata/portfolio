@@ -2,8 +2,8 @@ import type { I18N } from './i18n';
 
 export const JP: I18N = {
   biography: [
-    { text: '慶應義塾大学環境情報学部1年' },
-    { text: 'PLAID Inc. セキュリティエンジニアインターン' },
+    { text: '慶應義塾大学 環境情報学部1年' },
+    { text: 'PLAID Inc. エンジニアインターン' },
     { text: 'Civictech Challenge Cup U-22 運営スタッフ' },
     { text: 'blog.kota-yata.com', url: 'https://blog.kota-yata.com' },
   ],

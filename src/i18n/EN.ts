@@ -3,9 +3,9 @@ import type { I18N } from './i18n';
 export const EN: I18N = {
   biography: [
     { text: 'Undergraduate at Keio Univ. The Faculty of Environment and Information Studies' },
-    { text: 'Security Engineering Intern at PLAID Inc.' },
-    { text: 'Student Staff at Civictech Challenge Cup U-22' },
-    { text: 'Bookworm📚' },
+    { text: 'Nakazawa and Okoshi Lab.', url: 'https://www.jn.sfc.keio.ac.jp/' },
+    { text: 'Software Engineering Intern at PLAID Inc.' },
+    { text: 'Student Staff at Civictech Challenge Cup U-22', url: 'https://ccc.code4japan.org/' },
   ],
   qualifications: [
     { text: 'Fundamental of Engineering (Japanese)' },
@@ -13,8 +13,7 @@ export const EN: I18N = {
     { text: 'Product Development & GMO Pepabo Prize at EFC Award', url: 'https://efc.fukuoka.jp/edd2022/award' }
   ],
   communication: [
-    { text: 'Email: kota@yatagai.com' },
-    { text: 'I\'m usually on Twitter so DMing me would work better than sending email' },
+    { text: 'Email: kota[at]yatagai.com' },
     { text: 'English available' },
   ],
   interests: `
