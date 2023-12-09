@@ -2,7 +2,7 @@
   <h1>KOTA YATAGAI</h1>
   <div>
     <!-- <span></span> -->
-    <p>If not taller, grow wider.</p>
+    <p>Undergraduate at Keio Univ. / Software Engineer</p>
   </div>
 </div>
 

@@ -3,8 +3,8 @@ import type { I18N } from './i18n';
 export const JP: I18N = {
   biography: [
     { text: '慶應義塾大学 環境情報学部1年' },
-    { text: 'PLAID Inc. エンジニアインターン' },
-    { text: 'Civictech Challenge Cup U-22 運営スタッフ' },
+    { text: '村井研究室 Arch研究グループ', url: 'https://arch.sfc.wide.ad.jp/' },
+    { text: 'Code for Japan エンジニア' },
     { text: 'blog.kota-yata.com', url: 'https://blog.kota-yata.com' },
   ],
   qualifications: [
@@ -17,12 +17,9 @@ export const JP: I18N = {
     { text: '日本語、英語対応可' },
   ],
   interests: `
-  詳しくどの分野を専攻、研究するかは大学入学時に決める予定ですが、暗号理論やネットワークなどに興味を持っています。
-  暗号に関して言えばSHA256やRSAを実際に実装してみて安全性に関する知識を得たり、最近は署名アルゴリズムや安全性のレベル分け、検証方法を独学で学んでいます。
-  ネットワークについてはWebRTCやWebTransportなど、アプリケーションレイヤーでネットワーク通信をいじることに面白みを感じていて、最近はHTTP/3周りの新しい技術に興味があります。
-  上記の興味を実装に移すという意味でWebアプリの開発もしていて、シグナリングサーバーとはProtocol Buffer on WebSocketで、ピア同士はWebRTCで通信を行うファイル共有アプリを作ったりしています。<br><br>
-  エンジニアリングやコーディング以外では、本を読むことに時間を費やしています。「1984」や「私を離さないで」などのディストピア系の小説が特に好きですが、
-  最近は社会契約論などの古典も読み進めています。
+  主に分散システム、P2P通信、ネットワークプロトコルの実装に興味があり、研究や趣味での開発を行っています。ネットワークプロトコルについては特にQUICやHTTP/3を取り巻く新しい仕様を追うことに興味を持っています。
+  業務経験としてはNuxtやSvelteなど各種フレームワークを用いたWebフロントエンド開発、GCPを用いたインフラ構築や<a href="https://tech.plaid.co.jp/mongo-atlas-to-bigquery">データベースのレプリケーション機構開発</a>などの経験があります。
+  個人制作物としてはWebアプリが多いですが、今後は主にプロトコルやサーバーの実装に力を入れていきます。
   `,
   works: {
     algorithmImplementations: [
@@ -37,10 +34,10 @@ export const JP: I18N = {
       { text: '笑顔の点数をつけるアプリ', url: 'https://github.com/kota-yata/SmileScore' },
     ],
     others: [
-      { text: 'Instant Drop用シグナリングサーバー', url: 'https://github.com/kota-yata/instant-drop-server' },
-      { text: 'npmパッケージ一覧', url: 'https://www.npmjs.com/~kota-yata' },
+      { text: 'シグナリングサーバー', url: 'https://github.com/kota-yata/instant-drop-server' },
       { text: 'Webページのmetaタグを取得するサーバー', url: 'https://github.com/kota-yata/meta-getter' },
-      { text: 'TCP Simultaneous Open実装', url: 'https://github.com/kota-yata/tcp-simultaneous-open' }
+      { text: 'TCP Simultaneous Open実装', url: 'https://github.com/kota-yata/tcp-simultaneous-open' },
+      { text: 'STUNサーバーのフルスクラッチRUST実装', url: 'https://github.com/kota-yata/organic-stun' }
     ]
   },
   news: [

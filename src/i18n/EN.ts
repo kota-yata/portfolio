@@ -3,9 +3,8 @@ import type { I18N } from './i18n';
 export const EN: I18N = {
   biography: [
     { text: 'Undergraduate at Keio Univ. The Faculty of Environment and Information Studies' },
-    { text: 'Nakazawa and Okoshi Lab.', url: 'https://www.jn.sfc.keio.ac.jp/' },
-    { text: 'Software Engineering Intern at PLAID Inc.' },
-    { text: 'Student Staff at Civictech Challenge Cup U-22', url: 'https://ccc.code4japan.org/' },
+    { text: 'Murai Lab, Arch Research Group', url: 'https://arch.sfc.wide.ad.jp/' },
+    { text: 'Software Engineer at Code for Japan'},
   ],
   qualifications: [
     { text: 'Fundamental of Engineering (Japanese)' },
@@ -20,7 +19,7 @@ export const EN: I18N = {
   Although my field of interest is quite diverse that I don't come up with the primary field, I enjoy implementing protocols on papers or specifications.
   One of my recent work is <a href="https://github.com/kota-yata/tcp-simultaneous-open">an implementation of TCP Simultaneous Open</a>,
   where you can establish TCP connection without having the conventional three-way handshake. I've also written SHA-256 in TypeScript,
-  and have been working on implementing Warp, a live streaming protocol on HTTP/3.<br>
+  and have been working on implementing Media over QUIC Transport, a live streaming protocol on HTTP/3.<br>
   I also write web apps for fun and research purpose sometimes. As I like tinkering network connection on an application layer WebRTC, WebSocket and WebTransport are what I usually code with
   (e.g. <a href="https://github.com/kota-yata/instant-drop">Instant Drop</a>).<br><br>
   Besides computer science and software engineering, I spend a great deal of time reading.
@@ -40,10 +39,10 @@ export const EN: I18N = {
       { text: 'Smile Score', url: 'https://github.com/kota-yata/SmileScore' },
     ],
     others: [
-      { text: 'Signaling Server for Instant Drop', url: 'https://github.com/kota-yata/instant-drop-server' },
-      { text: 'npm Packages', url: 'https://www.npmjs.com/~kota-yata' },
+      { text: 'Signaling Server', url: 'https://github.com/kota-yata/instant-drop-server' },
       { text: 'Meta Getter', url: 'https://github.com/kota-yata/meta-getter' },
-      { text: 'TCP Simultaneous Open', url: 'https://github.com/kota-yata/tcp-simultaneous-open' }
+      { text: 'TCP Simultaneous Open', url: 'https://github.com/kota-yata/tcp-simultaneous-open' },
+      { text: 'STUN Server from scratch in Rust', url: 'https://github.com/kota-yata/organic-stun' }
     ]
   },
   news: []
