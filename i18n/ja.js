@@ -1,5 +1,5 @@
 window.i18n_ja = {
-  "name": "Kota Yatagai",
+  "name": "八谷航太（ヤタガイ コウタ）",
   "intro": "リアルタイム通信に関するプログラムを書くソフトウェアエンジニアです",
   "projects": {
     "title": "個人プロジェクト",
