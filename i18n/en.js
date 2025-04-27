@@ -60,19 +60,19 @@ window.i18n_en = {
     "entries": [
       {
         "title": "Streaming Engineer Intern at AbemaTV, Inc. (Feb - Apr 2025)",
-        "desc": "Developed ad insertion systems for live streams from external sources like DAZN and WOWOW using Go and TypeScript"
+        "desc": "Developed ad insertion systems for live streams from external sources such as DAZN or WOWOW."
       },
       {
         "title": "Software Engineer Intern at RightTouch Inc. (Apr - Nov 2024)",
-        "desc": "Worked on synonym search integration, SSR site generation, and a proxy server handling SIP/SDP/RTP protocols"
+        "desc": "Worked on synonym search integration, SSR site generation, and a VoIP proxy server handling SIP/SDP and RTP streams"
       },
       {
         "title": "Summer Intern at SORACOM (Aug - Oct 2024)",
-        "desc": "Evaluated Media over QUIC Transport and WebRTC performance under constrained mobile network conditions using TypeScript"
+        "desc": "Evaluated Media over QUIC Transport and WebRTC performance under constrained mobile network conditions."
       },
       {
         "title": "Software Engineer Intern at PLAID, Inc. (Mar - Oct 2023)",
-        "desc": "Developed a real-time data synchronization system from MongoDB to BigQuery, designing high-reliability data transfer mechanisms in Java"
+        "desc": "Developed a real-time data synchronization system from MongoDB to BigQuery"
       }
     ]
   },
