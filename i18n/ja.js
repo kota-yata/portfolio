@@ -9,7 +9,7 @@ window.i18n_ja = {
         "desc": "メディアプロトコルMoQTのクライアントを実装し、IETF120および122の相互接続試験に参加",
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/moqtail"},
-          {"label": "Blog post", "url": "https://www.kota-yata.com/posts/moqt-experiment/"}
+          {"label": "Blog post", "url": "https://blog.kota-yata.com/posts/moqt-experiment/"}
         ]
       },
       {
@@ -25,7 +25,7 @@ window.i18n_ja = {
         "desc": "ICEプロトコルからトンネリングする形でQUIC上でのP2P通信を確立する手法を実装",
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/p2p-aioice-aioquic"},
-          {"label": "Blog post", "url": "https://www.kota-yata.com/posts/quic-p2p/"}
+          {"label": "Blog post", "url": "https://blog.kota-yata.com/posts/quic-p2p/"}
         ]
       }
     ]

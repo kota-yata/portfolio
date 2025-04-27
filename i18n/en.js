@@ -9,7 +9,7 @@ window.i18n_en = {
         "desc": "Implemented a MoQT client and participated in interop tests at IETF 120 and 122",
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/moqtail"},
-          {"label": "Blog post", "url": "https://www.kota-yata.com/en/posts/moqt-experiment-en/"}
+          {"label": "Blog post", "url": "https://blog.kota-yata.com/en/posts/moqt-experiment-en/"}
         ]
       },
       {
@@ -24,7 +24,7 @@ window.i18n_en = {
         "desc": "Implemented a method to establish P2P communication over QUIC by tunneling through ICE protocol",
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/p2p-aioice-aioquic"},
-          {"label": "Blog post", "url": "https://www.kota-yata.com/en/posts/quic-p2p-en/"}
+          {"label": "Blog post", "url": "https://blog.kota-yata.com/en/posts/quic-p2p-en/"}
         ]
       }
     ]
