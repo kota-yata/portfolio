@@ -34,6 +34,31 @@ body.ja {
   font-family: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', 'MS PMincho', serif;
 }
 
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+select {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.print {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
 
 a {
   color: var(--link-color);
@@ -69,5 +94,11 @@ footer {
 
   h3 {
     font-size: 16px;
+  }
+}
+
+@media print {
+  .header {
+    display: none;
   }
 }

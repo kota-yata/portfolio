@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kota Yatagai</title>
-  <link rel="icon" href="sql.webp" type="image/x-icon">
+  <link rel="icon" href="assets/sql.webp" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <script defer src="i18n/en.js"></script>
@@ -13,12 +13,16 @@
 </head>
 <body>
 
-<div style="text-align: right;">
+<div class="header">
   <select id="lang-select">
     <option value="en">English</option>
     <option value="ja">日本語</option>
   </select>
+  <button class="print" onclick="window.print()">
+    <img src="assets/print.svg" alt="Print" height="20px"/>
+  </button>
 </div>
+
 
 <h1 id="name"></h1>
 
