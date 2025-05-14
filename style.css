@@ -59,6 +59,10 @@ select {
   margin-left: 10px;
 }
 
+.formal-pic {
+  display: none;
+}
+
 
 a {
   color: var(--link-color);
@@ -100,5 +104,8 @@ footer {
 @media print {
   .header {
     display: none;
+  }
+  .formal-pic { 
+    display: block;
   }
 }
