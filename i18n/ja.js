@@ -34,6 +34,13 @@ window.i18n_ja = {
     "title": "OSSへの貢献",
     "entries": [
       {
+        "title": "ntt-com/moq-wasm",
+        "desc": "Media over QUIC TransportのPublisher実装の改善",
+        "links": [
+          {"label": "PRs", "url": "https://github.com/nttcom/moq-wasm/pulls?q=is%3Apr+author%3Akota-yata"}
+        ]
+      },
+      {
         "title": "emiago/sipgo",
         "desc": "SIPメッセージのRefer-ToおよびReferred-Byヘッダーのパース機能を追加",
         "links": [

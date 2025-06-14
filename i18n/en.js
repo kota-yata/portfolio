@@ -33,6 +33,13 @@ window.i18n_en = {
     "title": "Open Source Contributions",
     "entries": [
       {
+        "title": "ntt-com/moq-wasm",
+        "desc": "Enhanced the Publisher implementation of Media over QUIC Transport",
+        "links": [
+          {"label": "PRs", "url": "https://github.com/nttcom/moq-wasm/pulls?q=is%3Apr+author%3Akota-yata"}
+        ]
+      },
+      {
         "title": "emiago/sipgo",
         "desc": "Added parsing support for Refer-To and Referred-By headers in SIP messages",
         "links": [
