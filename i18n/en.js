@@ -20,11 +20,10 @@ window.i18n_en = {
         ]
       },
       {
-        "title": "P2P communication over QUIC",
-        "desc": "Implemented a method to establish P2P communication over QUIC by tunneling through ICE protocol",
+        "title": "P2P QUIC communication maintenance mechanism implementation",
+        "desc": "Significantly reduced interruption time during address changes in P2P communication using QUIC by temporarily relaying communication through an intermediate server",
         "links": [
-          {"label": "Repository", "url": "https://github.com/kota-yata/p2p-aioice-aioquic"},
-          {"label": "Blog post", "url": "https://blog.kota-yata.com/en/posts/quic-p2p-en/"}
+          {"label": "Repository", "url": "https://github.com/kota-yata/p2p-quic-migration"}
         ]
       }
     ]

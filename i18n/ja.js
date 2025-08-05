@@ -21,11 +21,10 @@ window.i18n_ja = {
         ]
       },
       {
-        "title": "QUICを用いたP2P通信の実装",
-        "desc": "ICEプロトコルからトンネリングする形でQUIC上でのP2P通信を確立する手法を実装",
+        "title": "P2P QUICにおけるアドレス変更時の通信維持機構の実装",
+        "desc": "一時的に中間サーバーで通信を中継することで，QUICを用いたP2P通信のアドレス変更時の中断時間を大幅に削減",
         "links": [
-          {"label": "Repository", "url": "https://github.com/kota-yata/p2p-aioice-aioquic"},
-          {"label": "Blog post", "url": "https://blog.kota-yata.com/posts/quic-p2p/"}
+          {"label": "Repository", "url": "https://github.com/kota-yata/p2p-quic-migration"},
         ]
       }
     ]
