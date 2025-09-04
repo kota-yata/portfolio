@@ -30,8 +30,15 @@ window.i18n_ja = {
     ]
   },
   "oss": {
-    "title": "OSSへの貢献",
+    "title": "主なOSSへの貢献",
     "entries": [
+      {
+        "title": "jitsi/jitsi-videobridge",
+        "desc": "WebRTC SFUサーバーにおける音声の選択的転送機能の実装",
+        "links": [
+          {"label": "PRs", "url": "https://github.com/jitsi/jitsi-videobridge/pulls?q=is%3Apr+author%3Akota-yata"}
+        ]
+      },
       {
         "title": "ntt-com/moq-wasm",
         "desc": "Media over QUIC TransportのPublisher実装の改善",
@@ -53,13 +60,6 @@ window.i18n_ja = {
           {"label": "PRs", "url": "https://github.com/mozilla/srihash.org/pulls?q=is%3Apr+author%3Akota-yata"}
         ]
       },
-      {
-        "title": "quinn-rs/quinn",
-        "desc": "Rust製QUICライブラリのドキュメント整備とサンプルコードのビルド検証自動化",
-        "links": [
-          {"label": "PRs", "url": "https://github.com/quinn-rs/quinn/pulls?q=is%3Apr+author%3Akota-yata"}
-        ]
-      }
     ]
   },
   "work": {
