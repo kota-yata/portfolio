@@ -32,6 +32,13 @@ window.i18n_en = {
     "title": "Open Source Contributions",
     "entries": [
       {
+        "title": "jitsi/jitsi-videobridge",
+        "desc": "Implemented a selective audio forwarding in a WebRTC SFU server",
+        "links": [
+          {"label": "PRs", "url": "https://github.com/jitsi/jitsi-videobridge/pulls?q=is%3Apr+author%3Akota-yata"}
+        ]
+      },
+      {
         "title": "ntt-com/moq-wasm",
         "desc": "Enhanced the Publisher implementation of Media over QUIC Transport",
         "links": [
@@ -52,13 +59,6 @@ window.i18n_en = {
           {"label": "PRs", "url": "https://github.com/mozilla/srihash.org/pulls?q=is%3Apr+author%3Akota-yata"}
         ]
       },
-      {
-        "title": "quinn-rs/quinn",
-        "desc": "Enhanced documentation and ensured sample code builds successfully in the Rust QUIC library",
-        "links": [
-          {"label": "PRs", "url": "https://github.com/quinn-rs/quinn/pulls?q=is%3Apr+author%3Akota-yata"}
-        ]
-      }
     ]
   },
   "work": {
