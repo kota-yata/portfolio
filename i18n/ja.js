@@ -6,7 +6,7 @@ window.i18n_ja = {
     "entries": [
       {
         "title": "Media over QUIC Transportを用いた低遅延ライブ配信デモ",
-        "desc": "メディアプロトコルMoQTのクライアントを実装し、IETF120および122の相互接続試験に参加",
+        "desc": "メディアプロトコルMoQTのクライアントを実装し，IETF120および122の相互接続試験に参加",
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/moqtail"},
           {"label": "Blog post", "url": "https://blog.kota-yata.com/posts/moqt-experiment/"}
@@ -14,7 +14,7 @@ window.i18n_ja = {
       },
       {
         "title": "ネットワークプロトコルスタック開発",
-        "desc": "「1000行で作るOS」のRISC-VベースOS上に、ICMPおよびARPプロトコルを処理するミニマルなネットワークスタックを実装",
+        "desc": "「1000行で作るOS」のRISC-VベースOS上に，ICMPおよびARPプロトコルを処理するミニマルなネットワークスタックを実装",
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/moqtail"},
           {"label": "Presentation", "url": "https://speakerdeck.com/kota_yata/2024nian-qiu-zhong-cun-yan-wipfa-biao-zi-liao"}
