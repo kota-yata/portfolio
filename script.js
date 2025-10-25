@@ -18,6 +18,7 @@ function applyTranslations(lang) {
 
   updateSection('projects', translations.projects);
   updateSection('oss', translations.oss);
+  updateSection('qualifications', translations.qualifications);
   updateSection('work', translations.work);
 
   const langSelect = document.getElementById('lang-select');
@@ -51,7 +52,7 @@ function updateSection(sectionId, sectionData) {
       div.appendChild(title);
       div.appendChild(desc);
 
-      if (entry.links && Array.isArray(entry.links)) {
+      if (entry.links && Array.isArray(entry.links) && entry.links.length > 0) {
         const linkP = document.createElement('p');
         linkP.appendChild(document.createTextNode('link: '));
         entry.links.forEach((linkObj, index) => {

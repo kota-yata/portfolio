@@ -61,6 +61,37 @@ window.i18n_en = {
       },
     ]
   },
+  "qualifications": {
+    "title": "Qualifications, Adoptions, Awards, etc.",
+    "entries": [
+      {
+        "title": "IPA Fundamental Information Technology Engineer (2021)",
+        "desc": "Acquired in the second year of high school",
+        "links": [
+          {"label": "Syallabus", "url": "https://www.ipa.go.jp/en/it-examinations/nph2g600000007uh-att/000009637.pdf"}
+        ]
+      },
+      {
+        "title": "Google Summer of Code (2025)",
+        "desc": "Selected for the Jitsi project and implemented selective audio forwarding in Jitsi Videobridge",
+        "links": [
+          {"label": "GSoC Profile", "url": "https://summerofcode.withgoogle.com/programs/2025/projects/aBy319rB"}
+        ]
+      },
+      {
+        "title": "IPA Security Camp (2025)",
+        "desc": "Implemented L4LB and cache servers in the self-built CDN seminar and constructed a small-scale PoP on actual machines.",
+        "links": []
+      },
+      {
+        "title": "Digital Agency Hackathon - Data Provision Award (2025)",
+        "desc": "Defined XML schema for notifications and circulars, and implemented a parser.",
+        "links": [
+          {"label": "Official report", "url": "https://www.digital.go.jp/en/news/9fb5ef8e-c631-4974-96d9-0b145304c553#:~:text=to%20accumulate%20cases.-,Laws%20and%20regulations%20Data%2Dsharing%20Award,-Notice%20and%20release"}
+        ]
+      }
+    ]
+  },
   "work": {
     "title": "Work Experience",
     "entries": [

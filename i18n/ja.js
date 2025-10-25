@@ -36,7 +36,8 @@ window.i18n_ja = {
         "title": "jitsi/jitsi-videobridge",
         "desc": "WebRTC SFUサーバーにおける音声の選択的転送機能の実装",
         "links": [
-          {"label": "PRs", "url": "https://github.com/jitsi/jitsi-videobridge/pulls?q=is%3Apr+author%3Akota-yata"}
+          {"label": "PRs", "url": "https://github.com/jitsi/jitsi-videobridge/pulls?q=is%3Apr+author%3Akota-yata"},
+          {"label": "Blog post", "url": "https://jitsi.org/blog/introducing-receiver-audio-subscriptions/"},
         ]
       },
       {
@@ -60,6 +61,37 @@ window.i18n_ja = {
           {"label": "PRs", "url": "https://github.com/mozilla/srihash.org/pulls?q=is%3Apr+author%3Akota-yata"}
         ]
       },
+    ]
+  },
+  "qualifications": {
+    "title": "資格，採択・受賞歴等",
+    "entries": [
+      {
+        "title": "基本情報処理技術者 (2021年取得)",
+        "desc": "高校2年次に取得",
+        "links": []
+      },
+      {
+        "title": "Google Summer of Code (2025年度採択)",
+        "desc": "Jitsiプロジェクトに採択され，Jitsi Videobridgeの音声選択的転送機能を実装",
+        "links": [
+          {"label": "GSoC profile", "url": "https://summerofcode.withgoogle.com/programs/2025/projects/aBy319rB"}
+        ]
+      },
+      {
+        "title": "セキュリティ・キャンプ全国大会 (2025年度修了)",
+        "desc": "CDN自作ゼミにてL4LB，キャッシュサーバーを実装し実機で小規模なPoPを構築",
+        "links": [
+          {"label": "Report", "url": "https://blog.kota-yata.com/posts/seccamp25/"}
+        ]
+      },
+      {
+        "title": "デジタル庁ハッカソン 法令等データ提供賞 (2025年度受賞)",
+        "desc": "通知，通達文書のXMLスキーマを定義し，パーサーを実装",
+        "links": [
+          {"label": "Official report", "url": "https://www.digital.go.jp/news/9fb5ef8e-c631-4974-96d9-0b145304c553#:~:text=%E3%81%A8%E3%81%97%E3%81%A6%E6%B4%BB%E7%94%A8%E5%8F%AF%E8%83%BD%E3%80%82-,%E6%B3%95%E4%BB%A4%E7%AD%89%E3%83%87%E3%83%BC%E3%82%BF%E6%8F%90%E4%BE%9B%E8%B3%9E,-%E9%80%9A%E7%9F%A5%E3%83%BB%E9%80%9A%E9%81%94Lawtext"}
+        ]
+      }
     ]
   },
   "work": {
