@@ -18,7 +18,7 @@
     <option value="en">English</option>
     <option value="ja">日本語</option>
   </select>
-  <button class="print" onclick="window.print()">
+  <button class="print" onclick="openPrintDialog()">
     <img src="assets/print.svg" alt="Print" height="20px"/>
   </button>
 </div>
@@ -38,32 +38,59 @@
   LinkedIn: <a href="https://www.linkedin.com/in/kota-yata/" target="_blank" rel="noopener noreferrer">kota-yata</a>
 </p>
 
-<hr>
+<hr class="section-sep">
 
 <section id="projects-section">
   <h2 id="projects-title"></h2>
   <div id="projects-entries"></div>
 </section>
 
-<hr>
+<hr class="section-sep">
 
 <section id="oss-section">
   <h2 id="oss-title"></h2>
   <div id="oss-entries"></div>
 </section>
 
-<hr>
+<hr class="section-sep">
+
+<section id="qualifications-section">
+  <h2 id="qualifications-title"></h2>
+  <div id="qualifications-entries"></div>
+</section>
+
+<hr class="section-sep">
 
 <section id="work-section">
   <h2 id="work-title"></h2>
   <div id="work-entries"></div>
 </section>
 
-<hr>
+<hr class="section-sep">
 
 <footer>
   2025 © Kota Yatagai
 </footer>
 
+<!-- Print Order Modal -->
+<div id="print-modal" class="modal-overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="print-modal-title">
+    <h3 id="print-modal-title">Arrange Sections to Print</h3>
+    <ul id="order-list" class="order-list">
+      <!-- populated by script.js -->
+    </ul>
+    <div class="modal-actions">
+      <button type="button" id="print-cancel">Cancel</button>
+      <button type="button" id="print-confirm" class="primary">Print</button>
+    </div>
+  </div>
+  <button class="modal-close" aria-label="Close" id="print-modal-close">×</button>
+  <div class="modal-backdrop" id="print-modal-backdrop"></div>
+</div>
+
+<!-- Staging container shown only for print -->
+<div id="print-staging" aria-hidden="true"></div>
+
+  <script defer src="print.js"></script>
 </body>
 </html>
