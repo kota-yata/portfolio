@@ -1,6 +1,6 @@
 window.i18n_en = {
   "name": "Kota Yatagai",
-  "intro": "Software engineer developing real-time communication systems. 3rd-year undergrads at Keio Univ.",
+  "intro": "3rd-year undergraduate student at Keio University.",
   "projects": {
     "title": "Personal Projects",
     "entries": [
