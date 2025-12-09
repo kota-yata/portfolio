@@ -5,23 +5,22 @@ window.i18n_en = {
     "title": "Personal Projects",
     "entries": [
       {
-        "title": "Low-latency live streaming demo using Media over QUIC Transport",
-        "desc": "Implemented a MoQT client and participated in interop tests at IETF 120 and 122",
+        "title": "moqtail: a client implementation of Media over QUIC",
+        "desc": `Implemented a MoQT client and participated in interop tests at IETF 120 and 122. Moqtail
+         provides generic serializers/deserializers for MoQT draft-11 control messages, along with an abstract
+         WebWorker interface for transport communication.`,
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/moqtail"},
           {"label": "Blog post", "url": "https://blog.kota-yata.com/en/posts/moqt-experiment-en/"}
         ]
       },
       {
-        "title": "Network protocol stack development",
-        "desc": "Implemented a minimal ICMP and ARP handling network stack on a self-built RISC-V based OS",
-        "links": [
-          {"label": "Repository", "url": "https://github.com/kota-yata/small-nick-os"}
-        ]
-      },
-      {
-        "title": "P2P QUIC communication maintenance mechanism implementation",
-        "desc": "Significantly reduced interruption time during address changes in P2P communication using QUIC by temporarily relaying communication through an intermediate server",
+        "title": "Seamless connection migration in P2P QUIC",
+        "desc": `Developed a new method to reduce interruption time when a peer's IP address changes
+         during a direct p2p connection. This system immediately routes the media through an intermediate server
+          upon address change, guaranteeing continuous service, and then quietly re-establishes the direct 
+          peer-to-peer link in the background. Utilizing QUIC makes this \"immediate fallback\" approach possible 
+          and quick thanks to its connection migration feature.`,
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/p2p-quic-migration"}
         ]
