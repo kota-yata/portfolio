@@ -60,7 +60,7 @@ window.i18n_en = {
       },
       {
         "title": "mozilla/srihash.org",
-        "desc": "Improved the UI for better usability of the SRI hash generator tool",
+        "desc": "Several UI improvements",
         "links": [
           {"label": "PRs", "url": "https://github.com/mozilla/srihash.org/pulls?q=is%3Apr+author%3Akota-yata"}
         ]
