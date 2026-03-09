@@ -41,6 +41,13 @@ window.i18n_ja = {
         ]
       },
       {
+        "title": "wireshark/wireshark",
+        "desc": "MS-TURNのData Indicationメッセージ判別の実装",
+        "links": [
+          {"label": "PRs", "url": "https://gitlab.com/wireshark/wireshark/-/merge_requests/23814"}
+        ]
+      },
+      {
         "title": "ntt-com/moq-wasm",
         "desc": "Media over QUIC TransportのPublisher実装の改善",
         "links": [

@@ -1,6 +1,6 @@
 window.i18n_en = {
   "name": "Kota Yatagai",
-  "intro": "3rd-year undergraduate student at Keio University.",
+  "intro": "Third-year undergraduate student at Keio University.",
   "projects": {
     "title": "Personal Projects",
     "entries": [
@@ -35,6 +35,13 @@ window.i18n_en = {
         "desc": "Implemented a selective audio forwarding in a WebRTC SFU server",
         "links": [
           {"label": "PRs", "url": "https://github.com/jitsi/jitsi-videobridge/pulls?q=is%3Apr+author%3Akota-yata"}
+        ]
+      },
+      {
+        "title": "wireshark/wireshark",
+        "desc": "Added support for parsing Data Indication message in MS-TURN protocol",
+        "links": [
+          {"label": "PRs", "url": "https://gitlab.com/wireshark/wireshark/-/merge_requests/23814"}
         ]
       },
       {
