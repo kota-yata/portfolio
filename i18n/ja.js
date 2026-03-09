@@ -44,7 +44,7 @@ window.i18n_ja = {
         "title": "wireshark/wireshark",
         "desc": "MS-TURNのData Indicationメッセージ判別の実装",
         "links": [
-          {"label": "PRs", "url": "https://gitlab.com/wireshark/wireshark/-/merge_requests/23814"}
+          {"label": "PRs", "url": "https://gitlab.com/wireshark/wireshark/-/merge_requests/?sort=created_date&state=all&author_username=kota-yata&first_page_size=20"}
         ]
       },
       {
