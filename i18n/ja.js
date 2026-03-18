@@ -21,9 +21,10 @@ window.i18n_ja = {
         ]
       },
       {
-        "title": "P2P QUICにおけるアドレス変更時の通信維持機構の実装",
-        "desc": "一時的に中間サーバーで通信を中継することで，QUICを用いたP2P通信のアドレス変更時の中断時間を大幅に削減",
+        "title": "P2P会議におけるWiFiからセルラーへの切り替え時の中断時間の削減（学術研究）",
+        "desc": "回線切り替え時のP2P通話の中断を最小化するため、QUICベースの復帰機構を実装",
         "links": [
+          {"label": "Paper (Awaiting Review)", "url": "/assets/qswitch.pdf"},
           {"label": "Repository", "url": "https://github.com/kota-yata/p2p-quic-migration"},
         ]
       }

@@ -15,13 +15,12 @@ window.i18n_en = {
         ]
       },
       {
-        "title": "Seamless connection migration in P2P QUIC",
-        "desc": `Developed a new method to reduce interruption time when a peer's IP address changes
-         during a direct p2p connection. This system immediately routes the media through an intermediate server
-          upon address change, guaranteeing continuous service, and then quietly re-establishes the direct 
-          peer-to-peer link in the background. Utilizing QUIC makes this \"immediate fallback\" approach possible 
-          and quick thanks to its connection migration feature.`,
+        "title": "Reducing Interruption Time under WiFi-to-Cellular Transitions in P2P Conferencing (Academic Research)",
+        "desc": `Proposed QSwitch, a QUIC-based recovery mechanism to minimize P2P call interruptions 
+        during network transitions. By leveraging QUIC’s connection migration for immediate server-relay fallback, 
+        QSwitch reduces median interruption time by 72% (vs. Teams) and 96% (vs. Zoom).`,
         "links": [
+          {"label": "Paper (Awaiting Review)", "url": "/assets/qswitch.pdf"},
           {"label": "Repository", "url": "https://github.com/kota-yata/p2p-quic-migration"}
         ]
       }
