@@ -113,6 +113,7 @@ footer {
   /* Hide original sections and separators during print */
   #featured-section,
   #personal-section,
+  #fun-fact-section,
   #work-section,
   hr.section-sep {
     display: none !important;

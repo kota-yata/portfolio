@@ -59,6 +59,17 @@ window.i18n_ja = {
       }
     ]
   },
+  "fun-fact": {
+    "title": "ちょっとした自慢",
+    "entries": [
+      {
+        "desc": "高校時代に見つけた化石が新種と判明し、私の名前が付きました。Ceratophyus yatagaii です。"
+      },
+      {
+        "desc": "ベンチプレス110kg、スクワット140kgです。デッドリフトは怖いのでやりません。"
+      }
+    ]
+  },
   "work": {
     "title": "職務経験（インターンシップ）",
     "entries": [

@@ -19,6 +19,7 @@ function applyTranslations(lang) {
   updateSection('featured', translations.featured, translations.fieldLabels);
   updateSection('personal', translations.personal, translations.fieldLabels);
   updateSection('work', translations.work, translations.fieldLabels);
+  updateSection('fun-fact', translations['fun-fact'], translations.fieldLabels);
 
   const langSelect = document.getElementById('lang-select');
   if (langSelect) {
@@ -42,14 +43,17 @@ function updateSection(sectionId, sectionData, fieldLabels) {
       const div = document.createElement('div');
       div.className = 'entry';
 
-      const title = document.createElement('h3');
-      title.textContent = entry.title;
+      if (entry.title) {
+        const title = document.createElement('h3');
+        title.textContent = entry.title;
+        div.appendChild(title);
+      }
 
-      const desc = document.createElement('p');
-      desc.textContent = entry.desc;
-
-      div.appendChild(title);
-      div.appendChild(desc);
+      if (entry.desc) {
+        const desc = document.createElement('p');
+        desc.textContent = entry.desc;
+        div.appendChild(desc);
+      }
 
       for (const fieldName of ['languages', 'protocols']) {
         if (!entry[fieldName]) continue;

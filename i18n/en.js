@@ -95,6 +95,17 @@ window.i18n_en = {
       }
     ]
   },
+  "fun-fact": {
+    "title": "Some Braggings",
+    "entries": [
+      {
+        "desc": "1. I discovered a fossil back in high school that turned out to be a new species, and it now carries my name! - Ceratophyus Yatagaii.",
+      },
+      {
+        "desc": "2. I bench press 110kg and squat 140kg. No I don't do deadlifts because I'm scared."
+      }
+    ]
+  },
   "lang-toggle": "日本語",
   "blog-link-href": "https://blog.kota-yata.com/en"
 };
