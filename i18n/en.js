@@ -1,120 +1,97 @@
 window.i18n_en = {
   "name": "Kota Yatagai",
   "intro": "Third-year undergraduate student at Keio University.",
-  "projects": {
-    "title": "Personal Projects",
-    "entries": [
-      {
-        "title": "moqtail: a client implementation of Media over QUIC",
-        "desc": `Implemented a MoQT client and participated in interop tests at IETF 120 and 122. Moqtail
-         provides generic serializers/deserializers for MoQT draft-11 control messages, along with an abstract
-         WebWorker interface for transport communication.`,
-        "links": [
-          {"label": "Repository", "url": "https://github.com/kota-yata/moqtail"},
-          {"label": "Blog post", "url": "https://blog.kota-yata.com/en/posts/moqt-experiment-en/"}
-        ]
-      },
-      {
-        "title": "Reducing Interruption Time under WiFi-to-Cellular Transitions in P2P Conferencing (Academic Research)",
-        "desc": `Proposed QSwitch, a QUIC-based recovery mechanism to minimize P2P call interruptions 
-        during network transitions. By leveraging QUIC’s connection migration for immediate server-relay fallback, 
-        QSwitch reduces median interruption time by 72% (vs. Teams) and 96% (vs. Zoom).`,
-        "links": [
-          {"label": "Paper (Awaiting Review)", "url": "/assets/qswitch.pdf"},
-          {"label": "Repository", "url": "https://github.com/kota-yata/p2p-quic-migration"}
-        ]
-      }
-    ]
+  "fieldLabels": {
+    "languages": "Languages",
+    "protocols": "Protocols"
   },
-  "oss": {
-    "title": "Open Source Contributions",
+  "featured": {
+    "title": "Featured Projects and OSS Contributions",
     "entries": [
       {
-        "title": "jitsi/jitsi-videobridge",
-        "desc": "Implemented a selective audio forwarding in a WebRTC SFU server",
+        "title": "Receiver Audio Subscription for Jitsi Meet",
+        "desc": "Jitsi Meet is an open source video conferencing system. I have implemented an audio subscription feature at Jitsi's media-relay server (jitsi-videobridge) so participants in a meeting can choose which audio stream to receive. This contribution was funded by GSoC 2025.",
         "links": [
-          {"label": "PRs", "url": "https://github.com/jitsi/jitsi-videobridge/pulls?q=is%3Apr+author%3Akota-yata"}
-        ]
-      },
-      {
-        "title": "wireshark/wireshark",
-        "desc": "Added support for parsing Data Indication message in MS-TURN protocol",
-        "links": [
-          {"label": "PRs", "url": "https://gitlab.com/wireshark/wireshark/-/merge_requests/?sort=created_date&state=all&author_username=kota-yata&first_page_size=20"}
-        ]
-      },
-      {
-        "title": "ntt-com/moq-wasm",
-        "desc": "Enhanced the Publisher implementation of Media over QUIC Transport",
-        "links": [
-          {"label": "PRs", "url": "https://github.com/nttcom/moq-wasm/pulls?q=is%3Apr+author%3Akota-yata"}
-        ]
-      },
-      {
-        "title": "emiago/sipgo",
-        "desc": "Added parsing support for Refer-To and Referred-By headers in SIP messages",
-        "links": [
-          {"label": "PRs", "url": "https://github.com/emiago/sipgo/pulls?q=is%3Apr+author%3Akota-yata"}
-        ]
-      },
-      {
-        "title": "mozilla/srihash.org",
-        "desc": "Several UI improvements",
-        "links": [
-          {"label": "PRs", "url": "https://github.com/mozilla/srihash.org/pulls?q=is%3Apr+author%3Akota-yata"}
-        ]
-      },
-    ]
-  },
-  "qualifications": {
-    "title": "Qualifications, Adoptions, Awards, etc.",
-    "entries": [
-      {
-        "title": "IPA Fundamental Information Technology Engineer (2021)",
-        "desc": "Acquired in the second year of high school",
-        "links": [
-          {"label": "Syallabus", "url": "https://www.ipa.go.jp/en/it-examinations/nph2g600000007uh-att/000009637.pdf"}
-        ]
-      },
-      {
-        "title": "Google Summer of Code (2025)",
-        "desc": "Selected for the Jitsi project and implemented selective audio forwarding in Jitsi Videobridge",
-        "links": [
+          {"label": "PRs", "url": "https://github.com/jitsi/jitsi-videobridge/pulls?q=is%3Apr+author%3Akota-yata"},
           {"label": "GSoC Profile", "url": "https://summerofcode.withgoogle.com/programs/2025/projects/aBy319rB"}
         ]
       },
       {
-        "title": "IPA Security Camp (2025)",
-        "desc": "Implemented L4LB and cache servers in the self-built CDN seminar and constructed a small-scale PoP on actual machines.",
-        "links": []
+        "title": "Reducing Interruption Time under WiFi-to-Cellular Transitions in P2P Conferencing",
+        "desc": "This is an academic research project. I performed packet-level analysis of P2P VoIP traffic (Teams/Zoom under certain conditions) and identified repetitive server handshakes as the main bottleneck in vertical network handover. To address this, I proposed a QUIC-based recovery system utilizing connection migration for near-instant fallback to server-relayed paths during WiFi-to-Cellular transitions. As part of this research, I contributed a fix to Wireshark's TURN dissector to support proprietary Teams extensions.",
+        "links": [
+          {"label": "Paper (Awaiting Review)", "url": "/assets/qswitch.pdf"},
+          {"label": "Repository", "url": "https://github.com/kota-yata/p2p-quic-migration"},
+          {"label": "Wireshark PRs", "url": "https://gitlab.com/wireshark/wireshark/-/merge_requests/?sort=created_date&state=all&author_username=kota-yata&first_page_size=20"}
+        ]
       },
       {
-        "title": "Digital Agency Hackathon - Data Provision Award (2025)",
-        "desc": "Defined XML schema for notifications and circulars, and implemented a parser.",
+        "title": "moqtail and Contribution at MoQ Community",
+        "desc": "Media over QUIC (MoQ) is a media transport protocol that has been discussed at IETF moq WG since 2022. I implemented a TypeScript client of MoQ which I named moqtail, and first brought it to IETF120 for interop, where there were only 6 client implementations from companies like Google or Meta. The interop was a success and moqtail was also interopped at IETF122 and 123 with updated versions respectively. While I only contributed a small typo fix to the draft spec, I have contributed to several MoQ-related softwares such as moq-wasm or moq-obs.",
         "links": [
-          {"label": "Official report", "url": "https://www.digital.go.jp/en/news/9fb5ef8e-c631-4974-96d9-0b145304c553#:~:text=to%20accumulate%20cases.-,Laws%20and%20regulations%20Data%2Dsharing%20Award,-Notice%20and%20release"}
+          {"label": "Repository", "url": "https://github.com/kota-yata/moqtail"},
+          {"label": "Blog post", "url": "https://blog.kota-yata.com/en/posts/moqt-experiment-en/"},
+          {"label": "moq-wasm PRs", "url": "https://github.com/nttcom/moq-wasm/pulls?q=is%3Apr+author%3Akota-yata"},
+          {"label": "moq-obs PRs", "url": "https://github.com/moq-dev/obs/pulls?q=is%3Apr+author%3Akota-yata"}
+        ]
+      }
+    ]
+  },
+  "personal": {
+    "title": "Personal Projects",
+    "entries": [
+      {
+        "title": "Network Protocol Stack on os-in-1000",
+        "desc": "Network protocol stack implementation that can handle ICMP and ARP messages. I wrote a 32-bit RISC-V OS first, reading operating-system-in-1000-lines, and then wrote the protocol stack on it.",
+        "languages": "C",
+        "links": [
+          {"label": "Repository", "url": "https://github.com/kota-yata/small-nick-os"}
+        ]
+      },
+      {
+        "title": "TCP Simultaneous Open",
+        "desc": "C implementation of TCP Simultaneous Open, a quick establishment of TCP connections.",
+        "languages": "C",
+        "links": [
+          {"label": "Repository", "url": "https://github.com/kota-yata/tcp-simultaneous-open"}
         ]
       }
     ]
   },
   "work": {
-    "title": "Work Experience",
+    "title": "Work Experiences (Internships)",
     "entries": [
       {
-        "title": "Streaming Engineer Intern at AbemaTV, Inc. (Feb - Apr 2025)",
-        "desc": "Developed ad insertion systems for live streams from external sources such as DAZN or WOWOW."
+        "title": "Mirrativ Inc. (December 2025 - Present)",
+        "desc": "Migrated HLS streaming from MPEG-TS to fMP4. Reduced Go GC overhead by implementing manual memory allocation via mmap and conducted performance benchmarking.",
+        "languages": "Go",
+        "protocols": "HLS, MPEG-TS and fMP4"
       },
       {
-        "title": "Software Engineer Intern at RightTouch Inc. (Apr - Nov 2024)",
-        "desc": "Worked on synonym search integration, SSR site generation, and a VoIP proxy server handling SIP/SDP and RTP streams"
+        "title": "AbemaTV (February - April 2025)",
+        "desc": "Implemented ad insertion for external live feeds, such as DAZN.",
+        "languages": "Go, TypeScript and Rust",
+        "protocols": "HLS, SCTE-35"
       },
       {
-        "title": "Summer Intern at SORACOM (Aug - Oct 2024)",
-        "desc": "Evaluated Media over QUIC Transport and WebRTC performance under constrained mobile network conditions."
+        "title": "RightTouch Inc. (April - November 2024)",
+        "desc": "Implemented a proxy server for automated telephone response. Contributed to a SIP library in Go as part of the work.",
+        "languages": "Go and TypeScript",
+        "protocols": "SIP/SDP and RTP",
+        "links": [
+          {"label": "sipgo PRs", "url": "https://github.com/emiago/sipgo/pulls?q=is%3Apr+author%3Akota-yata"}
+        ]
       },
       {
-        "title": "Software Engineer Intern at PLAID, Inc. (Mar - Oct 2023)",
-        "desc": "Developed a real-time data synchronization system from MongoDB to BigQuery"
+        "title": "SORACOM (August - October 2024)",
+        "desc": "Conducted a performance comparison between Media over QUIC and WebRTC in bandwidth-restricted environments, such as those encountered in mobile usage scenarios.",
+        "languages": "TypeScript",
+        "protocols": "MoQ, WebRTC"
+      },
+      {
+        "title": "PLAID Inc. (March - October 2023)",
+        "desc": "Implemented real-time migration of logging data from MongoDB to BigQuery.",
+        "languages": "Java"
       }
     ]
   },

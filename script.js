@@ -16,10 +16,9 @@ function applyTranslations(lang) {
 
   document.body.classList.toggle('ja', lang === 'ja');
 
-  updateSection('projects', translations.projects);
-  updateSection('oss', translations.oss);
-  updateSection('qualifications', translations.qualifications);
-  updateSection('work', translations.work);
+  updateSection('featured', translations.featured, translations.fieldLabels);
+  updateSection('personal', translations.personal, translations.fieldLabels);
+  updateSection('work', translations.work, translations.fieldLabels);
 
   const langSelect = document.getElementById('lang-select');
   if (langSelect) {
@@ -27,7 +26,7 @@ function applyTranslations(lang) {
   }
 }
 
-function updateSection(sectionId, sectionData) {
+function updateSection(sectionId, sectionData, fieldLabels) {
   const section = document.getElementById(`${sectionId}-section`);
   if (!section) return;
 
@@ -51,6 +50,13 @@ function updateSection(sectionId, sectionData) {
 
       div.appendChild(title);
       div.appendChild(desc);
+
+      for (const fieldName of ['languages', 'protocols']) {
+        if (!entry[fieldName]) continue;
+        const meta = document.createElement('p');
+        meta.textContent = `${fieldLabels[fieldName]}: ${entry[fieldName]}`;
+        div.appendChild(meta);
+      }
 
       if (entry.links && Array.isArray(entry.links) && entry.links.length > 0) {
         const linkP = document.createElement('p');
@@ -84,22 +90,25 @@ function changeLanguage(e) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('preferredLanguage');
-  const userLang = navigator.language || navigator.userLanguage;
+  // const savedLang = localStorage.getItem('preferredLanguage');
+  // const userLang = navigator.language || navigator.userLanguage;
 
-  if (savedLang) {
-    applyTranslations(savedLang);
-    currentLang = savedLang;
-  } else if (userLang.startsWith('ja')) {
-    applyTranslations('ja');
-    currentLang = 'ja';
-  } else {
-    applyTranslations('en');
-    currentLang = 'en';
-  }
+  // if (savedLang) {
+  //   applyTranslations(savedLang);
+  //   currentLang = savedLang;
+  // } else if (userLang.startsWith('ja')) {
+  //   applyTranslations('ja');
+  //   currentLang = 'ja';
+  // } else {
+  //   applyTranslations('en');
+  //   currentLang = 'en';
+  // }
 
-  const langSelect = document.getElementById('lang-select');
-  if (langSelect) {
-    langSelect.addEventListener('change', changeLanguage);
-  }
+  // const langSelect = document.getElementById('lang-select');
+  // if (langSelect) {
+  //   langSelect.addEventListener('change', changeLanguage);
+  // }
+  // temporarily force English until the Japanese translation is complete
+  applyTranslations('en');
+  currentLang = 'en';
 });

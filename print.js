@@ -1,5 +1,5 @@
 // ----- Print ordering dialog -----
-const SECTION_IDS = ['projects', 'oss', 'qualifications', 'work'];
+const SECTION_IDS = ['featured', 'personal', 'work'];
 let printOrderState = [];
 
 function openPrintDialog() {
@@ -46,9 +46,8 @@ function renderOrderList() {
   list.innerHTML = '';
 
   const labels = {
-    projects: document.getElementById('projects-title')?.textContent || 'Projects',
-    oss: document.getElementById('oss-title')?.textContent || 'OSS',
-    qualifications: document.getElementById('qualifications-title')?.textContent || 'Qualifications',
+    featured: document.getElementById('featured-title')?.textContent || 'Featured',
+    personal: document.getElementById('personal-title')?.textContent || 'Personal Projects',
     work: document.getElementById('work-title')?.textContent || 'Work',
   };
 

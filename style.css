@@ -111,9 +111,8 @@ footer {
     display: none;
   }
   /* Hide original sections and separators during print */
-  #projects-section,
-  #oss-section,
-  #qualifications-section,
+  #featured-section,
+  #personal-section,
   #work-section,
   hr.section-sep {
     display: none !important;
