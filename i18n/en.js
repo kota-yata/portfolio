@@ -12,6 +12,7 @@ window.i18n_en = {
         "title": "Receiver Audio Subscription for Jitsi Meet",
         "desc": "Jitsi Meet is an open source video conferencing system. I have implemented an audio subscription feature at Jitsi's media-relay server (jitsi-videobridge) so participants in a meeting can choose which audio stream to receive. This contribution was funded by GSoC 2025.",
         "links": [
+          {"label": "Blog post", "url": "https://jitsi.org/blog/introducing-receiver-audio-subscriptions/"},
           {"label": "PRs", "url": "https://github.com/jitsi/jitsi-videobridge/pulls?q=is%3Apr+author%3Akota-yata"},
           {"label": "GSoC Profile", "url": "https://summerofcode.withgoogle.com/programs/2025/projects/aBy319rB"}
         ]
