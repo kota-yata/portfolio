@@ -41,19 +41,19 @@ window.i18n_en = {
     "title": "Personal Projects",
     "entries": [
       {
+        "title": "Byrd: Memory-efficient MP3 Decoder in Go",
+        "desc": "MP3 decoder in pure Go. Byrd reduces memory allocation by reusing buffers for decoding each frame as much as possible.",
+        "languages": "Go",
+        "links": [
+          {"label": "Repository", "url": "https://github.com/kota-yata/byrd-mp3"}
+        ]
+      },
+      {
         "title": "Network Protocol Stack on os-in-1000",
         "desc": "Network protocol stack implementation that can handle ICMP and ARP messages. I wrote a 32-bit RISC-V OS first, reading operating-system-in-1000-lines, and then wrote the protocol stack on it.",
         "languages": "C",
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/small-nick-os"}
-        ]
-      },
-      {
-        "title": "TCP Simultaneous Open",
-        "desc": "C implementation of TCP Simultaneous Open, a quick establishment of TCP connections.",
-        "languages": "C",
-        "links": [
-          {"label": "Repository", "url": "https://github.com/kota-yata/tcp-simultaneous-open"}
         ]
       }
     ]
