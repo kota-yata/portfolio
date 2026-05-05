@@ -1,6 +1,6 @@
 window.i18n_en = {
   "name": "Kota Yatagai",
-  "intro": "Third-year undergraduate student at Keio University.",
+  "intro": "Fourth-year undergraduate student at Keio University. Loves random packet watching on Wireshark.",
   "fieldLabels": {
     "languages": "Languages",
     "protocols": "Protocols"
@@ -55,6 +55,14 @@ window.i18n_en = {
         "languages": "C",
         "links": [
           {"label": "Repository", "url": "https://github.com/kota-yata/small-nick-os"}
+        ]
+      },
+      {
+        "title": "Kyache: RFC9111-compliant cache server",
+        "desc": "Kyache is an HTTP shared cache server. It supports HTTP/2 and HTTP/3, and is compliant with most header attributes defined in RFC9111.",
+        "languages": "Go",
+        "links": [
+          {"label": "Repository", "url": "https://github.com/kota-yata/kyache"}
         ]
       }
     ]
